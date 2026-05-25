@@ -82,5 +82,125 @@
  "003-339": {
   "title": "IISS-ESS Communication Fail 20",
   "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    송신 통신 확립 Error(IITsc 검지)\n[검지조건]\n    PAR 의 통신 확립 실패\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ },
+ "003-340": {
+  "title": "IISS-ESS Communication Fail 21",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    송신 동기 Error(IITsc 검지)\n[검지조건]\n    PAR 의 송신 동기 Error\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ },
+ "003-341": {
+  "title": "IISS-ESS Communication Fail 22",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    송신 통신 Error(IITsc 검지)\n[검지조건]\n    PAR 송신시 통신 Error\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ },
+ "003-342": {
+  "title": "IISS-ESS Communication Fail 23",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    수신 부정확 인수 Error(IITsc 검지)"
+ },
+ "003-343": {
+  "title": "IISS-ESS Communication Fail 24",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    수신 동기 Error(IITsc 검지)\n[검지조건]\n    PAR 의 수신 동기 Error\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ },
+ "003-345": {
+  "title": "X PIO Unmatch Fail 1",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    X PIO Unmatch Fail 1\n[검지조건]\n    IISS 에서의 X Job Fail 를 수신했을 때 X Hot Line 의 이상을 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ },
+ "003-346": {
+  "title": "X PIO Unmatch Fail 2",
+  "text": ""
+ },
+ "003-347": {
+  "title": "IITsc SD Card Access Failure",
+  "text": "[Fault 명칭]\n    IITsc SD Card Access Failure\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    IITsc 가 SD 카드에 액세스하지 못했다.\n[검지조건]\n    SD 카드 읽기 / 쓰기 실행에 대한 NG 반환을 IITsc 가 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-01 Common System Fail"
+ },
+ "003-701": {
+  "title": "Duplication prevention code detect",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    HWM 검지 Hardware 가 원고 정보 내에서 복제제한 코드를 검지\n[검지조건]\n    원고를 Scan 했을 때 HWM 검지 Hardware 가 원고 내에서 복제제한 코드를 검지했다.\n[대처순서]\n    복제제한 코드가 설정되지 않은 원고를 사용한다.\n    Trouble 이 계속되는 경우, 다음을 실시한다.\n    Hybrid WaterMark Board 불량으로 인한 오검지.\n    Hybrid WaterMark Board 교환\n    Trouble 이 계속되는 경우, 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "003-702": {
+  "title": "Different magnification, for surface and back of a document",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    원고 앞 / 뒷면의 배율이 다르다.\n[검지조건]\n    원고 양면을 동시에 복사할 때 동일한 원고에 대해 앞면과 뒷면의 배율 설정이 다른\n    것을 검지했다.\n[대처순서]\n    동일 원고의 앞면과 뒷면에 대한 스캔 배율을 동일하게 설정한다.\n    그래도 Trouble 이 계속될 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "003-703": {
+  "title": "Auto Color Correction Patch Position Fail",
+  "text": "[Fault 명칭]\n    Auto Color Correction Patch Position Fail\n[Error 분류]\n    Job"
+ },
+ "003-704": {
+  "title": "Color Correction Value Difference Fail",
+  "text": "[Fault 명칭]\n    Color Correction Value Difference Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    양면 동시 색보정의 색상차 이상 에러\n[검지조건]\n    스캔한 색보정 패턴의 각 색 14계조 패치값의 값이 이상하거나 보정값의 색상차 이\n    상을 검지한 경우\n[대처순서]\n    양면 동시 색보정용 차트가 바르게 세트되어 있는지 확인한다.\n    문제가 계속되는 경우는 아래를 실시하여 문제를 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-705": {
+  "title": "Paper Size Mismatch of the Energy Saving Return Fail",
+  "text": "[Fault 명칭]\n    Paper Size Mismatch of the Energy Saving Return Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    절전모드 복귀시의 용지크기 불일치 에러\n[검지조건]\n    절전모드 (부분 절전모드) 중에 용지크기가 변경되었을 때 절전모드에서 복귀하여 용\n    지크기가 변경된 것을 검지하기 전에 복사작업 (Tray 지정) 을 실행한 경우\n[대처순서]\n    일단 작업을 취소한 후 다시 설정하고 실행한다.\n    문제가 계속되는 경우는 아래를 실시하여 문제를 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-750": {
+  "title": "Book Duplex-Insufficient Docs",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Book 양면인쇄시의 원고부족.\n[검지조건]\n    설정조건에서는 1장도 축적되지 않는다.\n[대처순서]\n    Parameter 를 변경하고 재조작한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-752": {
+  "title": "Cannot scan 600DPI",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    DADF Mix 양면 Mode Scan 으로 600dpi 불가\n[검지조건]\n    DADF Mix 양면 Mode Scan 으로, Scan 불가능한 600dpi 해상도를 검지했다.\n[대처순서]\n    400dpi 이하의 해상도로 Scan 하고 조작한다.\n    또는, Mix Mode 이외에서 Scan 한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-753": {
+  "title": "Cannot scan over 300DPI",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    DADF Mix 양면 Mode Scan 300/400/600dpi 불가\n[검지조건]\n    DADF Mix 양면 Mode Scan 으로, Scan 불가능한 300dpi 해상도를 검지했다.\n[대처순서]\n    200dpi 이하의 해상도로 Scan 하고 조작한다.\n    또는, Mix Mode 이외에서 Scan 한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-754": {
+  "title": "S2X recoverable Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    회복 가능한 고압축 PDF Board(S2X) 의 Error\n[검지조건]\n    S2X PWB 에서 회복 가능한 Error 가 통지되었다.\n[대처순서]\n    다시 동일 Job 을 실행한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-755": {
+  "title": "S2X command Error",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "003-757": {
+  "title": "Cannot scan over 400DPI",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    DADF Mix 양면 Mode Scan 으로 400/600dpi 불가\n[검지조건]\n    DADF Mix 양면 Mode Scan 으로, Scan 불가능한 400dpi 해상도를 검지했다.\n[대처순서]\n    300dpi 이하의 해상도로 Scan 하고 조작한다.\n    또는, Mix Mode 이외에서 Scan 한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-760": {
+  "title": "Scan Settings Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Job Parameter 부적합\n[검지조건]\n    Job 속성이 부정확한 값이다."
+ },
+ "003-761": {
+  "title": "Incorrect Paper Tray Size",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Tray 선택 Error\n    (이미 선택되어 있는 Tray 의 용지 Size 가 APS 에서 선택된 Tray 의 용지 Size 와 다\n    르다.)\n[검지조건]\n    Cover 본문 Tray 나 합지 +Nset Tray 가 APS 로 선택된 경우, Cover Tray 나 OHP Tray\n    와 비교하여 Tray 내의 용지 Size 가 달라진다.\n[대처순서]\n    Tray 번호, 용지 Size 등의 Job 기동 Parameter 를 변경하고 재조작한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-780": {
+  "title": "Scan Image Compression Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Fax Scan 압축 불량\n[검지조건]\n    압축 Data Size 가 비압축의 8배를 초과했다.\n[대처순서]\n    Job 을 Abort 한다. 읽기 해상도 Parameter 를 변경하고 재조작한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-795": {
+  "title": "AMS Limit Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    AMS(자동배율선택) 배율 제한 Error\n    (AMS 지정에서 원고 자동 검지 후에 배율 제한 범위 이외가 되었다.)\n[검지조건]\n    AMS/AMS Auto-Fill 에서 50% ~ 400% 이외의 배율이 되었다.\n[대처순서]\n    Job 을 Abort 한다. Parameter 를 변경하고 재조작한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-913": {
+  "title": "Document Size Error (Without Ability for Auto Detect)",
+  "text": "[Fault 명칭]\n    Document Size Error (Without Ability for Auto Detect)\n[Error 분류]\n    Operation\n[Fault 내용]\n    원고 크기 Error(자동검지 능력 없음)\n[검지조건]\n    원고 크기 검지능력이 없는 IIT/DADF 를 사용하며 가상 원고 크기 금지 기능이 선택\n    된 경우\n[대처순서]\n    원고 크기로 적절한 값을 입력한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "003-930": {
+  "title": "Cannot scan over 300DPI",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    DADF Mix 양면 Mode Scan 에서 300dpi/400dpi/600dpi 불가\n[검지조건]\n    DAM Memory 가 적으므로, 지정된 해상도로는 A3 원고를 판독할 수 없음. A4/B4 원고\n    라면 판독이 가능하다.\n[대처순서]\n    300dpi 이하로 판독하도록 조작한다.\n    그래도 Trouble 이 지속될 경우는 DAM Memory 를 늘린다."
+ },
+ "003-931": {
+  "title": "Cannot scan over 400DPI",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    DADF Mix 양면 Mode Scan 에서 400dpi/600dpi 불가\n[검지조건]\n    DAM Memory 가 적으므로, 지정된 해상도로는 A3 원고를 판독할 수 없음. A4/B4 원고\n    라면 판독이 가능하다.\n[대처순서]\n    400dpi 이하로 판독하도록 조작한다.\n    그래도 Trouble 이 지속될 경우는 DAM Memory 를 늘린다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-932": {
+  "title": "Cannot scan 600DPI",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    DADF Mix 양면 Mode Scan 에서 600dpi 불가\n[검지조건]\n    DAM Memory 가 적으므로, 지정된 해상도로는 A3 원고를 판독할 수 없음. A4/B4 원고\n    라면 판독이 가능하다.\n[대처순서]\n    600dpi 이하로 판독하도록 조작한다.\n    그래도 Trouble 이 지속될 경우는 DAM Memory 를 늘린다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-933": {
+  "title": "Next Documents Cannot scan over 300DPI",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    DADF Mix 양면 Mode Scan 에서 300dpi/400dpi/600dpi 불가 (다음 원고가 있을 때)\n[검지조건]\n    DAM Memory 가 적으므로, 지정된 해상도로는 A3 원고를 판독할 수 없음. A4/B4 원고\n    라면 판독이 가능하다.\n[대처순서]\n    300dpi 이하로 판독하도록 조작한다.\n    그래도 Trouble 이 지속될 경우는 DAM Memory 를 늘린다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-934": {
+  "title": "Next Documents Cannot scan over 400DPI",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    DADF Mix 양면 Mode Scan 에서 400dpi/600dpi 불가 (다음 원고가 있을 때)\n[검지조건]\n    DAM Memory 가 적으므로, 지정된 해상도로는 A3 원고를 판독할 수 없음. A4/B4 원고\n    라면 판독이 가능하다.\n[대처순서]\n    400dpi 이하로 판독하도록 조작한다.\n    그래도 Trouble 이 지속될 경우는 DAM Memory 를 늘린다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-935": {
+  "title": "Next Documents Cannot scan over 600DPI",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    DADF Mix 양면 Mode Scan 에서 600dpi 불가 (다음 원고가 있을 때)\n[검지조건]\n    DAM Memory 가 적으므로, 지정된 해상도로는 A3 원고를 판독할 수 없음. A4/B4 원고\n    라면 판독이 가능하다.\n[대처순서]\n    600dpi 이하로 판독하도록 조작한다.\n    그래도 Trouble 이 지속될 경우는 DAM Memory 를 늘린다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-940": {
+  "title": "DAM memory insufficient",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    DAM 의 Memory 부족을 검출했다.\n[검지조건]\n    다음 AND 조건의 Job 에서 IITsc 에 기동이 걸렸을 경우\n    ·  DAM Memory < 384MB\n    ·  안표지 Image 있음 선택\n    ·  Color Mode 흑백 이외\n    ·  고화질 Mode\n[대처순서]\n    Job Cancel\n    ·  Color Mode 를 흑백 또는 안표지 Image 있음을 해제하고 재실행한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
  }
 }
