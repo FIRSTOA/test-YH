@@ -642,5 +642,125 @@
  "012-500": {
   "title": "Finisher/MACS-ROM 로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Finisher/MACS-ROM 로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)\n[검지조건]\n    Finisher-ROM( 혹은 DCCf450MP 의 MACS-ROM) 쓰기 중에 Error 를 검지\n    ROM 내용이 삭제되었으므로 정상적으로 작동하지 않는다.\n[대처순서]\n    다시 실시해도 실패하는 경우, Finisher-ROM( 혹은 DCCf450MP 의 MACS-ROM) 을 교환하\n    고 다시 DLD 방식으로 Version Up 을 실시한다."
+ },
+ "012-914": {
+  "title": "Stacker Tray Staple Set Over Count",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    Stacker Tray Staple Set Over Count\n[검지조건]\n    Staple Set 의 Eject 시, Stacker Tray 의 Staple Set Count 가 50Set 를 초과했다.\n[대처순서]\n    Stacker 로부터의 용지를 제거하고 Finisher Stacker No Paper Sensor 가 올바르게 작\n    동하는지 확인한 후, 작동하지 않으면 교환한다"
+ },
+ "012-965": {
+  "title": "Stapler Pin Near Empty",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    Finisher Stapler Pin Near Empty"
+ },
+ "016-210": {
+  "title": "SW Option Fail (HDD 미장착)",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    [SW Option 기능 미달성]\n    HDD 의 이상 / 미장착으로 인해 SW Option 기능 중 어느 기능을 실현할 수 없다.\n[검지조건]\n    SW Option 기능을 유효 설정시, Controller Board HDD 미장착, 이상 검지\n    [검지대상 Option 명]\n    ·  Internet FAX Kit\n    ·  주소록 확장 Kit\n    ·  Water Marking Kit\n    ·  Data Security Kit\n    ·  Annotation\n    ·  Scan Kit\n[대처순서]\n    Power OFF/ON 한다.\n    HDD 의 Connector 를 확인한다.\n    Controller Board 에 HDD 를 장착 또는 교환한다."
+ },
+ "016-211": {
+  "title": "SW Option Fail (System Memory Low)",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    [SW Option 기능 미달성]\n    System Memory 용량 부족을 검출했다.\n[검지조건]\n    SW Option 기능을 유효 설정시, Controller Board System Memory 용량의 부족.\n[대처순서]\n    Power OFF/ON 한다.\n    Controller Board 의 Memory(Option) 를 증설한다."
+ },
+ "016-212": {
+  "title": "SW Option Fail (Page Memory Low)",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    [SW Option 기능 미달성]\n    Page Memory 용량 부족을 검출했다.\n[검지조건]\n    Page Memory 용량 부족으로 인해 SW Option 기능 중 어느 기능을 실현할 수 없다.\n[대처순서]\n    Power OFF/ON 한다.\n    Controller Board 의 Memory(Page) 를 증설한다."
+ },
+ "016-213": {
+  "title": "SW Option Fail (Printer CARD 미장착)",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    [SW Option 기능 미달성]\n    PRT_CARD 의 이상 / 미장착으로 인해 SW Option 기능 중 어느 기능을 실현할 수 없다.\n[검지조건]\n    SW Option 기능을 유효 설정시, PRT_CARD 미장착, 이상을 검지했다.\n    [검지대상 Option 명]\n    ·  Internet FAX Kit\n[대처순서]\n    Power OFF/ON 한다.\n    미장착이면 PRT_CARD 를 장착한다.\n    장착시는 교환한다."
+ },
+ "016-214": {
+  "title": "SW Option Fail (Fax CARD 미장착)",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    [SW Option 기능 미달성]\n    FAX_CARD 의 이상 / 미장착으로 인해 SW Option 기능 중 어느 기능을 실현할 수 없다.\n[검지조건]\n    SW Option 기능을 유효 설정시, FAX_CARD 미장착, 이상을 검지했다.\n    [검지대상 Option 명]\n    ·  Internet FAX Kit\n[대처순서]\n    Power OFF/ON 한다.\n    미장착이면 FAX_CARD 를 장착한다.\n    장착시는 교환한다."
+ },
+ "016-215": {
+  "title": "SW Option Fail (JPEG Board 미장착)",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    [SW Option 기능 미달성]\n    JPEG Board 이상 / 미장착을 검지했다.\n[검지조건]\n    JPEG Board 이상 / 미장착으로 인해 SCANNER/ 기능을 실현할 수 없다.\n[대처순서]\n    Power OFF/ON 한다.\n    미장착이면 JPEG Board 를 장착한다.\n    장착시는 교환한다."
+ },
+ "016-216": {
+  "title": "SW Option Fail (Ext Memory 미장착)",
+  "text": ""
+ },
+ "016-217": {
+  "title": "SW Option Fail (Controller ROM not Printer kit)",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    [SW Option 기능 미달성]\n    Controller ROM 이 Printer Kit 미대응\n[검지조건]\n    SW Option 기능을 유효로 설정시, Controller ROM 이 해당 Option 에 대응하지 않는\n    다.\n    [검지대상 Option 명]\n    ·  Printer Kit\n[대처순서]\n    Power OFF/ON 한다.\n    Printer Kit 에 대응하는 Controller ROM 에 Firmware 를 VersionUP 한다."
+ },
+ "016-218": {
+  "title": "PS KIT Not Exist for XDOD",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    [SW Option 기능 미달성]\n    XDOD 기능에 필요한 PS Kit 의 미장착을 검출했다.\n[검지조건]\n    PS Kit 미장착으로 인해 XDOD 기능을 실현할 수 없다.\n[대처순서]\n    Power OFF/ON 한다.\n    PS Kit 를 장착한다."
+ },
+ "016-219": {
+  "title": "License is required (Printer Kit).",
+  "text": "[Fault 명칭]\n    License is required (Printer Kit)."
+ },
+ "016-220": {
+  "title": "S2X unrecoverable Error",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    치명적인 고압축 PDF Board(S2X) Error\n[검지조건]\n    S2X PWB 에서 회복 불가능한 Error 가 통지되었다.\n[대처순서]\n    Power OFF/ON 해도 정상으로 동작하지 않는 경우에는 S2X PWB 를 교환한다."
+ },
+ "016-222": {
+  "title": "S2X self-diag Error",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    고압축 PDF Board(S2X) 의 자기진단 Error\n[검지조건]\n    S2X PWB 의 자기진단에서 Error 가 발생했다.\n[대처순서]\n    Power OFF/ON 해도 정상으로 동작하지 않는 경우에는 S2X PWB 를 교환한다."
+ },
+ "016-224": {
+  "title": "S2X PCI Reg Error",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    고압축 PDF Board(S2X) PCI Register Write/Read Test Fail\n[검지조건]\n    S2X PWB 가 내부 PCI 공간으로의 Access 에 실패했다.\n[대처순서]\n    1.  SDRAM Memory 를 배냈다 다시 끼우고 장착을 확인한다.\n    2.  S2X PWB 교환."
+ },
+ "016-225": {
+  "title": "S2X ROM CheckSum Error",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    고압축 PDF Board(S2X) ROM CheckSum Fail\n[검지조건]\n    S2X PWB 가 ROM Check Sum Test 에 실패했다.\n[대처순서]\n    S2X PWBA 교환."
+ },
+ "016-231": {
+  "title": "SW Option Fail (Image Ext PWB Not Exist)",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    [SW Option 기능 미달성]\n    Image Ext PWB 의 이상 / 미장착으로 인해 SW Option 기능 중 어느 기능을 실현할 수\n    없다.\n[검지조건]\n    SW Option 기능을 유효 설정시, Controller Board 에 Image Ext PWB 또는\n    Image Ext PWB Board 이상 검지\n    [검지 대상 Option 명]\n    Thumbnail SW Option\n    Preview SW Option\n    Image Log SW Option\n[대처순서]\n    전원을 OFF/ON 한다.\n    Trouble 이 지속될 경우, 다음을 진행한다.\n    Image 확장 Kit(Ama+toto Board) 고장 또는 미장착이므로 교환 또는 장착."
+ },
+ "016-234": {
+  "title": "XCP Out of Memory Error",
+  "text": "[Error 분류]\n    local\n[Fault 내용]\n    메모리 부족에 의한 XCP 의 정지\n[검지조건]\n    Controller 내부에서 JAVA 를 실행하는 소프트웨어 모듈이 기계의 메모리 부족으로\n    인해 동작을 계속할 수 없었다.\n[대처순서]\n    1.  전원을 OFF/ON 한다.\n    2.  HDD 를 초기화한다."
+ },
+ "016-235": {
+  "title": "XCP Internal Error",
+  "text": "[Error 분류]\n    local\n[Fault 내용]\n    기타 내부 Error 로 인해 XCP 기능의 정지\n[검지조건]\n    JVM 이 내부 Error 로 인해 정지했음을 검지했다.\n[대처순서]\n    1.  전원을 OFF/ON 한다.\n    2.  HDD 를 초기화한다."
+ },
+ "016-236": {
+  "title": "XCP not active",
+  "text": "[Error 분류]\n    local\n[Fault 내용]\n    XCP 미기동 Error\n[검지조건]\n    기동 시에 SecSys Task 가 다음 중 하나의 조건을 검지한 경우.\n    (조건 1) 인증모드가 사용자인증으로 설정된 상태에서 가져오기 플러그인 기능이 비\n    활성화됐다.\n    (조건 2) 인증모드가 사용자인증으로 설정된 상태에서 XCP 스마트카드의 Selection\n    Service Status 가 활성화되어 있지 않다.\n    (PFV_SELECTION_SERVICE_XCP_SMARTCARD)\n[대처순서]\n    전원을 OFF/ON 한다."
+ },
+ "016-237": {
+  "title": "Auth plugin not active",
+  "text": "[Error 분류]\n    local\n[Fault 내용]\n    인증용 사용자 플러그인 미기동 Error\n[검지조건]\n    기동 시에 SecSys Task 가 다음 중 하나의 조건을 검지한 경우.\n    (조건 1) 인증모드가 사용자인증으로 설정된 상태에서 인증용 사용자 플러그인이 등\n    록되어 있지 않다.\n    (조건 2) 인증모드가 사용자인증으로 설정된 상태에서 인증용 사용자 플러그인이 기\n    동되어 있지 않다.\n    (조건 3) 인증용 사용자 플러그인의 파일 가져오기에 실패했다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    Trouble 이 계속되는 경우에는 다음을 실시한다.\n    CWIS 에 기계 관리자로 로그인한 후 [등록정보] 탭을 지정하여 [보안] → [플러그인\n    설정] → [가져오기 플러그인 목록] 을 선택하고, 인증용 사용자 플러그인을 등록한\n    다음 다시 기동한다."
+ },
+ "016-240": {
+  "title": "S2X NVM CheckSum Fail",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    고압축 PDF Board(S2X) NVM CheckSum Fail\n[검지조건]\n    S2X 가 NVM 의 CheckSum Test 에 실패했다.\n[대처순서]\n    S2X PWB 의 교환 (NVM Memory 는 기판 재장착)"
+ },
+ "016-241": {
+  "title": "SW Option Fail (SIP_FAX not exist)",
+  "text": "[Fault 명칭]\n    SW Option Fail (SIP_FAX not exist)\n[Error 분류]\n    Local\n[Fault 내용]\n    < SW 옵션기능 사용 불가능 > SIP_FAX SW-Key 가 활성화되어 있지 않아서 NGN 옵션 기\n    능을 사용할 수 없다.\n[검지조건]\n    NGN 옵션기능이 활성화되어 있지만 SIP_FAX SW-Key 가 비활성화 상태이다.\n[대처순서]\n    SIP_FAX Kit 를 구매한다. (미구입 고객만 해당)\n    SIP_FAX SW-Key 를 활성화한다."
+ },
+ "016-242": {
+  "title": "System GMT Clock Fail",
+  "text": "[Fault 명칭]\n    System GMT Clock Fail\n[Error 분류]\n    Local"
+ },
+ "016-244": {
+  "title": "Self-Signed Certificate Auto Update Failure",
+  "text": "[Fault 명칭]\n    Self-Signed Certificate Auto Update Failure\n[Error 분류]\n    Local\n[Fault 내용]\n    자체 서명 인증서 자동 업데이트 시의 오류\n[검지조건]\n    자체 서명 인증서 자동 업데이트 기능에서 어떠한 이유로 인해 업데이트가 이루어지\n    지 못했다.\n[대처순서]\n    이 기계의 전원을 OFF 한 후 조작부가 꺼진 것을 확인하고 전원을 다시 ON. (재발 시\n    에는 관리자 · 고객상담센터 등에 연락)\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    문제가 계속되는 경우 문제 발생 직후에 PfShowInfo 8 로그와 네트워크 로그를 취득\n    하여 지원부문에 의뢰한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-245": {
+  "title": "Invalid Accessory in auth and account mode",
+  "text": "[Fault 명칭]\n    Invalid Accessory in auth and account mode\n[Error 분류]\n    Local\n[Fault 내용]\n    Invalid Accessory in auth and account mode\n[검지조건]\n    기계 기동 시 액세서리 연결이 금지된 인증과 집계 모드의 조합이 검출되었다.\n[대처순서]\n    [액세서리 연결이 불필요]\n    KO 모드에서 액세서리 연결을 해제. 전원을 OFF 하고 액세서리를 분리한 후 전원 ON.\n    [액세서리 연결이 필요]\n    KO 모드에서 인증과 집계 모드를 재설정하고 전원을 OFF/ON 한다."
+ },
+ "016-246": {
+  "title": "Invalid Accessory Kind in auth and account mode",
+  "text": ""
+ },
+ "016-310": {
+  "title": "ssmm Job Log Full",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    SSMM Job Log Full\n[검지조건]\n    Job Log File 이 외부 Application(AWAS) 에서 취득되지 않아서 저장 가능한 규정수\n    (280 File) 를 초과했다.\n[대처순서]\n    외부 Application(AWAS) 에서 SSMI 경유로 Job Log File 을 취득 (GetJobLog) 한 후,\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 계속될 경우는 다음을 실시한다.\n    외부 Application(AWAS) 에서 SSMI 경유로 Job Log File 을 취득 (GetJobLog) 한 후,\n    전원을 OFF/ON 한다."
+ },
+ "016-311": {
+  "title": "No Scanner that Should Be",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Scanner 표준 장비임에도 불구하고 Scanner 미장착\n[검지조건]\n    Scanner 미장착을 검지한 경우\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 아래를 실행한다.\n    1.  Scanner 와 본체간의 I/F 부 장착 및 교환.\n    2.  그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-01 Common System Fail"
+ },
+ "016-314": {
+  "title": "SW Option Fail (Hybrid WaterMark Not Exist)",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    < SW Option 기능 미달성 >\n    원고 뒷면 검출 Board 미장착으로 인해 \"Paper Security Kit\" 를 작동할 수 없다.\n[검지조건]\n    SW Option 기능을 유효로 설정했을 때, DADF:PF1.5/IIT:PF1-BW 조합에 대해 2 개 (앞\n    면용, 뒷면용) 의 HWM 기판이 부착된 양면 동시 Scan 으로 인해 복제 제한 Code 를 검\n    출한 경우는 검출한 면에만 반영시킨다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    원고 뒷면 검출 Board 가 미장착 상태일 때는 장착한다.\n    그래도 Trouble 이 계속될 경우는 다음을 실시한다.\n    OF-01 Common System Fail"
  }
 }
