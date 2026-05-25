@@ -962,5 +962,125 @@
  "016-373": {
   "title": "Cont HDD FileSystem Fail-B",
   "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont HDD FileSystem Fail-B"
+ },
+ "016-374": {
+  "title": "Cont HDD FileSystem Fail-C",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont HDD FileSystem Fail-C\n[검지조건]\n    Boot Diag 가 HDD 의 논리 에러 (파티션 C) 를 검출했다.\n[대처순서]\n    아래의 순서를 실시한다.\n    1.  전원을 OFF/ON 한다.\n    2.  HDD 를 초기화한다."
+ },
+ "016-376": {
+  "title": "Cont HDD FileSystem Fail-E",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont HDD FileSystem Fail-E\n[검지조건]\n    Boot Diag 가 HDD 의 논리 에러 (파티션 E) 를 검출했다.\n[대처순서]\n    아래의 순서를 실시한다.\n    1.  전원을 OFF/ON 한다.\n    2.  HDD 를 초기화한다."
+ },
+ "016-377": {
+  "title": "Cont HDD FileSystem Fail-F",
+  "text": ""
+ },
+ "016-379": {
+  "title": "Cont HDD FileSystem Fail-H",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont HDD FileSystem Fail-H\n[검지조건]\n    Boot Diag 가 HDD 의 논리 에러 (파티션 H) 를 검출했다.\n[대처순서]\n    아래의 순서를 실시한다.\n    1.  전원을 OFF/ON 한다.\n    2.  HDD 를 초기화한다."
+ },
+ "016-380": {
+  "title": "Cont HDD FileSystem Fail-I",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont HDD FileSystem Fail-I\n[검지조건]\n    Boot Diag 가 HDD 의 논리 에러 (파티션 I) 를 검출했다."
+ },
+ "016-381": {
+  "title": "Cont HDD FileSystem Fail-J",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont HDD FileSystem Fail-J\n[검지조건]\n    Boot Diag 가 HDD 의 논리 에러 (파티션 J) 를 검출했다.\n[대처순서]\n    아래의 순서를 실시한다.\n    1.  전원을 OFF/ON 한다.\n    2.  HDD 를 초기화한다."
+ },
+ "016-382": {
+  "title": "Cont HDD FileSystem Fail-P",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont HDD FileSystem Fail-P\n[검지조건]\n    Boot Diag 가 HDD 의 논리 에러 (파티션 P) 를 검출했다.\n[대처순서]\n    아래의 순서를 실시한다.\n    1.  전원을 OFF/ON 한다.\n    2.  HDD 를 초기화한다."
+ },
+ "016-401": {
+  "title": "802.1x EAP type not supported",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    802.1x 인증 방식 불일치 (본체 인증 방식에 인증 Server 가 미대응)\n[검지조건]\n    기계와 물리적으로 연결된 \"인증장치\" 에서 기계에 설정된 인증방식을 처리할 수 없\n    다는 Fail 신호를 수신했다.\n[대처순서]\n    본체의 인증 방식을 인증 Server 에 설정된 인증 방식과 동일하게 설정한다.\n    UI 에서 802.1x 인증 방식을 확인한다."
+ },
+ "016-402": {
+  "title": "802.1x authentication failure by timing out",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    802.1x 인증 Timeout(\"인증 장치\" 로부터 응답 신호가 미수신)\n[검지조건]\n    본체와 물리적으로 연결된 \"인증 장치\" 로부터 응답 신호를 수신하지 못하여 인증\n    Timeout.\n[대처순서]\n    기계와 물리적으로 연결된 \"인증 장치\" 의 스위치 설정 및 네트워크 접속을 확인한\n    다.\n    Trouble 이 계속되는 경우, Device 가 연결된 스위치 설정 및 네트워크 접속을 확인\n    한다"
+ },
+ "016-403": {
+  "title": "802.1x certificate failure",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    802.1x 인증용 인증서 불일치\n[검지조건]\n    1.  인증 Server 의 Server 인증서용 루트 인증서가 본체에 저장되어 있지 않거나 일치하\n        지 않는다."
+ },
+ "016-404": {
+  "title": "802.1x inside failure",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    802.1x 인증 기타 에러\n[검지조건]\n    본체의 802.1x 요청자 기능에서 내부 Error 가 발생했다.\n    1.  인증 Server 에서 부정한 Protocol 신호를 수신\n[대처순서]\n    한번 더 동일한 조작을 실시한다.\n    Trouble 이 계속되는 경우, Log 를 취득하여 기술부문에 문의한다."
+ },
+ "016-406": {
+  "title": "802.1x client certificate failure",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    802.1x 인증용 클라이언트 인증서의 설정 Error\n[검지조건]\n    802.1x 인증의 인증방식에 [EAP-TLS] 가 선택되어 있지만 SSL 클라이언트 인증서가\n    설정되어 있지 않거나 삭제되었다.\n[대처순서]\n    1.  기계에 SSL 클라이언트 인증서를 저장하고 SSL 클라이언트 인증서로 설정한다.\n    2.  SSL 클라이언트 인증서를 설정할 수 없는 경우, 인증방식을 [EAP-TLS] 이외로 변경\n        한다."
+ },
+ "016-407": {
+  "title": "XCP Plugin Secrity Exception",
+  "text": ""
+ },
+ "016-408": {
+  "title": "XCP Invalid Plugin",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    Plug-In 파일이 부정확\n[검지조건]\n    패키지 관리기능이 Jar 파일의 파손을 검지했다.\n[대처순서]\n    Plug-In 을 수정한 후에 다시 설치한다."
+ },
+ "016-409": {
+  "title": "XCP Plugin Version Incompatible",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    Plug-In 버전의 부정합\n[검지조건]\n    패키지 관리기능이 버전의 부정합을 검지했다.\n[대처순서]\n    Plug-In 을 수정한 후에 다시 설치한다."
+ },
+ "016-410": {
+  "title": "XCP_PLUGIN_PROPERTY_INVALID",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    Plug-In 정의 파일의 부정확\n[검지조건]\n    패키지 관리기능이 정의 파일의 부정확을 검지했다.\n[대처순서]\n    Plug-In 을 수정한 후에 다시 설치한다."
+ },
+ "016-411": {
+  "title": "XCP_UNSUPPORTED_CLASS_VERSION",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    Plug-In 의 클래스 파일 버전이 지원 불가능"
+ },
+ "016-413": {
+  "title": "Couldnt detect proxy server automatically",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    자동 프록시 검출 실패\n[검지조건]\n    프록시 서버를 자동으로 검출하지 못했다.\n    프록시 서버가 수동으로 설정된 경우를 제외하고는 자동으로 DHCP 서버에서 프록시\n    서버의 설정을 취득하도록 시도하지만 취득에 실패했다.\n    자세한 내용은 아래와 같다.\n    -  취득한 PAC 파일의 내용이 비정상이다. (JavaScript 실행시 Erroor 가 발생)\n    -  PAC 파일을 취득하지 못했다. (Timeout/ 연결 Error)\n    -  PAC 파일을 취득하지 못했다. (PAC 파일이 존재안함 / 파일의 용량 비대)\n    -  PAC 파일의 URL 정보를 취득하지 못했다. (Timeout)\n    -  PAC 파일의 URL 정보를 취득하지 못했다. (조회 결과에 URL 가 없음)\n[대처순서]\n    아래를 확인한다.\n    -  기본 게이트웨이의 설정을 확인한다.\n    -  서브넷 마스크의 설정을 확인한다.\n    -  DNS 서버주소의 설정을 확인한다.\n    상기의 설정을 확인한 후, 상태가 개선되지 않으면 네트워크 장애 또는 DHCP 서버의\n    설정이 부적절할 가능성이 크므로 네트워크 관리자에게 상담한다. (예를 들어, DHCP\n    서버가 프록시 서버의 주소를 반송하도록 설정되어 있으면 이 Error 가 발생)\n    네트워크 환경의 확인항목을 아래와 같다.\n    -  PAC 파일 (CFILE) 을 제공하는 HTTP 서버가 정상적으로 가동하고 있는지 또는 해\n        당 서버에 네트워크가 도달하고 있는지 확인한다.\n    -  PAC 파일의 내용에 구성 상의 문제 또는 지정 서버의 주소에 문제가 없는지 확인\n        한다. 또는 파일 크기가 64KB 이하인지 확인한다.\n    -  CURL 정보를 등록한 DHCP 서버가 정상적으로 가동하고 있는지 또는 해당 서버에\n        네트워크가 도달하고 있는지 확인한다."
+ },
+ "016-414": {
+  "title": "Couldnt connect to Xerox server or proxy",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    네트워크 이상\n[검지조건]\n    Xerox Communication 서버 또는 프록시 서버에 접속하지 못했다.\n    (네트워크 경로이상 및 단선 등)\n[대처순서]\n    아래를 확인한다.\n    -  LAN Cable 의 접속을 확인한다.\n    -  IP 주소의 설정을 확인한다.\n    -  기본 게이트웨이의 설정을 확인한다.\n    -  서브넷 마스크의 설정을 확인한다.\n    -  DNS 서버주소의 설정을 확인한다.\n    -  프록시 서버주소의 설정을 확인한다.\n    상기의 설정을 확인한 후, 상태가 개선되지 않으면 네트워크 장애일 가능성이 크므\n    로 네트워크 관리자에게 상담한다.\n    복구수단을 실시한 후, Xerox Communication 서버와 정상적으로 통신이 실행되는 시\n    점에서 Fault 는 해제된다.\n    네트워크가 정상임에도 불구하고 상태가 개선되지 않는 경우, Trouble 발생 직후에\n    pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다."
+ },
+ "016-415": {
+  "title": "Connection to Xerox server has timed out",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    서버 무응답\n[검지조건]\n    Xerox Communication 서버에서 일정시간 응답이 없어 통신 Timeout 이 발생했다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    복구수단을 실시한 후, Xerox Communication 서버와 정상적으로 통신이 실행되는 시\n    점에서 Fault 는 해제된다.\n    상태가 개선되지 않는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log\n    를 취득하여 기술부문에 문의한다."
+ },
+ "016-416": {
+  "title": "An invalid state message received from server",
+  "text": ""
+ },
+ "016-417": {
+  "title": "Invalid network settings were found",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    설정이상\n[검지조건]\n    무효 또는 부적절한 네트워크 설정으로 인해 통신하지 못했다.\n[대처순서]\n    아래를 확인한다.\n    -  IP 주소의 설정을 확인한다.\n    -  기본 게이트웨이의 설정을 확인한다.\n    -  서브넷 마스크의 설정을 확인한다.\n    -  DNS 서버주소의 설정을 확인한다.\n    -  프록시 서버주소의 설정을 확인한다.\n    -  Xerox Communication Server URL 의 설정을 확인한다.\n    -  [상대 서버 인증서 검증] 을 [사용안함] 으로 설정한다.\n    상기의 설정을 확인한 후, 상태가 개선되지 않으면 네트워크 장애일 가능성이 크므\n    로 네트워크 관리자에게 상담한다.\n    복구수단을 실시한 후, Xerox Communication 서버와 정상적으로 통신이 실행되는 시\n    점에서 Fault 는 해제된다.\n    네트워크가 정상임에도 불구하고 상태가 개선되지 않는 경우, Trouble 발생 직후에\n    pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다."
+ },
+ "016-421": {
+  "title": "Input Tray is Removed",
+  "text": "[Fault 명칭]\n    Input Tray is Removed\n[Error 분류]\n    Information\n[Fault 내용]\n    급지 트레이 Removed\n[검지조건]\n    급지 트레이가 분리되어 있다."
+ },
+ "016-422": {
+  "title": "Diag Offline",
+  "text": "[Fault 명칭]\n    Diag Offline\n[Error 분류]\n    Information\n[Fault 내용]\n    Diag Offline\n[검지조건]\n    1. 진단 모드 조작 중이기 때문에 오프라인이 되어버린 경우\n[대처순서]\n    다른 메시지가 표시되면 그 오류를 해제한다.\n    진단 모드 조작 중이라면 조작을 완료한다.\n    원격 액세스 중이라면 액세스가 종료되기까지 기다린다.\n\n    그래도 해결되지 않으면 전원을 OFF/ON 하고 로그를 취득하여 지원 부서로 연락한다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "016-423": {
+  "title": "Offline",
+  "text": "[Fault 명칭]\n    Offline\n[Error 분류]\n    Information\n[Fault 내용]\n    Offline\n[검지조건]\n    1. 다른 Fault 장애가 발생하여 작업 처리를 진행할 수 없는 경우\n    2. 조작부 조작 (진단 모드 중 이외) 을 실시 중이므로 작업을 처리할 수 없다.\n    3. 제 3 자가 원격 액세스로 작업을 처리할 수 없다.\n\n[대처순서]\n    다른 메시지가 표시되면 그 오류를 해제한다.\n    조작부를 조작 중이면 완료한다.\n    원격 액세스 중이라면 액세스가 종료되기까지 기다린다.\n\n    그래도 해결되지 않으면 전원을 OFF/ON 하고 로그를 취득하여 지원 부서로 연락한다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "016-424": {
+  "title": "Low Power Mode",
+  "text": ""
+ },
+ "016-425": {
+  "title": "Sleep Mode",
+  "text": "[Fault 명칭]\n    Sleep Mode\n[Error 분류]\n    Information\n[Fault 내용]\n    Sleep Mode\n[검지조건]\n    Sleep 절전 상태로 전환한 경우\n[대처순서]\n    조작부 또는 원격으로 절전을 해제한다. 작업을 진행해도 절전은 해제된다.\n\n    그래도 해결되지 않으면 전원을 OFF/ON 하고 로그를 취득하여 지원 부서로 연락한다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "016-450": {
+  "title": "SMB Host name duplicated",
+  "text": "[Error 분류]\n    Time Bomb(Information)\n[Fault 내용]\n    SMB Host 명 중복\n[검지조건]\n    Network 상에 동일 Host 명을 가진 PC 가 존재했다.\n[대처순서]\n    1.  Device 와 동일 Host 명이 다른 단말기에 설정되어 있는지를 확인하고, 중복되어 있\n        으면 Device 의 Host 명 혹은 중복처의 단말기 Host 명을 변경한다.\n    2.  중복 사실을 확인할 수 없는 경우에는 Device Host 명을 변경한다.\n    3.  2.5.2 로그 수집 / 추출 도구의 조작 설명에 따라 Log 를 채취한다.\n        2.4.5 Network 관계 상세 확인 Flow\n        2.5.2 로그 수집 / 추출 도구의 조작설명"
+ },
+ "016-453": {
+  "title": "Dynamic DNS - IPv6 NG",
+  "text": ""
+ },
+ "016-454": {
+  "title": "DNS renewal failure of dynamic",
+  "text": "[Error 분류]\n    Time Bomb(Information)\n[Fault 내용]\n    Dynamic DNS- 동적변경에 실패\n[검지조건]\n    Dynamic DNS- 동적변경에 실패\n[대처순서]\n    1.  DNS Server Address 가 바르게 설정되어 있는지 확인한다.\n    2.  고객 System 관리자에게 Dynamic DNS 가 동작할 수 있는 DNS Server 설정으로 되어\n        있는지 확인한다.\n    3.  2.5.2 로그 수집 / 추출 도구의 조작 설명에 따라 Log 를 채취한다.\n        2.4.5 Network 관계 상세 확인 Flow\n        2.5.2 로그 수집 / 추출 도구의 조작설명"
  }
 }
