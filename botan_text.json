@@ -322,5 +322,85 @@
  "005-160": {
   "title": "DADF Tray Lift Up Fail on Running (Document Set) (High model)",
   "text": "참조 BSD : CH5.2\n\n원고가 세트되어 있는 Tray 가 상승하기 시작한 후 일정 시간이 지나도 DADF Level Sensor\n가 On 되지 않는다. 또는 DADF Bottom Sensor 가 Off 되지 않는다. (Run 중, Stop 중,\nPurge 중에 검지한 경우)\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  DADF Level Sensor (DC330[005-203]) 작동불량. (PL 54.8)\n·  DADF Tray Motor (DC330[005-051]) 작동불량. (PL 54.5)\n·  DADF Bottom Sensor (DC330[005-202]) 작동불량. (PL 54.6)\n·  DADF Tray Motor Drive Gear 의 마모, 파손 및 Torque Limiter 의 파손.\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
+ },
+ "005-193": {
+  "title": "DADF Multi Feed Detection Jam",
+  "text": "참조 BSD : CH5.5\n\nSonic Sensor 를 탑재하고 중송 검지 기능 상태에서 Multifeed 원고를 검지했다.\n\n원인 / 대처방법\nUI 화면의 지시에 따른다."
+ },
+ "005-194": {
+  "title": "Size Mismatch Jam on SS Mix-Size",
+  "text": "참조 BSD : CH5.3, CH5.15\n\n부주사 (SS) Mix 모드일 때 DADF 로부터 이송된 원고에서 주주사 (FS) 방향의 크기가 다른\n원고를 검지했다.\n\n원인 / 대처방법 [High model]\nUI 화면의 지시에 따른다. 오류가 사라지지 않으면 아래 항목을 점검한다.\n\n·  DADF Tray Set Guide 의 작동불량.\n·  DADF Tray APS Sensor 1-4(DC330[005-215/216/217/302]) 작동불량. (PL 54.6)\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)\n\n\n원인 / 대처방법 [Low/Mid model]\nUI 화면의 지시에 따른다. 오류가 사라지지 않으면 아래 항목을 점검한다."
+ },
+ "005-196": {
+  "title": "(High model) Size Mismatch Jam on No Mix-Size",
+  "text": "참조 BSD : CH5.6, CH5.3, CH5.17, CH5.15\n\n2매째부터 1매째 원고 크기와 다른 원고를 검지했다.\n\n원인 / 대처방법 [High model]\nUI 화면의 지시에 따른다. 오류가 사라지지 않으면 아래 항목을 점검한다.\n\n·  DADF Tray APS Sensor 1-4(DC330[005-215/216/217/302]) 작동불량. (PL 54.6)\n·  DADF APS Sensor 1 (DC330[005-218]) 작동불량. (PL 54.9)\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
+ },
+ "005-197": {
+  "title": "Prohibit Combine Size Jam",
+  "text": "참조 BSD : CH5.6, CH5.16\n\n혼합이 금지된 크기의 원고를 검지했다.\n\n원인 / 대처방법\n아래와 같은 크기의 혼합은 금지되어 있음을 사용자에게 설명한다.\n\n·  A5SEF 와 기타 모든 원고 크기.\n·  B5SEF 와 기타 모든 원고 크기."
+ },
+ "005-198": {
+  "title": "Too Short Size Jam",
+  "text": "참조 BSD : CH5.7, CH5.4, CH5.16, CH5.18\n\nDADF 가 이송 가능한 최소 크기 이하의 원고를 검지했다.\n\n·  Low/Mid model: 85mm 미만 (단면 모드)\n·  High model: 135.0mm 미만 (단면 모드)\n\n원인 / 대처방법\n사용자가 주행한 원고 크기를 확인하고 DADF 가 이송 가능한 길이인 경우에는 아래 항목\n을 점검한다.\n\n·  DADF Pre Regi Sensor(DC330[005-206]) 작동불량. (PL 54.9, PL 55.5)\n·  DADF Feed Out Sensor (DC330[005-205]) 작동불량. (PL 54.9, PL 55.5)\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3, PL 55.4)"
+ },
+ "005-199": {
+  "title": "Too Long Size Jam",
+  "text": "참조 BSD : CH5.7, CH5.16\n\n원고의 부주사 방향 길이가 규격에서 벗어난 것을 검지했다.\n\n·  Low/Mid model: 1275mm 이상 (단면 모드)\n·  High model: 670mm 이상 (단면 모드)"
+ },
+ "005-210": {
+  "title": "DADF Download Fail",
+  "text": "참조 BSD : CH3.3\n\nIISS 기동시 (전원 ON, Sleep 복귀) 에 DADF 가 다운로드 모드인 것을 검지했다.\n\n원인 / 대처방법\nDADF 의 소프트웨어를 다운로드한다."
+ },
+ "005-212": {
+  "title": "Bottom Sensor Logic Fail (High model)",
+  "text": "참조 BSD : CH5.2\n\nDADF 동작 중에 Tray 하강 이외의 동작에서 Bottom Sensor 가 On 되었다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  DADF Bottom Sensor (DC330[005-202]) 작동불량. (PL 54.6)\n·  DADF Tray Motor (DC330[005-051]) 작동불량. (PL 54.5)\n·  DADF Tray Motor Drive Gear 의 마모, 파손 및 Torque Limiter 의 파손.\n·  Sensor Actuator 파손.\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
+ },
+ "005-275": {
+  "title": "DADF RAM Fail",
+  "text": "참조 BSD : CH3.3\n\nPower On 시에 DADF PWB 상의 RAM 불량을 검지했다.\n\n원인 / 대처방법\n전원을 OFF/ON 해도 복구되지 않는 경우에는 DADF PWB 를 교환한다. (PL 54.3, PL 55.4)"
+ },
+ "005-280": {
+  "title": "DADF EEPROM Fail",
+  "text": "참조 BSD : CH3.3\n\nDADF EEPROM 으로의 쓰기불량 또는 EEPROM 과의 통신불량을 검지했다.\n\n원인 / 대처방법\n전원을 OFF/ON 해도 복구되지 않는 경우에는 DADF PWB 를 교환한다. (PL 54.3, PL 55.4)"
+ },
+ "005-281": {
+  "title": "DADF Tray Lift Down Fail (High model)",
+  "text": "참조 BSD : CH5.2\n\nDADF Tray 가 하강하기 시작한 후 일정 시간이 지나도 DADF Bottom Sensor 가 On 되지 않\n는다.\n\n원인 / 대처방법\n005-212 (Bottom Sensor Logic Fail (High model)) FIP 참고."
+ },
+ "005-282": {
+  "title": "DADF Tray Lift Up Fail (No Document) (High model)",
+  "text": "참조 BSD : CH5.2\n\n원고가 세트되어 있지 않은 상태의 초기화 동작에서 Tray 가 상승하기 시작한 후 일정 시\n간이 지나도 DADF Bottom Sensor 가 Off 되지 않는다.\n\n원인 / 대처방법\n005-212 (Bottom Sensor Logic Fail (High model)) FIP 참고."
+ },
+ "005-283": {
+  "title": "DADF Level Sensor Logic Fail (High model)",
+  "text": "참조 BSD : CH5.2\n\nDocument Set Sensor 출력과의 관계에서 이론적으로 DADF Level Sensor 불량 또는 Nudger\nSolenoid 불량을 검지했다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  DADF Level Sensor (DC330[005-203]) 작동불량. (PL 54.8)\n·  DADF Nudger Solenoid (DC330[005-086]) 작동불량. (PL 54.8)\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
+ },
+ "005-284": {
+  "title": "DADF APS Sensor Logic Fail (High model)",
+  "text": "참조 BSD : CH5.6\n\nDADF APS Sensor 1-3 의 출력 조합이 논리적으로 비정상임을 검지하였다.\n\n원인 / 대처방법\nDADF APS Sensor 1/2/3 (DC330[005-218/219/220]) 작동불량을 점검한다. (PL 54.9)\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
+ },
+ "005-305": {
+  "title": "DADF Feeder Cover Interlock Open",
+  "text": "참조 BSD : CH5.1, CH5.14\n\nDADF 작동 중에 DADF Feeder Cover Interlock Switch 가 Open 상태이다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  DADF Feeder Cover 의 정합불량.\n·  DADF Feed Cover Interlock Switch (DC330[005-212]) 작동불량. (PL 54.7, PL 55.9)\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3, PL 55.4)"
+ },
+ "005-309": {
+  "title": "DADF L/H Cover Interlock Open (High model)",
+  "text": "참조 BSD : CH5.1\n\nDADF 작동 중에 DADF L/H Cover Interlock Sensor 가 Open 상태이다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  DADF L/H Cover 의 장착 불량.\n·  Sensor Actuator 의 이탈 및 변형.\n·  DADF L/H Cover Interlock Sensor (DC330[005-223]) 작동불량. (PL 54.7)\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
+ },
+ "005-500": {
+  "title": "DADF-ROM 으로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    DADF-ROM 으로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)\n[검지조건]\n    DADF-ROM 쓰기중에 Error 를 검지했다.\n    ROM 내용은 삭제되어 있으므로 정상으로 작동하지 않는다.\n[대처순서]\n    재시행해도 실패할 경우에는 DADF-ROM 을 교환하고, 다시 DLD 방식으로 VerUP 작업을\n    실시한다."
+ },
+ "005-600": {
+  "title": "DADF Multi Feed Detection Failure",
+  "text": "참조 BSD : CH5.5\n\nSonic Sensor 고장을 검지했다. (이 Fail 은 숨은 Fail 이다)\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Sonic Sensor (DC330[005-194]) 작동불량. (PL 54.8, PL 54.14)\n\n    주기 : IO 점검 (DC330[005-194]) 을 On 했을 때 Multifeed 원고가 Sonic Sensor 사이\n    에 있으면 [Low] 가 된다. 그외에 원고 1 매나 원고 없음은 [High] 가 된다. 단\n    NVM[711-250](중송 검지 기능 활성화 설정) 이 [1: Kit 있음] 일 것.\n\n    주기 : IO 점검 시 중송 검지 수신값은 NVM[711-253](중송 검지 Diag 결과) 에 저장\n    된다. 이 수신값이 NVM[711-259](중송 검지 기준값 조정) 값 미만이면 중송으로 판\n    정된다.\n\n·  AMP PWB J767 과 DADF PWB J761 사이의 Wire 단선, 단락 또는 접촉불량.\n·  AMP PWB J771 과 Sonic Sensor Transmit J783 사이의 Wire 단선, 단락 또는 접촉\n    불량.\n·  AMP PWB J776 과 Sonic Sensor Receive J785 사이의 Wire 단선, 단락 또는 접촉불\n    량.\n·  Sonic Sensor 에 이물질 부착.\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
+ },
+ "005-601": {
+  "title": "DADF Multi Feed Detection AMP not Connector Fail",
+  "text": "참조 BSD : CH5.5\n\nDADF 중송 검지 AMP 기판 미접속이 검지되었다. (이 Fail 은 숨은 Fail 이다)\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Sonic Sensor (DC330[005-194]) 작동불량. (PL 54.8, PL 54.14)\n\n    주기 : IO 점검 (DC330[005-194]) 을 On 했을 때 Multifeed 원고가 Sonic Sensor 사이\n    에 있으면 [Low] 가 된다. 그외에 원고 1 매나 원고 없음은 [High] 가 된다. 단\n    NVM[711-250](중송 검지 기능 활성화 설정) 이 [1: Kit 있음] 일 것.\n\n    주기 : IO 점검 시 중송 검지 수신값은 NVM[711-253](중송 검지 Diag 결과) 에 저장\n    된다. 이 수신값이 NVM[711-259](중송 검지 기준값 조정) 값 미만이면 중송으로 판\n    정된다.\n\n·  AMP PWB J767 과 DADF PWB J761 사이의 Wire 단선, 단락 또는 접촉불량."
+ },
+ "005-905": {
+  "title": "DADF Feed Out Sensor Static Jam",
+  "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
  }
 }
