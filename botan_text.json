@@ -1242,5 +1242,125 @@
  "016-556": {
   "title": "Attestation Agent Error 556",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error(SERVICE_IS_PROCESSING)\n[검지조건]\n    Database 의 처리에서 Timeout 이 됐다.\n    ApeosWare Authentication Agent 가 접속할 Database 가 과부하 상태에서 Error 가 됐\n[대처순서]\n    Service 가 과부하이므로, 시간을 두고 다시 인증한다.\n    해결하고 싶을 경우에는, ApeosWare Authentication Agent 를 확인한다.\n    대처방법에 대해서는, ApeosWare Authentication Agent 의 취급설명서를 참고한다.\n    그래도 Trouble 이 지속될 때는 Trouble 발생 직후에 2.5 Log 수집 · 추출 Tool 의 조\n    작설명을 참고하고, pfshowinfo9 Log 와 Network Log 를 채취하여 Support 부문에 연\n    락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-557": {
+  "title": "Attestation Agent Error 557",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error(INTERNAL_Error)\n[검지조건]\n    인증에서 기타 Error 가 발생했다.\n    ApeosWare Authentication Agent 의 내부 Error.\n[대처순서]\n    ApeosWare Authentication Agent 를 확인한다.\n    대처방법에 대해서는, ApeosWare Authentication Agent 의 취급설명서를 참고한다.\n    그래도 Trouble 이 지속될 때는 Trouble 발생 직후에 2.5 Log 수집 · 추출 Tool 의 조\n    작설명을 참고하고, pfshowinfo9 Log 와 Network Log 를 채취하여 Support 부문에 연\n    락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-558": {
+  "title": "Attestation Agent Error 558",
+  "text": ""
+ },
+ "016-559": {
+  "title": "Remote Download parameter Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Remote Download Parameter Error\n[검지조건]\n    Remote Download 를 실시할 때, 필요한 System Data 에 설정된 값이 정확하지 않은\n    경우.\n[대처순서]\n    Remote Download 를 실시할 때 설정이 필요한 System Data 가 모두 올바르게 설정되\n    어 있는지의 여부를 확인한다.\n    예 : IP Mode 에 따른 Server 설정의 확인 등."
+ },
+ "016-560": {
+  "title": "Attestation Agent Error 560",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent 통신 Error\n[검지조건]\n    이 기계와 ApeosWare Authentication Agent 의 통신 Error 가 발생했다.\n[대처순서]\n    1.  Network Cable 의 접속상태 및 Authentication Agent 기능설정을 확인.\n    2.  Printer 기능 설정 List 의 ApeosWare Authentication Agent 의 Server 명 /IP Address\n        에 Server 의 DNS Address 가 설정되어 있을 경우에는 DSN 이 유효한지 확인"
+ },
+ "016-562": {
+  "title": "ADetected user duplication, in a cert agent",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error*ICCG 외부 인증에서 중복 ID 를 검지"
+ },
+ "016-563": {
+  "title": "Image Log Memory Full (Exp. Kit)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    이미지 확장 Kit 의 Memory 부족 발생으로 인한 Job 계속 불가\n[검지조건]\n    System Data [로그 이미지 보증 레벨] 이 [고] 로 설정된 경우에 이미지 확장 Kit\n    의 Memory 부족 발생\n[대처순서]\n    화질 지정을 표준 화질로 한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-564": {
+  "title": "Remote Download Server Authentication Failed",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Remote Download Server 인증 Error\n[검지조건]\n    Remote Download Server 에 액세스했을 때 Server 에서 인증 Error 가 통지되었다.\n[대처순서]\n    Remote Download Server 액세스를 위한 사용자명, 비밀번호가 올바르게 지정되어 있\n    는지의 여부를 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-565": {
+  "title": "Backup Restore Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Backup Restore Error"
+ },
+ "016-566": {
+  "title": "Backup Restore Condition Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    NVM 백업 / 복원 조건 Error\n[검지조건]\n    ·  백업시 본체와 동일한 Version 의 FW Download File 을 찾을 수 없다.\n    ·  복원을 시도하였지만 백업시와 복원시의 본체 Configuration 이 일치하지 않아서 복\n        원을 실시할 수 없다.\n    ·  복원시, 별도 Device 의 백업파일이 지정되었거나 부정확한 백업파일이 지정되었다.\n[대처순서]\n    ·  백업시, USB Memory 의 [dwld] Directory 에 FW Download File 을 저장하여 본체에 한\n        후 백업을 실시한다.\n    ·  복원시, IOT 및 IIT 의 ROM Version 을 백업시와 동일하게 조정한다. USB 백업 File\n        에서 복원할 경우 HDD 유무도 일치시킨다.\n    ·  HDD 가 장착되지 않은 경우, ESS 의 ROM Version 도 일치시킨다. Configuration 을 일\n        치시킬 수 없는 경우, 조작부에서 백업 파일을 삭제한다.\n    ·  외부 백업파일에서의 복원시에 발생한 경우, 백업파일을 작성한 시점의 ESS/IIT/\n        IOT/FAX 의 ROM 버전이 변경되지 않았는지 확인한다. 또한 백업파일을 생성한 Device\n        와 동일한 Device 인지 확인한다."
+ },
+ "016-567": {
+  "title": "Backup Capacity Full",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    NVM 백업 저장위치의 용량 초과\n[검지조건]\n    ·  백업 위치의 용량 부족.\n    ·  백업시의 데이터 암호용 메모리가 부족.\n[대처순서]\n    ·  HDD 백업시, 조작부에서 기존 백업 파일을 삭제하여 용량을 확보한다.\n    ·  USB 백업시, 조작부에서 USB Memory 내의 백업 파일을 삭제하거나 또는 PC 에서 USB\n        Memory 내의 불필요한 파일을 삭제하여 용량을 확보한다."
+ },
+ "016-568": {
+  "title": "Backup Restore Failed",
+  "text": ""
+ },
+ "016-569": {
+  "title": "Attestation Agent Error 569",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent 상기 이외의 Error\n[검지조건]\n    Authentication Agent 기능에 관한 상기 이외의 Error\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 지속될 때는 Trouble 발생 직후에 2.5 Log 수집 · 추출 Tool 의 조\n    작설명을 참고하고, pfshowinfo9 Log 와 Network Log 를 채취하여 Support 부문에 연\n    락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-570": {
+  "title": "Job ticket out of memory",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    XPIF Memory 부족.\n[검지조건]\n    XPIF Parser 가 Job Ticket 해석 처리 중에 Memory 부족을 검지했다.\n[대처순서]\n    UI 조작부에서 Job Ticket 용 메모리 크기를 확장하여 재기동한 후 Job 을 실행한다."
+ },
+ "016-571": {
+  "title": "Job ticket wrong param",
+  "text": ""
+ },
+ "016-572": {
+  "title": "Job ticket media Error",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    XPIF Media 변환 Error.\n[검지조건]\n    Job Ticket 에서 지정된 용지 속성이 Device 에서 지원되는 용지 (용지크기, 용지종\n    류, 용지색) 로서 인식할 수 없음을 Decomposer 가 검지했다.\n[대처순서]\n    Job Ticket 에서 지정된 용지 (용지크기, 용지종류, 용지색 구멍 속성) 가 송신하고\n    있는 Device 에서 인쇄 가능한지 확인한다."
+ },
+ "016-573": {
+  "title": "Job ticket parse Error",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    XPIF 해석 Error.\n[검지조건]\n    XPIF Parser 가 해석 불가능한 구문을 가진 Job Ticket 을 수신했다.\n[대처순서]\n    Job Ticket 을 생성하는 Client 가 올바르게 Install 되어 있는지, 동작 조건이 갖추\n    어져 있는지, Device 와의 Version 조합이 맞는지 확인한다."
+ },
+ "016-574": {
+  "title": "Host name solution Error in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 에서 Host 명 해결 실패\n[검지조건]\n    FTP Server 로의 접속전에 DNS Access 를 한 Timing 에서 Host 명 (=Server 명) 의 해\n    결에 실패. DNS Library Call Error."
+ },
+ "016-575": {
+  "title": "DNS server un-sets up in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 에서 DNS Server 미설정\n[검지조건]\n    FTP Server 로의 접속전에 DNS Server 미설정을 검지. DNS Library Call Error.\n[대처순서]\n    1.  DNS Address 를 설정한다.\n        또는 수신국 Server 의 Address 를 IP Address 로 설정한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-576": {
+  "title": "Server connection Error in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 에서 Server 와의 접속에 문제가 있다\n[검지조건]\n    FTP Server 로의 접속시에 접속에 실패했다.\n[대처순서]\n    1.  수신국의 FTP Server 와 이 기계가 Network 통신이 가능한 상태에 있는지 확인한다.\n        예를 들어, 다음 내용을 확인한다.\n        ·  Server 의 IP Address 가 정확한지 확인\n        ·  Network Cable 의 접속 확인\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-577": {
+  "title": "Problem in FTP service",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Service 에 문제가 있다.?\n[검지조건]\n    수신국 Server 의 FTP Service 에 접속할 수 없었다."
+ },
+ "016-578": {
+  "title": "Login name or a password Error in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 의 Login 명 또는 Password Error\n[검지조건]\n    FTP Server 로의 접속후에 본체 내의 USER./PASS Command 실패, Login 명 또는\n    Password 에 문제가 있다.\n[대처순서]\n    1.  Login 명 (User 명) 및 Password 가 정확한지 확인한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-579": {
+  "title": "Scanning picture preservation place Error in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 의 Scan 화상 저장위치에 문제가 있다\n[검지조건]\n    FTP Server 로의 접속후, 화상 저장위치를 이동중에 RepositoryPath 로의 이동 실패\n    . Scan 화상 Data 저장위치에 문제가 있다.\n[대처순서]\n    1.  FTP Scan Server 에 있는 Scan 화상 저장위치가 정확한지 확인한다."
+ },
+ "016-580": {
+  "title": "File name acquisition failure from FTP server",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan Server 의 File 명 /Folder 명 취득 실패\n[검지조건]\n    FTP Server 로의 접속후 Server 의 File/Folder 명 취득시에 NLST Command 실패.\n[대처순서]\n    1.  FTP Scan Server 의 Access 권한을 확인한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-583": {
+  "title": "Lock folder creation failure in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan Lock Folder 작성에 실패\n[검지조건]\n    FTP Server 로의 접속후 Server 내에서의 Lock Folder 작성중에 Lock Folder 작성에\n    실패.\n[대처순서]\n    1.  기존의 lock directory(*.LCK) 가 수신국에 남아있을 경우, 수동으로 해제하고 다시\n        Job 을 실행한다.\n    2.  지정한 이름이 저장위치에 작성 가능한 Folder 명인지 확인한다.\n    3.  지정한 이름과 동일한 이름의 Folder 가 기존에 존재하는지 확인한다."
+ },
+ "016-584": {
+  "title": "Folder creation failure in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan Folder 의 작성에 실패\n[검지조건]\n    FTP Server 로의 접속후 Server 내에서의 Folder 작성중에 Folder 작성 실패.\n[대처순서]\n    1.  지정한 이름이 저장위치에 작성 가능한 Folder 명인지 확인한다.\n    2.  지정한 이름과 동일한 이름의 Folder 가 기존에 존재하는지 확인한다.\n    3.  저장위치에 여유 공간이 있는지 확인한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-585": {
+  "title": "File delete failure in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan File 의 삭제에 실패\n[검지조건]\n    FTP Server 로의 접속후 Server 내에서의 File 삭제중에 삭제에 실패.\n[대처순서]\n    1.  Server 의 Access 권한을 확인한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-586": {
+  "title": "Lock folder delete failure in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan Lock Folder 의 삭제에 실패\n[검지조건]\n    FTP Server 로의 접속후 Server 내에서의 Lock Folder 삭제중에 삭제에 실패.\n[대처순서]\n    1.  Server 의 Access 권한을 확인한다.\n    2.  기존 lock directory(*.LCK) 가 수신국에 남아 있는 경우, 수동으로 삭제하고 다시\n        Job 을 실행한다."
+ },
+ "016-587": {
+  "title": "Folder delete failure in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan Folder 의 삭제에 실패\n[검지조건]\n    FTP Server 로의 접속후 Server 내에서의 Folder 삭제중에 삭제에 실패.\n[대처순서]\n    1.  Server 의 Access 권한을 확인한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-588": {
+  "title": "Data write-in failure to FTP server",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan Server 로의 Data 쓰기에 실패\n[검지조건]\n    FTP Server 로의 접속후 Server 로의 Data 쓰기에 실패.\n[대처순서]\n    1.  저장위치에 여유 공간이 있는지 확인한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-589": {
+  "title": "Data read failure from FTP server",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan Server 로부터의 Data 읽기에 실패\n[검지조건]\n    스캔 (PC 저장) 의 FTP 전송에서 FTP Server 로의 접속후 FTP Server 로부터의 Data 읽\n    기에 실패했다.\n[대처순서]\n    FTP Server 에 Access 권이 있는지 확인하고 정확한 권리를 부여받는다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
  }
 }
