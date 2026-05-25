@@ -202,5 +202,125 @@
  "003-940": {
   "title": "DAM memory insufficient",
   "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    DAM 의 Memory 부족을 검출했다.\n[검지조건]\n    다음 AND 조건의 Job 에서 IITsc 에 기동이 걸렸을 경우\n    ·  DAM Memory < 384MB\n    ·  안표지 Image 있음 선택\n    ·  Color Mode 흑백 이외\n    ·  고화질 Mode\n[대처순서]\n    Job Cancel\n    ·  Color Mode 를 흑백 또는 안표지 Image 있음을 해제하고 재실행한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-941": {
+  "title": "Page memory insufficient",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    Page Memory 부족\n[검지조건]\n    축적하는 이미지에 대해 Page Memory 가 부족.\n[대처순서]\n    Parameter 를 변경한 후 다시 조작한다.\n    Trouble 이 계속되는 경우에는 Page Memory 의 장착 여부를 확인하고 전원을 OFF/ON\n    한다.\n    그래도 Trouble 이 계속되는 경우에는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "003-942": {
+  "title": "Document size Auto Detect Error",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    원고 Size Error\n[검지조건]\n    원고 Size 를 자동 검지할 수 없다.\n[대처순서]\n    원고 Size 로 적절한 값을 입력한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-944": {
+  "title": "Image repeat count fail",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Image Repeat 수 부정확 (1장도 붙일 수 없다.)\n[검지조건]\n    Image Repeat 의 [반복수가 개수 자동] 일 때, 1장도 붙일 수 없는 경우의 Error\n[대처순서]\n    Image Repeat 수 Parameter 를 변경하고 재조작한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-946": {
+  "title": "Every direction difference (Copy APS)",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Copy 종횡 상이 (APS)"
+ },
+ "003-948": {
+  "title": "Return Documents mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    복귀한 원고 Size Mismatch(복귀 전과 다른 Size 세트)\n[검지조건]\n    원고 복귀에서 User 가 복귀한 원고가 다른 경우\n    ·  복귀할 원고에 대한 Page 정보를 후공정 Software Module 에 배포가 끝난 경우만\n       Error 가 된다.\n    ·  단, 긴급 복귀시는 배포가 끝난 Page 정보는 파기되므로 Error 로는 되지 않는\n    ·  원고가 다르다고 판단하기 위한 Check 항목은 원고 Size/ 방향과 ACS 시의 Color\n       Mode 만)\n[대처순서]\n    다시 바른 Size 의 원고로 세트한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-952": {
+  "title": "Return Documents Color mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    복귀한 원고색 Mismatch(복귀 전과 다른 원고 색을 검지했다.)\n[검지조건]\n    원고 복귀에서 User 가 복귀한 원고가 다른 경우\n    ·  복귀할 원고에 대한 Page 정보를 후단에 배포가 끝난 경우만 Error 가 된다.\n    ·  단 긴급 복귀시는 배포가 끝난 Page 정보는 파기되므로, 항상 Error 로 한다.\n    ·  원고가 다르다고 판단하기 위한 Check 항목은 원고 Size/ 방향과 ACS 시의 Color\n       Mode 만)\n[대처순서]\n    다시 바른 색의 원고를 세트한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-955": {
+  "title": "Documents size exchange Error",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    원고 Size 변경 Error(MixMode)\n[검지조건]\n    Mix Size 원고금지기능 선택에서 원고추가시에 다른 Size/ 방향의 원고를 검지했다.\n    ·  원고추가라도 다른 Size 를 금지하는 기능은 ImageOverlay 만.\n[대처순서]\n    원고를 다시 세트한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-965": {
+  "title": "ATS/APS No Paper (IITsc Detect)",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    ATS/APS No Paper\n    APS/ATS NG(No Paper)(IIT)\n[검지조건]\n    APS 에서 선택할 수 있는 Tray 가 NoPaper.\n[대처순서]\n    용지를 보충한다.\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 Tray 모듈을 교환한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-966": {
+  "title": "ATS/APS No Destination (IITsc)",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    ATS/APS No Destination Error\n    APS/ATS NG(No Paper 이외)(IIT)"
+ },
+ "003-967": {
+  "title": "DADF APS No Destination",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    ·  DADF-75 사용 시에 원고크기 =8.5x11SEF. * 원고크기 입력은 제외\n    ·  혼합크기가 선택되지 않았다.\n    ·  배율은 임의의 APS 복사 작업으로 선택되었지만 선택한 Tray 가 존재하지 않았다.\n    A4SEF 원고를 세트하였지만 원고크기를 8.5x11SEF 로 검지한 가능성이 있다.\n\n    * 이 FaultCode 는 DADF-75 에서만 발생하므로 DADF-150, DADF-250 은 해당 없음.\n\n[검지조건]\n    검지한 용지 Size 가 Tray 에 없다.\n[대처순서]\n    1. Panel 에 표시되어 있는 Size 의 용지를 본체 Tray 에 Set 하거나 사용할 Size 의 용지\n       가 저장되어 있는 Tray 를 선택한다.\n    2. A4SEF 원고를 Letter 원고로 잘못 검지할 Case 에는 일단 Job Cancel 후 DADF 원고\n       Guide 를 판독 원고의 양측에 확실히 Set 하는 것부터 재조작한다.\n    그래도 Trouble 이 지속될 때는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-968": {
+  "title": "Punch position Error",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Punch 위치 Error\n[검지조건]\n    선택한 위치에 Punch 할 수 없다. (APS/Tray 선택 공통)\n[대처순서]\n    Punch 위치를 적절한 장소에 지정하거나, Punch 를 해제하고 다시 Job 을 실행한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-970": {
+  "title": "FAX Line Memory Over Flow",
+  "text": "[Error 분류]\n    notice\n[Fault 내용]\n    FAX 부주사 행 수 초과\n[검지조건]\n    FAX 병렬합성과 긴 원고확대 등으로 인해 부주사 행 수가 상한값을 초과한 경우.\n[대처순서]\n    계속 버튼을 눌러 메모리로 옮겨진 부분을 축적하고 다음 원고의 스캔을 계속하거나\n    , 취소 버튼을 눌러 작업을 중지한다.\n    전원을 OFF/ON 해도 Trouble 이 계속되는 경우에는 Page Memory 의 장착 여부를 확인"
+ },
+ "003-971": {
+  "title": "Prevention code detect with the right to cancel",
+  "text": "[Error 분류]\n    notice\n[Fault 내용]\n    Copy 원고에서 복제제한 코드를 검지 (검지의 일시 해제 권한을 보유한 사용자용)\n[검지조건]\n    복제제한 코드 검지의 일시 해제 권한을 보유한 사용자가 Scan 작업을 실시하는 중\n    에 원고 내에서 복제제한 코드를 검지했다.\n[대처순서]\n    해당 원고는 Copy 할 수 없으므로 조작부 화면에서 [취소] 또는 [계속] 을 누른다."
+ },
+ "003-972": {
+  "title": "Maximum Stored Page Over Flow",
+  "text": "[Error 분류]\n    Notice Error\n[Fault 내용]\n    최대 축적 매수 Over\n[검지조건]\n    원고를 Scan 하여 본체에 저장한 페이지 수가 System Data 에 설정되어 있는 Copy 최\n    대 저장 매수를 초과했다.\n[대처순서]\n    원고매수를 최대 축적 매수 이내로 한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다."
+ },
+ "003-973": {
+  "title": "Every direction difference",
+  "text": "[Error 분류]\n    Notice Error\n[Fault 내용]\n    종횡 다름\n    종횡 다름 (Poster 지정 시 이외에 Rotation 전환을 표시 안 함)\n[검지조건]\n    원고와 이미지의 방향이 달라서 회전하지 않으면 이미지가 누락되지만 회전 불가\n[대처순서]\n    그대로 시작하거나 취소한다.\n    그래도 문제가 계속되는 경우는 다음을 실시하여 문제를 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-974": {
+  "title": "Next Original Specification",
+  "text": "[Error 분류]\n    Notice Error\n[Fault 내용]\n    다음 원고 지정\n[검지조건]\n    세트된 원고의 Scan 이 모두 완료됐다.\n[대처순서]\n    다음 원고 있고 없음 유무를 정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-976": {
+  "title": "FAX Line Memory Over Flow (N up)",
+  "text": "[Error 분류]\n    Notice Error\n[Fault 내용]\n    Fax N up 시의 부주사 Line 수 Over\n[검지조건]\n    FAX 병렬 합성과 긴 원고 확대 등으로 인해 부주사 Line 수가 상한값 (65535) 을 초\n    과한 경우.\n    또는 Page Memory 가 Full 상태이다.\n[대처순서]\n    취소 버튼을 눌러서 Job 을 일단 중지하고 해상도 또는 배율을 낮춰서 다시 Job 을 실\n    행한다.\n    전원을 OFF/ON 해도 Trouble 이 계속될 때는 Page Memory 의 장착을 확인. 그래도\n    Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-977": {
+  "title": "Document Miss Match (Multi Scan)",
+  "text": ""
+ },
+ "003-978": {
+  "title": "Color Document Miss Match (Multi Scan)",
+  "text": "[Error 분류]\n    Notice Error\n[Fault 내용]\n    원고색 Mismatch(Multi Scan 중의 원고 교환)\n[검지조건]\n    1.\n[대처순서]\n    바른 Size 의 원고를 다시 세트하고 Start 한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-980": {
+  "title": "Staple position Error",
+  "text": "[Error 분류]\n    Notice Error\n[Fault 내용]\n    Staple 위치 Error\n[검지조건]\n    지정된 위치에서 Staple 할 수 없다.\n[대처순서]\n    Staple 위치를 재설정하거나 Staple 을 해제하고 다시 Job 을 실행한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "003-981": {
+  "title": "Staple size Error",
+  "text": "[Error 분류]\n    Notice Error\n[Fault 내용]\n    Staple Size Error(Copy APS 시)"
+ },
+ "005-121": {
+  "title": "(Low/Mid model) DADF Feed Out Sensor On Jam",
+  "text": "참조 BSD : CH5.16\n\nPre Feed 가 시작된 후 일정 시간이 지나도 DADF Feed Out Sensor 가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  원고이송경로의 이물질에 의한 이송불량\n·  Feed Roll, Nudger Roll, Retard Roll 표면에 이물질 등이 부착.\n·  Feed Roll, Nudger Roll, Retard Roll 표면의 마모.\n·  DADF Feed Out Sensor (DC330[005-205]) 작동불량. (PL 55.5)\n·  DADF Feed Motor (DC330[005-047]) 작동불량. (PL 55.9)\n\n    주기 : Diag 에서 Feed Motor 를 회전시킬 경우는 Top Cover 를 열고 DADF Interlock\n    Switch 를 드라이버 등으로 Cheat 하고 나서 회전시킬 것. 일반 상태에서 Feed Motor\n    를 회전시키면 이상음이 발생하는 경우가 있다. (Nudger Roll 과 Bottom Pad(Nudger\n    아래의 코르크 패드) 의 마찰에 따른 이상음)\n\n·  DADF Nudger Roll 의 Nip 작동불량.\n·  Drive Gear 의 마모 및 파손.\n·  Timing Belt 의 Jumping 및 Belt 장력 불량.\n·  Pulley, Gear 의 그리스 양.\n·  Nudger 하우징의 작동불량.\n·  Set Gate 의 작동불량 (Gear 긁힘, 마모, 이물질 부착에 따라 Set Gate 가 내려가지\n    않는다).\n    단, 여러 매를 세트할 때 2매째 이후에 오류가 발생한 경우는 Set Gate 가 원인이 아\n    니다.\n·  Nudger Housing, Set Gate 선단에 마모가루 부착.\n·  Top Cover 를 연 상태에서 Feed Roll 를 회전하여 Set Gate 가 내려가는지 확인한다.\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 55.4)"
+ },
+ "005-122": {
+  "title": "(Low/Mid model) DADF Simplex/Side 1 Pre Regi Sensor On Jam",
+  "text": "참조 BSD : CH5.18, CH5.16\n\n단면 또는 양면 모드인 경우 1매째의 Pre Feed 시작 (Feed Motor On(CW)) 으로부터 일정\n시간이 지나도 Pre Registration Sensor 가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  원고이송경로의 이물질에 의한 이송불량\n·  Feed Roll, Nudger Roll, Take Away Roll 표면에 이물질 등이 부착.\n·  Feed Roll, Nudger Roll, Take Away Roll 표면의 마모.\n·  DADF Pre Regi Sensor(DC330[005-206]) 작동불량. (PL 55.5)\n·  DADF Feed Motor (DC330[005-047]) 작동불량. (PL 55.9)\n\n    주기 : Diag 에서 Feed Motor 를 회전시킬 경우는 Top Cover 를 열고 DADF Interlock\n    Switch 를 드라이버 등으로 Cheat 하고 나서 회전시킬 것. 일반 상태에서 Feed Motor\n    를 회전시키면 이상음이 발생하는 경우가 있다. (Nudger Roll 과 Bottom Pad(Nudger\n    아래의 코르크 패드) 의 마찰에 따른 이상음)\n\n·  DADF Pre Registration Motor(DC330[005-070]) 작동불량. (PL 55.9)\n·  DADF T/A Clutch (DC330[005-098]) 작동불량. (PL 55.9)\n·  DADF Pre Registration Clutch(DC330[005-099]) 작동불량. (PL 55.9)\n·  Drive Gear 의 마모 및 파손.\n·  Timing Belt 의 Jumping 및 Belt 장력 불량.\n·  Pulley, Gear 의 그리스 양.\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 55.4)"
+ },
+ "005-123": {
+  "title": "(Low/Mid model) DADF Simplex/Side 1 Regi Sensor On Jam",
+  "text": "참조 BSD : CH5.19, CH5.18\n\nPre Regi. 동작 개시 (Feed Motor On(CCW)) 로부터 일정 시간이 지나도 DADF Regi Sensor\n가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  원고이송경로의 이물질에 의한 이송불량\n·  Pre Regi Roll, Regi Roll 표면에 이물질 등이 부착.\n·  Pre Regi Roll, Regi Roll 표면 마모.\n·  DADF Regi Sensor(DC330[005-110]) 작동불량. (PL 55.5)\n·  DADF Pre Registration Motor(DC330[005-070]) 작동불량. (PL 55.9)\n·  DADF Registration Motor(DC330[005-038]) 작동불량. (PL 55.9)\n·  DADF T/A Clutch (DC330[005-098]) 작동불량. (PL 55.9)\n·  DADF Pre Registration Clutch(DC330[005-099]) 작동불량. (PL 55.9)\n·  Drive Gear 의 마모 및 파손.\n·  Timing Belt 의 Jumping."
+ },
+ "005-124": {
+  "title": "DADF Lead Regi Sensor On Jam (High model)",
+  "text": "참조 BSD : CH5.8\n\n스캔 시작 (DADF Registration Motor 기동) 후 일정 시간이 지나도 DADF Lead\nRegistration Sensor 가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  원고이송경로의 이물질에 의한 이송불량.\n·  Registration Roll, Pre Registration Roll 표면에 이물질 등이 부착.\n·  Regi Roll, Pre Regi Roll 표면 마모\n·  DADF Lead Registration Sensor(DC330[005-207]) 작동불량. (PL 54.9)\n·  DADF Registration Motor(DC330[005-021]) 작동불량. (PL 54.10)\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
+ },
+ "005-127": {
+  "title": "(Low/Mid model) DADF Out Sensor Off Jam",
+  "text": "참조 BSD : CH5.22, CH5.19\n\nDADF Regi Sensor Off 후 일정 시간이 지나도 DADF Out Sensor 가 Off 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  원고이송경로의 이물질에 의한 이송불량\n·  배출 트레이상의 이물질.\n·  CIS Roll, Exit Roll 표면에 이물질 등이 부착.\n·  CIS Roll, Exit Roll 표면의 마모.\n·  DADF Out Sensor (DC330[005-208]) 작동불량. (PL 55.5)\n·  DADF Regi Sensor(DC330[005-110]) 작동불량. (PL 55.5)\n·  DADF Registration Motor(DC330[005-038]) 작동불량. (PL 55.9)\n·  Drive Gear 의 마모 및 파손.\n·  Timing Belt 의 Jumping 및 Belt 장력 불량.\n·  Pulley, Gear 의 그리스 양.\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 55.4)"
+ },
+ "005-128": {
+  "title": "(Low/Mid model) DADF Simplex Exit Sensor On Jam",
+  "text": "참조 BSD : CH5.22, CH5.19\n\nSimplex Mode 일 때 DADF Out Sensor On 후 일정 시간이 지나도 DADF Exit Sensor 가 On\n되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  원고이송경로의 이물질에 의한 이송불량\n·  Out Roll, CIS Roll 표면에 이물질 등이 부착.\n·  Out Roll, CIS Roll 표면의 마모.\n·  DADF Exit Sensor (DC330[005-209]) 작동불량. (PL 55.5)\n·  DADF Out Sensor (DC330[005-208]) 작동불량. (PL 55.5)\n·  DADF Registration Motor(DC330[005-038]) 작동불량. (PL 55.9)\n·  Drive Gear 의 마모 및 파손.\n·  Timing Belt 의 Jumping 및 Belt 장력 불량.\n·  Pulley, Gear 의 그리스 양.\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 55.4)"
+ },
+ "005-146": {
+  "title": "(High model) DADF Pre Regi Sensor Off Jam",
+  "text": "참조 BSD : CH5.7, CH5.8\n\nDADF Feed Sensor Off 이후 일정 시간이 지나도 DADF Pre Regi Sensor 가 Off 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  원고이송경로의 이물질에 의한 이송불량\n·  Take Away Roll, Pre Regi Roll 표면에 이물질 등이 부착.\n·  Take Away Roll, Pre Regi Roll, Regi Roll 표면의 마모.\n·  DADF Pre Regi Sensor(DC330[005-206]) 작동불량. (PL 54.9)\n·  DADF Pre Registration Motor(DC330[005-013]) 작동불량. (PL 54.10)\n·  DADF T/A Clutch (DC330[005-087]) 작동불량. (PL 54.10)\n·  DADF Registration Motor(DC330[005-021]) 작동불량. (PL 54.10)\n·  Drive Gear 의 마모 및 파손.\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
+ },
+ "005-153": {
+  "title": "DADF Lead Regi Sensor Off Jam (High model)",
+  "text": "참조 BSD : CH5.8\n\n원고 모드가 천공용지 일 때 DADF Lead Registration Sensor On 후 일정 시간이 지나도\nDADF Lead Registration Sensor 가 Off 되지 않는다.\n\n원인 / 대처방법\n원고후단의 구멍위치 (중심이 아닌 원고후단에서 가장 먼 외주부) 가 원고후단에서 19mm\n이내인지 확인한다. 원고에 문제가 없으면 DADF Lead Registration Sensor(DC330[005-\n207]) 를 점검한다."
+ },
+ "005-160": {
+  "title": "DADF Tray Lift Up Fail on Running (Document Set) (High model)",
+  "text": "참조 BSD : CH5.2\n\n원고가 세트되어 있는 Tray 가 상승하기 시작한 후 일정 시간이 지나도 DADF Level Sensor\n가 On 되지 않는다. 또는 DADF Bottom Sensor 가 Off 되지 않는다. (Run 중, Stop 중,\nPurge 중에 검지한 경우)\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  DADF Level Sensor (DC330[005-203]) 작동불량. (PL 54.8)\n·  DADF Tray Motor (DC330[005-051]) 작동불량. (PL 54.5)\n·  DADF Bottom Sensor (DC330[005-202]) 작동불량. (PL 54.6)\n·  DADF Tray Motor Drive Gear 의 마모, 파손 및 Torque Limiter 의 파손.\n\n점검에서 문제가 없으면 DADF PWB 를 교환한다. (PL 54.3)"
  }
 }
