@@ -1082,5 +1082,85 @@
  "016-454": {
   "title": "DNS renewal failure of dynamic",
   "text": "[Error 분류]\n    Time Bomb(Information)\n[Fault 내용]\n    Dynamic DNS- 동적변경에 실패\n[검지조건]\n    Dynamic DNS- 동적변경에 실패\n[대처순서]\n    1.  DNS Server Address 가 바르게 설정되어 있는지 확인한다.\n    2.  고객 System 관리자에게 Dynamic DNS 가 동작할 수 있는 DNS Server 설정으로 되어\n        있는지 확인한다.\n    3.  2.5.2 로그 수집 / 추출 도구의 조작 설명에 따라 Log 를 채취한다.\n        2.4.5 Network 관계 상세 확인 Flow\n        2.5.2 로그 수집 / 추출 도구의 조작설명"
+ },
+ "016-455": {
+  "title": "SNTP server time out",
+  "text": "[Error 분류]\n    Time Bomb(Information)\n[Fault 내용]\n    SNTP Timeout.\n[검지조건]\n    SNTP Server 로부터 규정시간 (60 초) 이내에 응답이 없다.\n[대처순서]\n    Machine 의 시간이 바르지 않은 경우, 직접 입력하여 시간을 설정한다.\n    1.  SNTP Server Address 가 정확히 설정되어 있는지 확인한다.\n    2.  2.5.2 로그 수집 / 추출 도구의 조작 설명에 따라 Log 를 채취한다.\n        2.4.5 Network 관계 상세 확인 Flow\n        2.5.2 로그 수집 / 추출 도구의 조작설명"
+ },
+ "016-461": {
+  "title": "Under non-transmitted image log stagnation",
+  "text": "[Error 분류]\n    information Fail\n[Fault 내용]\n    미전송 Image Log 정체에 의해 신규 Job 작성 제한중\n[검지조건]\n    System Data \"Image Log 전송 보증 Level\" 이 [고] 로 설정되어 있을 때, 미전송\n    Image Log 정체에 의해 신규 Job 작성이 제한되었다.\n[대처순서]\n    Image Log 관리 Server 의 상태, Network 의 상태를 확인하고 Image Log Server 로의\n    Image Log 전송을 저해하는 요인을 제거한다.\n    전송 설정을 확인하고 미전송 Log 를 모두 전송한다.\n    또는 전송 보증 Level 을 낮게 변경한다. 단, 전송 보증 Level 을 \"저\" 로 낮춘 경\n    우에는 Image Log 는 미전송 상태에서 차례대로 삭제되는 경우가 있다.\n    Trouble 이 계속되는 경우, 다음을 실시한다.\n    OF-09 Common Job Fail\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-500": {
+  "title": "Cont-ROM 으로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Cont-ROM 으로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)\n[검지조건]\n    Controller-ROM 쓰기중에 Error 를 검지했다.\n    ROM 내용은 삭제되어 있으므로, 정상으로 작동하지 않는다."
+ },
+ "016-501": {
+  "title": "S2X-ROM 으로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    S2X-ROM 으로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)\n[검지조건]\n    S2X-ROM 쓰기중에 Error 검지\n    ROM 내용은 삭제되어 있으므로, 정상으로 작동하지 않는다.\n[대처순서]\n    재시행해도 실패할 경우에는 S2X-ROM 을 교환하고, 다시 DLD 방식으로 VerUP 작업을\n    실시한다."
+ },
+ "016-503": {
+  "title": "SMTP Server Fail for Redirector",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMTP Server 명 해결에 실패 (Server 접속전)\n[검지조건]\n    DNS Library Call Error\n[대처순서]\n    SMTP Server 명을 바르게 설정할지 IP Address 로 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    2.4 NET 시스템 오류 확인\n    2.4.3 전혀 나오지 않음 인자되지 않음"
+ },
+ "016-504": {
+  "title": "POP Server Fail for Redirector",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    POP Server 명 해결에 실패 (Server 접속전)\n[검지조건]\n    DNS Library Call Error\n[대처순서]\n    SMTP Server 명을 바르게 설정할지 IP Address 로 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    2.4 NET 시스템 오류 확인\n    2.4.3 전혀 나오지 않음 인자되지 않음\n    2.4.5 Network 관계 상세 확인 Flow"
+ },
+ "016-505": {
+  "title": "POP Authentication Fail for Redirector",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    POP 인증 실패 (Server 접속후)\n[검지조건]\n    POP Server 에서의 인증정보가 바르지 않은 것을 검출했다.\n[대처순서]\n    POP Server 에서 인증정보를 바르게 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    2.4 NET 시스템 오류 확인\n    2.4.3 전혀 나오지 않음 인자되지 않음\n    2.4.5 Network 관계 상세 확인 Flow"
+ },
+ "016-506": {
+  "title": "Image Log HDD Full",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Log Image 저장 영역에서의 Disk Full 발생에 의해 Job 계속 불가\n[검지조건]\n    System Data \"Log Image 작성 보증 Level\" 이 [고] 로 설정되어 있을 때, Log Image\n    저장 영역에서의 Disk Full 발생 (Copy/Scan 계 Job 이외의 Job 을 처리 중일 경우)\n[대처순서]\n    다시 Job 을 실행한다.\n    몇번을 재투입해도 개선되지 않을 경우에는 Device 내에 저장할 필요가 없는 문서의\n    삭제, 또는 작성 보증 Level 의 설정 변경 (낮춘다). 단, 작성 보증 Level 을 저로\n    낮춘 경우에는 Log Image 의 작성 보증은 불가능하게 된다."
+ },
+ "016-507": {
+  "title": "Image Log Send Fail01",
+  "text": ""
+ },
+ "016-508": {
+  "title": "Image Log Send Fail02",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Log Image 전송 실패로 인해 Image 전송 Job 계속 불가\n[검지조건]\n    Image Log 전송 실패\n[대처순서]\n    수신국 Image Log 관리 Server 의 상태나 Network 의 상태를 확인하고, Image Log 관\n    리 Server 로의 Image Log 전송을 저해하는 요인을 제거한다."
+ },
+ "016-510": {
+  "title": "Image Log No Send Rule02",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Log Image 전송 Rule 미등록\n[검지조건]\n    전송 Rule 미설정으로 인해 전송 실패\n[대처순서]\n    수신국 Image Log 관리 Server 로부터 Device 로의 전송 Rule 등록을 실시한다."
+ },
+ "016-512": {
+  "title": "Image Log Invalid Send Rule02",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Log Image 전송 Rule 부정확\n[검지조건]\n    전송 Rule 부정확으로 인해 전송 실패\n[대처순서]\n    수신국 Image Log 관리 Server 로부터 Device 로의 전송 Rule 덮어쓰기를 실시한다."
+ },
+ "016-513": {
+  "title": "SMTP Server Reception Error",
+  "text": "[Fault 명칭]\n    SMTP Server Reception Error\n[Error 분류]\n    작업\n[Fault 내용]\n    SMTP Server 로부터의 응답 수신 Error(서버 접속후)\n[검지조건]\n    SMTP Server 로부터의 응답 수신시 Time Out\n[대처순서]\n    1.  Time Out 이 발생했다.\n        ·  서버 또는 네트워크의 부하가 크다.\n            →잠시 기다린 후 동일한 조작을 다시 실시한다.\n        ·  SMTP 송신 포트번호가 정확한지 확인한다.\n            →상황이 개선되지 않는 경우는 네트워크 관리자에게 문의한다."
+ },
+ "016-514": {
+  "title": "XPS Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    XPS Error"
+ },
+ "016-516": {
+  "title": "XPS Print Ticket description Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    XPS PrintTicket 기술 Error"
+ },
+ "016-517": {
+  "title": "PS Booklet Illegal Color Mode Change",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PS 팜플렛 인쇄시 Color/ 흑백 혼재 원고\n[검지조건]\n    PSDecomp 가 팜플렛 지정 Job 해석중에 ProcessColorModel, 또는 해상도 · 다중값\n    Parameter 의 변경을 검지했다.\n[대처순서]\n    Page Device ProcessColorModel 을 도중에 전환하지 않도록 PostScript 파일을 다시 작성\n    한다.\n\n    그래도 Trouble 이 계속될 경우는 다음으로 진행하여 Trouble 을 복구한다.\n\n    OF-09 Common Job Fail"
+ },
+ "016-518": {
+  "title": "PS Booklet Conflict WM",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PS 팜플렛 WaterMark 동시지정\n[검지조건]\n    PS 팜플렛 WaterMark 가 동시 지정되었다.\n[대처순서]\n    PS 팜플렛과 WaterMark/UUID 는 동시에 지정할 수 없다. 둘 중에 하나를 해제한다.\n    그래도 Trouble 이 계속되는 경우, 다음을 실시한다."
+ },
+ "016-519": {
+  "title": "Device DV - Reached Limit",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인자 가능 면수 제한 Full\n[검지조건]\n    Device 에서 인자 가능한 면수를 설정한 경우, 작업 중에 인자한 면수가 설정한 값\n    에 도달했다.\n[대처순서]\n    기계관리자와 상담하여 인자 가능한 면수의 제한값을 변경하도록 의뢰한다."
+ },
+ "016-522": {
+  "title": "LDAP SSL Error 112",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    LDAP-SSL 인증 Error112(Client 증명서를 취득할 수 없음)\n[검지조건]\n    LDAP Server 의 SSL 인증 Error 이다.\n    SSL Client 증명서를 취득할 수 없다.\n[대처순서]\n    LDAP Server 에서 SSL Client 증명서를 요구하므로 Device 에 SSL Client 증명서를 설\n    정한다."
+ },
+ "016-523": {
+  "title": "LDAP SSL Error 113",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    LDAP-SSL 인증 Error113(Server 증명서 Data 가 부정확)\n[검지조건]\n    LDAP Server 의 SSL 인증 Error 이다.\n    Server 증명서 Data 가 부정확\n[대처순서]\n    Device 가 LDAP Server 의 SSL 증명서를 신뢰할 수 없다.\n    LDAP Server 의 SSL 증명서의 Root 증명서를 Device 에 등록한다."
  }
 }
