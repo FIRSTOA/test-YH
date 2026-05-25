@@ -402,5 +402,125 @@
  "005-905": {
   "title": "DADF Feed Out Sensor Static Jam",
   "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-907": {
+  "title": "DADF Pre Regi Sensor Static Jam",
+  "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-908": {
+  "title": "DADF Regi Sensor Static Jam",
+  "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-909": {
+  "title": "DADF Lead Regi Sensor Static Jam (High model)",
+  "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-910": {
+  "title": "DADF Out Sensor Static Jam",
+  "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-911": {
+  "title": "DADF Exit Sensor Static Jam",
+  "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-915": {
+  "title": "DADF APS Sensor 1 Static Jam",
+  "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-916": {
+  "title": "DADF APS Sensor 2 Static Jam",
+  "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-917": {
+  "title": "DADF APS Sensor 3 Static Jam",
+  "text": "참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-919": {
+  "title": "DADF Tray Lift Up Fail (Document Set) (High model)",
+  "text": "참조 BSD : CH5.2\n\n원고가 세트되어 있는 상태의 Tray 가 상승하기 시작한 후 일정 시간이 지나도 DADF Level\nSensor 가 On 되지 않는다. 또는 DADF Bottom Sensor 가 Off 되지 않는다. (Run 중, Stop\n중, Purge 중 이외에 검지한 경우)\n\n원인 / 대처방법\n005-160 (DADF Tray Lift Up Fail on Running (Document Set)) (High model) FIP 참고."
+ },
+ "005-920": {
+  "title": "DADF Skew Sensor Static Jam (High model)",
+  "text": "참조 BSD : CH5.7\n\n참고 FIP\nCF-001 (DADF Sensor Static Jam) FIP 참고."
+ },
+ "005-940": {
+  "title": "DADF No Original",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    DADF 원고 누락에 의한 최종 원고 정정 통지\n[검지조건]\n    원고 누락을 검지했다.\n[대처순서]\n    원고를 다시 세트한다.\n    그래도 Trouble 이 지속될 때는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "005-941": {
+  "title": "Doc number of sheets is insufficient",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    [전체 원고 복귀 /N 매 복귀] 실시시, 원고매수 부족\n[검지조건]\n    전체 원고 복귀 /N 매 복귀와 상관없이 원고 Skip 중 (공회전) 에 원고부족을 검지\n    원고 Scan 이 완료, 배출되기 전에 이상이 발생한 경우는 N장 복귀시에도 Skip 동작\n    이 실행된다.\n[대처순서]\n    원고 매수가 부족하므로, 정확한 매수의 원고를 다시 Set 한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "005-942": {
+  "title": "DADF Tray Stack Over Fail (High model)",
+  "text": "참조 BSD : CH5.2\n\nTray Lift Up 을 시작할 때 DADF Level Sensor 가 On 상태이다.\n\n원인 / 대처방법\n원고 매수를 줄여서 다시 세트한다."
+ },
+ "005-945": {
+  "title": "Document guide set mistake.",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    DADF 원고 가이드 설정 오류 (혼합원고 검지).\n[검지조건]\n    [MIX=OFF 모드] 지정된 작업 도중에 [1][2] 중에서 하나를 검지\n    [[1]] 의 검지조건\n    DADF 원고 가이드가 실제의 원고와 다른 위치로 설정되어 있어서 원고 크기를 잘못\n    검지 (= A3SEF).\n    또한 이 기계는 오검지 용지 (=A3SEF) 를 이미 용지를 로드하여 정확한 크기 (= A4SEF)\n    로 갱신할 수 없다.\n    [[2]] 의 검지조건\n    혼합크기 원고가 보급되어 있어서 제일 위의 원고를 잘못 검지 (=A3SEF)\n    또한 이 기계는 오검지 용지 (=A3SEF) 를 이미 용지를 로드하여 정확한 크기 (= A4SEF)\n    로 갱신할 수 없다.\n[대처순서]\n    [[1]] 의 해제순서\n    -  작업취소\n    -  DADF 원고 가이드를 실제의 원고에 맞추어 조정한다.\n    -  작업을 다시 시작\n    [[2]] 의 해제순서\n    -  작업취소\n    -  복사 설정 메뉴에서 혼합크기 모드를 ON 으로 설정\n    -  작업을 다시 시작\n    Trouble 이 계속되는 경우에는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "005-946": {
+  "title": "Manuscript reading equipment obstacle detection",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    DADF 장해물 검지 (혼합원고 검지).\n[검지조건]\n    [MIX=OFF 모드] 지정된 작업 도중에 [1][2] 중에서 하나를 검지"
+ },
+ "005-947": {
+  "title": "FS-Size Mismatch Jam on No Mix-Size or SS Mix-Size",
+  "text": "참조 BSD : CH5.3, CH5.17\n\nNo Mix 모드 또는 부주사 (SS) Mix 모드일 때 DADF 에서 이송된 원고에서 주주사 (FS) 방\n향 크기가 다른 원고를 검지했다. (용지가 급지되지 않은 경우에는 [005-945] 이 표시되\n고 용지가 급지된 경우에는 [005-947] 이 표시된다.)\n\n원인 / 대처방법\n005-945 (FS-Size Mismatch Jam on No Mix-Size or SS Mix-Size (Cont)) FIP 참고."
+ },
+ "005-948": {
+  "title": "SS-Size Mismatch Jam on No Mix-Size",
+  "text": "참조 BSD : CH5.4, CH5.15\n\nNo Mix 모드일 때 DADF 에서 이송된 원고에서 부주사 (SS) 방향 크기가 다른 원고를 검지\n했다. (용지가 급지되지 않은 경우에는 [005-946] 이 표시되고 용지가 급지된 경우에는\n[005-948] 이 표시된다.)\n\n원인 / 대처방법\n005-946 (SS-Size Mismatch Jam on No Mix-Size (Cont)) FIP 참고."
+ },
+ "007-954": {
+  "title": "SMH size mismatch",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    SMH 크기 불일치 (부주사 길이 Error)\n    Imari-MF: 부주사 길이 / 주주사 폭 Error\n[검지조건]\n    기계로의 인쇄에서 지정된 크기 정보가 수동 Tray 용지 (=Tray 다이얼 설정크기) 와\n    다르다.\n[대처순서]\n    1. 고객이 작업에서 지시한 크기의 용지를 기계의 수동 Tray 에 설정한다.\n    2. 기계의 수동 Tray 다이얼을 고객이 작업에서 지시한 크기의 위치로 변경한다.\n       지정하고자 하는 용지크기가 다이얼에 없는 경우, [기타] 로 설정한다."
+ },
+ "007-959": {
+  "title": "OHP kind mismatch (Not white frame OHP)",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    테두리가 있는 OHP 필름 검지\n    [IOTdc 상에서의 처리]\n    Controller 의 용지종류 지시와 관계 없이 검지한 용지종류가 OHP 필름이고 테두리가\n    있으면 Shutdown(정지)\n[검지조건]\n    Feed 개시 후에 (OHP 필름 Sensor 에서) OHP 필름 Sheet 의 흰색 테두리 유무를 검사\n    하고 흰색 테두리가 있다고 판단하면 Jam 이 발생한다.\n[대처순서]\n    Xerox 의 흰색 테두리가 없는 OHP 필름 Sheet 를 사용한다."
+ },
+ "007-960": {
+  "title": "Paper kind mismatch",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    OHP 필름과 보통용지의 용지종류 불일치\n    [IOTdc 상에서의 처리]\n    Controller 에서 지정된 용지종류와 다른 용지가 이송된 경우 (보통용지와 중량지는\n    식별 불가능), 이 Error 가 발생한다.\n[검지조건]\n    사용자가 OHP 필름을 지시한 경우에 보통용지가 이송되거나 OHP 필름 이외를 지시한\n    경우에 OHP 필름이 이송되었다.\n[대처순서]\n    OHP 필름을 보급하거나 보통용지를 보급하는 등 지정한 용지종류를 보급하면 해제된\n    다."
+ },
+ "010-327": {
+  "title": "Fusing Unit On Time Fail",
+  "text": "참조 BSD : CH10.4\n\nReady 상태 또는 Standby 상태에서 규정 전력 이상일 때 IH Driver 제어 시간이 규정 시\n간을 초과하였다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 IH Rear Thermistor 단선을 점검한다.\n3.  Motor Drive PWB J420 와 Drawer Connector J600 사이의 Wire 단선, 단락 또는 접\n    촉불량을 점검한다.\n4.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  Fusing Unit (PL 7.1)\n    ·  Coil Assembly (PL 7.1)\n    ·  Motor Drive PWB (PL 18.2)"
+ },
+ "010-330": {
+  "title": "Fusing Unit Motor Fail",
+  "text": "참조 BSD : CH10.1\n\nFusing Unit Drive Motor 의 회전불량을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n순서\n기계에서 Fusing Unit 을 분해한다. Fusing Unit 의 Drive Gear 를 손으로 돌리고, Gear\n가 돌아가지 않는 등의 이상 부하가 없는지 확인한다. 큰 부하 없이 Gear 가 돌아가는가?\nY  N\n|    Fusing Unit 를 교환한다. (PL 7.1)\n|\nFusing Unit 을 원래대로 복원한다. 전원을 OFF/ON 하고, 전원 On 시에 Exit Roll 1 이 회\n전하는지 점검한다. Exit Roll 1 이 회전하는가?\nY  N\n|    아래의 항목을 점검한다.\n|\n|    ·  Fusing Unit Drive Motor(DC330[010-002]) 작동불량. (PL 3.1)\n|    ·  Drive Gear 의 마모 및 파손.\n|\n|    점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)\n|\n아래의 항목을 점검한다."
+ },
+ "010-341": {
+  "title": "Fusing Unit Assy Illegal Fail",
+  "text": "참조 BSD : CH10.6\n\n장착된 Fusing Unit 의 종류가 다르다.\n\n·  FX: 속열형 / 고속형\n·  APO: 속열형 / 축열형 / 고속형\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 올바른 Fusing Unit 으로 교환한다. (PL 7.1)"
+ },
+ "010-360": {
+  "title": "IH Driver Input High Voltage Fail",
+  "text": "참조 BSD : CH10.3, CH1.1, CH1.2, CH1.3\n\nIH Driver 의 입력 전압이 고전압 (155 +/- 5V 이상) 이다. (상태 코드 0 x 1 수신)\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n순서\n전원을 켠다 (Main Power Switch 를 ON 한다). AC Drive PWB J6-1 과 J6-3 사이의 전압\n이 100VAC 또는 110/208~240VAC 인가?\nY  N\n|    2.2.2.2 (전원 코드 1개 유형) AC Power FIP 또는 2.2.2.2 (전원 코드 2개 유형)\n|    AC Power FIP 로 진행한다.\n|\n주전원을 끄고 AC Drive PWB J6-1, 3 과 IH Power Supply J30-1, 3 사이의 Wire 단선 또\n는 접촉불량을 점검한다."
+ },
+ "010-362": {
+  "title": "IH Driver Surge Fail",
+  "text": "참조 BSD : CH10.3\n\nIH Driver 가 Surge 를 검지했다. (상태 코드 0 x 3 수신)\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  고객의 콘센트 전압 및 전압의 노이즈 등을 점검한다.\n3.  점검에서 문제가 없을 경우에는 IH Power Supply 를 교환한다. (PL 18.1)"
+ },
+ "010-363": {
+  "title": "IGBT Temperature High Fail",
+  "text": "참조 BSD : CH10.3\n\nIGBT 온도 Sensor 가 고온을 검지했다. (상태 코드 0 x 4 수신)\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n1.  IHPS Intake Fan (DC330[042-070]) 의 작동불량을 점검한다. 동작에 이상이 있을 때\n    는 043-356 FIP 로 진행한다.\n2.  전원을 끄고 IH Power Supply J530 와 Motor Drive PWB J441 사이의 Wire 단선, 단\n    락 또는 접촉불량을 점검한다."
+ },
+ "010-364": {
+  "title": "IGBT Temperature Sensor Disconnection, Abnormal Action, Short Fail",
+  "text": "참조 BSD : CH10.3, CH1.1, CH1.2, CH1.3, CH10.4\n\nIGBT 온도 Sensor 의 단선, 단락 또는 Sensor 값이 이상 변동을 보였다. (상태 코드 0 x\n5 수신)\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 IH Power Supply J530 와 Motor Drive PWB J441 사이의 Wire 단선, 단\n    락 또는 접촉불량을 점검한다.\n3.  AC Drive PWB J511 와 Motor Drive PWB J437 사이의 Wire 단선, 단락 또는 접촉불\n    량을 점검한다.\n4.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  IH Power Supply (PL 18.1)\n    ·  AC Drive PWB (PL 18.3)\n    ·  Motor Drive PWB (PL 18.2)"
+ },
+ "010-367": {
+  "title": "Input Low Current Fail",
+  "text": "참조 BSD : CH10.3\n\n입력 전류가 일정 시간 계속되어 하한값 미만이 되었다. (상태 코드 0 x 8 수신)\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  본체와 Fusing Unit 사이의 Drawer Connector( DP/DJ600, P/J600) 의 Pin 변형, 소\n    실, Connector 에 이물질 혼입 등.\n·  IH Power Supply J60, J61 와 IH Heating Coil 사이의 Wire 단선, 단락 또는 접촉\n    불량."
+ },
+ "010-368": {
+  "title": "Encoder Pulse Fail",
+  "text": "참조 BSD : CH10.1\n\nFusing Unit Belt Speed Sensor 의 레벨 변화가 1 초 미만이다. (상태 코드 0 x A 수신)\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  본체와 Fusing Unit 사이의 Drawer Connector( DP/DJ600, P/J600) 의 Pin 변형, 소실\n    , Connector 에 이물질 혼입 등.\n·  Motor Drive PWB J420 와 Drawer Connector J600 사이의 Wire 단선, 단락 또는 접\n    촉불량.\n\n점검에서 문제가 없으면 아래 부품을 차례대로 교환한다. 단, 부품 교환 시마다 Fail 발\n생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n\n·  Fusing Unit (PL 7.1)\n·  Motor Drive PWB (PL 18.2)"
+ },
+ "010-369": {
+  "title": "IH Driver Communication Fail",
+  "text": "참조 BSD : CH10.3\n\nIH Driver 와 Motor Drive PWB 사이에서 통신 이상이 발생했다 (상태 코드 0 x C 수신 또\n는 DD-IH 가 통신 이상을 검지).\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n010-364 (IGBT Temperature Sensor Disconnection, Abnormal Action, Short Fail) FIP 참\n고."
  }
 }
