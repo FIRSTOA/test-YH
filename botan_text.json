@@ -1162,5 +1162,85 @@
  "016-523": {
   "title": "LDAP SSL Error 113",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    LDAP-SSL 인증 Error113(Server 증명서 Data 가 부정확)\n[검지조건]\n    LDAP Server 의 SSL 인증 Error 이다.\n    Server 증명서 Data 가 부정확\n[대처순서]\n    Device 가 LDAP Server 의 SSL 증명서를 신뢰할 수 없다.\n    LDAP Server 의 SSL 증명서의 Root 증명서를 Device 에 등록한다."
+ },
+ "016-524": {
+  "title": "LDAP SSL Error 114",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    LDAP-SSL 인증 Error114(Server 증명서가 유효기간 전이다)\n[검지조건]\n    LDAP Server 의 SSL 인증 Error.\n    Server 증명서가 유효기간 전\n[대처순서]\n    LDAP Server 의 SSL 증명서를 유효한 것으로 변경한다.\n    기계의 [LDAP Server/Directory Service 설정] 의 [인증시의 SSL 통신] 을 [선택안\n    함] 으로 설정해도 Error 를 회피할 수 있지만, 접속할 LDAP Server 의 정당성이 보\n    증되지 않으므로 주의할 것."
+ },
+ "016-525": {
+  "title": "LDAP SSL Error 115",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    LDAP-SSL 인증 Error115(Server 증명서가 유효 기한 만료)"
+ },
+ "016-526": {
+  "title": "LDAP SSL Error 116",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    LDAP-SSL 인증 Error116(Server 명과 증명서가 불일치)\n[검지조건]\n    LDAP Server 의 SSL 인증 Error.\n    Server 명과 증명서가 일치하지 않는다.\n[대처순서]\n    Device 에 설정되어 있는 LDAP Server 의 Address 와 LDAP Server 의 SSL 증명서에 기\n    재되어 있는 Address 가 일치하도록 한다.\n    Device 의 설정 [SSL Server 의 검증] 을 OFF 해도 회피할 수 있지만, 접속할 LDAP\n    Server 의 정당성이 보증되지 않으므로 주의할 것."
+ },
+ "016-527": {
+  "title": "LDAP SSL Error 117",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    LDAP-SSL 인증 Error117(SSL 인증 내부 Error)\n[검지조건]\n    LDAP Server 의 SSL 인증 Error 이다.\n    SSL 인증 내부 Error 이다.\n[대처순서]\n    프로그램의 내부 Error 가 발생했다."
+ },
+ "016-528": {
+  "title": "SmartCard Not Auth",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Smart Card 개인 인증 Error\n[검지조건]\n    개인서명의 Scan Job 이 기동한 후, Smart Card 의 비밀번호 조회 상태가 해제되어 개\n    인 서명에 실패했다.\n[대처순서]\n    Smart Card 의 비밀번호 조회를 실시하고 다시 개인 서명의 Scan 을 실행한다."
+ },
+ "016-529": {
+  "title": "Remote Download server timeout",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Remote Download Server 의 Timeout\n[검지조건]\n    Remote Download Server 와의 접속에서 규정 시간 (45 초) 내에 응답이 없다.\n[대처순서]\n    네트워크의 접속 확인. Remote Download Server 가 네트워크 상에서 올바르게 설정되\n    고 운용되고 있는지 확인한다."
+ },
+ "016-533": {
+  "title": "Kerberos Attestation protocol Error 37",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Kerberos 인증 Protocol Error(37)\n[검지조건]\n    Kerberos Server 의 인증 Protocol Error. (37)\n[대처순서]\n    Device 와 Kerberos Server 의 시계 차가 Kerberos Server 측의 Clock Skew 의 제한값\n    을 초과했다. Device 의 시계 또는 Kerberos Server 의 시계가 정확히 설정되어 있는\n    지 확인한다.\n    이때, Device 와 Kerberos Server 의 시간 뿐만 아니라 Summer Time 의 설정 및 Time\n    Zone 의 설정도 같은지 확인한다.\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n    취하여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-534": {
+  "title": "Kerberos Attestation protocol Error 41.42",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Kerberos 인증 Protocol Error(41.42)\n[검지조건]\n    Kerberos Server 의 인증 Protocol Error. (41, 42)\n[대처순서]\n    Device 에 설정되어 있는 Realm 이 Kerberos Server 에 존재하지 않거나, 설정되어 있\n    는 Kerberos Server 의 Address 에는 접속할 수 없다.\n    Device 의 Kerberos 설정에 있는 Realm 명 및 Server 의 Address 가 정확한지 확인한다.\n    Microsoft Windows 2000/2003 Server 에 접속할 경우에는, Realm 명은 대문자로 한다."
+ },
+ "016-535": {
+  "title": "Remote Download file access Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Remote Download Server 상에 FW 갱신 File 이 없다.\n[검지조건]\n    Remote Download Server 상에 지정된 FW 갱신 File(Download Image File) 이 존재하\n    지 않는 경우.\n[대처순서]\n    Remote Download Server 상의 FW 갱신 File 을 확인한다."
+ },
+ "016-536": {
+  "title": "Host name solution Error in Remote Download",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Remote Download Server 명 해결 Error\n[검지조건]\n    Remote Download Server 로의 접속 전에 DNS 액세스한 시점에서 Host 명 (=Server 명)\n    의 해결에 실패. DNS Library Call Error.\n[대처순서]\n    DNS 와의 접속을 확인한다.\n    또는 Remote Download Server 명이 DNS 에 등록되어 있는지 확인한다."
+ },
+ "016-537": {
+  "title": "Remote Download server connection Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Remote Download Server 접속을 위한 연결 Error\n[검지조건]\n    접속할 위치의 Remote Download Server 의 Port 가 열려 있지 않은 경우.\n[대처순서]\n    Remote Download Server 의 네트워크 접속설정 (Port) 확인."
+ },
+ "016-538": {
+  "title": "Remote Download file write Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Remote Download File 의 HDD 쓰기 Error\n[검지조건]\n    Remote Download Server 에서 취득한 FW 갱신 File 을 HDD 에 저장할 때 HDD 에 정상\n    적으로 쓰기할 수 없다."
+ },
+ "016-539": {
+  "title": "Kerberos Attestation protocol Error other",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Kerberos 인증 Protocol Error( 기타 )\n[검지조건]\n    Kerberos Server 의 인증 Protocol Error 이다. (기타)\n[대처순서]\n    프로그램의 내부 Error 가 발생했다."
+ },
+ "016-543": {
+  "title": "Attestation Agent Error 543",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error(REALM_UNKNOWN)\n[검지조건]\n    지정한 Realm/Domain 이 ApeosWare Authenticaton Agent 로부터 없어졌다 (Realm 의 이\n    름 List 를 Device 취득한 후에, ApeosWare Authentication Agent 에서 수동으로\n    Domain 을 삭제했다.)\n[대처순서]\n    Device 의 Realm 갱신 Button 을 사용하여 Realm List 를 갱신하거나 ApeosWare\n    Authentication Agent 에 Domain 을 추가한다.\n    Device 의 Realm 정보를 갱신하기 위해서는 Device 측의 확인화면에 있는 [인증위치\n    ] Button 을 누른 후, 인증위치 화면에서 [최신 정보로 갱신] Button 을 누른다.\n    그래도 Trouble 이 지속될 때는 Trouble 발생 직후에 2.5 Log 수집 · 추출 Tool 의 조\n    작설명을 참고하고, pfshowinfo9 Log 와 Network Log 를 채취하여 Support 부문에 연\n    락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-545": {
+  "title": "Attestation Agent Error 545",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error(CLOCKSKEW_ERR)\n[검지조건]\n    인증에서 ClockSkew Error 가 발생했다.\n    ApeosWare Authentication Agent 와 ActiveDirectory 의 시간이 ActiveDirectory 에\n    설정된 Kerberos 의 ClockSkew 상한과 차이가 난다."
+ },
+ "016-546": {
+  "title": "Attestation Agent Error 546",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error(ACCESS_DENIED)\n[검지조건]\n    일반 User 가 자신 이외의 User 정보를 취득하도록 했다 (GetUserInformation Method\n    만).\n    http Header 의 WWW-Authorization 에 포함되어 있는 User 명과 GetUserInformation\n    Method 의 Request Message 중에 포함되어 있는 < UserID > 가 다르다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 지속될 때는 Trouble 발생 직후에 2.5 Log 수집 · 추출 Tool 의 조\n    작설명을 참고하고, pfshowinfo9 Log 와 Network Log 를 채취하여 Support 부문에 연\n    락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-548": {
+  "title": "Attestation Agent Error 548",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error(UNREGISTERED_DEVICE)\n[검지조건]\n    인증 조작을 실시한 기기의 정보가 Database 에 존재하지 않는다 (GetUserInformation\n    Method 만).\n    Device 가 ApeosWare Authenction Agent 에 등록되어 있지 않다.\n[대처순서]\n    Device 를 ApeosWare Authentication Agent 에 등록한다. 대처방법에 대해서는,\n    [ApeosWare Authentication Agent 취급설명서] 를 참고.\n    그래도 Trouble 이 지속될 때는 Trouble 발생 직후에 2.5 Log 수집 · 추출 Tool 의 조\n    작설명을 참고하고, pfshowinfo9 Log 와 Network Log 를 채취하여 Support 부문에 연\n    락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-554": {
+  "title": "Attestation Agent Error 554",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error(CONFIGRATION_Error)\n[검지조건]\n    인증 Error 가 있을 때에 지정된 User 의 존재 확인에 실패했다.\n    ApeosWare Authentication Agent 의 Domain 의 Domain User 조회용 Login 명 또는 조\n    회용 Password 가 부정확하다.\n[대처순서]\n    ApeosWare Authentication Agent 의 Domain 의 Domain User 조회용 Login 명과 조회용\n    Password 에 정확한 것을 설정한다.\n    그래도 Trouble 이 지속될 때는 Trouble 발생 직후에 2.5 Log 수집 · 추출 Tool 의 조\n    작설명을 참고하고, pfshowinfo9 Log 와 Network Log 를 채취하여 Support 부문에 연\n    락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-555": {
+  "title": "Attestation Agent Error 555",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error(SERVICE_ISNOT_WORKING)\n[검지조건]\n    인증 Server 로의 접속에서 Timeout 이 됐다.\n    ApeosWare Authentication Agent 가 Database 또는 Active Directory 에 접속할 수 없\n    다."
+ },
+ "016-556": {
+  "title": "Attestation Agent Error 556",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    인증 Agent Error(SERVICE_IS_PROCESSING)\n[검지조건]\n    Database 의 처리에서 Timeout 이 됐다.\n    ApeosWare Authentication Agent 가 접속할 Database 가 과부하 상태에서 Error 가 됐\n[대처순서]\n    Service 가 과부하이므로, 시간을 두고 다시 인증한다.\n    해결하고 싶을 경우에는, ApeosWare Authentication Agent 를 확인한다.\n    대처방법에 대해서는, ApeosWare Authentication Agent 의 취급설명서를 참고한다.\n    그래도 Trouble 이 지속될 때는 Trouble 발생 직후에 2.5 Log 수집 · 추출 Tool 의 조\n    작설명을 참고하고, pfshowinfo9 Log 와 Network Log 를 채취하여 Support 부문에 연\n    락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
  }
 }
