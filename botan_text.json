@@ -522,5 +522,45 @@
  "010-369": {
   "title": "IH Driver Communication Fail",
   "text": "참조 BSD : CH10.3\n\nIH Driver 와 Motor Drive PWB 사이에서 통신 이상이 발생했다 (상태 코드 0 x C 수신 또\n는 DD-IH 가 통신 이상을 검지).\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n010-364 (IGBT Temperature Sensor Disconnection, Abnormal Action, Short Fail) FIP 참\n고."
+ },
+ "010-370": {
+  "title": "IH Driver Freeze Fail",
+  "text": "참조 BSD : CH10.3\n\nIH Driver Freeze 포트가 Active(Low) 가 되었다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n확인작업\n전원 코드 2개 유형 모델인 경우 Tray Module 측 Inlet 에 전원 코드가 바르게 연결되어\n있는지 (전원이 공급되고 있는지) 확인한다. Tray Module 측 Inlet 에 전원이 공급되지\n않으면 이 Fail 이 발생한다.\n\n원인 / 대처방법\n010-364 (IGBT Temperature Sensor Disconnection, Abnormal Action, Short Fail) FIP 참\n고."
+ },
+ "010-371": {
+  "title": "Heat Belt STS Center Disconnection Fail",
+  "text": "참조 BSD : CH10.4\n\nIH Center Thermistor 의 단선 AD 값을 연속해서 3 회 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 IH Center Thermistor 단선을 점검한다.\n3.  Motor Drive PWB J420 와 Drawer Connector J600 사이의 Wire 단선, 단락 또는 접\n    촉불량을 점검한다.\n4.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  Fusing Unit (PL 7.1)\n    ·  Motor Drive PWB (PL 18.2)"
+ },
+ "010-372": {
+  "title": "Heat Belt STS Center Over Temperature Fail",
+  "text": "참조 BSD : CH10.4\n\nIH Center Thermistor 에서 규정값 이상의 온도 Monitor AD 값을 연속해서 4 회 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n    주기 : 이 Fail 을 해제하려면 원인을 제거한 후 NVM[744-001](이상 검지 이력) 을 [0] 으\n    로 재설정하고 전원을 OFF/ON 할 것. 또한 표시된 수치와 이상을 검지한 부품의 관계는\n    다음과 같다.\n·  0: 정상\n·  1: IH Center Thermistor 의 고온이상 (Run 중)\n·  2: IH Rear Thermistor 의 고온이상 (Run 중)\n·  3: IH Center Thermistor 의 고온이상 (Run 이외)\n·  4: IH Rear Thermistor 의 고온이상 (Run 이외)\n·  5: 코일 부하 이상\n·  6: IH Center Thermistor 의 이상발열\n·  7: IH Rear Thermistor 의 이상발열\n·  8: 감온 폭주 감시에 따른 고온이상 검지\n·  9: IH Center Thermistor Warmup Time (온도상승 없음) Fail\n·  10: IH Rear Thermistor Warmup Time (온도상승 없음) Fail\n·  11: IH 전원 부품 불량\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  IH Center Thermistor 의 탈락 또는 Sensor 부분의 오염, 이물질로 인한 막힘.\n·  Heat Belt 의 용지말림.\n·  IH Center Thermistor (DC140[010-200]) 작동불량.\n    -  온도 AD 값 : 100 이하 (온도 모니터값 : 250℃ 이상) 는 Fail\n·  Heat Belt 의 파손.\n\n점검에서 문제가 없으면 아래 부품을 차례대로 교환한다. 단, 부품 교환 시마다 Fail 발\n생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n\n·  Fusing Unit (PL 7.1)\n·  Motor Drive PWB (PL 18.2)"
+ },
+ "010-374": {
+  "title": "Heat Belt STS Rear Over Temperature Fail",
+  "text": "참조 BSD : CH10.4\n\nIH Rear Thermistor 에서 규정값 이상의 온도 Monitor AD 값을 연속해서 4 회 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n    주기 : 이 Fail 을 해제하려면 원인을 제거한 후 NVM[744-001](이상 검지 이력) 을 [0] 으\n    로 재설정하고 전원을 OFF/ON 할 것. 또한 표시된 수치와 이상을 검지한 부품의 관계는\n    다음과 같다.\n·  0: 정상\n·  1: IH Center Thermistor 의 고온이상 (Run 중)\n·  2: IH Rear Thermistor 의 고온이상 (Run 중)\n·  3: IH Center Thermistor 의 고온이상 (Run 이외)\n·  4: IH Rear Thermistor 의 고온이상 (Run 이외)\n·  5: 코일 부하 이상\n·  6: IH Center Thermistor 의 이상발열\n·  7: IH Rear Thermistor 의 이상발열\n·  8: 감온 폭주 감시에 따른 고온이상 검지\n·  9: IH Center Thermistor Warmup Time (온도상승 없음) Fail\n·  10: IH Rear Thermistor Warmup Time (온도상승 없음) Fail\n·  11: IH 전원 부품 불량\n\n원인 / 대처방법\n아래의 항목을 점검한다."
+ },
+ "010-378": {
+  "title": "Heat Belt Rotation Fail",
+  "text": "참조 BSD : CH10.1\n\nFusing Unit Drive Motor On 에서 규정 시간이 지나도 Fusing Unit Belt Speed Sensor 의\n출력이 바뀌지 않는다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n순서\nDiagnostic 에 들어가서 Fusing Unit Drive Motor 의 Chain-Link 를 On 한다.\n\n·  High model: DC330[010-001]\n·  Mid model: DC330[010-004]\n·  Low model: DC330[010-006]\nFusing Unit Drive Motor 또는 Fusing Belt, P/Roll 이 회전하는가?\nY  N\n|    전원을 끄고 Motor Drive PWB J426, J427 와 Fusing Unit Drive Motor J201, J211\n|    사이의 Wire 단선, 단락 또는 접촉불량을 점검한다.\n|\n|    점검에서 문제가 없으면 아래 부품을 차례대로 교환한다. 단, 부품 교환 시마다 Fail\n|    발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n|\n|    ·  Fusing Unit Drive Motor (PL 3.1)\n|    ·  Motor Drive PWB (PL 18.2)\n|\nFusing Unit Belt Speed Sensor 의 단선을 생각할 수 있다. 전원을 끄고 아래의 항목을\n점검한다.\n\n·  본체와 Fusing Unit 사이의 Drawer Connector( DP/DJ600, P/J600) 의 Pin 변형, 소실\n    , Connector 에 이물질 혼입 등.\n·  Motor Drive PWB J420 와 Drawer Connector J600 사이의 Wire 단선, 단락 또는 접\n    촉불량."
+ },
+ "010-379": {
+  "title": "Fusing Unit Hot Not Ready Return Time Fail",
+  "text": "참조 BSD : CH10.4\n\n고온의 Not Ready 상태에서의 복귀 시간이 규정 시간을 초과했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n010-327 (Fusing Unit On Time Fail) FIP 참고."
+ },
+ "010-380": {
+  "title": "P/Roll Latch Motor Fail",
+  "text": "참조 BSD : CH10.2\n\nP/Roll 의 Contact/Retract 동작에서 P/R Latch Sensor 가 P/Roll 의 Latch 위치 이상을\n검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고)\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  P/R Latch Motor (DC330[010-009/010] (Latch On/Off)) 작동불량. (PL 7.1)\n·  Motor Drive PWB J420 와 Drawer Connector J600 사이의 Wire 단선, 단락 또는 접\n    촉불량.\n·  본체와 Fusing Unit 사이의 Drawer Connector( DP/DJ600, P/J600) 의 Pin 변형, 소\n    실, Connector 에 이물질 혼입 등.\n·  Drive Gear 의 마모 및 파손.\n\n점검에서 문제가 없으면 아래 부품을 차례대로 교환한다. 단, 부품 교환 시마다 Fail 발\n생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n\n·  Fusing Unit (PL 7.1)\n·  Motor Drive PWB (PL 18.2)"
+ },
+ "010-382": {
+  "title": "Fusing Unit Thermostat Fail",
+  "text": "참조 BSD : CH10.4\n\nFusing Unit 의 Thermostat 이 끊어졌다."
+ },
+ "010-420": {
+  "title": "Fusing Unit Near Life Warning",
+  "text": "참조 BSD : CH10.5\n\nFusing Unit 의 교환 시기가 근접했다.\n\n원인 / 대처방법\nFusing Unit 의 교환 시기에 가까워졌으므로 필요에 따라 Fusing Unit (PL 7.1) 을 교환\n한다.\n\n    주기 : 교환 후, DC135[954-850] (Fusing Unit Assy Print Count) 의 카운터 값을 재설정\n    할 것."
+ },
+ "010-421": {
+  "title": "Fusing Unit Life Over Warning",
+  "text": "참조 BSD : CH10.5\n\nFusing Unit 이 교환 시기이다.\n\n원인 / 대처방법\nFusing Unit (PL 7.1) 을 교환하고 DC135[954-850] (Fusing Unit Assy Print Count) 의 카\n운터 값을 재설정한다."
  }
 }
