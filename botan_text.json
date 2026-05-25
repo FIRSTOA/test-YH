@@ -762,5 +762,125 @@
  "016-314": {
   "title": "SW Option Fail (Hybrid WaterMark Not Exist)",
   "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    < SW Option 기능 미달성 >\n    원고 뒷면 검출 Board 미장착으로 인해 \"Paper Security Kit\" 를 작동할 수 없다.\n[검지조건]\n    SW Option 기능을 유효로 설정했을 때, DADF:PF1.5/IIT:PF1-BW 조합에 대해 2 개 (앞\n    면용, 뒷면용) 의 HWM 기판이 부착된 양면 동시 Scan 으로 인해 복제 제한 Code 를 검\n    출한 경우는 검출한 면에만 반영시킨다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    원고 뒷면 검출 Board 가 미장착 상태일 때는 장착한다.\n    그래도 Trouble 이 계속될 경우는 다음을 실시한다.\n    OF-01 Common System Fail"
+ },
+ "016-315": {
+  "title": "IIT Interface Fail",
+  "text": ""
+ },
+ "016-317": {
+  "title": "Page Memory Broken- Standard",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Page Memory( 표준 ) 가 손상되었다.\n[검지조건]\n    Scanner 부 Page Memory( 표준 ) 의 Error 를 검지한 경우\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  Page Memory( 표준 ) 분리 / 접속\n    2.  Page Memory( 표준 ) 교환\n    그래도 Trouble 이 계속될 경우는 다음을 실시한다.\n    OF-01 Common System Fail"
+ },
+ "016-319": {
+  "title": "Long Boot Diag IIT Interface Fail",
+  "text": "[Fault 명칭]\n    Long Boot Diag IIT Interface Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    IIT-Controller 사이의 IF 부가 파손되었다. (OS 검지)\n[검지조건]\n    Scanner 와 본체간의 IF 부 에러를 검지한 경우\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속되는 경우는 다음을 실시한다.\n    1. Scanner 와 본체간의 IF 부 장착 및 교환\n    2. ESS PWB 또는 IISS 교환"
+ },
+ "016-320": {
+  "title": "Document Formatter Fatal Error",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    CopyServer 기능의 문서변환 S/W 치명적 Error\n[검지조건]\n    문서 변환시에 Software Error 를 검출했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-01 Common System Fail"
+ },
+ "016-321": {
+  "title": "Fax Module Error",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    기동시의 FAX 관련 Error"
+ },
+ "016-322": {
+  "title": "JBA Account Full",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    JBA Accounting 정보 Full\n[검지조건]\n    Accounting 정보가 규정수 (15000 건) 축적되었다.\n[대처순서]\n    1.  외부 Accounting Server 에서 Accounting 정보를 읽은 후 Power OFF/ON 한다.\n    2.  Trouble 이 지속될 때는 아래를 참고하여 Trouble 을 복구한다.\n    OF-01 Common System Fail"
+ },
+ "016-324": {
+  "title": "Scheduled Image Overwrite",
+  "text": "[Error 분류]\n    sub Fail\n[Fault 내용]\n    Scheduled Image Overwrite\n[검지조건]\n    Scheduled Image Overwrite 의 실행 설정 시간이 되면 SysCon 이 발행된다.\n[대처순서]\n    Scheduled Image Overwrite 실행이 종료될 때까지 기다린다.\n    취소할 경우, 전원을 OFF/ON 한다."
+ },
+ "016-326": {
+  "title": "Cont-UI Cable Connection Fail",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont-UI Cable Connection Fail\n[검지조건]\n    Controller 가 UI 와의 Cable 연결 이상을 검지했다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    Trouble 이 계속되는 경우에는 다음을 실시한다.\n    1.  Controller 와 UI 사이의 Cable 접속을 확인한다.\n    2.  Cable 을 교환한다."
+ },
+ "016-327": {
+  "title": "BackPlane Connection Fail",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    BackPlane Connection Fail\n[검지조건]\n    Controller 가 BackPlane 과의 접속 이상을 검지했다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    Trouble 이 계속되는 경우에는 다음을 실시한다.\n    1.  Controller 를 분리한 후에 다시 접속한다."
+ },
+ "016-328": {
+  "title": "Cont-MCU Cable Connection Fail",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont-MCU Cable Connection Fail\n[검지조건]\n    Controller 가 MCU 와의 Cable 접속 이상을 검지했다."
+ },
+ "016-329": {
+  "title": "Long Boot Diag Page Memory Not Detected Fail",
+  "text": "[Fault 명칭]\n    Long Boot Diag Page Memory Not Detected Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    Page Memory( 표준 ) 가 검지되지 않는다. (OS 검지)\n[검지조건]\n    Controller 부 Page Memory( 표준 ) 의 미장착을 검지한 경우\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속되는 경우는 다음을 실시한다.\n    1. Page Memory( 표준 ) 분리 / 접속\n    2. Page Memory( 표준 ) 교환"
+ },
+ "016-330": {
+  "title": "Cont System Memory Fail-1",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont System Memory 진단 Fail-1\n[검지조건]\n    Slot1 탑재 Memory 용량이 규정값에서 벗어난 것을 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  ESS RAM DIMM #1 분리 / 접속\n    2.  ESS RAM DIMM #1 교환\n    3.  Controller Board 교환"
+ },
+ "016-331": {
+  "title": "Cont System Memory Fail-2",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont System Memory 진단 Fail-2\n[검지조건]\n    Slot2 탑재 Memory 용량이 규정값에서 벗어난 것을 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  ESS RAM DIMM #2 분리 / 접속\n    2.  ESS RAM DIMM #2 교환"
+ },
+ "016-332": {
+  "title": "Cont System Memory Fail-3",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont System Memory 진단 Fail-3\n[검지조건]\n    Slot1, 2 전체 Memory 용량이 규정값에서 벗어난 것을 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  ESS RAM DIMM #1 및 ESS RAM DIMM #2 분리 / 접속\n    2.  ESS RAM DIMM #1 및 ESS RAM DIMM #2 교환\n    3.  Controller Board 교환"
+ },
+ "016-333": {
+  "title": "Long Boot Diag Page Memory Broken Standard Fail",
+  "text": "[Fault 명칭]\n    Long Boot Diag Page Memory Broken Standard Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    Page Memory( 표준 ) 가 파손되었다. (OS 검지)\n[검지조건]\n    Controller 부 Page Memory( 표준 ) 의 에러를 검지한 경우\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속되는 경우는 다음을 실시한다.\n    1. Page Memory( 표준 ) 분리 / 접속\n    2. Page Memory( 표준 ) 교환"
+ },
+ "016-334": {
+  "title": "Long Boot Diag Page Memory Broken Option Fail",
+  "text": "[Fault 명칭]\n    Long Boot Diag Page Memory Broken Option Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    Page Memory( 옵션 ) 가 파손되었다. (OS 검지)\n[검지조건]\n    Controller 부 Page Memory( 옵션 ) 의 에러를 검지한 경우\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속되는 경우는 다음을 실시한다.\n    1. Page Memory( 옵션 ) 분리 / 접속\n    2. Page Memory( 옵션 ) 교환"
+ },
+ "016-335": {
+  "title": "Cont Program ROM Fail-1",
+  "text": ""
+ },
+ "016-336": {
+  "title": "Cont Program ROM Fail-2",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Program ROM 진단 Fail-2\n[검지조건]\n    Program ROM1 의 Write Command 에 실패했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  ESS ROM DIMM #1 분리 / 접속\n    2.  ESS ROM DIMM #1 교환\n    3.  PrinterKit 분리 / 접속\n    4.  PrinterKit 교환\n    5.  Controller Board 교환"
+ },
+ "016-337": {
+  "title": "Cont Program ROM Fail-3",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Program ROM 진단 Fail-3\n[검지조건]\n    Program ROM2 의 Write Command 에 실패했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  ESS ROM DIMM #2 분리 / 접속\n    2.  ESS ROM DIMM #2 교환\n    3.  Controller Board 교환"
+ },
+ "016-338": {
+  "title": "Cont Font ROM Fail-1",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Font ROM 진단 Fail-1"
+ },
+ "016-339": {
+  "title": "Cont Font ROM Fail-2",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Font ROM 진단 Fail-2\n[검지조건]\n    Slot1 탑재 Font ROM ID 가 규정값에서 벗어난 것을 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  ESS Font ROM DIMM #1 분리 / 접속\n    2.  ESS Font ROM DIMM #1 교환\n    3.  PrinterKit 분리 / 접속\n    4.  PrinterKit 교환\n    5.  Controller Board 교환"
+ },
+ "016-340": {
+  "title": "Cont Font ROM Fail-3",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Font ROM 진단 Fail-3\n[검지조건]\n    Slot2 탑재 Font ROM ID 가 규정값에서 벗어난 것을 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  ESS Font ROM DIMM #2 분리 / 접속\n    2.  ESS Font ROM DIMM #2 교환\n    3.  Controller Board 교환"
+ },
+ "016-341": {
+  "title": "Cont Font ROM Fail-4",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Font ROM 진단 Fail-4\n[검지조건]\n    Slot2 탑재 Font ROM 의 Checksum 이 맞지 않는다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다."
+ },
+ "016-342": {
+  "title": "Cont RTC Fail",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont RTC 진단 Fail\n[검지조건]\n    RTC 의 시간 범위가 규정값에서 벗어나 있다 (Ex 13 월 36 일).\n    시간이 멈추었다.\n[대처순서]\n    전원 OFF/ON 한다.\n    복구할 수 없을 때는 아래의 순서로 작업을 실시한다.\n    1.  문제 부품의 교환\n    2.  Controller Board 교환"
+ },
+ "016-343": {
+  "title": "Long Boot Diag Timer Fail",
+  "text": "[Fault 명칭]\n    Long Boot Diag Timer Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    타이머 오류 (OS 검지)\n[검지조건]\n    타이머의 이상을 검지하였다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속되는 경우는 다음을 실시한다.\n    1. NVM Board 가 장착된 경우에는 NVM Board 교환\n    2. ESS PWB 교환"
+ },
+ "016-345": {
+  "title": "Cont NV-Memory Fail",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont NV-Memory 진단 Fail\n[검지조건]\n    선두 Address 의 Data 가 0x00 인 것을 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  NV-RAM Board 교환\n    2.  Controller Board 교환"
+ },
+ "016-346": {
+  "title": "Cont A4FAX Modem Diagnosis Fail",
+  "text": ""
+ },
+ "016-347": {
+  "title": "Cont Page Memory Fail",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Page Memory 진단 Fail\n[검지조건]\n    Slot2 탑재 Memory 용량이 규정값에서 벗어난 것을 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  Page Memory(Option) 분리 / 접속\n    2.  Page Memory(Option) 교환\n    3.  Controller Board 교환"
+ },
+ "016-348": {
+  "title": "Cont Page Memory Fail-2",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Page Memory Fail-2\n[검지조건]\n    Page Memory 에 대한 W/R/V Test 에서 Error 발생\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  Page Memory 접촉확인\n    2.  Page Memory 교환\n    3.  Controller Board 교환"
+ },
+ "016-349": {
+  "title": "Cont MAC Address Data Fail",
+  "text": "[Fault 명칭]\n    Cont MAC Address Data Fail\n[Error 분류]\n    SubSystem"
  }
 }
