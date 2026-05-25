@@ -1,0 +1,50 @@
+{
+ "003-310": {
+  "title": "IIT extension memory capacity is insufficient",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    FaxCard가 있음에도 불구하고 IISS 확장 Memory 용량 부족 (=256MB 없음)\n[검지조건]\n    전원 ON 시에 116-389 의 검지 조건을 회피한 후, IITsc 가 검지하는 FaultCode 로\n    FaxCard 장착 상태에 있는 동안 원고 판독부의 확장 Memory 용량이 256MB 보다 작은\n    것을 검지했다.\n    이 Error 발생시의 제한 사항은\n    < DADF-75 >\n    이 Fail 발생 상태에서 사용불가. Platen 에서의 Fax 송신은 가능.\n    < DADF-250 >\n    이 Fail 발생 상태에서도 DADF 사용가능. 단, 제한 사항으로써 양면 판독은 기계적\n    인 반전 동작으로 실시\n[대처순서]\n    전원을 OFF/ON 한다.\n    Trouble 이 지속될 경우, 다음을 진행한다.\n    IISS ExtensionMemory(IIT-IPS 옆의 Extension PWB 상의 Memory 를 장착)"
+ },
+ "003-311": {
+  "title": "IIT CDI I/F Mismatch",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    IIT CDI I/F 불일치\n[검지조건]\n    IIT CDI I/F 에서 Controller 의 초기화를 실행하는 중에 IIT 에서의 정보가 부족한 경\n    우 (Controller 버전과 IIT 버전의 조합이 불일치).\n[대처순서]\n    Controller 버전과 조합 가능한 IIT 소프트웨어로 업그레이드한다."
+ },
+ "003-313": {
+  "title": "IITsc RAM Access Failure",
+  "text": "[Fault 명칭]\n    IITsc RAM Access Failure\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    IITsc 가 RAM 에 액세스하지 못했다.\n[검지조건]\n    RAM 읽기 / 쓰기 실행에 대한 NG 반환을 IITsc 가 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-01 Common System Fail"
+ },
+ "003-319": {
+  "title": "IITsc Video Driver Detection Fail",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Video Driver 검지 Fail\n[검지조건]\n다음 Error 를 Driver 에서 통지했을 때\n\n1. 압축 기준값 초과\n2. DMA 전송 이상\n3. 기타 압축계 이상\n4. Controller-IIT 사이의 I/F 이상\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ },
+ "003-320": {
+  "title": "IISS-ESS Communication Fail 1",
+  "text": ""
+ },
+ "003-321": {
+  "title": "IISS-ESS Communication Fail 2",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 송신 Error\n    (Sequence No 부정확)\n[검지조건]\n    Cont 에서 2회의 Command 재송으로 Cont 가 IISS 에서의 ACK 를 수신할 수 없었다. (\n    송신한 Message Packet 의 Sequence No. 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-05 IIT System Fail"
+ },
+ "003-322": {
+  "title": "IISS-ESS Communication Fail 3",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 송신 Error\n    (Packet No 부정확)\n[검지조건]\n    Cont 에서 2회의 Command 재송으로 Cont 가 IISS 에서의 ACK 를 수신할 수 없었다. (\n    송신한 Message Packet 의 Packet No. 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-05 IIT System Fail"
+ },
+ "003-323": {
+  "title": "IISS-ESS Communication Fail 4",
+  "text": "[Error 분류]\n    Sub System Fail"
+ },
+ "003-324": {
+  "title": "IISS-ESS Communication Fail 5",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 송신 Error\n    (Check Code Error)\n[검지조건]\n    Cont 에서 2회의 Command 재송으로 Cont 가 IISS 에서의 ACK 를 수신할 수 없었다. (\n    송신한 Message Packet 의 Check Code 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-05 IIT System Fail"
+ },
+ "003-325": {
+  "title": "IISS-ESS Communication Fail 6",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 송신 Error\n    (Parity Error)\n[검지조건]\n    Cont 에서 2회의 Command 재송으로 Cont 가 IISS 에서의 ACK 를 수신할 수 없었다.\n    (IISS 측의 HARDWARE 에서 Parity Error 가 검출되었다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-05 IIT System Fail"
+ },
+ "003-326": {
+  "title": "IISS-ESS Communication Fail 7",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 송신 Error"
+ },
+ "003-327": {
+  "title": "IISS-ESS Communication Fail 8",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 송신 Error\n    (Overrun Error)\n[검지조건]\n    Cont 에서 2회의 Command 재송으로 Cont 가 IISS 에서의 ACK 를 수신할 수 없었다.\n    (IISS 측의 HARDWARE 에서 Overrun Error 가 검출되었다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ }
+}
