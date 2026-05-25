@@ -562,5 +562,85 @@
  "010-421": {
   "title": "Fusing Unit Life Over Warning",
   "text": "참조 BSD : CH10.5\n\nFusing Unit 이 교환 시기이다.\n\n원인 / 대처방법\nFusing Unit (PL 7.1) 을 교환하고 DC135[954-850] (Fusing Unit Assy Print Count) 의 카\n운터 값을 재설정한다."
+ },
+ "010-613": {
+  "title": "Fusing Motor Current Warning",
+  "text": "참조 BSD : CH10.1\n\nFusing Motor 에 인가되는 전류값이 규정 시간을 넘어 연속해서 기준값을 초과하고 있다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Fusing Assy Print Count 의 HFSI 카운터 값 (HFSI[954-850]).\n·  Fusing Unit Belt Speed Sensor (DC330[010-203]) 작동불량. (PL 7.1)\n·  Belt Speed Roll 불량 또는 파손.\n·  Fusing Belt, Pressure Roll 회전 시의 과부하.\n·  Fusing Belt 의 마모 및 파손.\n·  Fusing Unit Drive Motor(DC330[010-002]) 작동불량. (PL 3.1)\n·  Fusing Unit Drive Assembly 의 Gear 마모, 파손, 긁힘.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "010-617": {
+  "title": "Fusing Unit Paper Quality Operation Mistake Warning",
+  "text": "참조 BSD : -\n\n설정된 용지종류와 다른 종류의 용지가 공급된다.\n\n원인 / 대처방법\nTray 설정을 확인하고 용지 설정을 바르게 변경한다."
+ },
+ "010-619": {
+  "title": "Fusing Unit E2PROM I2C Master Communication Info",
+  "text": "참조 BSD : CH10.6\n\nI2C Master 의 통신 오류 또는 통신 제어 ASIC 가 고장났다.\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n\n    주기 : 복구된 경우에는 외부 Noise 또는 기계 내부 이상 방전 등의 Noise 로 인해 오\n    작동될 가능성이 높다. 기계 주변의 Noise 발생원 및 이상 방전의 발생 유무를 확인\n    할 것.\n\n2.  Contoroller PWB 에서 Fusing Unit E2PROM 까지의 접속을 확인한다. 전원을 끄고 아\n    래의 항목을 점검한다.\n    ·  Controller PWB, BP PWB, Half Tone PWB 사이의 접속 Connector( P/J335, P/\n       J451) 의 접촉 불량, 파손, Connector 에 이물질 혼입.\n    ·  Half Tone PWB J551 와 Motor Drive PWB J410 사이 Flat Cable 의 단선 또는 접\n       촉불량을 점검한다.\n    ·  Motor Drive PWB J420 와 Drawer Connector J600 사이의 Wire 단선, 단락 또는\n       접촉불량.\n    ·  Drawer Connector P600 와 Fusing Unit E2PROM 사이의 Wire 단선, Short 또는\n       접촉불량.\n3.  복구되지 않으면 아래의 부품을 차례로 교환한다. 단, 부품 교환 시마다 Fail 발생\n    유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  Fusing Unit (PL 7.1)\n    ·  Controller PWB (PL 35.2)"
+ },
+ "010-620": {
+  "title": "Fusing Unit E2PROM Data Mismatch Info",
+  "text": "참조 BSD : CH10.6\n\nFusing Unit 의 E2PROM 인증영역에서 부정확한 데이터를 검지했다.\n\n원인 / 대처방법\n1.  Fusing Unit 을 분해하고 올바른 위치에 다시 장착한다.\n2.  복구되지 않는 경우는 Fusing Unit 을 교환한다. (PL 7.1)"
+ },
+ "010-621": {
+  "title": "Fusing Unit E2PROM Not In Position Info",
+  "text": "참조 BSD : CH10.6\n\nFusing Unit 의 E2PROM 이 지정된 위치에 장착되어 있지 않거나 (E2PROM 분리) E2PROM 과\n의 통신 이상이 발생했다.\n\n원인 / 대처방법\n1.  Fusing Unit 이 지정된 위치에 장착되어 있는지 점검하고 올바른 위치에 장착되어 있\n    지 않은 경우에는 지정된 위치에 장착한다.\n2.  복구되지 않는 경우는 Fusing Unit 을 교환한다. (PL 7.1)"
+ },
+ "010-622": {
+  "title": "Fusing Unit E2PROM Data Broken Info",
+  "text": "참조 BSD : CH10.6\n\nFusing Unit 의 E2PROM 으로의 쓰기 데이터와 읽기 데이터의 불일치를 검지했다.\n\n원인 / 대처방법\n010-620 (Fusing Unit E2PROM Data Mismatch Info) FIP 참고."
+ },
+ "010-623": {
+  "title": "Fusing Heavy Paper Quality Operation Mistake Warning",
+  "text": "참조 BSD : -\n\n설정한 용지종류 (중량지) 와 다른 종류 (일반 용지나 얇은 용지) 의 용지가 공급되었을\n수 있다.\n\n원인 / 대처방법\nTray 설정을 확인하고 용지 설정을 바르게 변경한다."
+ },
+ "010-625": {
+  "title": "IH Driver Load Abnormality Detection Warning",
+  "text": "참조 BSD : CH10.3"
+ },
+ "010-626": {
+  "title": "IH Driver Part Abnormality Detection Warning",
+  "text": "참조 BSD : CH10.3\n\nIH Driver 의 보조 전원 회로 이상 (Diode Short 에 따른 제한 저항에 대한 인가 전압값\n이상) 을 검지했다. (상태 코드 0 x 0B 수신)\n\n순서\nNVM[744-001] (이상 검지 이력) 값을 확인한다. 값이 [11](IH 전원 부품 불량) 인 경우\n에는 [0] 으로 재설정하고 전원을 OFF/ON 할 것. Error 가 표시되는가?\nY  N\n|    종료\n|\n위 순서를 2~3 회 반복해서 실시한다. Error 가 표시되는가?\nY  N\n|    종료\n|\n전원을 끄고 IH Power Supply 를 교환한다. (PL 18.1)\n\n    주기 : 교환 후 NVM[744-001] (이상 검지 이력) 값을 확인한다. 값이 [11] (IH 전원 부\n    품 불량) 인 경우에는 [0] 으로 재설정하고 전원을 OFF/ON 할 것."
+ },
+ "011-941": {
+  "title": "MBX #01 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    해당 Bin 에서 FullStack 을 검지했다.\n[검지조건]\n    FullStack Sensor 가 Stack 량 최대를 검지했다.\n[대처순서]\n    Finisher TopTray 에서 용지를 제거한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "011-942": {
+  "title": "MBX #02 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    해당 Bin 에서 FullStack 을 검지했다.\n[검지조건]\n    FullStack Sensor 가 Stack 량 최대를 검지했다.\n[대처순서]\n    Finisher TopTray 에서 용지를 제거한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "011-943": {
+  "title": "MBX #03 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    해당 Bin 에서 FullStack 을 검지했다.\n[검지조건]\n    FullStack Sensor 가 Stack 량 최대를 검지했다.\n[대처순서]\n    Finisher TopTray 에서 용지를 제거한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "011-945": {
+  "title": "MBX #05 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    해당 Bin 에서 FullStack 을 검지했다.\n[검지조건]\n    FullStack Sensor 가 Stack 량 최대를 검지했다.\n[대처순서]\n    Finisher TopTray 에서 용지를 제거한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "011-946": {
+  "title": "MBX #06 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    해당 Bin 에서 FullStack 을 검지했다.\n[검지조건]\n    FullStack Sensor 가 Stack 량 최대를 검지했다.\n[대처순서]\n    Finisher TopTray 에서 용지를 제거한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "011-947": {
+  "title": "MBX #07 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    해당 Bin 에서 FullStack 을 검지했다.\n[검지조건]\n    FullStack Sensor 가 Stack 량 최대를 검지했다.\n[대처순서]\n    Finisher TopTray 에서 용지를 제거한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "011-949": {
+  "title": "MBX #09 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    해당 Bin 에서 FullStack 을 검지했다.\n[검지조건]\n    FullStack Sensor 가 Stack 량 최대를 검지했다.\n[대처순서]\n    Finisher TopTray 에서 용지를 제거한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "011-950": {
+  "title": "MBX #10 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    해당 Bin 에서 FullStack 을 검지했다.\n[검지조건]\n    FullStack Sensor 가 Stack 량 최대를 검지했다.\n[대처순서]\n    Finisher TopTray 에서 용지를 제거한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "011-944": {
+  "title": "MBX #04 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    해당 Bin 에서 FullStack 을 검지했다.\n[검지조건]\n    FullStack Sensor 가 Stack 량 최대를 검지했다."
+ },
+ "011-948": {
+  "title": "MBX #08 Bin Full Stack",
+  "text": "[Error 분류]\n    Operation Fail"
+ },
+ "012-500": {
+  "title": "Finisher/MACS-ROM 로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Finisher/MACS-ROM 로의 Data 쓰기 처리시에 Error 검지 (DLD 방식시)\n[검지조건]\n    Finisher-ROM( 혹은 DCCf450MP 의 MACS-ROM) 쓰기 중에 Error 를 검지\n    ROM 내용이 삭제되었으므로 정상적으로 작동하지 않는다.\n[대처순서]\n    다시 실시해도 실패하는 경우, Finisher-ROM( 혹은 DCCf450MP 의 MACS-ROM) 을 교환하\n    고 다시 DLD 방식으로 Version Up 을 실시한다."
  }
 }
