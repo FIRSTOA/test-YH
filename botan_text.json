@@ -46,5 +46,41 @@
  "003-327": {
   "title": "IISS-ESS Communication Fail 8",
   "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 송신 Error\n    (Overrun Error)\n[검지조건]\n    Cont 에서 2회의 Command 재송으로 Cont 가 IISS 에서의 ACK 를 수신할 수 없었다.\n    (IISS 측의 HARDWARE 에서 Overrun Error 가 검출되었다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ },
+ "003-330": {
+  "title": "IISS-ESS Communication Fail 11",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 수신 Error\n    (Packet No 부정확)\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신했다. (수신된 Message Packet 의 Packet No.\n    가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ },
+ "003-331": {
+  "title": "IISS-ESS Communication Fail 12",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 수신 Error\n    (Message 길이 부정확)\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신했다. (수신된 Message Packet 의 Message 길이\n    가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
+ },
+ "003-332": {
+  "title": "IISS-ESS Communication Fail 13",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 수신 Error\n    (Check Code Error)"
+ },
+ "003-333": {
+  "title": "IISS-ESS Communication Fail 14",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 수신 Error\n    (Parity Error)\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신한 경우에 발생. (UART 가 가지고 있는 HARDWARE\n    로 Parity Error 를 검지했다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-05 IIT System Fail"
+ },
+ "003-335": {
+  "title": "IISS-ESS Communication Fail 16",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 수신 Error\n    (Overrun Error)"
+ },
+ "003-336": {
+  "title": "IISS-ESS Communication Fail 17",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 IISS 수신 Error\n    (수신중단 Error)\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신한 경우에 발생. (Header 를 인식한 후, 수신\n    중단을 검출했다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-05 IIT System Fail"
+ },
+ "003-337": {
+  "title": "IISS-ESS Communication Fail 18",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    절전복귀후 IISS 로의 Power On Command 에 대해 응답없음\n[검지조건]\n    절전복귀후 IISS 로의 Power On Command 송신한 후, 일 시간이 지나도 응답없음\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-05 IIT System Fail"
+ },
+ "003-338": {
+  "title": "IISS-ESS Communication Fail 19",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    송신 부정확 인수 Error(IITsc 검지)\n[검지조건]\n    Driver 가 Application 으로부터의 부정확한 송신 Parameter 인수를 검지했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다."
+ },
+ "003-339": {
+  "title": "IISS-ESS Communication Fail 20",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    송신 통신 확립 Error(IITsc 검지)\n[검지조건]\n    PAR 의 통신 확립 실패\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-05 IIT System Fail"
  }
 }
