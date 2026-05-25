@@ -882,5 +882,85 @@
  "016-349": {
   "title": "Cont MAC Address Data Fail",
   "text": "[Fault 명칭]\n    Cont MAC Address Data Fail\n[Error 분류]\n    SubSystem"
+ },
+ "016-350": {
+  "title": "Cont SEEP-ROM Fail-1",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont SEEP-ROM 진단 Fail-1\n[검지조건]\n    Product ID 를 취득할 수 없었다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  SEEP ROM 접촉확인 (Pin 구부러짐 또는 부러짐 등)\n    2.  Controller Board 와 BP Board 접촉확인 (Cable 접촉불량 등)\n    3.  Controller Board 교환"
+ },
+ "016-351": {
+  "title": "Cont SEEP-ROM Fail-2",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont SEEP-ROM 진단 Fail-2\n[검지조건]\n    W/R/V Test 에서 Error 가 발생했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  SEEP ROM 접촉확인 (Pin 구부러짐 또는 부러짐 등)\n    2.  Controller Board 와 BP Board 접촉확인 (Cable 접촉불량 등)\n    3.  Controller Board 교환"
+ },
+ "016-352": {
+  "title": "Internal Network Initialize Fail",
+  "text": ""
+ },
+ "016-353": {
+  "title": "Cont IOT-Controller Comunication Fail",
+  "text": "[Fault 명칭]\n    Cont IOT-Controller Comunication Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    IOT 와 ESS 사이에서 통신이 되지 않는다\n[검지조건]\n    IOT 와 ESS 와의 사이에서 통신을 할 수 없는 경우\n[대처순서]\n    1. System Memory 의 탈착.\n    2. ESS 기판의 탈착.\n    3. BP 기판의 탈착.\n    1~3 으로 개선되지 않으면 ESS 기판 ->BP 기판 ->MCU 기판의 순서로 교환한다."
+ },
+ "016-354": {
+  "title": "Cont IIT-Controller Comunication Fail",
+  "text": "[Fault 명칭]\n    Cont IIT-Controller Comunication Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    IIT-Controller 사이에 통신이 되지 않는다\n[검지조건]\n    Scanner 와 ESS 사이에서 통신할 수 없는 경우\n[대처순서]\n    1. System Memory 의 탈착.\n    2. ESS 기판의 탈착.\n    3. IIT 하네스 탈착 (BP 기판측과 트랜스 기판측).\n    1~3 으로 개선되지 않으면 ESS 기판 ->BP 기판 ->IIT 하네스 -> 트랜스 기판의 순서로\n    교환한다."
+ },
+ "016-355": {
+  "title": "Cont IoAsic Fail",
+  "text": "[Fault 명칭]\n    Cont IoAsic Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    Cont IoASIC 진단 Fail\n[검지조건]\n    Scanner 의 진단\n    (Copy Path, Scan Path) 에서 에러가 발생한 경우\n[대처순서]\n    1. System Memory 의 탈착.\n    2. Page Memory 의 탈착.\n    3. ESS 기판의 탈착.\n    4. IIT 하네스 탈착 (BP 기판측과 트랜스 기판측).\n    개선되지 않으면 System Memory ->Page Memory->ESS 기판 ->BP 기판 ->IIT 하네스 ->\n    트랜스 기판의 순서로 교환한다."
+ },
+ "016-356": {
+  "title": "Cont Video ASIC Fail",
+  "text": "[Fault 명칭]\n    Cont Video ASIC Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    Cont VideoASIC 진단 Fail\n[검지조건]\n    IOT 진단 (Print Path) 에서 에러가 발생한 경우\n[대처순서]\n    1. System Memory 의 탈착.\n    2. Page Memory 의 탈착.\n    개선되지 않으면 System Memory ->Page Memory->ESS 기판의 순서로 교환한다."
+ },
+ "016-357": {
+  "title": "Cont EP-Controller Comunication Fail",
+  "text": "[Fault 명칭]\n    Cont EP-Controller Comunication Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    Cont EP 기기 통신 Fail\n[검지조건]\n    EP 기기와 ESS 사이에 통신할 수 없는 경우\n[대처순서]\n    1. EP I/F 접속 케이블 탈착."
+ },
+ "016-358": {
+  "title": "Cont Parallel Card Fail",
+  "text": "[Fault 명칭]\n    Cont Parallel Card Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    Cont Parallel Board 진단 Fail\n[검지조건]\n    Parallel Card 의 내부 레지스터 W/R/V 테스트에서 에러가 발생한 경우\n[대처순서]\n    1. Parallel Board 의 탈착.\n    2. PCI Riser 기판의 탈착.\n    개선되지 않으면 Parallel Board ->PCI Riser Board ->ESS 기판의 순서로 교환한다."
+ },
+ "016-359": {
+  "title": "Cont USB HUB Fail",
+  "text": "[Fault 명칭]\n    Cont USB HUB Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    Cont USB HUB 진단 Fail\n[검지조건]\n    USB HUB 의 접속 수가 잘못된 경우\n[대처순서]\n    ESS 기판을 교환한다."
+ },
+ "016-360": {
+  "title": "Cont UI Fail-1",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont UI 진단 Fail-1\n[검지조건]\n    PCI Config 공간의 W/R/V Test 에서 Error 가 발생했다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  UI Card 분리 / 접속\n    2.  UI Card 교환\n    3.  Controller Board 교환"
+ },
+ "016-361": {
+  "title": "Cont USB 3.0 Device Fail",
+  "text": ""
+ },
+ "016-362": {
+  "title": "Cont UI Fail-2",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont UI 진단 Fail-2\n[검지조건]\n    UI 통신 Error 발생\n    VRAM 의 W/R/V Test 에서 Error 발생. Long Boot Mode 에 들어가면 Command/Status\n    LINE 는 정상.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  UI Cable 분리 / 접속\n    2.  UI Card 분리 / 접속\n    3.  UI Cable 교환\n    4.  UI Card 교환\n    5.  UI 교환\n    6.  Controller Board 교환"
+ },
+ "016-365": {
+  "title": "Cont USB2.0 Device Fail",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont USB2.0 Device 진단 Fail\n[검지조건]\n    PCI Config 공간의 W/R/V Test 또는 내부 Register W/R/V Test 에서 Error 발생.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  Liser Card 분리 / 접속\n    2.  USB2.0Device Card 분리 / 접속\n    3.  Liser Card 교환\n    4.  USB2.0Device Card 교환\n    5.  Controller Board 교환"
+ },
+ "016-366": {
+  "title": "Cont HDD Fail-1",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont HDD 진단 Fail-1\n[검지조건]\n    IDE Controller 의 Check 에서 Error 가 발생 (ideDrv 동등)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  HDD Cable 분리 / 접속\n    2.  HDD 분리 / 접속\n    3.  HDD 와 HDD Cable 교환\n    4.  Controller Board 교환"
+ },
+ "016-368": {
+  "title": "Cont Torino Fail",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Torino 진단 Fail\n[검지조건]\n    PCI Config 공간의 W/R/V Test 또는 내부 Register W/R/V Test 에서 Error 가 발생했\n    다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  Liser Card 분리 / 접속\n    2.  Torino Board 분리 / 접속\n    3.  Liser Card 교환\n    4.  Torino Board 교환\n    5.  Controller Board 교환"
+ },
+ "016-370": {
+  "title": "Cont Fail",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont Rendering Engine 진단 Fail\n[검지조건]\n    Rendering Engine 부의 진단에서 이상을 검출\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  Controller Board 교환"
+ },
+ "016-371": {
+  "title": "Cont USB1.1 Host Fail",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    Cont USB1.1 Host 진단 Fail\n[검지조건]\n    USB1.1 Host 진단에서 이상 검지 (FaxCard 와의 통신을 확인할 수 없다)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 다음을 실시한다.\n    1.  Cable 접속확인\n    2.  Cable 교환\n    3.  FaxCard 교환\n    4.  Controller Board 교환"
+ },
+ "016-372": {
+  "title": "Cont HDD FileSystem Fail-A",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont HDD FileSystem Fail-A\n[검지조건]\n    Boot Diag 가 HDD 의 논리 에러 (파티션 A) 를 검출했다.\n[대처순서]\n    아래의 순서를 실시한다.\n    1.  전원을 OFF/ON 한다.\n    2.  HDD 를 초기화한다."
+ },
+ "016-373": {
+  "title": "Cont HDD FileSystem Fail-B",
+  "text": "[Error 분류]\n    sub\n[Fault 내용]\n    Cont HDD FileSystem Fail-B"
  }
 }
