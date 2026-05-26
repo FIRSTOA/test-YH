@@ -3006,5 +3006,45 @@
  "021-578": {
   "title": "DNS resolve Host (CA) Fail (3Gnet-BOX).",
   "text": "[Fault 명칭]\n    DNS resolve Host (CA) Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    DNS 이름 해결 (CA) Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서의 통신 시에 CA 서버의 이름 해결에 실패했다.\n\n    secep 에서 \"SECEP_BEE_RESOLVE_HOST\" 가 반환되었다.\n[대처순서]\n    3Gnet-BOX 진단 리포트를 출력하고 다음 항목을 확인한다.\n    · 전파상태 상태가 권외 혹은 레벨이 낮은 상태이면 다음을 실시한다\n        - 3Gnet-BOX 의 안테나가 넘어져 있으면 수직으로 세운다\n        - 안테나 주변에 차폐하는 것이 있으면 떨어진 곳에 설치한다\n    · LAN-IP 주소, WAN-DNS 서버 주소 등, USB RNDIS 어댑터에 적절한 값이 입력되어\n    있는지 확인.\n\n    3G 회선 ( 전용선 ) 측에 유지관리 / 통신장애가 발생하지 않는지 확인한다 ( 전사 방송\n    등 ).\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-579": {
+  "title": "DNS Resolver misc Error (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    DNS Resolver misc Error (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    DNS 라이브러리 Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서의 통신 시에 통신 라이브러리 (DNSResolver) 에서 Error 를 검출했다.\n\n    DNSResolver 에서 \"EAI_BADFLAGS\", \"EAI_FAMILY\", \"EAI_MEMORY\", \"EAI_SERVICE\",\n    \"EAI_SOCKTYPE\", \"EAI_BADHINTS\" 또는\n    미분류 Error 가 반환되었다.\n[대처순서]\n    복합기의 Power OFF/ON 을 한다.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-580": {
+  "title": "IP Protocol inactive Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    IP Protocol inactive Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    3Gnet-BOX 와의 IP 통신 불가 Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 를 사용한 3G 통신 시에 TCP/IP 프로토콜 상태가 통신불가 상태라는 것을\n    검출했다.\n\n    Wep 의 통신 시에 검출 또는 secep 에서 \"SECEP_BEE_IP_PROT_INACTIVE\" 가 반환되었다.\n[대처순서]\n    복합기의 Power OFF/ON 을 한다.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트"
+ },
+ "021-581": {
+  "title": "DNS resolve Host (Fwrt) Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    DNS resolve Host (Fwrt) Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    DNS 이름 해결 (Fwrt) Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서의 통신 시에 Repository 서버의 이름 해결에 실패했다.\n\n    DNSResolver 에서 \"EAI_NONAME\" 이 반환되었다.\n[대처순서]\n    3Gnet-BOX 진단 리포트를 출력하고 다음 항목을 확인한다.\n    · 전파상태 상태가 권외 혹은 레벨이 낮은 상태이면 다음을 실시한다.\n    - 3Gnet-BOX 의 안테나가 넘어져있으면 수직으로 세운다.\n    - 안테나 주변에 차폐하는 것이 있으면 떨어진 곳에 설치한다.\n    · LAN-IP 주소, WAN-DNS 서버 주소 등, USB RNDIS 어댑터에 적절한 값이 입력되어\n    있는지 확인한다.\n\n    3G 회선 ( 전용선 ) 측에 유지관리 / 통신장애가 발생하지 않는지 확인한다 ( 전사 방송\n    등 ).\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-582": {
+  "title": "SWupdate and Batch conflict Fail.",
+  "text": "[Error 분류]\n    작업\n[Fault 내용]\n    일괄설정 / 취득과의 경쟁 ( 소프트웨어 갱신 )\n[검지조건]\n    FW 의 다운로드를 시작할 때 일괄설정 / 취득처리 중이라는 것을 검지했다.\n[대처순서]\n    \"유지보수 / 진단\" 화면에서 나와 일괄설정 / 취득처리가 완료될 때까지 기다리고 나\n    서 다시 소프트웨어 갱신을 실행한다.\n    문제가 해결되지 않을 때는 전원 OFF/ON 하고 다시 소프트웨어 갱신을 실행한다."
+ },
+ "021-583": {
+  "title": "A new firmware has detected after the download.",
+  "text": "[Fault 명칭]\n    A new firmware has detected after the download.\n[Error 분류]\n    Job\n[Fault 내용]\n    다운로드 완료 파일 불일치 ( 소프트웨어 업그레이드 )\n[검지조건]\n    다운로드가 끝나고 업그레이드를 시작할 때 소프트웨어가 업그레이드된 서버에 버전\n    을 조회한 결과, 다운로드가 완료된 파일과의 불일치를 검출했다.\n    · 서버에 새로운 파일이 등록되어 있거나 다운로드가 완료된 파일이 깨지는 등의 불\n    일치.\n[대처순서]\n    사용자 조작으로는 발생하지 않으므로 대처 불필요.\n\n    다운로드 완료 후 업그레이드와는 다른 방법으로 펌웨어를 업그레이드한다.\n    · 표준 모드 (NVM 자동 변경 있음 ) 로 업그레이드\n    · FWDL 소프트웨어에 의한 업그레이드"
+ },
+ "021-700": {
+  "title": "Accessory Failure",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    EP Accessory - Service Canceled By Disable-USB Accessory Failure or Disconnect\n[검지조건]\n    아래의 USB 관련 Local Fail 중에서 하나가 발생한 상태에서 작업이 기동되었다.\n    021-210 USB IC Card Reader 미접속\n    021-211 USB IC Card Reader 고장\n    021-212 USB IC Card Reader 미기동\n[대처순서]\n    Fail 이 발생한 작업을 다시 실시하려면 발생한 Local Fail( 후술 ) 을 확인하고, 해\n    당 Fault Code 의 복구순서를 실시한 후에 다시 작업을 실행할 것.\n    ( 021-210, 021-211, 021-212 중에서 하나의 Fault 가 발생중 )\n    Trouble 이 계속되는 경우, Trouble 발생 직후에 \"2.5 LOG\" 에 따라 pfshowinfo9 Log\n    와 Network Log 를 취득하여 기술부문에 문의한다.\n    OF-09 Common Job Fail"
+ },
+ "021-701": {
+  "title": "Accessory Preparing",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    EP Accessory - Service Canceled By Disable-USB Accessory Preparing"
+ },
+ "021-731": {
+  "title": "EP Accessory - Function Disabled",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    EP Accessory - Disabled Function\n[검지조건]\n    MDSS 접속시에는 Coin Kit 에서 Color 금지로 설정한 상태에서 Color Copy Job 요구.\n[대처순서]\n    설정을 확인한다."
+ },
+ "021-732": {
+  "title": "EP Accessory Error732",
+  "text": "[Fault 명칭]\n    EP Accessory Error732\n[Error 분류]\n    Job\n[Fault 내용]\n    EP Accessory - Service Canceled By Disable\n[검지조건]\n    Accessory 가 설치된 상태에서 Card 누락, 요금부족 ( 전자머니 포함 ) 또는 도수 부\n    족이 발생한 경우. 또는 인증되지 않은 경우.\n[대처순서]\n    Xerox Card, Copy Card, 요금 또는 전자머니를 Accessory 에 투입하여 요금 / 도수를\n    충전한다. 또는 인증 ( 예를 들면 IC Card 나 조작부를 통해 ) 을 한다.\n    문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "021-733": {
+  "title": "EP Accessory Error733",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    EP Accessory - Service Canceled By Color Mode Restriction\n[검지조건]\n    Accessory 가 설치되어 있는 상태에서 Color 금지, 또는 상한값에 도달한 경우."
  }
 }
