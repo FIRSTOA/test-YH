@@ -2042,5 +2042,85 @@
  "017-770": {
   "title": "Ssl server cert invalid Fail(POP)",
   "text": "[Fault 명칭]\n    Ssl server cert invalid Fail(POP)\n[Error 분류]\n    Job\n[Fault 내용]\n    Ssl server cert invalid Fail(POP)\n[검지조건]\n    서버 이름과 서버 증명서의 서버 주소가 불일치\n[대처순서]\n    1.  POP 서버 증명서에 기재된 서버 이름과 서버 주소가 올바른지 확인한다.\n    2.  복합기의 설정 [SSL 서버 검증] 을 OFF 해도 회피할 수 있지만, 접속할 POP 서버\n        의 정당성이 보증되지 않으므로 주의한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    문제 발생 직후에 PfShowInfo 8 로그와 네트워크 로그를 취득하여 지원 부서에 연락\n    하고 지시에 따른다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "017-771": {
+  "title": "Pop over ssl internal Fail",
+  "text": "[Fault 명칭]\n    Pop over ssl internal Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    Pop over ssl internal Fail\n[검지조건]\n    POP over ssl 처리 중에 소프트웨어 내부 에러 발생\n[대처순서]\n    1.  다시 한 번 동일한 조작을 실시한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    문제 발생 직후에 PfShowInfo 8 로그와 네트워크 로그를 취득하여 지원 부서에 연락\n    하고 지시에 따른다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "017-772": {
+  "title": "Scan all blank page Fail",
+  "text": ""
+ },
+ "017-787": {
+  "title": "Google Cloud Print Data Error",
+  "text": "[Fault 명칭]\n    Google Cloud Print Data Error\n[Error 분류]\n    작업\n[Fault 내용]\n    Google Cloud Print 데이터 Error\n[검지조건]\n    Google Cloud Print 처리 경로에서 Decomposer 처리 중에 구문 Error, 미정의\n    Command 사용, 매개변수 Error, 파일 파손, Decomposer 내부 Error 가 발생했다.\n[대처순서]\n    디바이스가 지원하는 별도의 프린트 방법 (Google Cloud Print 이외의 프린터 드라이\n    버나 유틸리티) 을 사용해 인쇄한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
+ },
+ "017-789": {
+  "title": "JobLimit Estimation Logic Fail",
+  "text": "[Fault 명칭]\n    JobLimit Estimation Logic Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지"
+ },
+ "017-790": {
+  "title": "Permission-Print in color by day/time",
+  "text": "[Fault 명칭]\n    Permission-Print in color by day/time\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    컬러 프린트가 금지된 시간대에 컬러 프린트를 실시했다.\n[대처순서]\n    허용된 시간대에 프린트를 실시하던가 관리자에게 권한 변경을 요청한다 (사용자 조\n    치와 동일)."
+ },
+ "017-791": {
+  "title": "Permission-Print by day/time",
+  "text": "[Fault 명칭]\n    Permission-Print by day/time\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    프린트가 금지된 시간대에 프린트를 실시했다.\n[대처순서]\n    허용된 시간대에 프린트를 실시하던가 관리자에게 권한 변경을 요청한다 (사용자 조\n    치와 동일)."
+ },
+ "017-792": {
+  "title": "Permission-Print (24/7 never)",
+  "text": "[Fault 명칭]\n    Permission-Print (24/7 never)\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    프린트가 항상 금지된 권한임에도 프린트를 실시했다.\n[대처순서]\n    관리자에게 권한 변경을 요청한다 (사용자 조치와 동일)."
+ },
+ "017-793": {
+  "title": "Permission-Print in color (24/7 never)",
+  "text": "[Fault 명칭]\n    Permission-Print in color (24/7 never)\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    컬러 프린트가 항상 금지된 권한임에도 컬러 프린트를 실시했다.\n[대처순서]\n    관리자에게 권한 변경을 요청한다 (사용자 조치와 동일)."
+ },
+ "017-795": {
+  "title": "Permission-Print application in color",
+  "text": "[Fault 명칭]\n    Permission-Print application in color\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    컬러 프린트가 금지된 응용 프로그램으로 컬러 프린트를 실시했다.\n[대처순서]\n    관리자에게 권한 변경을 요청한다 (사용자 조치와 동일)."
+ },
+ "017-796": {
+  "title": "Permission-Print application in simplex",
+  "text": "[Fault 명칭]\n    Permission-Print application in simplex\n[Error 분류]\n    Job"
+ },
+ "017-797": {
+  "title": "Permission-Print Tray",
+  "text": "[Fault 명칭]\n    Permission-Print Tray\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    금지된 급지 트레이를 지정한 프린트를 실시했다.\n[대처순서]\n    관리자에게 권한 변경을 요청한다 (사용자 조치와 동일)."
+ },
+ "017-799": {
+  "title": "Permission-Print 1-sided documents",
+  "text": "[Fault 명칭]\n    Permission-Print 1-sided documents\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    단면 프린트가 금지었음에도 단면 프린트를 실시했다.\n[대처순서]\n    관리자에게 권한 변경을 요청한다 (사용자 조치와 동일)."
+ },
+ "018-400": {
+  "title": "IPSEC Error (Configuration Mismatch)",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    IPSEC Error( 설정 부정합 )\n[검지조건]\n    IPSEC 가 Enable 로 되어 있지만 인증 방식 =[ 사전 공유 비밀번호 ] 에서 비밀번호가\n    미설정 또는 인증 방식 =[Digital 서명 ] 에서 IPSEC 인증서 미설정 상태이다.\n[대처순서]\n    IPSEC 설정의 부정합을 해결하고 다시 IPSEC 을 Enable 로 한다. IPSEC 의 부정합에는\n    인증 방식 =[ 사전 공유키 ] 에서 비밀번호 미설정, 인증 방식 =[ 디지털 서명 ] 에서\n    IPSEC 인증서 미설정이 있으므로 이것을 설정한다."
+ },
+ "018-401": {
+  "title": "Incosistent SIP configuration",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    SIP 서버 설정의 모순 검출\n[검지조건]\n    Device 의 [IP 모드 ] 와 [SIP 주소 설정 방법 ] 에 모순이 있거나 [IP 모드 ] 와 [SIP\n    주소 ] 에 모순이 있음을 검지했다.\n[대처순서]\n    ·  [IP 모드 ] 가 IPv4 이고 [IP 주소 설정 방법 ] 이 수동으로 설정된 경우, [SIP 주소\n        설정 방법 ] 은 수동으로 설정한다.\n    ·  [IP 모드 ] 가 IPv4 이고 [IP 주소 설정 방법 ] 이 수동 이외로 설정된 경우, [SIP 주\n        소 설정 방법 ] 은 수동 또는 DHCP 로 설정한다.\n    ·  [IP 모드 ] 가 IPv6 인 경우, [SIP 주소 설정 방법 ] 은 수동 또는 DHCPv6 으로 설정한다.\n    ·  [SIP 주소 설정 방법 ] 을 수동으로 설정한 상태에서 주소를 FQDN 문자열로 설정한 경\n        우, DNS 에서 정확한 주소해결이 가능하도록 DNS 서버를 설정한다.\n    ·  [IP 모드 ] 가 IPv4 이고 [IP 주소 설정 방법 ] 가 수동으로 설정된 경우, [SIP 주소 ]\n        는 IPv4 주소 또는 FQDN 문자열로 설정한다.\n    ·  [IP 모드 ] 가 IPv6 인 경우, [SIP 주소 ] 는 IPv6 주소 또는 FQDN 문자열로 설정한다.\n    ·  Primary SIP Register 서버주소와 Primary SIP 프록시 서버주소를 반드시 설정한다."
+ },
+ "018-405": {
+  "title": "UserAccount Disable",
+  "text": "[Fault 명칭]\n    UserAccount Disable\n[Error 분류]\n    Information"
+ },
+ "018-437": {
+  "title": "LPD Communication Timeout",
+  "text": "[Fault 명칭]\n    LPD Communication Timeout\n[Error 분류]\n    Information\n[Fault 내용]\n    LPD 데이터 수신 시간 제한 * 리포트 표시만\n[검지조건]\n    규정 시간 이내에 호스트로부터 송신된 데이터를 수신할 수 없다. 이 C/L 은 조작부\n    에 표시되지 않고 오류 이력 리포트에만 표시.\n[대처순서]\n    호스트 측이 Windows 의 표준 TCPIP 포트를 이용하며, 바이트 카운트 활성화가 [Off]\n    인 경우는 [On] 으로 변경한다.\n    TCP 수신 창 크기 (C/L: 771-046) 를 변경한다.\n    통신 시간 제한의 설정값을 크게 한다.\n\n    2.4 NET 계열 불량 조사는 다음 항목을 실시한다.\n    [2.4.3 전혀 나오지 않는다, 인쇄되지 않는다 ]\n    [2.4.5.3 TCP/IP(LPD) 장애 시의 확인작업 흐름 ]\n    문제 발생 직후에 PfShowInfo 8 로그와 네트워크 로그를 채취하여 지원부서에 연락\n    하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-438": {
+  "title": "LPD Print Data size exceeding the limit",
+  "text": "[Fault 명칭]\n    LPD Print Data size exceeding the limit\n[Error 분류]\n    Information\n[Fault 내용]\n    LPD 인쇄 데이터의 최대 크기 초과 * 리포트에만 표시\n[검지조건]\n    호스트에서 송신된 인쇄 데이터의 크기가 LPD 가 수신할 수 있는 최대 크기를 초과했\n    다. 이 C/L 은 조작부에 표시되지 않고 오류 이력 리포트에만 표시."
+ },
+ "018-439": {
+  "title": "Wi-Fi Direct stops by the conflict setting for Ad-hoc",
+  "text": "[Fault 명칭]\n    Wi-Fi Direct stops by the conflict setting for Ad-hoc\n[Error 분류]\n    Information\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Wi-Fi Direct 기동 시 Wi-Fi Network Type Ad-hoc 설정을 검출했다.\n[대처순서]\n    기계의 Wi-Fi Network Type 설정을 Infrastructure 로 변경한다 (사용자 조치와 동일\n    )."
+ },
+ "018-440": {
+  "title": "Wi-Fi Direct stops by the conflict setting for IPv6 mode",
+  "text": "[Fault 명칭]\n    Wi-Fi Direct stops by the conflict setting for IPv6 mode\n[Error 분류]\n    Information\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Wi-Fi Direct 기동 시 IP Protocol Stack 에 관한 구성정보에서 IPv6 모드 설정을 검\n    출했다.\n[대처순서]\n    기계의 IP Protocol Stack 에 관한 구성정보 설정을 Dual 또는 IPv4 모드로 변경한다\n    (사용자 조치와 동일)."
+ },
+ "018-441": {
+  "title": "Wi-Fi Direct stops by the conflict setting for 5GHz mode",
+  "text": "[Fault 명칭]\n    Wi-Fi Direct stops by the conflict setting for 5GHz mode"
  }
 }
