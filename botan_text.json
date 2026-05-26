@@ -4086,5 +4086,85 @@
  "058-337": {
   "title": "Fusing Paper Quality Operation Mistake Fail",
   "text": "참조 BSD : -\n\n설정된 용지종류와 다른 종류의 용지가 공급된다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\nTray 설정을 확인하고 용지 설정을 바르게 변경한다."
+ },
+ "060-341": {
+  "title": "LPH Data Fail Y",
+  "text": "참고 FIP\nCF-005 (LPH Data Fail) FIP 참고."
+ },
+ "060-342": {
+  "title": "LPH Data Fail M",
+  "text": "참고 FIP\nCF-005 (LPH Data Fail) FIP 참고."
+ },
+ "060-344": {
+  "title": "LPH Data Fail K",
+  "text": "참고 FIP\nCF-005 (LPH Data Fail) FIP 참고."
+ },
+ "060-345": {
+  "title": "LPH Timeout Fail Y",
+  "text": "참고 FIP\nCF-006 (LPH Timeout Fail) FIP 참고."
+ },
+ "060-346": {
+  "title": "LPH Timeout Fail M",
+  "text": "참고 FIP\nCF-006 (LPH Timeout Fail) FIP 참고."
+ },
+ "060-347": {
+  "title": "LPH Timeout Fail C",
+  "text": "참고 FIP\nCF-006 (LPH Timeout Fail) FIP 참고."
+ },
+ "060-348": {
+  "title": "LPH Timeout Fail K",
+  "text": "참고 FIP\nCF-006 (LPH Timeout Fail) FIP 참고."
+ },
+ "060-350": {
+  "title": "LPH Reset Fail M",
+  "text": "참고 FIP\nCF-007 (LPH Reset Fail) FIP 참고."
+ },
+ "060-351": {
+  "title": "LPH Reset Fail C",
+  "text": "참고 FIP\nCF-007 (LPH Reset Fail) FIP 참고."
+ },
+ "060-352": {
+  "title": "LPH Reset Fail K",
+  "text": "참고 FIP\nCF-007 (LPH Reset Fail) FIP 참고."
+ },
+ "060-353": {
+  "title": "LPH Pixcel Count Diff Fail Y",
+  "text": "참고 FIP\nCF-008 (LPH Pixcel Count Diff Fail) FIP 참고."
+ },
+ "060-354": {
+  "title": "LPH Pixcel Count Diff Fail M",
+  "text": "참고 FIP\nCF-008 (LPH Pixcel Count Diff Fail) FIP 참고."
+ },
+ "060-355": {
+  "title": "LPH Pixcel Count Diff Fail C",
+  "text": "참고 FIP\nCF-008 (LPH Pixcel Count Diff Fail) FIP 참고."
+ },
+ "060-356": {
+  "title": "LPH Pixcel Count Diff Fail K",
+  "text": "참고 FIP\nCF-008 (LPH Pixcel Count Diff Fail) FIP 참고."
+ },
+ "060-357": {
+  "title": "CONTIF Error Fail #1",
+  "text": "참고 FIP\nCF-009 (CONTIF Error Fail) FIP 참고."
+ },
+ "060-358": {
+  "title": "CONTIF Error Fail #2",
+  "text": "참고 FIP\nCF-009 (CONTIF Error Fail) FIP 참고."
+ },
+ "060-360": {
+  "title": "CONTIF Error Fail #4",
+  "text": "참고 FIP\nCF-009 (CONTIF Error Fail) FIP 참고."
+ },
+ "061-358": {
+  "title": "LPH Config Fail Y",
+  "text": "참고 FIP\nCF-011 (LPH Config Fail) FIP 참고."
+ },
+ "061-361": {
+  "title": "LPH Config Fail K",
+  "text": "참고 FIP\nCF-011 (LPH Config Fail) FIP 참고."
+ },
+ "061-363": {
+  "title": "LPH Read Fail M",
+  "text": "참고 FIP\nCF-012 (LPH Read Fail) FIP 참고."
  }
 }
