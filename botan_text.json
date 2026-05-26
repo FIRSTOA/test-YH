@@ -4246,5 +4246,45 @@
  "063-210": {
   "title": "Extension EEPROM Fail",
   "text": "참조 BSD : CH5.11, CH5.21\n\nExtension EEPROM 에 대한 쓰기불량 또는 EEPROM 과의 통신불량을 검지했다.\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 DCDC PWB J745 와 Controller PWB J390 사이 Cable 의 단선, 단락 또\n    는 접촉불량을 점검한다.\n3.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  DCDC PWB (PL 54.4, PL 55.4)\n    ·  Controller PWB (PL 35.2)"
+ },
+ "071-100": {
+  "title": "Tray 1 Miss Pre Feed Jam (Mid/High model)",
+  "text": "참조 BSD : CH8.1, CH7.8\n\nTray 1 에서 용지 급지가 시작된 후 규정시간이 지나도 Tray 1 Pre Feed Sensor 가 On 되\n지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Tray 1 Pre Feed Sensor (DC330[071-105]) 작동불량. (PL 9.5)\n·  Tray 1 Feed/Lift Motor(DC330[071-001] (Feed)) 작동불량. (PL 9.5)\n·  Tray 1 의 Feed Roll, Retard Roll, Nudger Roll 의 오염, 마모, 열화로 인한 이송불\n    량.\n·  Drive Gear 의 마모 및 파손.\n·  Bottom Plate 상의 Pad 조립불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  Sensor Cover 및 Roll 이탈.\n\n점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다 Fail\n발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n\n·  Feed/Nudger/Retard Roll (3Piece Set) (PL 9.5)\n·  Tray1 Feeder Assembly (PL 9.4)\n·  Motor Drive PWB (PL 18.2)"
+ },
+ "071-105": {
+  "title": "Regi Sensor On Jam (Tray 1)",
+  "text": "참조 BSD : CH8.7, CH8.3, CH7.8\n\nTray 1 에서의 용지 이송에서 규정된 Regi Motor On 회전 개시시간 전임에도 Regi Sensor\n가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Regi Sensor (DC330[077-103]) 작동불량. (PL 14.4)\n·  Take Away Motor 1 (DC330[077-050]) 작동불량. (PL 15.2)\n·  Tray 1 Feed/Lift Motor(DC330[071-001] (Feed)) 작동불량. (PL 9.5)\n·  T/A Roll 1, Tray 1 의 Feed Roll, Retard Roll, Nudger Roll 의 오염, 마모, 열화로\n    인한 이송불량.\n·  Drive Gear 의 마모 및 파손.\n·  LH Unit 의 Latch 불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  Take Away Pinch Roll 을 위로 올리는 구조 주변이 이탈되거나 느슨해지지 않았는가.\n·  사양 이외의 용지 사용.\n·  Regi Transport Assembly 의 조립불량. (PL 15.1)"
+ },
+ "071-212": {
+  "title": "Tray 1 Paper Size Sensor Broken",
+  "text": "참조 BSD : CH7.1\n\nTray 1 Paper Size Sensor 에서 비정상적인 AD 값을 검출했다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  트레이 뒷면 바닥의 Link 이탈, 파손\n·  트레이 Rear 측의 Actuator 작동불량.\n·  Tray 1 Paper Size Sensor (DC140[071-200], DC330[071-104]) 작동불량. (PL 9.1)\n·  트레이 내의 용지 세트 오류.\n·  Connector 접촉불량.\n·  트레이 내에 용지 이외의 물건이 방치\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "072-100": {
+  "title": "Tray 2 Miss Pre Feed Jam (Mid/High model)",
+  "text": "참조 BSD : CH8.1, CH7.9\n\nTray 2 에서 용지 급지가 시작된 후 규정시간이 지나도 Tray 2 Pre Feed Sensor 가 On 되\n지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Tray 2 Pre Feed Sensor (DC330[072-105]) 작동불량. (PL 9.6)\n·  Tray 2 Feed/Lift Motor(DC330[072-001] (Feed)) 작동불량. (PL 9.6)\n·  Tray 2 의 Feed Roll, Retard Roll, Nudger Roll 의 오염, 마모, 열화로 인한 이송불\n    량.\n·  Drive Gear 의 마모 및 파손.\n·  Bottom Plate 상의 Pad 조립불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  Sensor Cover 및 Roll 이탈.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "072-105": {
+  "title": "Regi Sensor On Jam (Tray 2)",
+  "text": "참조 BSD : CH8.7, CH8.3, CH8.4, CH7.9\n\nTray 2 에서의 용지 이송에서 규정된 Regi Motor On 회전 개시시간 전임에도 Regi Sensor\n가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Regi Sensor (DC330[077-103]) 작동불량. (PL 14.4)\n·  Take Away Motor 1 (DC330[077-050]) 작동불량. (PL 15.2)\n·  Take Away Motor 2 (DC330[077-051]) 작동불량. (PL 15.2)\n·  Tray 2 Feed/Lift Motor(DC330[072-001] (Feed)) 작동불량. (PL 9.6)\n·  T/A Roll 2, MSI T/A Roll, Tray 2 의 Feed Roll, Retard Roll, Nudger Roll 의 오염\n    , 마모, 열화로 인한 이송불량.\n·  Drive Gear 의 마모 및 파손.\n·  LH Unit 의 Latch 불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  MSI TA Assembly 조립불량. (PL 13.1)\n·  Regi Transport Assembly 의 조립불량. (PL 15.1)\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "072-107": {
+  "title": "MSI Feed Out Sensor On Jam (Tray 2)",
+  "text": "참조 BSD : CH8.3, CH8.4, CH7.9\n\nTray 2 에서 용지 급지가 시작된 후 규정시간이 지나도 MSI Feed Out Sensor 가 On 되지 않\n는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  MSI Feed Out Sensor (DC330[077-104]) 작동불량. (PL 13.2)\n·  Take Away Motor 1 (DC330[077-050]) 작동불량. (PL 15.2)\n·  Take Away Motor 2 (DC330[077-051]) 작동불량. (PL 15.2)\n·  Tray 2 Feed/Lift Motor(DC330[072-001] (Feed)) 작동불량. (PL 9.6)\n·  T/A Roll 2, MSI T/A Roll, Tray 2 의 Feed Roll, Retard Roll, Nudger Roll 의 오염\n    , 마모, 열화로 인한 이송불량.\n·  Drive Gear 의 마모 및 파손.\n·  LH Unit 의 Latch 불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  MSI TA Assembly 조립불량. (PL 13.1)\n·  Regi Transport Assembly 의 조립불량. (PL 15.1)\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "073-100": {
+  "title": "Tray 3 Miss Pre Feed Jam (2TM의 Low model 제외 )",
+  "text": "참조 BSD : CH8.2, CH7.10\n\nTray 3 에서 용지 급지가 시작된 후 규정시간이 지나도 Tray 3 Pre Feed Sensor 가 On 되\n지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Tray 3 Pre Feed Sensor (DC330[073-105]) 작동불량. (PL 10.6, PL 11.7)\n·  Tray 3 Feed/Lift Motor(DC330[073-001] (Feed)) 작동불량. (PL 10.6, PL 11.7)\n·  Tray 3 의 Feed Roll, Retard Roll, Nudger Roll 의 오염, 마모, 열화로 인한 이송불\n    량.\n·  Drive Gear 의 마모 및 파손.\n·  Bottom Plate 상의 Pad 조립불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  Sensor Cover 및 Roll 이탈.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "073-101": {
+  "title": "Tray 3 Miss Feed Jam",
+  "text": "참조 BSD : CH8.5, CH8.6, CH7.10\n\nTray 3 에서 용지 급지가 시작된 후 규정시간이 지나도 Feed Out Sensor 3 가 On 되지 않\n는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Feed Out Sensor 3 (DC330[073-103]) 작동불량. (PL 10.3, PL 11.3)\n·  Tray 3 Feed/Lift Motor(DC330[073-001] (Feed)) 작동불량. (PL 10.6, PL 11.7)\n·  2TM/TTM Take Away Motor (DC330[077-035]) 작동불량. (PL 10.4, PL 11.4)\n·  T/A Roll 3, Tray 3 의 Feed Roll, Retard Roll, Nudger Roll 의 오염, 마모, 열화로\n    인한 이송불량.\n·  Drive Gear 의 마모 및 파손.\n·  LH Cover Assembly Latch 불량. (PL 14.1)\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "073-210": {
+  "title": "Tray 3 Lift Up Fail",
+  "text": "참조 BSD : CH7.10, CH7.11\n\nTray 3 Lift Up 시 규정시간 이내에 Tray 3 Level Sensor 가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Tray 3 Level Sensor (DC330[073-102]) 작동불량. (PL 10.6, PL 11.7)\n·  Tray 3 Feed/Lift Motor (DC330[073-002] (Lift Up)) 작동불량. (PL 10.6, PL 11.7)\n·  Bottom Plate 와 Tray 3 Feed/Lift Motor 사이의 구동 시스템 작동불량\n·  트레이 내의 용지 세트 오류.\n·  Tray 안쪽으로 용지 보급.\n·  트레이 내에 용지 이외의 물건이 방치\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "074-100": {
+  "title": "Tray 4 Miss Pre Feed Jam (2TM의 Low model 제외 )",
+  "text": "참조 BSD : CH8.2, CH7.12, CH7.13\n\nTray 4 에서 용지 급지가 시작된 후 규정시간이 지나도 Tray 4 Pre Feed Sensor 가 On 되\n지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Tray 4 Pre Feed Sensor (DC330[074-105]) 작동불량. (PL 10.6, PL 11.8)\n·  Tray 4 Feed/Lift Motor(DC330[074-001] (Feed)) 작동불량. (PL 10.6, PL 11.8)\n·  Tray 4 의 Feed Roll, Retard Roll, Nudger Roll 의 오염, 마모, 열화로 인한 이송불\n    량.\n·  Drive Gear 의 마모 및 파손.\n·  Bottom Plate 상의 Pad 조립불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  Sensor Cover 및 Roll 이탈.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
  }
 }
