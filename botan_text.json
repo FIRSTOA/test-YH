@@ -1722,5 +1722,125 @@
  "016-796": {
   "title": "Document insert operation Error",
   "text": ""
+ },
+ "016-797": {
+  "title": "Media Reader:Image File Read Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    [Media Reader] [Media Reader] Image File 취득 Error(Job 도중에 발생 )- 해당 Job\n    만을 위한 Job Abort\n[검지조건]\n    Media 로의 Access 가 발생하는 조작시에, MediaLib 에서 이 Error 를 검지한 경우\n[대처순서]\n    1.  PC 에서 Media 기록 내용 확인 ... 인쇄 대상 File 의 Image 가 PC 에 표시되는지 여부\n        를 확인, 재설정\n        그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n        OF-09 Common Job Fail"
+ },
+ "016-798": {
+  "title": "No TrustMarking Option",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    No TrustMarking Option\n[검지조건]\n    Decomposer 가 S-Image lib 를 호출하면 HD 없음 Error 가 나타났다.\n[대처순서]\n    필요한 Option(HDD) 을 장착한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail\n    OF-02 HDD System Fail"
+ },
+ "016-799": {
+  "title": "PLW Print Instruction Fail",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "016-910": {
+  "title": "Required Resource Not Ready (IOTsc detect)",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    Required Resource Not Ready\n[검지조건]\n    프린트 지시에서 요구된 용지, 스테이플침이 세트되어 있지 않다.\n[대처순서]\n    용지를 보급하거나 교환하고, 스테이플침을 보급한다.\n    Trouble 이 계속되는 경우, 아래로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-911": {
+  "title": "Multi-Paper Required On A Single Tray",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    Multi-Paper Required On A Single Tray\n[검지조건]\n    프린트 지시에서 요구된 용지, 스테이플침이 보급되어 있지 않다.\n    또는\n    동일한 Tray 에 대해 다른 크기 또는 종류의 용지로 교환할 필요가 있다.\n[대처순서]\n    해당 작업을 강제로 실행한 후 조작부 표시에 따라 용지의 보급, 용지의 교환, 스테\n    이플침의 보급을 실시한다. 또는 해당 작업을 취소한다. Trouble 이 계속되는 경우\n    에는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "016-912": {
+  "title": "Insert Position NG Before Perfect Bind Cover",
+  "text": "[Fault 명칭]\n    Insert Position NG Before Perfect Bind Cover\n[Error 분류]\n    Operation"
+ },
+ "016-914": {
+  "title": "Page Delete NG Perfect Bind Body All Page",
+  "text": "[Fault 명칭]\n    Page Delete NG Perfect Bind Body All Page\n[Error 분류]\n    Operation\n[Fault 내용]\n    바인더 제본 본문 페이지 모두 삭제\n[검지조건]\n    바인더 제본 문서의 본문 페이지가 없어질 것 같은 페이지 삭제 지시를 검지했을 때\n    * 합지 페이지가 남아 있어도 본문 페이지가 없으면 이러한 Fault 로 한다.\n[대처순서]\n    작업 취소 후 검지 조건을 회피하는 작업 지정을 실시한다."
+ },
+ "016-916": {
+  "title": "HELD_BY_JOB_LIMITS",
+  "text": "[Fault 명칭]\n    HELD_BY_JOB_LIMITS"
+ },
+ "016-917": {
+  "title": "Job Held by Toner Y Life End (Operation)",
+  "text": "[Fault 명칭]\n    Job Held by Toner Y Life End (Operation)\n[Error 분류]\n    Operation\n[Fault 내용]\n    Job Held by Toner Y Life End (Operation)\n[검지조건]\n    Y 토너 잔량이 없고 프린트를 계속할 수 없는 상태에서 컬러 프린트 지시가 있다.\n[대처순서]\n    Y Toner Cartridge 교환 문제가 계속되는 경우는 범용 Sensor FIP 를 참고하여 Sensor\n    를 점검한다.\n    그래도 문제가 계속되는 경우는 다음을 진행한다.\n    OF-09 Common Job Fail"
+ },
+ "016-918": {
+  "title": "Job Held by Toner M Life End (Operation)",
+  "text": "[Fault 명칭]\n    Job Held by Toner M Life End (Operation)\n[Error 분류]\n    Operation\n[Fault 내용]\n    Job Held by Toner M Life End (Operation)\n[검지조건]\n    M 토너 잔량이 없고 프린트를 계속할 수 없는 상태에서 컬러 프린트 지시가 있다.\n[대처순서]\n    M Toner Cartridge 교환 문제가 계속되는 경우는 범용 Sensor FIP 를 참고하여 Sensor\n    를 점검한다.\n    그래도 문제가 계속되는 경우는 다음을 진행한다.\n    OF-09 Common Job Fail"
+ },
+ "016-919": {
+  "title": "Job Held by Toner C Life End (Operation)",
+  "text": ""
+ },
+ "016-920": {
+  "title": "Job Held by ATS/APS No Destination Error",
+  "text": "[Fault 명칭]\n    Job Held by ATS/APS No Destination Error\n[Error 분류]\n    Operation\n[Fault 내용]\n    Job Held by ATS/APS No Destination Error, ATS/APS NG(No Paper 이외 )\n[검지조건]\n    프린트에서 지시된 용지가 트레이에 세트되어 있지 않다.\n[대처순서]\n    용지 설정을 변경한다.\n    그래도 문제가 계속되는 경우는 다음을 진행한다.\n    OF-09 Common Job Fail"
+ },
+ "016-921": {
+  "title": "DADF MULTI FEED DETECTION",
+  "text": "[Fault 명칭]\n    DADF MULTI FEED DETECTION\n[Error 분류]\n    Operation\n[Fault 내용]\n    DADF 중송 검지\n[검지조건]\n    중송 검지가 있는 DADF 작업 중에 DADF 가 005-193(DADF 중송 ) 을 검지했다.\n    (검지 시 IITsc 가 016-921 로 변환되어 발행)\n[대처순서]\n    전원을 OFF/ON 한다. 문제가 계속되는 경우는 다음을 실시한다 (사용자 조치와 동일).\n    1.  일반 JAM 과 동일하게 원고 복귀를 실시한다. (다시 중송 검지할 가능성이 있으\n        므로 원고를 처리한다)\n    2.  Recovery 작업 진행 시 [중송 검지함 / 안 함] 을 선택하여 작업을 계속한다."
+ },
+ "016-940": {
+  "title": "Duplex Mix Size NG",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    양면 지정 Mix Size NG\n[검지조건]\n    양면출력을 지정해서 Job 을 개시 후, 양면의 표면과 뒷면의 Size 차이를 검출했을 때\n[대처순서]\n    검지조건을 회피하는 Job 을 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-941": {
+  "title": "Booklet Duplex Mix Size NG",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Booklet 지정 Mix Size NG\n[검지조건]\n    팜플렛 /Booklet 을 지정해서 Job 을 개시한 후, Image 있는 Page 에 Size/ 방향이 혼\n    합되어 있는 것을 검출한 경우\n[대처순서]\n    검지조건을 회피하는 Job 을 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-942": {
+  "title": "Page Delete Duplex Mix Size NG",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Page 삭제 양면 Mix Size NG\n[검지조건]\n    양면 지정 Page 를 삭제한 결과, 양면의 표면과 뒷면 Size 차이를 검출했을 때\n[대처순서]\n    검지조건을 회피하는 Job 을 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-943": {
+  "title": "Insert doc Duplex Mix Size NG",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    문서 삽입 양면 Mix Size NG"
+ },
+ "016-947": {
+  "title": "APS No Destination Error",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    APS No Destination Error\n[검지조건]\n    APS( 자동용지 선택 ) 문서를 선택 또는 APS 를 설정해서 Job 을 개시한 후, 자동용지\n    선택 대상 Size 의 용지가 Set 된 Tray 가 없는 것이 판명된 경우\n[대처순서]\n    검지조건을 회피하는 Job 을 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-948": {
+  "title": "Small Book action NG",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    팜플렛 지정 표지, 합지, 백지 NG\n[검지조건]\n    팜플렛 /Booklet 을 지정해서 Job 개시 후, Image 있는 표지 또는 합지 또는 Blank 의\n    Page 가 있는 것이 판명된 경우\n[대처순서]\n    검지조건을 회피하는 Job 을 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-981": {
+  "title": "HDD access Error",
+  "text": "[Error 분류]\n    Notice"
+ },
+ "016-983": {
+  "title": "Image Log HDD Full",
+  "text": "[Error 분류]\n    Notice\n[Fault 내용]\n    작성 보증 Level [고] 시, Log Image 저장 영역의 Disk Full 발생시에 Copy/Scan\n    Job 의 Cancel 에 대한 User 개입용"
+ },
+ "016-985": {
+  "title": "Data size over flow (Scan to Email)",
+  "text": "[Error 분류]\n    Notice Error\n[Fault 내용]\n    Scan to Email 에서 Data Size Over\n[검지조건]\n    본체에서 설정하는 [Mail Size 의 상한 설정] 에 설정되어 있는 Size 를 초과했다.\n[대처순서]\n    원고 매수를 줄이고, 해상도를 내리고, 다중값 Scan 인 경우에는 압축률을 내리도록\n    의뢰한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "017-500": {
+  "title": "JobLimit Illegal Response",
+  "text": "[Fault 명칭]\n    JobLimit Illegal Response\n[Error 분류]\n    Job\n[Fault 내용]\n    JobLimit Illegal Response\n[검지조건]\n    JobLimitServer 에서 잘못된 응답을 검지했다.\n[대처순서]\n    작업 매개변수 설정을 확인한다.\n    같은 Fail 이 계속 발행하는 경우 OF-09 Common Job Fail 등을 실시한다."
+ },
+ "017-504": {
+  "title": "JobLimit Server Connection Fail (LUI)",
+  "text": "[Fault 명칭]\n    JobLimit Server Connection Fail (LUI)"
+ },
+ "017-506": {
+  "title": "JobLimit Rejected by Remote Server",
+  "text": "[Fault 명칭]\n    JobLimit Rejected by Remote Server\n[Error 분류]\n    Job\n[Fault 내용]\n    JobLimit Rejected by Remote Server\n[검지조건]\n    JobLimitServer 에서 Reject 이 반환되었다. (작업은 취소됨)\n[대처순서]\n    관리자에게 연락하여 조치를 의뢰한다."
+ },
+ "017-507": {
+  "title": "Disabled Direct Print",
+  "text": "[Fault 명칭]\n    Disabled Direct Print\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지"
+ },
+ "017-516": {
+  "title": "File name acquisition from SFTP server Fail",
+  "text": "[Fault 명칭]\n    File name acquisition from SFTP server Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    SFTP 서버로 연결 시 서버 파일 / 폴더명 취득에 실패했다.\n[대처순서]\n    Server 의 Access 권한을 확인한다 (사용자 조치와 동일).\n    문제가 계속되는 경우 문제 발생 직후에 pfshowinfo 8 로그와 네트워크 로그를 취득\n    하여 지원부서에 연락한다 (2.5.1 LOG)."
+ },
+ "017-520": {
+  "title": "Login name or a password in SFTP Fail",
+  "text": "[Fault 명칭]\n    Login name or a password in SFTP Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    SFTP 서버로의 로그인에 실패했다.\n[대처순서]\n    로그인 이름 (사용자 이름) 및 암호가 정확한지 확인한다. 문제가 계속되는 경우 로\n    그를 취득하여 지원부서에 연락한다 (2.5.1 LOG)."
+ },
+ "017-522": {
+  "title": "File creation in SFTP Fail",
+  "text": "[Fault 명칭]\n    File creation in SFTP Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    SFTP 서버의 파일 작성에 실패했다.\n[대처순서]\n    지정한 파일명이 적절한지, 저장위치에 빈 영역이 있는지 확인한다 (사용자 조치와\n    동일).\n    문제가 계속되는 경우 문제 발생 직후에 pfshowinfo 9 로그와 네트워크 로그를 취득\n    하여 지원부서에 연락한다 (2.5.1 LOG)."
+ },
+ "017-525": {
+  "title": "Host name solution in SFTP Fail",
+  "text": "[Fault 명칭]\n    Host name solution in SFTP Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    SFTP 서버로 연결 전 DNS 로 액세스한 타이밍에서 호스트 이름 (= 서버 이름) 해결에\n    실패했다.\n[대처순서]\n    DNS 연결 또는 수신자 서버 이름이 DNS 에 등록되었는지 확인한다 (사용자 조치와 동\n    일).\n    문제가 계속되는 경우 문제 발생 직후에 pfshowinfo 9 로그와 네트워크 로그를 취득\n    하여 지원부서에 연락한다 (2.5.1 LOG)."
  }
 }
