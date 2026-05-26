@@ -4366,5 +4366,45 @@
  "089-314": {
   "title": "IReCT Error Fail #2",
   "text": "참고 FIP\nCF-017 (IReCT Error Fail) FIP 참고."
+ },
+ "089-600": {
+  "title": "RC Sample Lateral Fail-A1",
+  "text": "참조 BSD : CH6.11\n\nA1( 미세 조정 패턴 ), C Patch 를 검출할 때 기준이 되는 K 색의 주주사 위치에 이상이 있\n다. ( 이 Fail 은 숨은 Fail 이다. Color Registration 을 보장할 수 없는 상태이며 History\n에만 등록된다 )\n\n    주기 : Chain No.089 (RegiCon) 의 Fail 이 다수 발생한 경우에는 아래 표의 우선순위에 따\n    라 조치할 것. 우선순위가 높은 Fail 을 처리함으로써 기타 Fail 도 복구되는 경우가 있다."
+ },
+ "089-601": {
+  "title": "RC Sample Block Fail-A1-In",
+  "text": "참조 BSD : CH6.11\n\nA1( 미세조정 패턴 ), C Patch 를 검출할 때 Rear MOB Sensor 의 Patch 가 지정된 유효\nSample Lock 수를 충족시키지 못했다. ( 이 Fail 은 숨은 Fail 이다. Color Registration\n을 보장할 수 없는 상태이며 History 에만 등록된다 )\n\n    주기 : Chain No. 089 (RegiCon) 의 Fail 이 복수 발생한 경우는 089-600 FIP 의 주기를 참\n    고하여 우선순위가 높은 Fail 부터 조치할 것.\n\n원인 / 대처방법\nRear MOB Sensor 검지부의 오염, Connector 분리, Wire 단선, 단락 또는 접촉 불량을\n점검한다.\n\n점검에서 문제가 없으면 MOB/ADC Sensor Assembly (PL 6.1) 를 교환한다. 교환 후\nDiagnostic 의 DC675 Registration Control 설정 주기 (6.4.2.23) 와 DC937 Procon ON\nPrint(6.4.2.28) 를 DC675, DC937 의 순서대로 실행한다."
+ },
+ "089-603": {
+  "title": "RC Sample Block Fail-A1-Out",
+  "text": "참조 BSD : CH6.11\n\nA1( 미세조정 패턴 ), C Patch 를 검출할 때 Front MOB Sensor 의 Patch 가 지정된 유효\nSample Lock 수를 충족시키지 못했다. ( 이 Fail 은 숨은 Fail 이다. Color Registration\n을 보장할 수 없는 상태이며 History 에만 등록된다 )\n\n    주기 : Chain No. 089 (RegiCon) 의 Fail 이 복수 발생한 경우는 089-600 FIP 의 주기를 참\n    고하여 우선순위가 높은 Fail 부터 조치할 것.\n\n원인 / 대처방법\nFront MOB Sensor 검지부의 오염, Connector 분리, Wire 단선, 단락 또는 접촉 불량을\n점검한다.\n\n점검에서 문제가 없으면 MOB/ADC Sensor Assembly (PL 6.1) 를 교환한다. 교환 후\nDiagnostic 의 DC675 Registration Control 설정 주기 (6.4.2.23) 와 DC937 Procon ON\nPrint(6.4.2.28) 를 DC675, DC937 의 순서대로 실행한다."
+ },
+ "089-604": {
+  "title": "RC Sample Block Fail-B-#1-In",
+  "text": "참고 FIP\nCF-018 (RC Sample Block Fail-B) FIP 참고."
+ },
+ "089-606": {
+  "title": "RC Sample Block Fail-B-#1-Out",
+  "text": "참고 FIP\nCF-018 (RC Sample Block Fail-B) FIP 참고."
+ },
+ "089-607": {
+  "title": "RC Sample Block Fail-B-#2-In",
+  "text": "참고 FIP\nCF-018 (RC Sample Block Fail-B) FIP 참고."
+ },
+ "089-610": {
+  "title": "RC Sample Block Fail-B-#3-In",
+  "text": "참고 FIP\nCF-018 (RC Sample Block Fail-B) FIP 참고."
+ },
+ "089-612": {
+  "title": "RC Sample Block Fail-B-#3-Out",
+  "text": "참고 FIP\nCF-018 (RC Sample Block Fail-B) FIP 참고."
+ },
+ "089-613": {
+  "title": "RC Sample Block Fail-B-#4-In",
+  "text": "참고 FIP\nCF-018 (RC Sample Block Fail-B) FIP 참고."
+ },
+ "089-616": {
+  "title": "RC Data Over Flow Fail",
+  "text": "참조 BSD : CH6.11\n\n연산 결과의 보정 설정값이 설정 가능 범위를 초과했다. ( 이 Fail 은 숨은 Fail 이다.\nColor Registration 을 보장할 수 없는 상태이며 History 에만 등록된다 )\n\n    주기 : Chain No. 089(RegiCon) 의 Fail 이 복수 발생한 경우는 089-600 FIP 의 주기를 참고\n    하여 우선순위가 높은 Fail 부터 조치할 것.\n\n순서\nDC675 Registration Control 설정 주기 (6.4.2.23) 를 실행하고 보정량과 아래 표의 값을\n비교한다.\n\nTable 1\n보정 항목 / 조정 범위 (MIN / MAX)\n·  주주사 여백 : -4720 / +4720\n·  부주사 여백 : -4720 / +4720\n·  기울어진 이미지 : -1650 / +1650\n\n[주주사 여백 ] 또는 [부주사 여백 ] 중에서 어느 쪽이 조정범위 (MIN or MAX) 에 도달했\n는가?\nY  N\n|    다음을 실시한다.\n|    ·  NVM[760-001] (IReCT 보정 활성화 SW) 의 값이 [1] 임을 확인한다.\n|    ·  각 색의 Drum Cartridge 의 위치를 확인한다.\n|    ·  해당 색의 LPH Unit 위치를 확인한다.\n|    점검에서 문제가 없으면 아래 부품을 차례대로 교환한다. 단, 부품 교환 시마다 Fail\n|    발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n|    ·  해당 색의 Drum Cartridge (PL 8.1)\n|    ·  해당 색의 LPH Unit (PL 2.1)\n\n[부주사 여백 ] 이 조정범위 (MIN or MAX) 에 도달했는가?\nY  N\n|    해당 색의 LPH 위치를 확인한다.\n|    점검에서 문제가 없으면 해당 색의 LPH Unit (PL 2.1) 을 교환한다."
  }
 }
