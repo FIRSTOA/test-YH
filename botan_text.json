@@ -3566,5 +3566,45 @@
  "024-957": {
   "title": "Interposer Empty",
   "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Interposer Empty\n[검지조건]\n    Interposer Tray 의 용지없음을 검지했다.\n[대처순서]\n    해당 Tray 에 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-958": {
+  "title": "SMH size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Size Miss-match 1\n    SMH Size 부적합\n[검지조건]\n    수동 Tray 내의 용지와 Print 지시한 용지가 다르다.\n[대처순서]\n    해당 Tray 에 바르게 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-959": {
+  "title": "Tray1 size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    (H4-1)Size Mismatch\n    Tray 1 Size 부적합\n[검지조건]\n    Tray 1 내의 용지와 프린트 지시한 용지가 다르다.\n[대처순서]\n    해당 Tray 에 바르게 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-960": {
+  "title": "Tray2 size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    (H4-2)Size Mismatch\n    Tray 2 Size 부적합\n[검지조건]\n    Tray 2 내의 용지와 프린트 지시한 용지가 다르다.\n[대처순서]\n    해당 Tray 에 바르게 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-961": {
+  "title": "Tray3 size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    (H4-3)Size Mismatch\n    Tray 3 Size 부적합\n[검지조건]\n    Tray 3 내의 용지와 프린트 지시한 용지가 다르다.\n[대처순서]\n    해당 Tray 에 바르게 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-962": {
+  "title": "Tray4 size mismatch",
+  "text": ""
+ },
+ "024-963": {
+  "title": "Finisher Punch DustBox FULL",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    Finisher Punch DustBox FULL\n[검지조건]\n    Punch Dust 의 개수가 Punch Dust Full 이상이 경우.\n[대처순서]\n    Punch Dust 를 제거한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-965": {
+  "title": "ATS/APS No Paper (IOTsc detect)",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    ATS/APS No Paper\n    APS/ATS NG(No Paper)\n[검지조건]\n    프린트에서 지시된 용지가 용지없음이다.\n[대처순서]\n    해당 Tray 에 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-966": {
+  "title": "ATS/APS No Destination Error",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    ATS/APS No Destination Error"
+ },
+ "024-967": {
+  "title": "Different width Mix Paper detect (Stapler job)",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    동일폭만 Staple 가능한 설정에서, 다른 폭이 Mix 된 것을 검지한 경우\n[검지조건]\n    동일폭만 Staple 가능한 설정에서, 다른 폭이 Mix 된 것을 검지한 경우\n[대처순서]\n    User Staple 을 해제한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-968": {
+  "title": "Stapler/Punch Batting",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Staple 과 Punch 의 Batting(FCW-UI 만 발생 )\n[검지조건]\n    Staple 위치와 Punch 의 위치가 Batting 했다.\n[대처순서]\n    Staple 해제, Punch 해제, 양쪽을 해제한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
  }
 }
