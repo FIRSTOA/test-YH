@@ -3166,5 +3166,45 @@
  "024-342": {
   "title": "IOT-ESS Communication Fail 3",
   "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    (IOT):\n    Controller 가 검지하는 MCU 송신 Error\n    (PacketNo Error)\n[검지조건]\n    2 회 재전송으로 ACK 를 수신할 수 없으므로 통신 Fail 발생. ( 송신한 Message Packet\n    의 Packet No. 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail\n    ESS-PWB 의 변경은 필요없음."
+ },
+ "024-343": {
+  "title": "IOT-ESS Communication Fail 4",
+  "text": ""
+ },
+ "024-345": {
+  "title": "IOT-ESS Communication Fail 5",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    (IOT):\n    Controller 가 검지하는 MCU 송신 Error\n    (Check Code Error)\n[검지조건]\n    2 회 재전송으로 ACK 를 수신할 수 없으므로 통신 Fail 발생. ( 송신한 Message Packet\n    의 Check Code 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail\n    ESS-PWB 의 변경은 필요없음."
+ },
+ "024-346": {
+  "title": "IOT-ESS Communication Fail 6",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    (IOT):\n    Controller 가 검지하는 MCU 송신 Parity Error\n[검지조건]\n    2 회 재전송으로 ACK 를 수신할 수 없으므로 통신 Fail 발생. (IOT 측의 HARDWARE 에\n    서 Parity Error 가 검출되었다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail"
+ },
+ "024-347": {
+  "title": "IOT-ESS Communication Fail 7",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Imari (IOT):\n    Controller 가 검지하는 MCU 송신 Flaming Error\n[검지조건]\n    2 회 재전송으로 ACK 를 수신할 수 없으므로 통신 Fail 발생. (IOT 측의 HARDWARE 에\n    서 Flaming Error 가 검출되었다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail\n    ESS-PWB 의 변경은 필요없음."
+ },
+ "024-348": {
+  "title": "IOT-ESS Communication Fail 8",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    (IOT):\n    Controller 가 검지하는 MCU 송신 Error\n    (Overrun Error)\n[검지조건]\n    2 회 재전송으로 ACK 를 수신할 수 없으므로 통신 Fail 발생. (IOT 측의 HARDWARE 에\n    서 Overrun Error 가 검출되었다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail\n    ESS-PWB 의 변경은 필요없음."
+ },
+ "024-349": {
+  "title": "IOT-ESS Communication Fail 9",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    (IOT):\n    Controller 가 검지하는 MCU 송신 Error\n    ( 수신중단 Error)\n[검지조건]\n    2 회 재전송으로 ACK 를 수신할 수 없으므로 통신 Fail 발생. (IOT 측의 Header 인식\n    후 수신중단이 검출되었다.)"
+ },
+ "024-350": {
+  "title": "IOT-ESS Communication Fail 10",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    (IOT):\n    Controller 가 검지하는 MCU 수신 Error\n    (SequenceNo Error)\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신한 경우에 발생. ( 수신된 Message Packet 의\n    Sequence No. 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail\n    ESS-PWB 의 변경은 필요없음."
+ },
+ "024-351": {
+  "title": "IOT-ESS Communication Fail 11",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    (IOT):\n    Controller 가 검지하는 MCU 수신 Error\n    (PacketNo Error )\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신한 경우에 발생. ( 수신된 Message Packet 의\n    Packet No. 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-06 IOT System Fail\n    ESS-PWB 도 변경 대상으로 한다."
+ },
+ "024-352": {
+  "title": "IOT-ESS Communication Fail 12",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 MCU 수신 Error\n    (Message 길이 Error)"
+ },
+ "024-353": {
+  "title": "IOT-ESS Communication Fail 13",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 MCU 수신 Error\n    (Check Code Error)\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신한 경우에 발생. ( 수신된 Message Packet 의\n    Check Code 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 아래를 진행하고, Trouble 을 복구한\n    다.\n    OF-06 IOT System Fail\n    (ESS PWB 교환은 필요없음.)"
  }
 }
