@@ -3286,5 +3286,45 @@
  "024-605": {
   "title": "SW-Key Backup Counter 2 repair",
   "text": "[Error 분류]\n    History\n[Fault 내용]\n    SW-Key Backup Counter 2 복구\n[검지조건]\n    SW-Key Backup Counter2 를 자동복구했다.\n[대처순서]\n    History 로의 등록만 해당."
+ },
+ "024-606": {
+  "title": "Billing Meter Type Master Counter repaire",
+  "text": "[Error 분류]\n    record\n[Fault 내용]\n    Billing Meter 방식 의 자동 복구 (ESS SEEP 복구 )\n[검지조건]\n    ( 이 Fail 은 숨은 Fail 이다.)\n    Billing Meter 방식 (ESS SEEP 저장 ) 을 자동 복구했다.\n\n    주기 : ShutdownHistory 리포트에 기재한다.\n\n[대처순서]\n    메시지를 전달하기 위한 Fail 일 뿐이므로 대처할 필요 없음."
+ },
+ "024-607": {
+  "title": "Billing Meter Type Backup Counter 1 repaire",
+  "text": "[Error 분류]\n    record\n[Fault 내용]\n    Billing Meter 방식 의 자동 복구 (ESS NVM 복구 )\n[검지조건]\n    ( 이 Fail 은 숨은 Fail 이다.)\n    Billing Meter 방식 (ESS NVM 저장 ) 을 자동 복구했다."
+ },
+ "024-608": {
+  "title": "Billing Meter Type Backup Counter 2 repaire",
+  "text": "[Error 분류]\n    record\n[Fault 내용]\n    Billing Meter 방식 의 자동 복구 (IOT NVM 복구 )\n[검지조건]\n    ( 이 Fail 은 숨은 Fail 이다.)\n    Billing Meter 방식 (IOT NVM 저장 ) 을 자동 복구했다.\n\n    주기 : ShutdownHistory 리포트에 기재한다.\n\n[대처순서]\n    메시지를 전달하기 위한 Fail 일 뿐이므로 대처할 필요 없음."
+ },
+ "024-609": {
+  "title": "Billing Count Type Master Counter repaire",
+  "text": "[Error 분류]\n    record\n[Fault 내용]\n    Billing Count 방식 의 자동 복구 (ESS SEEP 복구 )\n[검지조건]\n    ( 이 Fail 은 숨은 Fail 이다.)\n    Billing Count 방식 (ESS SEEP 저장 ) 을 자동 복구했다.\n\n    주기 : ShutdownHistory 리포트에 기재한다.\n\n[대처순서]\n    메시지를 전달하기 위한 Fail 일 뿐이므로 대처할 필요 없음."
+ },
+ "024-610": {
+  "title": "Billing Count Type Backup Counter 1 repaire",
+  "text": "[Error 분류]\n    record\n[Fault 내용]\n    Billing Count 방식 의 자동 복구 (ESS NVM 복구 )\n[검지조건]\n    ( 이 Fail 은 숨은 Fail 이다.)\n    Billing Count 방식 (ESS NVM 저장 ) 을 자동 복구했다.\n\n    주기 : ShutdownHistory 리포트에 기재한다.\n\n[대처순서]\n    메시지를 전달하기 위한 Fail 일 뿐이므로 대처할 필요 없음."
+ },
+ "024-611": {
+  "title": "Billing Count Type Backup Counter 2 repaire",
+  "text": ""
+ },
+ "024-612": {
+  "title": "Modal Break Point Master Counter repaire",
+  "text": "[Error 분류]\n    record\n[Fault 내용]\n    Modal Break Point 의 자동 복구 (ESS SEEP 복구 )\n[검지조건]\n    ( 이 Fail 은 숨은 Fail 이다.)\n    Modal Break Point (ESS SEEP 저장 ) 을 자동 복구했다.\n\n    주기 : ShutdownHistory 리포트에 기재한다.\n\n[대처순서]\n    메시지를 전달하기 위한 Fail 일 뿐이므로 대처할 필요 없음."
+ },
+ "024-613": {
+  "title": "Modal Break Point Backup Counter 1 repaire",
+  "text": "[Error 분류]\n    record\n[Fault 내용]\n    Modal Break Point 의 자동 복구 (ESS NVM 복구 )\n[검지조건]\n    ( 이 Fail 은 숨은 Fail 이다.)\n    Modal Break Point (ESS NVM 저장 ) 을 자동 복구했다.\n\n    주기 : ShutdownHistory 리포트에 기재한다.\n\n[대처순서]\n    메시지를 전달하기 위한 Fail 일 뿐이므로 대처할 필요 없음."
+ },
+ "024-614": {
+  "title": "Modal Break Point Backup Counter 2 repaire",
+  "text": "[Error 분류]\n    record\n[Fault 내용]\n    Modal Break Point 자동 복구 (IOT NVM 복구 )"
+ },
+ "024-616": {
+  "title": "Serial No Master restore",
+  "text": "[Fault 명칭]\n    Serial No Master restore\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Serial No Master 를 자동 복구했다.\n[대처순서]\n    History 로의 등록만 해당되고 대처 없음."
  }
 }
