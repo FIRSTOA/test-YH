@@ -4166,5 +4166,45 @@
  "061-363": {
   "title": "LPH Read Fail M",
   "text": "참고 FIP\nCF-012 (LPH Read Fail) FIP 참고."
+ },
+ "061-364": {
+  "title": "LPH Read Fail C",
+  "text": "참고 FIP\nCF-012 (LPH Read Fail) FIP 참고."
+ },
+ "061-365": {
+  "title": "LPH Read Fail K",
+  "text": "참고 FIP\nCF-012 (LPH Read Fail) FIP 참고."
+ },
+ "061-391": {
+  "title": "LPH Latch Fail M",
+  "text": "참고 FIP\nCF-015 (LPH Latch Fail) FIP 참고."
+ },
+ "061-392": {
+  "title": "LPH Latch Fail C",
+  "text": "참고 FIP\nCF-015 (LPH Latch Fail) FIP 참고."
+ },
+ "061-393": {
+  "title": "LPH Latch Fail K",
+  "text": "참고 FIP\nCF-015 (LPH Latch Fail) FIP 참고."
+ },
+ "062-277": {
+  "title": "IPS-DADF Communication Fail",
+  "text": "참조 BSD : CH3.3\n\nController PWB 와 DADF PWB 사이에서 통신이 불가능하다.\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 아래의 항목을 점검한다.\n    ·  IIT Trans PWB P7501 와 DADF PWB J751, J752 사이의 Wire 단선, 단락 또는\n        접촉불량.\n    ·  Controller PWB J321 와 IIT Trans PWB J7192 사이 Flat Cable 의 단선, 단락\n        또는 접촉불량.\n3.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  DADF PWB (PL 54.3, PL 55.4)\n    ·  Controller PWB (PL 35.2)\n    ·  IIT Trans PWB (PL 1.3, PL 1.9)"
+ },
+ "062-300": {
+  "title": "(Low/Mid model) Platen Interlock Open",
+  "text": "참조 BSD : CH6.1\n\nPlaten Close Sensor 의 Open 을 검지했다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Platen Sensor(DC330[062-300]) 작동불량. (PL 1.9)\n·  DADF 닫힘 상태.\n·  Platen Close Sensor J7251 와 IIT Trans PWB J722 사이의 Wire 단선 및 Connector\n    접촉불량.\n·  IIT Trans PWB J7192 와 Controller PWB J321 사이 Flat Cable 의 단선 및 Connector\n    접촉불량.\n\n점검에서 문제가 없으면 Controller PWB 를 교환한다. (PL 35.2)"
+ },
+ "062-313": {
+  "title": "Unexecutable Error",
+  "text": "참조 BSD : CH3.2\n\nSCAN COMMAND 의 Parameter 를 실행할 수 없는 조합이다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  복구되지 않는 경우는 Controller PWB 를 교환한다. (PL 35.2)"
+ },
+ "062-345": {
+  "title": "IIT EEPROM Fail (IIT)",
+  "text": "참조 BSD : CH3.2\n\nEEPROM 에 대한 쓰기불량 또는 EEPROM 과의 통신불량이 발생했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  복구되지 않는 경우는 IIT Trans PWB 를 교환한다 (IIT 출하 검사 NVM 리스트의 값을\n    쓴다 ). (PL 1.3, PL 1.9)"
+ },
+ "062-357": {
+  "title": "CCD Fan Fail (High model)",
+  "text": "참조 BSD : CH6.8\n\nCCD Fan 의 이상을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  CCD Fan (DC330[062-017]) 회전불량. (PL 1.3)\n·  CCD Fan 에 이물질 혼입.\n·  CCD Fan Fail 신호 라인 (DC330[062-280]) 단선.\n\n점검에서 문제가 없으면 IIT Trans PWB 를 교환한다. (PL 1.3)"
  }
 }
