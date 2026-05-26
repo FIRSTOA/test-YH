@@ -2846,5 +2846,45 @@
  "021-505": {
   "title": "Couldn't establish SSL session",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SSL Session Error\n[검지조건]\n    SSL/TLS 의 Handshake 시 Error 가 발생했다.\n    libcURL 에서 \"CURLE_SSL_CONNECT_Error\" 가 응답되었다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-506": {
+  "title": "An invalid peer certificate has received",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "021-507": {
+  "title": "Proxy unauthorized access",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Proxy 인증 Error\n[검지조건]\n    Proxy Server 의 인증에 실패했다.\n    libcURL 에서 \"HTTP Status : 407 Proxy Authorization Required\" 가 응답되었다.\n[대처순서]\n    다음을 확인한다.\n    -  EP Proxy Server 의 인증 사용자를 확인한다.\n    -  EP Proxy Server 의 인증 비밀번호를 확인한다.\n    상기의 설정을 확인 후 상태가 개선되지 않는 경우, Network 장애 혹은 Proxy Server\n    의 설정 변경이나 장애의 가능성이 크므로 고객의 Network 관리자에게 문의한다.\n    Network 가 정상이지만 상태가 개선되지 않는 경우, Trouble 발생 직후에 pfshowinfo9\n    Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-508": {
+  "title": "A connection to host/proxy has timed out",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    통신 Timeout\n[검지조건]\n    통신 Timeout 이 발생했다.\n    libcURL 에서 \"CURLE_OPERATION_TIMEOUTED\" 가 응답되었다.\n[대처순서]\n    다음을 확인한다.\n    -  LAN Cable 의 접속을 확인한다.\n    -  Default Gateway 설정을 확인한다.\n    -  Subnet Mask 설정을 확인한다.\n    -  EP Server 설정을 확인한다. (Chain-Link(920-003 ~ 920-006))\n    BB-Direct 구성인 경우, 다음을 확인한다."
+ },
+ "021-509": {
+  "title": "SOAP Fault:An invalid message detected",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    통신 Message 부정확\n[검지조건]\n    Server 측에서 부정확한 Message 가 검출되었다.\n    Device 의 Message 가 부정확함을 알리는 SOAP Fault 가 Server 로부터 통지되었다.\n    Code=Client, Subcode=InvalidMessage\n    또는 Server 이상으로 인해 예상하지 않은 SOAP Fault 가 통지되었다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-510": {
+  "title": "SOAP Fault:The MC already unregistered",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    철수 상태 부정합 (EP System)\n[검지조건]\n    Server 측에서 이미 철수된 상태라고 검출되었다.\n    Device 가 이미 EP System 상에서 철수된 상태임을 알리는 SOAP Fault 가 Server 로부\n    터 통지되었다.\n    Code=Client, Subcode=InvalidOperation, Subcode3=AlreadyUnregistered\n[대처순서]\n    철수 조작에 대한 Error 이면 이상이 없는 것이다. 작업을 종료한다.\n    철수 이외의 조작에 대한 Error 이면 EP 계약이 종료되지 않았는지 확인하고, 계약\n    종료된 상태이면 이상이 없는 것이다.\n    EP 계약이 종료되지 않았음에도 불구하고 이 Error 가 발생한 경우, Trouble 발생 직\n    후에 pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-512": {
+  "title": "SOAP Fault:The MC already registered (EP-SV)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    EP-SV 설치 Conflict (EP System)\n[검지조건]\n    설치를 실시했지나 Server 측에서 이미 EP-SV 설치된 상태라고 검출되었다.\n    설치를 실시했지만 EP System 상에 EP-SV 가 이미 설치된 상태임을 알리는 SOAP Fault\n    가 Server 로부터 통지되었다.\n    Code=Client, Subcode=InvalidOperation, Subcode3=AlreadyRegisteredBySV\n[대처순서]\n    EP Center 에 EP 계약 상황과 등록 상황을 확인한다.\n    EP Center 에 해당 EP 가 등록되지 않았음에도 불구하고 이 Fault 가 발생한 경우,\n    Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의\n    한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-513": {
+  "title": "SOAP Fault:The MC already registered (EP-DX)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    EP-DX 설치 Conflict (EP System)\n[검지조건]\n    설치를 실시했지만 Server 측에서 이미 EP-DX 가 설치된 상태라고 검출되었다.\n    설치를 실시했지만 EP System 상에 EP-DX 가 이미 설치된 상태임을 알리는 SOAP Fault\n    가 Server 로부터 통지되었다.\n    Code=Client, Subcode=InvalidOperation, Subcode3=AlreadyRegisteredByDX\n[대처순서]\n    EP Center 에 EP 계약 상황과 등록 상황을 확인한다."
+ },
+ "021-514": {
+  "title": "SOAP Fault:The MC already registered (EP-TRESS)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    TRESS 설치 Conflict (EP System)\n[검지조건]\n    설치를 실시했지만 Server 측에서 이미 TRESS 가 설치된 상태라고 검출되었다.\n    설치를 실시했지만 EP System 상에 EP-TRESS 가 이미 설치 상태임을 알리는 SOAP\n    Fault 가 Server 로부터 통지되었다.\n    Code=Client, Subcode=InvalidOperation, Subcode3=AlreadyRegisteredByTRESS\n[대처순서]\n    EP Center 에 EP 계약 상황과 등록 상황을 확인한다.\n    EP Center 에 해당 EP 가 등록되지 않았음에도 불구하고 이 Fault 가 발생한 경우,\n    Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의\n    한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-515": {
+  "title": "SOAP Fault:An invalid product code detected",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    기종코드 부정확\n[검지조건]\n    Server 측에서 부정확한 기종코드가 검출되었다.\n    Device 의 Message 에 기재되는 기종코드가 부정확함을 알리는 SOAP Fault 가 통지되\n    었다.\n    Code=Client, Subcode=InvalidOperation, Subcode3=InvalidProductCode\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-517": {
+  "title": "SOAP Fault:The service not responded",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    통신 장애 (EP Center)\n[검지조건]\n    Server 측에서 EP Center 와의 통신 장애를 검출했다.\n    Edge Server (EPA 설치 구성인 경우는 EPA-Server) 와 해당 Back-end 사이에서 통신\n    장애가 발생했음을 알리는 SOAP Fault 가 Server 로부터 통지되었다.\n    Code=Server, Subcode=NextServiceNotRespond\n[대처순서]\n    EP Center 에 System 의 가동 상황을 확인한다.\n    EP Center 에서 장애가 발생한 경우, EP Center 가 복구되는 대로 다시 UI 에서 조작\n    을 시도한다.\n    EP Center 가 복구하고 있음에도 불구하고 상태가 되지 않는 경우, Trouble 발생 직\n    후에 pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
  }
 }
