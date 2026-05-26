@@ -4446,5 +4446,45 @@
  "091-330": {
   "title": "Drum CRUM M Authentication IC is not Available",
   "text": "참고 FIP\nCF-022 (Drum CRUM Authentication IC is not Available) FIP 참고."
+ },
+ "091-331": {
+  "title": "Drum CRUM C Authentication IC is not Available",
+  "text": "참고 FIP\nCF-022 (Drum CRUM Authentication IC is not Available) FIP 참고."
+ },
+ "091-400": {
+  "title": "Waste Toner Bottle Near Full",
+  "text": "참조 BSD : CH9.22\n\nWaste Toner Bottle 이 교환시기에 근접하였다.\n\n원인 / 대처방법\n1.  Waste Toner Bottle 이 교환시기에 근접하였으므로 필요에 따라 Waste Toner Bottle\n    Assembly 를 교환한다. (PL 8.1)\n2.  복구되지 않는 경우는 Waste Toner Bottle Full Sensor(DC330[091-201]) 를 점검한다\n    . (PL 8.2)\n3.  점검에서 문제가 없을 경우에는 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "091-401": {
+  "title": "Drum Cartridge K Near Life",
+  "text": "참고 FIP\nCF-023 (Drum Cartridge Near Life) FIP 참고."
+ },
+ "091-402": {
+  "title": "Drum Cartridge K Life Over",
+  "text": "참고 FIP\nCF-024 (Drum Cartridge Life Over) FIP 참고."
+ },
+ "091-406": {
+  "title": "Drum Cartridge K Pre Near Life",
+  "text": "참고 FIP\nCF-025 (Drum Cartridge Pre Near Life) FIP 참고."
+ },
+ "091-411": {
+  "title": "Drum Cartridge Y Near Life",
+  "text": "참고 FIP\nCF-023 (Drum Cartridge Near Life) FIP 참고."
+ },
+ "091-416": {
+  "title": "Drum Cartridge Y Pre Near Life",
+  "text": "참고 FIP\nCF-025 (Drum Cartridge Pre Near Life) FIP 참고."
+ },
+ "091-421": {
+  "title": "Drum Cartridge M Near Life",
+  "text": "참고 FIP\nCF-023 (Drum Cartridge Near Life) FIP 참고."
+ },
+ "091-426": {
+  "title": "Drum Cartridge M Pre Near Life",
+  "text": "참고 FIP\nCF-025 (Drum Cartridge Pre Near Life) FIP 참고."
+ },
+ "091-431": {
+  "title": "Drum Cartridge C Near Life",
+  "text": "참고 FIP\nCF-023 (Drum Cartridge Near Life) FIP 참고."
  }
 }
