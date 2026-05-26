@@ -1482,5 +1482,125 @@
  "016-716": {
   "title": "TIFF Data Over Flow",
   "text": ""
+ },
+ "016-717": {
+  "title": "Fax/Internet FAX Send Result Not Found",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Fax/Internet FAX 송신결과정보가 Cont 내부에 저장되어 있지 않다.\n[검지조건]\n    [미송신 리포트] 또는 [모니터 리포트] 를 작성하려고 했지만 Report 작성에 필요\n    한 [송신 결과 정보] 가 본체 Memory/HDD 에 저장되어 있지 않으므로 Report 를 작성\n    할 수 없었다.\n    -  Partition C 용량 (2GB or 4GB) 을 초과하는 용량의 Internet FAX 문서 송신에서\n        HDD Full 이 되고, 그 결과 [Internet FAX 송신 결과 정보] 를 저장할 수 없었다.\n    -  Report 배출 지정 Job 종료 이후에, 200 개 이상의 Job 이 실시되어 [Internet\n        FAX 송신 결과 정보] 가 덮어쓰기 되었다.\n[대처순서]\n    ·  문서축적 용량이 2GB 를 초과하는 Internet FAX 문서는 분할하여 Job 을 실행하고,\n        Memory 나 HDD 의 사용량을 제한한다.\n    ·  Scanner/Internet FAX 문서가 다수 실행되고 있을 경우에는 다른 Scanner/Internet\n        FAX Job 이 종료되고나서 내 Scanner/Internet FAX Job 을 실행한다.\n    ·  Report 를 배출하고 싶은 Job 의 종료로부터 Report 배출까지에 200 개 이상의 Job 을\n        실시하지 말 것.\n        그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n        OF-09 Common Job Fail"
+ },
+ "016-718": {
+  "title": "Out of PCL6 Memory",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PCL6 Decomposer Memory 부족\n[검지조건]\n    PCL6 사용시, Memory 부족을 검지했다.\n[대처순서]\n    PLW Memory 는 고정이므로 해상도를 낮출 수 있으면 낮춘다. (PLW 유효시만)"
+ },
+ "016-719": {
+  "title": "Out of PCL Memory",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PCL Decomposer Memory 부족\n[검지조건]\n    PCL 사용시, Memory 부족을 검지했다.\n[대처순서]\n    PCL Memory Size 를 늘린다. System 전체의 Memory 를 늘려서, Decomposer 에 할당되\n    는 메모리가 어느 정도 증가합니다.\n    UI 에서의 설정이나 다른 방법으로 명시적으로 PCL Memory 를 늘릴 수 없다.\n    따라서, 최대 용량까지 Memory 를 늘려도 Memory 부족으로 Job Abort 할 경우,\n    Printer Drive 의 설정을 변경하고 인쇄가 가능한지 시도해 본다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-722": {
+  "title": "Job cancel by staple position NG",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Staple 위치나 용지 Size 가 대응 불가능하므로 Job Cancel\n[검지조건]\n    이 기계가 대응하지 않는 Staple 위치와 Finisher 에 대응하지 않는 용지 Size 가 지\n    정되었다.\n[대처순서]\n    인쇄부로 보내지는 Print Data 의 Staple 지정 위치나 용지 Size 를 이 기계에서 처리\n    가능하도록 설정한다.\n    또는, Client 측의 System 을 확인한다.\n    그래도 Trouble 이 지속될 때는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-723": {
+  "title": "Job cancel by punch position NG",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Punch 위치나 용지 Size 가 불가능하기 때문에 Job Cancel\n[검지조건]\n    이 기계가 대응하지 않는 Punch 위치와 Finisher 에 대응하지 않는 용지 Size 가 지정\n    되었다.\n[대처순서]\n    인쇄부로 보내지는 Print Data 의 Punch 지정 위치나 용지 Size 를 이 기계에서 처리\n    가능하도록 설정한다.\n    또는, Client 측의 System 을 확인한다.\n    그래도 Trouble 이 지속될 때는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-724": {
+  "title": "Complex Position Error of Staple and Punch",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Staple 위치와 Punch 위치, 불가능한 조합 지정으로 Job Cancel\n[검지조건]\n    메일박스에서의 Print 에서, CWIS 에서의 지정 또는 메일박스 Job Flow( 지시서 ) 에\n    의한 지정시, Staple 과 Punch 가 양쪽에 지정되어 있는데, 왼쪽 Double Staple 과 오\n    른쪽 Punch 등과 같이, 닫는 위치가 달라져 Staple, Punch 처리를 할 수 없는 조건\n    이 지정되었다."
+ },
+ "016-725": {
+  "title": "B-Formatter Library Image Conversion Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    B-Formatter 에서 검지한 Scan 문서 →FAX 송신문서의 Image 변환처리 Error\n[검지조건]\n    본체의 Job Flow 기능을 사용하여 메일박스에 저장되어 있는 Scan 문서를 Facsimile\n    장치로 송신 처리 중, 메일박스 문서로부터 Facsimile 용 Data 로 변환할 수 없는\n    Error 가 발생했다.\n[대처순서]\n    Job Flow 기능을 사용하지 말 것.\n    본체의 Facsimile 지시 화면에서 원고를 직접 읽어 상대방 Facsimile 로 송신 지시한\n    다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-726": {
+  "title": "PDL Auto Switch Fail",
+  "text": "[Fault 명칭]\n    PDL Auto Switch Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    < 자동판정 Error >\n    Auto SW 자동판정이 불가능했다.\n[검지조건]\n    프린트 언어 자동판정 실패 (PCL5/ESCP 탑재기에서는 발생하지 않는다.)\n    프린트 모드 지정이 [자동] 인 경우에 프린트 언어를 자동적으로 선택할 수 없다.\n    1.  Adobe Post Script 3 Kit( 옵션 ) 가 장착되지 않은 상태에서 Post Script 데이터\n        를 송신했다.\n    2.  Emulation Kit( 옵션 ) 가 장착되지 않은 상태에서 프린트 모드를 [자동] 으로 지\n        정하여 HP-GL/2, 201H, PCL 데이터를 송신했다.\n[대처순서]\n    Decomposer 를 조작부 또는 명령으로 고정 선택한다.\n    1. 에 대해서는 Adobe Post Script 3 Kit 를 장착한다.\n    2. 에 대해서는 Emulation Kit 를 장착한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "016-727": {
+  "title": "0-page document is unstorable in a MailBox",
+  "text": ""
+ },
+ "016-728": {
+  "title": "Unsupported TIFF Data",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    지원하지 않는 TIFF Data 이다.\n[검지조건]\n    [TIFF File 부정]\n    Image File 전개 Library 에서 장착되어 있지 않은 Tag 를 포함하고 있다.\n[대처순서]\n    지원하지 않는 TIFF File 임을 고객에게 설명한다. 다시 확인이 필요한 경우에는\n    Support 부문에 확인을 의뢰한다."
+ },
+ "016-729": {
+  "title": "TIFF Data Size too Big",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    TIFF 에서 Spool 하는 File 이 Disk 용량을 Over 했다.\n[검지조건]\n    [TIFF File 부정]\n    색수, Pixel 수를 유효범위의 상한을 초과하여 지정했다.\n[대처순서]\n    유효범위 정정.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-731": {
+  "title": "Invalid TIFF Data",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    무효한 TIFF Data 이다.\n[검지조건]\n    [TIFF File 부정]\n    TIFF Data 가 끊어져 있거나 도중에 끊어졌다.\n[대처순서]\n    Data 재전송을 실시한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-732": {
+  "title": "Form not registerd",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    [Form 합성 Error]\n    Emulation 에서 지정된 Form 이 등록되지 않는 경우에 Data 자체를 인쇄하지 않는다.\n[검지조건]\n    지정된 Form 이 등록되지 않은 것을 Decomposer 가 검지.\n[대처순서]\n    Form Data 를 재전송한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-733": {
+  "title": "Destination address resolution Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    P2P Address 해결에 실패 (Server 접속전)\n[검지조건]\n    1.  Peer to peer 통신 방식에 의한 Mail 송신시, 수신 Mail Address @ 의 오른쪽 문자\n        열에서 IP Address 를 취득할 수 없었다.\n    2.  Peer to peer 통신 방식에 의한 Mail 송신시, @ 의 오른쪽 문자열을 FQDN 으로서 DNS\n        해결할 수 없었다."
+ },
+ "016-734": {
+  "title": "Simple transmittion report invocation Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    간이 수신 결과 Report 출력 Error\n[검지조건]\n    1) 간이 수신 결과 Report 출력에 실패\n[대처순서]\n    1.  송신측 Device 의 Mail 수신 설정을 [SMTP 수신] 으로 한다.\n    2.  수신 허가 Domain List 에서 자체 기기 Domain 에서의 Mail 수신이 제한되어 있는 경\n        우 제한을 푼다.\n        그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n        OF-09 Common Job Fail\n        2.4 NET 시스템 오류 확인\n        2.4.5 Network 관계 상세 확인 Flow"
+ },
+ "016-735": {
+  "title": "Updating Job Template",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Job Template 갱신중 Error.\n[검지조건]\n    [Job Template 갱신중]\n    Job Template 갱신중에 Job Template List 를 출력하려고 한 경우.\n[대처순서]\n    Job Template 갱신종료한 후, 재실시한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-736": {
+  "title": "Remote directory lock Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Repository Lock Error\n[검지조건]\n    Lock Directory 작성에 실패했다."
+ },
+ "016-737": {
+  "title": "Remote lock directory remove Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Lock Directory 삭제 Error\n[검지조건]\n    Lock Directory 삭제에 실패했다. FTP 전송중에 CDI Cable 을 빼거나 DFE 의 Reset SW\n    를 눌러 전원을 OFF 한다.\n[대처순서]\n    기존 Lock Directory(*.LCK) 가 수신국에 남아 있는 경우, 수동으로 삭제하고 다시\n    Job 을 실행한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-738": {
+  "title": "PS Booklet Illegal OutPut Size",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PS 팜플렛 인쇄 출력 용지 Size 부정확\n[검지조건]\n    지시된 용지 Size 가 부정확\n[대처순서]\n    팜플렛 인쇄가 가능한 용지 Size 를 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-739": {
+  "title": "PS Booklet Document Output Missmatch",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PS 팜플렛 원고 / 출력 용지 Mismatch\n[검지조건]\n    지시된 원고 · 용지 Size 의 조합이 부정확\n[대처순서]\n    팜플렛 인쇄가 가능한 원고, 용지 Size 의 조합을 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다."
+ },
+ "016-740": {
+  "title": "PS Booklet OutPut Tray Missmatch",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PS 팜플렛 출력 Tray 가 부정확\n[검지조건]\n    지시된 Tray 가 부정확\n[대처순서]\n    팜플렛 인쇄가 가능한 Tray 를 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-741": {
+  "title": "Download Mode NGJob Fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Download Mode 로 전환불가\n[검지조건]\n    ·  SysData:700-420=1 이므로 Download 금지를 검지 또는 일부 Job 이 존재하므로\n        DownloadMode 이동 불가를 검지.\n    ·  [User 에 의해 조작중] 을 본체가 검지했으므로 DownloadMode 로 이동하지 않았다.\n        (Panel 조작 종료후부터 1분간은 [User 조작중] 상태가 된다)\n[대처순서]\n    ·  Download 금지 Mode 를 해제하고 Job 종료를 확인하고 다시 실시. 통신중 LED 의 삭\n        제도 확인한다.\n    ·  Panel 조작 종료로부터 1분 이상 경과후에 Download 작업을 시작한다.\n        Trouble 이 지속될 때는 다음을 진행한다.\n        Download 금지 Mode 를 해제 (SysData:700-420=0 으로 설정) 하여 다시 실시.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-742": {
+  "title": "Download Data 의 ProductID 상이 검지",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Download Data 의 ProductID 상이 검지\n[검지조건]\n    Download Data 로 전송된 ProductID 와 SEEP-ROM 에 저장되어 있는\n    ProductID(SysData:700-421 ~ 700-428) 가 불일치."
+ },
+ "016-743": {
+  "title": "기계 Model/Panel 종류별 Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    기계 Model/Panel 종류별 Error\n    Download Data 의 대상 Model 과 기계의 Model 이 불일치.\n[검지조건]\n    ·  장착된 IISS/DADF/IOT/FaxCard/Finisher 에서 취득한 ModelName 과 Download File 내\n        의 각 Firmware CDI Header 에 포함되어 있는 ModelName 의 비교결과가 불일치.\n        Controller 에서는 [현장착 ROM Header 에서 취득한 ModelName] 과 [Download File 내\n        ModelName] 이 비교대상.\n        < 예외 >\n        DCC450G 의 IOT 의 MACS 는 I/F 사양이 오래되었으므로 ModelName 을 Check 하지 않는다.\n    ·  Download 시에 Device 에 접속된 Panel 종류별 (HBorFCW) 과 Download File 내의\n        Controller Firmware CDI Header 에 포함된 Panel 종류별 (HBorFCW) 이 다르다.\n[대처순서]\n    Download File 이 부정확하다. VerUP 할 기계와 동일한 Model 의 Download File 을 입\n    수하고, 다시 실시할 것.\n    또는, 본체에 접속되어 있는 Panel 종류별 (FCW-UI 또는 HB-UI 의 종류별) 에 대응하\n    는 Download File 을 입수하고, 다시 실시한다."
+ },
+ "016-744": {
+  "title": "Download Data 의 Checksum Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Download Data 의 Checksum Error\n[검지조건]\n    Download Data 의 Checksum 이 부정확\n[대처순서]\n    Device 와의 접속 Cable 을 바르게 접속하고, 다시 실행한다."
+ },
+ "016-745": {
+  "title": "Download 시에 XPJL 의 치명적 Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Download 시에 XPJL 의 치명적 Error\n    (XPJL 이 수신 Data 가 Download Data 이면 인식후에 발생)"
+ },
+ "016-746": {
+  "title": "Unsupported PDF File",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    지원되지 않는 기능이 전송된 PDF Error.\n[검지조건]\n    PDF1.3 에서는 Transparency 또는 JBIG2 가 PDF File 중에 포함되어 있다.\n[대처순서]\n    Acrobat Reader 에서 Driver 경유로 인쇄한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail\n    2.4.4 정상으로 인자되지 않는다.\n    2.4.5 Network 관계 상세 확인 Flow"
+ },
+ "016-747": {
+  "title": "No memory for drawing annotation",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Annotation Image Illustration 시에 Memory 부족\n[검지조건]\n    Copy 의 Repeat 기능 지정에 의해 Annotation Image 를 Illustration 할 때, 본체\n    Controller Board 의 Memory 부족 발생.\n    Annotation Image 문자 Size 로 24 Point 이하를 지정하면 발생한다.\n    25 ~ 64 Point 이면 Repeat 기능의 MAX 지정이 가능.\n    6 ~ 24 Point 에서도 1 Page 내에 239 개 이하의 Repeat 는 가능.\n[대처순서]\n    1.  Annotation Image Size 를 키운다.\n    2.  Repeat 기능 지정의 화상 Repeat 횟수를 줄인다.\n    앞에서 기재한 1, 2 를 조합하여 Memory 부족을 회피한다.\n\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 를 채취하고 Support 부문\n    에 연락하여 지시를 받는다.\n\n    OF-09 Common Job Fail"
+ },
+ "016-750": {
+  "title": "Print job ticket description Error",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "016-751": {
+  "title": "PDF Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PDF Error\n[검지조건]\n    1.  PDF Bridge 처리중에 구문 Error, 미정의 Command 의 사용, Parameter Error, PDF\n        File 의 손상, PDF Decomposer 의 내부 Error 가 발생\n[대처순서]\n    1.  [FX PDF]\n        Acrobat Reader 에서 Driver 를 사용하여 Print 한다.\n    2.  PDF Emulation 설정을 [1] 로 하는 경우에는 PostScript Memory 를 늘린다.\n        그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n        OF-09 Common Job Fail\n        2.4.3 전혀 나오지 않음, 인자되지 않음.\n        2.4.4 정상적으로 인자되지 않음.\n        2.4.5 Network 관계 상세 확인 Flow"
  }
 }
