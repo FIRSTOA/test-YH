@@ -1442,5 +1442,45 @@
  "016-612": {
   "title": "Log Image Creation Failure",
   "text": "[Fault 명칭]\n    Log Image Creation Failure\n[Error 분류]\n    Record\n[Fault 내용]\n    로그 이미지 작성 실패\n[검지조건]\n    로그 이미지를 작성하는 동안 에러가 발생했다. (로그 이미지 조작 보증 레벨이 [\n    낮음] 인 경우에 한한다.)\n[대처순서]\n    (CE 대처 불필요)"
+ },
+ "016-700": {
+  "title": "Password is under minimum figures",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    문서보호 프린트 및 인증 프린트의 비밀번호 자릿수가 최소 자릿수 미만\n[검지조건]\n    최소 자릿수 미만의 비밀번호 Job 이 지시되었다.\n    * 문서보호 프린트 및 인증 프린트의 비밀번호 최소 자릿수를 설정가능으로 설정하고\n    , 최소 자릿수 미만으로 지시된 비밀번호 Job 은 저장하지 않는다."
+ },
+ "016-701": {
+  "title": "Out of ART EX Memory",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PLW Decomposer Memory 부족\n[검지조건]\n    ART EX 사용시, Memory 부족을 검지했다.\n[대처순서]\n    다음 순서를 차례로 실시한다.\n    1.  ART EX 할당 Memory 를 늘린다. (실제 Memory 증설이 필요한 경우도 있다.)\n    2.  인쇄 Mode 를 변경한다. (예 : 고화질 Mode →표준 Mode)\n    3.  해상도를 낮춘다.\n    4.  [페이지 인쇄모드] 를 [선택함] 으로 설정한다.\n    5.  Printer Driver 의 [그래픽] Tab 에서, [이미지 압축] 을 실시한다.\n    그래도 Trouble 이 지속될 때는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-702": {
+  "title": "Out of Page Buffer",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Print Page Buffer 부족에 따라, 1 Page 도 압축할 수 없었다.\n[검지조건]\n    1 Page 도 압축할 수 없었다.\n    Print Page Buffer 의 부족을 검지했다.\n[대처순서]\n    1.  [프린트모드] 를 [속도우선] 으로 하고 인쇄 지시 해상도를 낮춰서 다시 조작한다.\n    2.  Memory 를 증설하고 Page Buffer 를 늘린다.\n    3.  [페이지 프린트모드] 에서 재조작한다. (PLW Decomposer(=ART-EX) 만)\n        [페이지 프린트모드] 는 Printer Driver On-Line Help 참고\n    그래도 Trouble 이 지속될 때는 다음을 진행한다.\n\n    OF-09 Common Job Fail"
+ },
+ "016-705": {
+  "title": "Secure Print Fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PrinterDriver 로부터 Security Print/ 메일박스 Print/ 과금 인증 축적이 불가.\n    원고 Scan 문서의 메일박스 등록 불가\n[검지조건]\n    원인으로는 다음을 들 수 있다.\n    1.  본체에 Scan 문서의 메일박스 등록을 지시했지만 Option 인 Scanner Kit 또는 E-\n        Mail Kit 가 장착되어 있지 않았다.\n    2.  이 기계용 Printer Driver 를 사용하지 않았다."
+ },
+ "016-706": {
+  "title": "Max. User Number Exceeded",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    메일박스 Full Print 의 최대 User 수를 넘은 것을 검출한 후 Job 종료한다.\n[검지조건]\n    HDD Access 시에 FULL 상태를 검출하여 Job 종료한다.\n[대처순서]\n    불필요한 문서 /User 를 삭제한 후 재 Print 실행한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-708": {
+  "title": "HD Full by Annotation/Watermark image",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Annotation/Analog Watermark Image 축적시 FULL\n[검지조건]\n    Annotation/Watermark Image 의 HD 축적시에 FULL 상태를 검출하여 Job 을 종료한다.\n[대처순서]\n    1.  Annotation/Watermark 를 해제하고 재실행\n    2.  원고매수를 줄인다. Mix Size 의 경우에는 단일 Size 만으로 한다.\n    3.  축적문서의 Print 시는, HD 내의 불필요 문서를 삭제하고 재실행\n    4.  해당 Service 의 HDD Partition 용량 증가\n        그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n        OF-09 Common Job Fail\n        OF-02 HDD System Fail"
+ },
+ "016-711": {
+  "title": "Email transmission size limit over",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    송신 Data Size 가 System Data 값을 초과 (Server 접속전)\n[검지조건]\n    Internet FAX, 지시서 Mail 전송의 Mail 송신에 의해 송신 Module(Redirector) 이\n    System Data[Scan to Email 의 Data Size 의 상한값] 을 초과하는 Data 를 Network 에\n    송신하려고 했다.\n\n    주기 : Scan to Email 의 경우도 동일한 System Data 를 참고하지만 Image 축적시에\n    016-985 로 검지된다.\n\n[대처순서]\n    1.  송신 Parameter 의 해상도 (송신화질) 를 낮추어 다시 송신한다.\n    2.  송신 Parameter 의 배율을 조절하여 Image 를 축소한 후, 다시 송신한다. (A3→A4 등)\n    3.  UI Panel 의 사양설정 화면에서 [데이터 용량 상한값] 을 변경한다. (기본값 2MB 권장)"
+ },
+ "016-712": {
+  "title": "Under PANTHER Capacity (I-Formatter)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Panther 의 능력을 밑도는 것을 검출했다."
+ },
+ "016-713": {
+  "title": "Security Box Password Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    메일박스에 축적시, Password 비교로 Error 를 검출했다.\n[검지조건]\n    Job 에서 지정한 메일박스는 존재하지만, 지정한 메일박스에 설정되어 있는 Password\n    와 Job 에서 지정한 Password 가 일치하지 않는 경우.\n[대처순서]\n    바른 Password 를 설정한 후, 재실시한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-716": {
+  "title": "TIFF Data Over Flow",
+  "text": ""
  }
 }
