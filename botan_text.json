@@ -3846,5 +3846,45 @@
  "027-521": {
   "title": "File name suffix limit over in SMB",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan File 명 /Folder 명의 Suffix 가 제한값을 초과했다.\n[검지조건]\n    SMB Scan 에서 지정 가능한 File 명 /Folder 명 Suffix 가 제한값을 초과했다.\n[대처순서]\n    1.  SMB Scan Server 상의 File 명 / 수신국 Folder 를 변경하거나 수신국 Folder 내의 File\n        을 이동 또는 삭제한다.\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채취하\n    여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "027-522": {
+  "title": "File creation failure in SMB",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan File 의 작성에 실패"
+ },
+ "027-523": {
+  "title": "Lock folder creation failure in SMB",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB ScanLock Folder 의 작성에 실패\n[검지조건]\n    SMB Scan Server 상에서 SMB Scan Lock Folder 의 작성에 실패\n    1.  SMBCL_NG_FILE_EXISTS\n        지정한 Lock Folder 명은 이미 존재하고 있다.\n[대처순서]\n    1.  기존의 lock directory(*.LCK) 가 수신국에 남아있을 경우, 수동으로 삭제한 후에 다\n        시 실행.\n    2.  지정한 이름과 동일한 이름의 Folder 가 이미 존재하고 있지 않은지 확인.\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채취하\n    여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "027-524": {
+  "title": "Folder creation failure in SMB",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan Folder 의 작성에 실패\n[검지조건]\n    스캔 (PC 저장 ) 의 SMB 전송에서 SMB Server 상에서의 Folder 작성에 실패했다. 지정\n    한 Folder 는 이미 존재한다.\n[대처순서]\n    지정한 이름과 동일한 이름의 File 또는 Folder 가 SMB Server 상에 있는지 확인한다."
+ },
+ "027-525": {
+  "title": "File delete failure in SMB",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan File 의 삭제에 실패\n[검지조건]\n    SMB Scan Server 상에서 SMB Scan File 의 삭제 실패\n    1.  SMBCL_NG_BAD_FILE\n        File 이 존재하지 않는다.\n    2.  SMBCL_NG_DOS_BAD_SHARE\n        이미 File 이 Open 되어 있다.\n    3.  SMBCL_NG_FILE_IS_DIR( 신규 )\n        지정한 File 명은 Directory 로 이미 존재하고 있다.\n[대처순서]\n    1.  지정한 저장위치에서 다른 User 가 File 조작을 실행하고 있지 않은지 확인한다.\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채취하\n    여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "027-526": {
+  "title": "Lock folder delete failure in SMB",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan Lock Folder 의 삭제에 실패\n[검지조건]\n    SMB Scan Server 상에서 Lock Folder 의 삭제에 실패\n    1.  SMBCL_NG_BAD_FILE\n        File 이 존재하지 않는다.\n    2.  SMBCL_NG_DIR_NOT_EMPTY( 신규 )\n        Directory 가 비어 있지 않다.\n    3.  SMBCL_NG_NOT_A_DIR( 신규 )\n        지정한 Directory 명은 Directory 에는 없다.\n[대처순서]\n    1.  기존 lock directory(*.LCK) 가 수신국에 남아 있는 경우, 수동으로 삭제하고 다시\n        Job 을 실행한다.\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채취하\n    여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "027-529": {
+  "title": "Data read failure from SMB server",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan Data Server 의 예상하지 못한 Error\n[검지조건]\n    스캔 (PC 저장 ) 의 SMB 전송에서 SMB Server 로부터 예상하지 못한 Error 응답을 수\n    신하거나 본체 내부에 예상하지 못한 Error 가 발생했다."
+ },
+ "027-533": {
+  "title": "Internal Error in SMB Scan",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan 에서 내부 Error 가 발생했다.\n[검지조건]\n    내부 Error 가 발생했다.\n[대처순서]\n    1.  한번 더 동일한 조작을 실시한다.\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채취하\n    여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "027-548": {
+  "title": "SMB Protocol Error 4-008",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Protocol Error(4-008) Scan User 명의 지정이 부정확\n[검지조건]\n    < SMB 인증 /SMB Scanner 에서 발생한 Case >\n    User 명 지정이 부정확한 것을 본체 Controller Software(SMB Library) 가 검지\n[대처순서]\n    < SMB 인증에서 발생한 Case >\n    System 관리자는 User 명을 정확하게 설정한다.\n    User 명의 확인 방법\n    1.  공통조작 1. 사용자정보가 설정되어 있는 ActiveDirectory 도메인 컨트롤러 상에\n        서 [ 시작 ] Menu 에서 [ 모든 프로그램 ] → [ 관리도구 ] → [ActiveDirectory 사용\n        자 및 컴퓨터 ] 를 선택한다.\n    2.  공통조작 2.[ActiveDirectory 사용자 및 컴퓨터 ] Window 의 왼쪽 테두리에서\n        [ActiveDirectory 사용자 및 컴퓨터 [ 서버 ]] → [ 도메인 ] → [ 사용자명 ] 을 선택\n        하고 사용자정보를 List 한다.\n    3.  공통조작 3.[ActiveDirectory 사용자 및 컴퓨터 ] Window 의 오른쪽 테두리에서\n        대상 사용자를 마우스의 오른쪽 버튼으로 Click 한 후, [등록정보 ] 를 선택한다.\n    4.  [ 사용자 등록정보 Window 에서 [ 계정 ] Tab 을 선택한 후, [ 사용자 로그인명\n        (Windows 2000 이전 )] 의 사용자명을 확인한다.\n    < SMB Scanner 에서 발생한 Case >"
+ },
+ "033-363": {
+  "title": "Fail",
+  "text": "[Fault 내용]\n    FaxCard 또는 Controller 소프트웨어의 불량 가능성이 높은 Fail 이다.\n[대처순서]\n    OF-07 FAX System Fail 의 1. ~ 3. 을 실시 ( 여기서는 FaxCard 교환은 불필요.)\n    문제가 계속되면 NVM700-530 을 \"0\" 으로 설정하고, System 발생 시의 자동 기동\n    부 동작을 비활성화하고, Error 발생 직후의 시간에 전원을 끄지 않고 [info9 or\n    xxx.tgz] 의 로그를 취득한다. (2.5.2 Log 수집 조작 순서 참조 )\n    전원을 Off/On 하고, Fax 아이콘이 표시된 후 로그 도구를 이용하여 로그 [info9 or\n    xxx.tgz] 명령에 의한 로그를 취득한다. 전원 OFF/ON 이 필요한 이유는 033-363 이 발\n    생한 상태에서는 FaxCard 가 응답하지 않으므로 로그를 취득할 수 없기 때문이다."
+ },
+ "041-316": {
+  "title": "IH Driver Interface Fail",
+  "text": "참조 BSD : CH10.3\n\nMotor Drive PWB 와 IH Power Supply 사이의 인터페이스 이상 (IH Driver 측 ) 을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 IH Power Supply J530 와 Motor Drive PWB J441 사이의 Wire 단선, 단\n    락 또는 접촉불량을 점검한다.\n3.  점검에서 문제가 없을 경우에는 IH Power Supply 를 교환한다. (PL 18.1)"
  }
 }
