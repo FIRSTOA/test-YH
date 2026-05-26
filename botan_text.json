@@ -3406,5 +3406,45 @@
  "024-775": {
   "title": "Print Booklet sheets counts over (Not field attachment)",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Printer Job 에서 Booklet 용지 매수 Over Job Cancel( 표지만들기 안함 처리에서 발\n    생 )\n[검지조건]\n    Print 개시시에 검지\n    Printer Print Set 의 용지 매수가 Booklet 가능 매수를 넘었다.\n    -  1 장의 경우에는 자동으로 중앙 여백만 해제하고 세 번 접어서 배출"
+ },
+ "024-900": {
+  "title": "Upper Tray Out Of Place",
+  "text": "[Error 분류]\n    operation\n[Fault 내용]\n    상단 Tray 미장착\n[검지조건]\n    급지선택 Tray 보다 상단에 있는 Tray 가 \"미장착\" 상태이므로 급지 불가능으로 판단\n    된 경우.\n    이 Fault 는 엔진의 용지이송 구성에 따라 발생할 수 있다. (Front C 경로 엔진에서\n    만 발생 )\n[대처순서]\n    Tray 미장착 상태가 해제되지 않는 경우에는 \"xxTray Out Of Place\" 의 CE 복구순서\n    와 동일한 순서를 실시한다."
+ },
+ "024-910": {
+  "title": "Tray1 size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    크기 불일치 Tray1: 길이 측정 결과 부적합\n[검지조건]\n    용지이송과정에서 용지폭 부주사길이를 측정하여 Tray 가 검지한 크기의 부주사 길이\n    와 다른 경우\n[대처순서]\n    올바른 용지 세트 또는 용지 가이드를 확인한다.\n    문제가 계속되는 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 점검한다.\n    문제가 계속되는 경우 다음을 실시한다.\n    OF-09 Common Job Fail\n    OF-06 IOT System Fail"
+ },
+ "024-911": {
+  "title": "Tray2 size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Size Mismatch Tray 2: 측정 길이 결과 부적합"
+ },
+ "024-912": {
+  "title": "Tray3 size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Size Mismatch Tray 3: 측정 길이 결과 부적합\n[검지조건]\n    용지이송과정에서 용지 부주사 길이를 측정하여, Tray 가 검지하는 Size 의 부주사 길\n    이와 다른 경우\n[대처순서]\n    올바른 용지 세트 또는 용지 가이드를 확인한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 지속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail\n    OF-06 IOT System Fail"
+ },
+ "024-913": {
+  "title": "Tray4 size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Size Mismatch Tray 4: 측정 길이 결과 부적합\n[검지조건]\n    용지이송과정에서 용지 부주사 길이를 측정하여, Tray 가 검지하는 Size 의 부주사 길\n    이와 다른 경우\n[대처순서]\n    올바른 용지 세트 또는 용지 가이드를 확인한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 지속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail\n    OF-06 IOT System Fail"
+ },
+ "024-914": {
+  "title": "Tray6 size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Size Mismatch Tray 6: 측정 길이 결과 부적합"
+ },
+ "024-917": {
+  "title": "Stacker Tray Staple Set Over Count",
+  "text": ""
+ },
+ "024-919": {
+  "title": "FaceUP Tray Close",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    FaceUP Tray Close\n[검지조건]\n    Faceup Tray 로의 출력을 지정했지만, Faceup Tray 가 닫혀 있는 것을 검지 (Jigen 에\n    서는 Error 라고 하지 않는다.)\n[대처순서]\n    FaceUpTray 의 Cover Open 으로 고쳐지지 않으면, FaceUpTray Sensor 혹은\n    FaceUpCover 를 교환한다."
+ },
+ "024-920": {
+  "title": "Face Down Tray1 Paper FULL",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Face Down Tray1 Paper FULL\n[검지조건]\n    Face Down Tray 1 에 출력된 용지가 가득하다.\n[대처순서]\n    용지를 제거한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 지속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail\n    OF-06 IOT System Fail"
+ },
+ "024-922": {
+  "title": "Face Down Tray2 Paper FULL",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Face Down Tray2 Paper FULL\n[검지조건]\n    Face Down Tray 2 에 출력된 용지가 가득하다."
  }
 }
