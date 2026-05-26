@@ -2806,5 +2806,45 @@
  "021-434": {
   "title": "3GAdapter Error Fail (3Gnet-BOX).",
   "text": "[Fault 명칭]\n    3GAdapter Error Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    3G 어댑터 Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서 이상이 발생했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_ADAPTER_OTHER\",\n    \"SESSMGR_USBRNDIS_ERR_ADPTER_CANNOT_OPERATE\" 가 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_ADAPTER_OTHER_ERR\", \"SECEP_BEE_CANNOT_OPERATE\" 가 반\n    환되었다.\n[대처순서]\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 상태가 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-435": {
+  "title": "Cannot open 3G connection Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    Cannot open 3G connection Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    3G 회선에 대한 접속불가 Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 를 사용한 3G 회선 접속 시에 MFP 에서 IP 주소 중복을 검지했다. 또는 어\n    댑터의 리셋과 디바이스의 재기동이 필요한 Error 를 검출하여 회선 접속을 할 수 없\n    었다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_DETECTED_DUPLICATED_ADDR\",\n    \"SESSMGR_USBRNDIS_ERR_REQUIRE_REST\" 가 반환되었다."
+ },
+ "021-436": {
+  "title": "DNS Resolver init Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    DNS Resolver init Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    DNS 라이브러리 미초기화 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 를 사용한 3G 회선 접속 시에 통신 라이브러리의 미초기화를 검출했다.\n\n    DNSResolver 에서 \"EAI_AGAIN\" 이 반환되었다.\n[대처순서]\n    복합기의 Power OFF/ON.\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-439": {
+  "title": "DNS resolve Host (CA) Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    DNS resolve Host (CA) Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    DNS 이름 해결 (CA) Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서의 통신 시에 CA 서버의 이름 해결에 실패했다.\n\n    secep 에서 \"SECEP_BEE_RESOLVE_HOST\" 가 반환되었다.\n[대처순서]\n    3Gnet-BOX 진단 리포트를 출력하고 다음 항목을 확인한다.\n    · 전파상태 상태가 권외 혹은 레벨이 낮은 상태이면 다음을 실시한다.\n        - 3Gnet-BOX 의 안테나가 넘어져있으면 수직으로 세운다.\n        - 안테나 주변에 차폐하는 것이 있으면 떨어진 곳에 설치한다\n    · LAN-IP 주소, WAN-DNS 서버 주소 등, USB RNDIS 어댑터에 적절한 값이 입력되어\n    있는지 확인한다.\n\n    3G 회선 ( 전용선 ) 측에 유지관리 / 통신장애가 발생하지 않는지 확인한다 ( 전사 방송\n    등 ).\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-440": {
+  "title": "IP Protocol inactive Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    IP Protocol inactive Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    3Gnet-BOX 와의 IP 통신 불가 Error(3Gnet-BOX)"
+ },
+ "021-500": {
+  "title": "EP Accessory Job Exclusion",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    EP 관련상품의 Job 거부\n[검지조건]\n    FAX 송신 과금 기능이 활성화된 상태에서 다음의 경우가 해당된다.\n    1.  FAX 송신 Job 의 작동 중에 Accessory 과금 대상 Job 을 기동하려고 했다.\n    2.  Accessory 과금 대상 Job 의 작동 중에 FAX 송신 Job 을 기동하려고 했다. FAX 송\n        신 과금 기능이 비활성화 상태이면 검지하지 않는다.\n[대처순서]\n    현재 작동 중인 Job 이 완료된 후 다시 Job 의 기동을 실시한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-501": {
+  "title": "Invalid URL has detected",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Server URL 부정확\n[검지조건]\n    Server URL 이 문법적으로 올바르지 않다.\n    libcURL 에서 \"CURLE_URL_MALFORMAT\" 이 응답되었다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    설치 조작에 대한 Error 이면 EP Server 의 URL 을 다시 확인하고 입력한다.\n    설치 이외의 조작에 대한 Error 이면 Chain-Link 에서 EP(920-003) Server URL 을 올\n    바른 값으로 변경하고 다시 실행한다."
+ },
+ "021-502": {
+  "title": "Couldn't resolve proxy name",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Proxy Server 의 Address 해결 Error\n[검지조건]\n    Proxy Server 명의 Address 해결에 실패했다.\n    libcURL 에서 \"CURLE_COULDNT_RESOLVE_PROXY\" 가 응답되었다.\n[대처순서]\n    다음을 확인한다.\n    -  LAN Cable 의 접속을 확인한다.\n    -  DNS Server Address 설정을 확인한다.\n    -  Default Gateway 설정을 확인한다.\n    -  Subnet Mask 설정을 확인한다.\n    BB-Direct 구성인 경우, 다음을 확인한다.\n    -  EP Proxy Server 의 URL 설정을 확인한다. (Chain-Link(920-35) 또는 KO 설정 )\n    상기의 설정을 확인 후 상태가 개선되지 않는 경우, Network 장애 혹은 DNS Server\n    장애일 가능성이 크므로 고객의 Network 관리자에게 문의한다.\n    Network 가 정상이지만 상태가 개선되지 않는 경우, Trouble 발생 직후에\n    pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-503": {
+  "title": "Couldn't resolve host name",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Server 의 Address 해결 Error\n[검지조건]\n    Server 명의 Address 해결에 실패했다.\n    libcURL 에서 \"CURLE_COULDNT_RESOLVE_HOST\" 가 응답되었다.\n[대처순서]\n    다음을 확인한다.\n    -  LAN Cable 의 접속을 확인한다.\n    -  DNS Server Address 설정을 확인한다.\n    -  Default Gateway 설정을 확인한다.\n    -  Subnet Mask 설정을 확인한다.\n    -  EP Server URL 설정을 확인한다. (Chain-Link(920-003))\n    상기의 설정을 확인 후 상태가 개선되지 않는 경우, Network 장애 혹은 DNS Server\n    장애일 가능성이 크므로 고객의 Network 관리자에게 문의한다.\n    Network 가 정상이지만 상태가 개선되지 않는 경우, Trouble 발생 직후에\n    pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-504": {
+  "title": "Couldn't connect to host/proxy",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Server 의 접속 Error\n[검지조건]\n    Server 또는 Proxy Server 와 접속할 수 없었다.\n    libcURL 에서 \"CURLE_COULDNT_CONNECT\" 가 응답되었다. (Server 의 전원이 OFF 인 경\n    우도 포함 )\n    또는 libc URL 에서 \"CURLE_GOT_NOTHING\" 이 응답되었다.\n[대처순서]\n    다음을 확인한다.\n    -  LAN Cable 의 접속을 확인한다.\n    -  Default Gateway 설정을 확인한다.\n    -  Subnet Mask 설정을 확인한다.\n    -  EP Server 설정을 확인한다. (Chain-Link(920-003 ~ 920-006))\n    BB-Direct 구성인 경우, 다음을 확인한다.\n    -  EP Proxy Server 설정을 확인한다. (Chain-Link(920-035 ~ 920-039) 또는 KO 설\n        정 )\n    상기의 설정을 확인 후 상태가 개선되지 않는 경우, Network 장애 또는 EPA-Server\n    의 FQDN 이 변경되었을 가능성 (EPA-Server 휴대폰인 경우 ) 이 크므로 고객의 Network\n    관리자에게 문의한다.\n    Network 가 정상이지만 상태가 개선되지 않는 경우, Trouble 발생 직후에\n    pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-505": {
+  "title": "Couldn't establish SSL session",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SSL Session Error\n[검지조건]\n    SSL/TLS 의 Handshake 시 Error 가 발생했다.\n    libcURL 에서 \"CURLE_SSL_CONNECT_Error\" 가 응답되었다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
  }
 }
