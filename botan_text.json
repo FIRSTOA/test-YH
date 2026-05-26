@@ -2206,5 +2206,85 @@
  "018-518": {
   "title": "BMLinkS operation-not-available",
   "text": "[Error 분류]\n    Job"
+ },
+ "018-520": {
+  "title": "Internal Error in BMLinkS Scan",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Service 로의 접속후, 내부 Error 가 발생 또는 예기치 않은 Server 응\n    답을 수신\n[검지조건]\n    내부처리 Error\n[대처순서]\n    동일한 조작을 다시 실시한다.\n    Trouble 이 계속될 경우는 다음을 참고하여 pfshowinfo9 Log 와 Network Log 를 취득\n    한 후, Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-521": {
+  "title": "request send failure in BMLinkS",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Service 로의 접속중, Network Error 가 발생"
+ },
+ "018-522": {
+  "title": "response receive failure in BMLinkS",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Service 로부터의 응답중, Network Error 가 발생\n[검지조건]\n    BMLinkS Service 로부터의 요구결과 수신중에 Network Error 를 검지했다.\n    또는 예기치 않은 요구결과를 수신했다.\n[대처순서]\n    동일한 조작을 다시 실시한다.\n    Trouble 이 계속될 경우는 다음을 참고하여 pfshowinfo9 Log 와 Network Log 를 취득\n    한 후, Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-523": {
+  "title": "image send failure in BMLinkS",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Service 로의 Image 전송중, Network Error 가 발생\n[검지조건]\n    BMLinkS Service 로의 Image 전송중에 Network Error 를 검지했다.\n[대처순서]\n    동일한 조작을 다시 실시한다.\n    Trouble 이 계속될 경우는 다음을 참고하여 pfshowinfo9 Log 와 Network Log 를 취득\n    한 후, Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-524": {
+  "title": "Invalid device network setting",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CUI Scan: Device Network 설정 Error\n[검지조건]\n    1.  Device 의 DNS 미설정으로 Template 에 Server 명이 FQDN 으로 기재되어 있다.\n    2.  Job Template 에 기재된 전송 Protocol 의 Port 가 Device 에서 기동하지 않는다 (SMB,\n        FTP 등)."
+ },
+ "018-525": {
+  "title": "HDD full or HDD access Error",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CUI Scan: Job Template 처리 중에 HDD 관련 Error\n[검지조건]\n    1.  CUI Scan 개시 처리 중에 내부 HDD 가 Full(Job Template 의 Partition)\n    2.  CUI 개시를 처리하는 중에 내부 HDD 의 고장을 검지했다.\n[대처순서]\n    잠시 기다린 후 동일한 조작을 다시 실시한다. 그래도 상태가 개선되지 않는 경우 다\n    음을 실시한다.\n    HDD Full 확인 또는 Error 가 발생한 HDD 교환.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 Log 취득방법의 설명에 따\n    라 PfShowInfo 9 Log 와 Network Log 를 취득하여 기술부문에 문의한다."
+ },
+ "018-526": {
+  "title": "Rejected to be refresh",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CUI Scan: Job Template Polling 중\n[검지조건]\n    CUI Scan:Job Template Polling 중에 CUI Scan 개시 요구를 수신했다.\n[대처순서]\n    잠시 기다린 후 동일한 조작을 다시 실시한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 Log 취득방법의 설명에 따\n    라 PfShowInfo 9 Log 와 Network Log 를 취득하여 기술부문에 문의한다."
+ },
+ "018-527": {
+  "title": "JT Monitor Internal Error",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CUI Scan:Job Template 처리 중에 내부 Error 가 발생\n[검지조건]\n    Job Template Monitor 내부 에러\n[대처순서]\n    동일한 조작을 다시 실시한다."
+ },
+ "018-528": {
+  "title": "Soap request Error",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CUI Scan:Soap 인수 Error\n[검지조건]\n    고객 서비스의 Soap Client 로부터 부정확한 인수를 요청받았다.\n[대처순서]\n    고객 서비스의 설정이 올바른지 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 Log 취득방법의 설명에 따\n    라 PfShowInfo 9 Log 와 Network Log 를 취득하여 기술부문에 문의한다. 고객 서비스\n    와 Device 간의 Packet Log 도 취득."
+ },
+ "018-529": {
+  "title": "Duplicate scan request",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CUI Scan:Soap Job 기동 Request 의 중복\n[검지조건]\n    고객 서비스의 Soap Client 로부터 받은 CUI Scan 개시 처리 중에 다른 CUI Scan 개\n    시 요구를 수신했다.\n[대처순서]\n    잠시 기다린 후 동일한 조작을 다시 실시한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 Log 취득방법의 설명에 따\n    라 PfShowInfo 9 Log 와 Network Log 를 취득하여 기술부문에 문의한다."
+ },
+ "018-531": {
+  "title": "Failed to create a new job",
+  "text": ""
+ },
+ "018-532": {
+  "title": "Too many jobs to create a new",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CUI 스캔 작업의 생성에 실패\n[검지조건]\n    1.  네트워크 전송 작업의 다중도 Over( 동시에 최대 3 개까지 )\n    2.  Job 생성용 내부 Resource 의 부족 (System 한계)\n[대처순서]\n    잠시 기다린 후 동일한 조작을 다시 실시한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 Log 취득방법의 설명에 따라\n    PfShowInfo 9 Log 와 Network Log 를 취득하여 기술부문에 문의한다."
+ },
+ "018-533": {
+  "title": "Invalid mail was detected",
+  "text": "[Fault 명칭]\n    Invalid mail was detected\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    잘못된 형식의 메일을 수신했다."
+ },
+ "018-543": {
+  "title": "Shared name Error in SMB server",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan Server 에서의 공유명에 문제가 있다"
+ },
+ "018-547": {
+  "title": "The number restriction over of SMB scan users",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan User 수 제한을 초과했다.\n[검지조건]\n    SMB Server Login 시에 SMB Scan User 수 제한 Over 검지\n[대처순서]\n    1.  공유 Folder 의 접속 User 수 제한을 확인한다.\n    2.  Server 의 동시 사용 User 수가 최대수를 초과하지 않았는지 확인한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-557": {
+  "title": "HTTP Invalid char in filename",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP File 문자 부정확\n[검지조건]\n    금칙 문자가 혼합된 File 명이 지정되었다.\n[대처순서]\n    Scan 문서의 송신위치에 지정한 File 명을 금칙 문자가 포함되지 않도록 변경한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-558": {
+  "title": "HTTP file not found",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP Directory/File 명이 존재하지 않는다.\n[검지조건]\n    어떠한 이유로 인해 HTTP Server 로부터 해당 Error Code 를 수신\n[대처순서]\n    다음을 실시한다.\n    1.  Scan 문서의 송신 HTTP Server 로 지정한 Directory 가 존재하는지 확인한다.\n    2.  Scan 문서의 송신 HTTP Server 로 지정한 File 명이 존재하는지 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-559": {
+  "title": "HTTP File dupulication fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    File 명 중복시의 처리 중지\n[검지조건]\n    Scan File 명 중복시의 처리에 [덮어쓰기 금지] 로 선택\n[대처순서]\n    Scan 작업 실행시의 중복된 파일명 처리를 [작업중지] 이외로 설정한다."
+ },
+ "018-560": {
+  "title": "HTTP server login fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP User 인증 Error\n[검지조건]\n    HTTP Status 401 을 수신했다.\n[대처순서]\n    다음을 실시한다.\n    1.  Scan 문서의 송신위치 HTTP Server 로 PC 에서 Access 가능한지 확인한다.\n    2.  로그인용 사용자명을 확인한다.\n    3.  로그인용 비밀번호를 확인한다.\n    4.  Scan 문서의 송신위치 HTTP Server 명을 확인한다.\n    5.  Scan 문서의 송신위치 HTTP Server Path 명을 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-561": {
+  "title": "HTTP server not found",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP Error - NotFound\n[검지조건]\n    HTTP Status 404 를 수신했다.\n    -  Host 명이 틀리다.\n    -  Script 저장 위치가 틀리다.\n[대처순서]\n    다음을 실시한다.\n    1.  Scan 문서의 송신위치 HTTP Server 로 PC 에서 Access 가능한지 확인한다.\n    2.  Scan 문서의 송신위치 HTTP Server 명을 확인한다.\n    3.  Scan 문서의 송신위치 HTTP Server Path 명을 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
  }
 }
