@@ -2966,5 +2966,45 @@
  "021-567": {
   "title": "SIM card NG Fail (3Gnet-BOX).",
   "text": "[Fault 명칭]\n    SIM card NG Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    SIM 카드 이상 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에 삽입할 SIM 카드의 상태가 이상.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_SIM_NG\",\n    \"SIM_CONFIRMING\" 이 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_SIM_NG\", \"SECEP_BEE_SIM_CONFIRMING\" 이 반환되었다.\n[대처순서]\n    3Gnet-BOX 에 정품 SIM 카드가 올바로 꽂혀 있는지 확인한다.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-568": {
+  "title": "Time setting Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    Time setting Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    시각 동기 실패 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 와의 시각 동기에 실패했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_TIME_SETTING\" 이 반환되었다.\n[대처순서]\n    디바이스의 설정 시각이 올바른지 확인하고 올바르지 않으면 다시 설정하고 복합기\n    의 Power OFF/ON.\n\n    확인 결과, 상태가 개선되지 않는 경우는"
+ },
+ "021-569": {
+  "title": "USB connection timeout Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    USB connection timeout Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    USB 와의 접속 타임아웃 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 와의 USB 접속에 실패했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_USB_CONNECT\" 가 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_USB_CONNECT_ERR\" 가 반환되었다.\n[대처순서]\n    3Gnet-BOX 와 복합기를 연결하는 USB 케이블이 빠져 있지 않은지 확인하여 빠져 있으\n    면 접속하고 복합기의 Power OFF/ON.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-570": {
+  "title": "Cannot routing Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    Cannot routing Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    MFP 의 통신경로 확정 실패 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 를 사용한 3G 회선용 MFP 의 주소가 미설정 혹은 라우팅 설정에 실패했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_MFP_IPADDR\",\n    \"SESSMGR_USBRNDIS_ERR_ROUTING\" 이 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_RUTING_ERR\", \"SECEP_BEE_MFP_IPADDR_ERR\" 가 반환되었\n    다."
+ },
+ "021-572": {
+  "title": "RNDIS misc Error (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    RNDIS misc Error (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    RNDIS 라이브러리 Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서의 통신처리 중에 통신 라이브러리 (RNDIS) 에서 Error 가 발생했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_INTERNAL_ERROR\",\n    \"SESSMGR_USBRNDIS_ERR_CONVERT_FAILURE\",\n    \"SESSMGR_USBRNDIS_ERR_ARGUMENT_ERROR\",\n    \"SESSMGR_USBRNDIS_ERR_BEFORE_INITIALIZE\","
+ },
+ "021-573": {
+  "title": "3GAdapter Error Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    3GAdapter Error Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    3G 어댑터 Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서 이상이 발생했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_ADAPTER_OTHER\",\n    \"SESSMGR_USBRNDIS_ERR_ADPTER_CANNOT_OPERATE\" 가 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_ADAPTER_OTHER_ERR\", \"SECEP_BEE_CANNOT_OPERATE\" 가 반\n    환되었다.\n[대처순서]\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-574": {
+  "title": "Cannot open 3G connection Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    Cannot open 3G connection Fail (3Gnet-BOX).\n[Error 분류]\n    작업"
+ },
+ "021-575": {
+  "title": "DNS Resolver init Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    DNS Resolver init Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    DNS 라이브러리 미초기화 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 를 사용한 3G 회선 접속 시에 통신 라이브러리의 미초기화를 검출했다.\n\n    DNSResolver 에서 \"EAI_AGAIN\" 이 반환되었다.\n[대처순서]\n    복합기의 Power OFF/ON.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-576": {
+  "title": "DNS connect Fail (3Gnet-BOX).",
+  "text": ""
+ },
+ "021-577": {
+  "title": "DNS resolve host Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    DNS resolve host Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    DNS 이름 해결 Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서의 통신 시에 EP 서버의 이름 해결에 실패했다.\n\n    DNSResolver 에서 \"EAI_NONAME\" 이 반환되었다.\n[대처순서]\n    3Gnet-BOX 진단 리포트를 출력하고 다음 항목을 확인한다.\n    · 전파상태 상태가 권외 혹은 레벨이 낮은 상태이면 다음을 실시한다."
+ },
+ "021-578": {
+  "title": "DNS resolve Host (CA) Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    DNS resolve Host (CA) Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    DNS 이름 해결 (CA) Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서의 통신 시에 CA 서버의 이름 해결에 실패했다.\n\n    secep 에서 \"SECEP_BEE_RESOLVE_HOST\" 가 반환되었다.\n[대처순서]\n    3Gnet-BOX 진단 리포트를 출력하고 다음 항목을 확인한다.\n    · 전파상태 상태가 권외 혹은 레벨이 낮은 상태이면 다음을 실시한다\n        - 3Gnet-BOX 의 안테나가 넘어져 있으면 수직으로 세운다\n        - 안테나 주변에 차폐하는 것이 있으면 떨어진 곳에 설치한다\n    · LAN-IP 주소, WAN-DNS 서버 주소 등, USB RNDIS 어댑터에 적절한 값이 입력되어\n    있는지 확인.\n\n    3G 회선 ( 전용선 ) 측에 유지관리 / 통신장애가 발생하지 않는지 확인한다 ( 전사 방송\n    등 ).\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
  }
 }
