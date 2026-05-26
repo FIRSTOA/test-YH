@@ -1602,5 +1602,125 @@
  "016-751": {
   "title": "PDF Error",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PDF Error\n[검지조건]\n    1.  PDF Bridge 처리중에 구문 Error, 미정의 Command 의 사용, Parameter Error, PDF\n        File 의 손상, PDF Decomposer 의 내부 Error 가 발생\n[대처순서]\n    1.  [FX PDF]\n        Acrobat Reader 에서 Driver 를 사용하여 Print 한다.\n    2.  PDF Emulation 설정을 [1] 로 하는 경우에는 PostScript Memory 를 늘린다.\n        그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n        OF-09 Common Job Fail\n        2.4.3 전혀 나오지 않음, 인자되지 않음.\n        2.4.4 정상적으로 인자되지 않음.\n        2.4.5 Network 관계 상세 확인 Flow"
+ },
+ "016-752": {
+  "title": "PDF Short of Memory",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PDF Short of Memory\n[검지조건]\n    PDF Bridge 처리중에 Memory 부족을 검지했다.\n[대처순서]\n    [FX PDF]\n    인쇄 Mode 가 [고화질] 일 경우에는 [표준] 으로, [표준] 일 경우에는 [고속] 으\n    로 변경한다. (고화질 모드인 기계만.)\n    그래도 발생하는 경우에는 Memory 를 증설한다.\n    최대로 증설하여도 발생하는 경우에는 Acrobat Reader 에서 Driver 를 사용하여 인쇄\n    한다."
+ },
+ "016-753": {
+  "title": "PDF Password Mismatched",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    PDF Password Mismatched\n[검지조건]\n    Password 로 보호되는 PDF File 을 처리할 경우에, UI Panel 설정의 Password, XPJL\n    에서 지정된 (Contents Bridge 에서 설정) Password 모두 일치하지 않을 경우.\n[대처순서]\n    바른 Password 를 UI Panel, 또는 Contents Bridge 에서 지정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-756": {
+  "title": "Auditron - Prohibit Service",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "016-757": {
+  "title": "Auditron-Invalid User",
+  "text": "[Fault 명칭]\n    Auditron-Invalid User\n[Error 분류]\n    작업\n[Fault 내용]\n    Auditron-Invalid User\n[검지조건]\n    계정이 등록되어 있지 않다.\n    * 위 사례는 다양한 서비스로 인한 것이고 특수한 사례도 있으므로 그 예를 보충 설\n    명한다.\n    인증모드가 OFF 이고 집계모드가 유효 (본체 집계와 Xerox Standard Accoutning) 인\n    경우에 미인증 사용자가 작성한 메일박스를 기점으로 하는 일괄처리가 자동실행된\n    경우\n[대처순서]\n    올바른 계정을 설정하고 다시 실행한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "016-758": {
+  "title": "Auditron - Disabled Function",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Auditron-Disabled Function\n[검지조건]\n    부정확 Account 를 검지했다.\n[대처순서]\n    1.  그 Account 에 허가되어 있는 기능으로 재설정하여 재실시한다.\n    2.  Account 관리자와 상담한 후, 권한을 얻는다.\n        그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n        OF-09 Common Job Fail"
+ },
+ "016-759": {
+  "title": "Auditron - Reached Limit",
+  "text": ""
+ },
+ "016-762": {
+  "title": "Print LANG Not Installed",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    [Decomposer 부재]\n    장착되어 있지 않은 기능 (Print 언어, Print"
+ },
+ "016-763": {
+  "title": "POP server is not found",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    POP Server 를 찾을수 없다. (Server 접속시)\n[검지조건]\n    (POPERR_SOCKET)\n[대처순서]\n    1.  수신국의 POP Server 와 본체가 Network 통신을 할 수 있는 상태인지 다음 내용을 확\n        인한다.\n        ·  Server 의 IP Address 가 정확한지 확인한다.\n        ·  Network Cable 접속을 확인한다."
+ },
+ "016-764": {
+  "title": "SMTP Server Connect Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMTP 서버와의 접속에 실패 (서버 접속시)\n[검지조건]\n    SMTP 서버와의 접속 오류를 검출했다.\n    SMTP 서버 응답코드 : 421 or 451\n[대처순서]\n    1.  SMTP 서버와의 접속에 실패했다.\n        잠시 기다린 후 동일한 조작을 다시 실시한다.\n    2.  Pop Before SMTP 인증이 선택된 경우, 네트워크 관리자에게 Pop Before SMTP 인증\n        환경 (POP 서버와 SMTP 서버의 설정) 이 바르게 설정되어 있는지 확인한다.\n        SMTP 통신 리포트를 출력하여 오류 발생 원인을 특정짓는다."
+ },
+ "016-767": {
+  "title": "Invalid E-mail Address",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMTP 서버가 수신 주소를 거절 (서버 접속후)\n[검지조건]\n    부정확한 Email 수신 주소를 검출했다.\n    SMTP 서버 응답코드 : 550 or 551 or 553\n[대처순서]\n    메일 수신을 확인하고 올바른 주소를 설정한다.\n    POP before SMTP 등을 송신할 때 인증이 필요한 MTA 의 경우, 디바이스 송신 시 인\n    증을 바르게 설정한다.\n    SMTP 통신 리포트를 출력하여 오류 발생 원인을 특정짓는다.\n    -  SMTP 송신 : 771-397 (0: 출력 안 함 1: 오류 발생 시 출력함 2: 항상 출력함)\n    -  SMTP 수신 : 771-398 (0: 출력 안 함 1: 오류 발생 시 출력함 2: 항상 출력함)\n    문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    2.4 NET 계통 문제 확인\n    2.4.5 네트워크 관련 상세 확인 흐름"
+ },
+ "016-768": {
+  "title": "Invalid Sender Address",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMTP Server 가 송신자 Address 를 거부 (Server 접속후)\n[검지조건]\n    SMTP Protocol 의 \"MAIL FROM:\" Command 에서 Error 응답\n[대처순서]\n    1.  SMTP Server 에서 송신자 Address 를 거부했다.\n    송신자 Address 가 정확한지 확인한다.\n\n    상황이 개선되지 않을 때는 Network 관리자에게 상담한다."
+ },
+ "016-770": {
+  "title": "The direct fax function is cancelled by NVM",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    System Data 설정에 의해 Direct Access Job 금지\n[검지조건]\n    System Data 설정에 의해 Direct Access Job 금지\n[대처순서]\n    Direct Access Job 금지를 해제할 경우에는 대상 System Data 를 0 으로 설정\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    Job 이력 (UI, Report, CWIS, SSMI 사용 Application) 을 취득한다."
+ },
+ "016-772": {
+  "title": "Scan Data Repository Error (DNS Library)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMTP Job 을 위한 Device 의 DNS Server 미설정 (Server 접속전)\n[검지조건]\n    DNS 해결의 Library 호출 Error\n[대처순서]\n    DNS Address 를 설정한다. 또는, Scan Data Repository 의 Address 를 IP Address 로\n    설정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail\n    2.4 NET 시스템 오류 확인\n    2.4.5 Network 관계 상세 확인 Flow"
+ },
+ "016-773": {
+  "title": "Invalid IP Address",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    본체 IP Address 불량 (DHCP Lease 절단)\n[검지조건]\n    접속 실패시, Resource 의 IP Address valid Flag 가 FALSE\n[대처순서]\n    DHCP 환경을 확인한다. 또는, 본체에 고정 IP Address 를 설정한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail\n    2.4 NET 시스템 오류 확인\n    2.4.5 Network 관계 상세 확인 Flow"
+ },
+ "016-774": {
+  "title": "HD Full - Compression Convert",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    [압축형식 변환시의 HDD Full]"
+ },
+ "016-776": {
+  "title": "Image Convert Error",
+  "text": "[Fault 명칭]\n    Image Convert Error\n[Error 분류]\n    작업\n[Fault 내용]\n    < 이미지 변환 Error >\n    S-Formatter 이미지 변환 처리중에 HDD Access 이외의 원인으로 Error 가 발생했다.\n[검지조건]\n    1.  압축형식 변환중 Decode Error\n    2.  지시서에 덮어쓰기 동작 지정이 기술되어 있고 출력양식으로 Multi Page File(PDF,\n        XPS, Multi Page TIFF 등) 을 지정한 경우 이 Fault 를 검지하는 경우가 있다.\n    3.  FIPS 모드시 지시서에 따라 PDF 암호화가 지시된 작업을 개시하였으나 본체측에 사\n        용할 수 없는 암호화 알고리즘 (RC4 등) 이 설정된 경우\n    4.  출력양식으로 Microsoft Word(doc)/Excel(xls) 을 지정한 경우 파일에 포함된 개체 (\n        도형, 이미지, 입력란 등) 수가 Microsoft Word(doc)/Excel(xls) 사양의 상한을 초\n        과한 경우\n[대처순서]\n    1.  Salutation/ 인터넷 팩스 수신 문서 전송 중에 실패한 경우 웹 브라우저를 통해 메일\n        박스에서 페이지 단위로 가져온다."
+ },
+ "016-777": {
+  "title": "HD Access Error-Image Convert",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    [Image 변환 Error]\n    S-Formatter 에 있어서 Image 변환 처리중에 HDD Access Error 가 발생했다.\n[검지조건]\n    압축 변환, Image 변환중의 작업용 File open/read/write 에서 diskfull 이외의\n    Error 검지\n[대처순서]\n    HD 를 교환한 후 재실행한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-02 HDD System Fail"
+ },
+ "016-778": {
+  "title": "HD Full - Scan Image Convert",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    [Scan Image 변환 Error]\n    I-Formatter 에 있어서 Scan Image 변환 처리중에 HDD 용량부족이 발생했다.\n[검지조건]\n    작업용 File 의 open/write 로 diskfull 검지\n[대처순서]\n    HDD 의 용량을 비운 후 다시 Scan 한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-02 HDD System Fail"
+ },
+ "016-779": {
+  "title": "Scan Image Conversion Error",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "016-780": {
+  "title": "HD Access Error-Image Convert",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    [Scan Image 변환 Error]\n    I-Formatter 에서 Scan Image 변환 처리중에 HDD Access Error 가 발생했다.\n[검지조건]\n    작업용 File 의 open/write 로 HDD Full 이외의 Error 검지\n[대처순서]\n    HD 를 교환한 후 다시 Scan 한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-02 HDD System Fail"
+ },
+ "016-781": {
+  "title": "Server Connect ERR",
+  "text": "[Fault 명칭]\n    Server Connect ERR\n[Error 분류]\n    Job\n[Fault 내용]\n    SMTP Server 를 찾을 수 없다. (서버 접속시)\n[검지조건]\n    SMTP 메일 서버와의 접속에 실패.\n    (1) 이 기계와 서버가 모두 통신할 수 없다.\n    (2) 이 기계와 서버가 통신확립 후에 이 기계에 설정되어 있는 호스트명이 ASCII 문\n    자 이외라는 것을 검지하였다.\n[대처순서]\n    1.  본체의 \"서브넷 마스크\" 및 \"게이트웨이\" 를 올바로 설정한다.\n    2.  전송할 곳의 서버에서 \"ping\" 등으로 이 기계가 보이는지 확인한다.\n    <DMP-XI-3a 이후 > 이 기계로부터 \"서버 소통 확인\" 에서 수신국 서버와 접속할 수 있\n    는지를 확인한다 (연속 2 회 실시)."
+ },
+ "016-782": {
+  "title": "Server Login Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    < Server Login Error >\n    Server 로의 File 전송시에 Server 에 Login 할 수 없다.\n[검지조건]\n    < FTP >\n    FTP Server 로의 Login 실패\n    < SMB >\n    SMB Server 로의 Login 실패\n    SMB 에서는 Net Cable 을 떼어낸 상태라도 발생한다.\n[대처순서]\n    다음의 Test 를 실시한다.\n    1.  SMB 의 경우에는 Network Cable 접속을 확인하고 그래도 문제가 있으면 다음과 같\n        이 한다.\n    2.  현 사양에서는 Host 명은 EUC Code( 일본어 ) 는 이용할 수 없으므로, 영어로 치\n        환한다.\n    3.  EasyAdmin 에서 Job Flow 를 등록한다.\n        Host 명이 EUC Code( 일본어 ) 라도 전송 가능하다.\n    4.  수신표에서 [Server 명 /IP Address] 를 확인한다.\n        WinNT4.0:IP Address 로 한 경우, WinNT4.0 으로의 SMB 전송을 할 수 없으므로\n        [Server 명 /IP Address] 를 Host 명으로 바꾼다.\n        WinXP:IP Address 라도 정상적으로 SMB 를 전송할 수 있다.\n    5.  WinXP 의 Default 설정에서는 빈 Password 로 Network 경유의 Access 는 되지 않\n        는다.\n        [빈 Password 의 Access 허가] 로 WinXP 의 설정을 변경한 후 재조작."
+ },
+ "016-783": {
+  "title": "Invalid Server Path",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    < Network 전송시의 Server Path Error >\n    Server 로의 File 전송시에 지정한 Path 가 없다.\n[검지조건]\n    < FTP >\n    DocumentPath 속성에서 지정된 출력위치 Directory 로의 \"CWD\" Command 실패. 지정된\n    Path 가 존재하지 않으며, Access 권한이 없다.\n    < SMB >\n    지정된 Path 가 존재하지 않으며, Access 권한이 없다.\n[대처순서]\n    1.  Job Template File 의 Attribute 에 바르게 설정한다.\n    2.  Job Template 에 설정되어 있는 Server 의 Path 명을 확인하고 재설정\n        그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n        2.4.5 Network 관계 상세 확인 Flow\n        2.4.5.5 Scanner\n        CenterWare Scan Service Install Guide 참고"
+ },
+ "016-784": {
+  "title": "Server Write Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    < Network 전송시의 Server 쓰기 Error >\n    Server 로의 File 전송시에 Server 쓰기 불가.\n[검지조건]\n    < FTP > FTP Command \"STOR\", 또는 Write 실패에서 HDD Full 이외\n    < SMB > 수신국 Server 의 HDD Full 이외의 쓰기 Error\n[대처순서]\n    다음의 순서를 실시한다.\n    1.  Server 의 Directory 에 \"쓰기권한\" 이 있는지 확인한다.\n    2.  Server Disk 에 빈공간을 만든다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-13 016-782/016-784 Fail\n    2.4.5 Network 관계 상세 확인 Flow"
+ },
+ "016-786": {
+  "title": "HD Full-Scan Write Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    < Scan 시의 내부 HDD 쓰기 Error >\n    SCAN TO SERVER 에서 일시 File 을 내장 HD 에 쓰기가 불가능하다.: HD Full\n[검지조건]\n    Scan 기능 실행시, HDD File 쓰기 불가능\n[대처순서]\n    다음중 하나의 방법으로 처리한다.\n    -  기계본체의 전원을 OFF/ON 한다.\n    -  본체의 Tray 에 용지 부족이 발생할 경우에는 용지를 보급한다.\n    -  Mail 송신에서 발생할 경우에는 다음과 같은 방법으로 처리한다.\n        -  해상도를 낮춰서 송신한다.\n        -  Size 를 축소하여 송신한다.\n        -  Page 수를 줄이고 Job 을 몇 회로 나누어서 송신한다.\n        -  [컬러모드] 를 [흑백 (2 계조 )] 으로 하여 송신한다.\n    그래도 Trouble 이 지속될 때는 다음을 진행한다.\n    OF-09 Common Job Fail\n    OF-10 HDD Job Fail"
+ },
+ "016-788": {
+  "title": "Retrieve to Browser Failed",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Scan to SMB(Web Browser 경유) 의 추출 실패\n[검지조건]\n    Device 측 Job Abort/Cancel, Timeout, Client 측 Job Cancel\n[대처순서]\n    1.  Browser Page 를 재판독 후, 다시 추출 조작을 한다.\n    2.  Browser 를 다시 시작 후, 추출 조작을 한다.\n    3.  Device 의 전원 OFF/ON 후, 다시 추출 조작을 한다.\n        또, User Cancel 인 경우에는 대처가 필요없음.\n    4.  Network 통신상태를 개선한다.\n    5.  IP 중복 등의 장해가 발생하고 있지 않은지 확인한다.\n        그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n        2.4.5 Network 관계 상세 확인 Flow\n        2.4.5.5 Scanner\n        CenterWare Scan Service Install Guide 참고"
+ },
+ "016-790": {
+  "title": "Email fragment over",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    Email Fragment 수 Over\n[검지조건]\n    Page 분할 및 Message Partial 분할시, 1 개의 수신국 당의 메일 단편수가 System\n    Data 의 \"최대 Fragment 수\" 를 초과했다.\n[대처순서]\n    다음을 실시한다.\n    1.  송신 Parameter 의 해상도 (송신화질) 를 낮추어 재송신한다.\n    2.  송신 Parameter 의 배율을 조절하여 Image 를 축소한 후, 다시 송신한다. (A3 →\n        A4 등)\n    3.  \"최대 Fragment 수\" 의 값을 증가한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo8 과 Network Log\n    를 취득하여 기술부문에 문의한다.\n    2.5.2 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-793": {
+  "title": "MF I/O HD Full",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    [MFIO]\n    HD Full\n[검지조건]\n    MF-IO Task 가 HDD Full 을 검지했다.\n[대처순서]\n    HD 의 File 을 삭제한다. 또는 HD 를 초기화한다.\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail\n    OF-02 HDD System Fail"
+ },
+ "016-794": {
+  "title": "Media Reader:Media No Insert",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    【Media Reader】Media 미삽입 (Job 도중에 발생)\n[검지조건]\n    Media 로의 Access 가 발생하는 조작시에, MediaLib 에서 이 Error 를 검지한 경우\n[대처순서]\n    Media 삽입 확인\n    그래도 Trouble 이 지속될 경우는, 다음으로 진행하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "016-796": {
+  "title": "Document insert operation Error",
+  "text": ""
  }
 }
