@@ -3486,5 +3486,45 @@
  "024-935": {
   "title": "Tray1 Wrong Medium Type",
   "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 1 용지 종류 불일치\n    BUTTON: 용지 종류 불일치 테두리가 있는 OHP 필름 검지 Tray 1\n[검지조건]\n    Feed 시작 후에 (OHP Sensor 에서 ) OHP 필름의 흰색 테두리 유무를 검사하고 흰색 테\n    두리가 있다고 판단하면 Jam 이 발생한다.\n[대처순서]\n    Xerox 의 흰색 테두리가 없는 OHP 필름을 사용함."
+ },
+ "024-936": {
+  "title": "Tray2 Wrong Medium Type",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 2 용지 종류 불일치\n[검지조건]\n    1.  OHP 이외의 작업을 실행하고 용지가 OHP 인 경우\n    2.  OHP 인 작업을 실행하고 용지가 OHP 이외인 경우\n    3.  흰색 테두리 OHP 를 검지한 경우\n    Feed 개시 후에 (OHP 필름 Sensor 에서 ) OHP 필름의 흰색 테두리 유무를 검사하고 흰\n    색 테두리가 있다고 판단하면 Jam 이 발생한다.\n[대처순서]\n    Xerox 의 흰색 테두리가 없는 OHP 필름을 사용함.\n    문제가 계속되는 경우, 아래로 진행하여 문제를 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-937": {
+  "title": "Tray3 Wrong Medium Type",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 3 용지 종류 불일치\n[검지조건]\n    1.  OHP 이외의 작업을 실행하고 용지가 OHP 인 경우\n    2.  OHP 인 작업을 실행하고 용지가 OHP 이외인 경우\n    3.  흰색 테두리 OHP 를 검지한 경우\n    Feed 개시 후에 (OHP 필름 Sensor 에서 ) OHP 필름의 흰색 테두리 유무를 검사하고 흰\n    색 테두리가 있다고 판단하면 Jam 이 발생한다.\n[대처순서]\n    Xerox 의 흰색 테두리가 없는 OHP 필름을 사용함.\n    문제가 계속되는 경우, 아래로 진행하여 문제를 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-938": {
+  "title": "Tray4 Wrong Medium Type",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    BUTTON: 용지 종류 미스매치\n    테두리가 있는 OHP 검지 Tray 4\n[검지조건]\n    1.  OHP 이외의 작업을 실행하고 용지가 OHP 인 경우\n    2.  OHP 인 작업을 실행하고 용지가 OHP 이외인 경우\n    3.  흰색 테두리 OHP 를 검지한 경우"
+ },
+ "024-939": {
+  "title": "OHP kind mismatch (OHP 흰테두리 없음 )",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    용지종류 Mismatch\n    Controller 의 용지종류 지시에 관계없이, 검지한 용지종류가 테두이 있는 OHP 이라\n    면 Shutdown( 정지 )\n[검지조건]\n    OHP 이외의 Job 을 실시하여 용지가 OHP 였던 경우\n    OHP 의 Job 을 실시하여 용지가 OHP 이외였던 경우\n    흰 테두리 OHP 를 검지한 경우\n    Feed 개시 후에 (OHP Sensor 에서 )OHP Seat 의 흰 테두리 유무를 검사하고, 흰 테두\n    리가 있다고 판단했을 때는 Jam 으로 처리한다.\n[대처순서]\n    Xerox 의 흰테두리 없는 OHP 필름을 사용한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-940": {
+  "title": "Drum Cartridge M Life End",
+  "text": "참고 FIP\nCF-004 (Drum Cartridge Life End) FIP 참고."
+ },
+ "024-942": {
+  "title": "Booklet sheets counts over",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Booklet 용지매수 Over\n[검지조건]\n    세트한 용지매수가 Booklet 가능매수를 초과했다.\n    ·  Print 개시시에 검지\n    ·  1 장의 경우에는 자동으로 중앙 여백만 해제하고 반으로 접어서 배출.\n    ·  접기만 지정한 경우에는 자동으로 접기 가능한 매수마다 접어서 배출.\n[대처순서]\n    Booklet 의 상한 매수마다, Booklet 을 하던지 Booklet 을 해제할지 선택\n    ·  상한매수마다의 Booklet 인 경우, Signature 의 제본도 그 단위로 한다.\n    Trouble 이 지속될 때는 아래를 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-943": {
+  "title": "Booklet Low Staple",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Booklet Low Staple\n[검지조건]\n    Staple 의 침이 Front 와 Rear 모두에 조금 남아 있거나 Staple Cartridge 배냄 검지.\n    세트의 접침 눈금까지 Copy 하고, Staple Cartridge 교환 지시.\n[대처순서]\n    Staple 침 Cartridge 를 교환한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-945": {
+  "title": "Booklet Full Stack",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Booklet Tray Full Stack"
+ },
+ "024-946": {
+  "title": "Tray 1 Out Of Place",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 1 Out of Place\n[검지조건]\n    Tray 1 이 세트되지 않은 것을 검출했다.\n[대처순서]\n    Tray 를 세트한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-947": {
+  "title": "Tray 2 Out Of Place",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 2 Out of Place\n[검지조건]\n    Tray 2 가 세트되지 않은 것을 검출했다.\n[대처순서]\n    Tray 를 세트한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
  }
 }
