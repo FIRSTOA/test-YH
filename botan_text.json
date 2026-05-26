@@ -3766,5 +3766,45 @@
  "026-737": {
   "title": "Network Error",
   "text": "[Fault 명칭]\n    Network Error\n[Error 분류]\n    작업\n[Fault 내용]\n    Network Error\n[검지조건]\n    HTTP 스캔 업로드에서 네트워크 에러를 검출했다.\n[대처순서]\n    네트워크 환경과 서버를 확인한다.\n\n    그래도 문제가 계속되는 경우는 문제 발생 직후에 [PfShowInfo 8 로그 ] 및 [네트워\n    크 로그 ] 를 취득하여 지원부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "026-738": {
+  "title": "Browser close during job",
+  "text": "[Fault 명칭]\n    Browser close during job\n[Error 분류]\n    작업\n[Fault 내용]\n    Browser close during job\n[검지조건]\n    HTTP 스캔 업로드 작업중 브라우저를 닫는다.\n[대처순서]\n    다시 한 번 조작한다."
+ },
+ "026-739": {
+  "title": "Authentication Makes Waiting Scan Job Deleted Fail",
+  "text": "[Fault 명칭]\n    Authentication Makes Waiting Scan Job Deleted Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    인증 성공시 / 인증 해제시, 일시정지 중인 스캔작업이 있을 때는 그 작업을 중지한\n    다.\n[검지조건]\n    인증 성공시 / 인증 해제시, 일시정지 중인 스캔작업이 있는 경우"
+ },
+ "027-310": {
+  "title": "DFE Communication Fail (SubSystem)",
+  "text": "[Fault 명칭]\n    DFE Communication Fail (SubSystem)\n[Error 분류]\n    Sub System\n[Fault 내용]\n    Controller 검지 DFE Comm Error (SubSystem)\n[검지조건]\n    GreenController 측이 DFE 와의 통신 Fail 을 검지했다.\n[대처순서]\n    DFE 연결 Cable 분리 / 접속\n    Power Off/On"
+ },
+ "027-311": {
+  "title": "DFE Parameter Error (SubSystem)",
+  "text": "[Fault 명칭]\n    DFE Parameter Error (SubSystem)\n[Error 분류]\n    Sub System\n[Fault 내용]\n    Controller 검지 DFE Parameter Error (SubSystem)\n[검지조건]\n    GreenController 측이 DFE 와의 COMMAND 통신에서 잘못된 매개변수를 검지했다.\n[대처순서]\n    DFE 연결 Cable 분리 / 접속\n    Power Off/On"
+ },
+ "027-312": {
+  "title": "ExtPrint Check Mode Error (SubSystem)",
+  "text": "[Fault 명칭]\n    ExtPrint Check Mode Error (SubSystem)\n[Error 분류]\n    Sub System\n[Fault 내용]\n    외부 Print CheckMode Error (SubSystem)\n[검지조건]\n    외부 CDI 의 H/W Check 모드에서 Controller 가 Error 를 검지했다\n[대처순서]\n    · DFE 와 M/C 사이의 Command/Video Cable 분리 / 접속\n    · Power Off/On"
+ },
+ "027-313": {
+  "title": "ExtPrint I/F Mismatch (SubSystem)",
+  "text": "[Fault 명칭]\n    ExtPrint I/F Mismatch (SubSystem)"
+ },
+ "027-400": {
+  "title": "Net Off Line",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    Net Off Line\n[검지조건]\n    1.  다른 Fault 장애가 발생하고 있기 때문에 통신할 수 없는 경우.\n    2.  조작부를 조작중 ( 특히 CE Mode 등 ) 이기 때문에 통신할 수 없는 경우.\n    3.  제 3 자의 Remote Access 로 인해 통신할 수 없는 경우.\n[대처순서]\n    다른 메시지가 표시된 경우, 해당 장애를 해결한다. 조작부를 조작하는 중이면 조작\n    을 완료한다. Remote Access 중인 경우 종료될 때까지 기다린다.\n    Trouble 이 계속되는 경우, 전원을 OFF/ON 한다.\n    다음을 실시한다.\n    2.4.3 전혀 나오지 않음, 인자되지 않음\n    2.4.5 Network 관계 상세 확인 Flow.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "027-443": {
+  "title": "Duplicat IP address",
+  "text": "[Error 분류]\n    Information\n[Fault 내용]\n    IPv6 - 비상태형 주소 자동 설정에서 IP 주소 2 가 중복\n[검지조건]\n    기계의 [비상태형 자동 설정 주소 2] 와 동일한 IP 주소를 가진 기기가 네트워크상\n    에 존재한다.\n    *Bit 1 PFRID_IPV6_PROT_AUTO 의 autoConfInet6Address[1] 에서의 중복 주소\n    027-442~027-447 이 동시에 발생했을 경우, Link 번호가 낮은 순서부터 우선적으로\n    표시된다.\n[대처순서]\n    중복된 네트워크상의 기계 IPv6 주소를 변경하여 IP 주소 중복을 해결한다.\n    (1) 비상태형 주소 자동 설정으로 설정한 IPv6 주소가 다른 곳에서 사용되고 있는지\n        확인한다.\n    (2) 장애 분석 로그 수집과 패킷 수집\n\n    문제가 계속되는 경우는 다음을 실시한다.\n    2.4.3 전혀 나오지 않는다. 인자되지 않음\n    2.4.5 네트워크 관련 세부사항의 확인작업 흐름\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "027-444": {
+  "title": "Duplicat IP address",
+  "text": "[Error 분류]\n    Information\n[Fault 내용]\n    IPv6 - 비상태형 주소 자동 설정에서 IP 주소 3 이 중복\n[검지조건]\n    기계의 IPv6 [ 비상태형 자동 설정 주소 3] 과 동일한 IP 주소를 가진 기기가 네트워\n    크상에 존재한다.\n    *Bit 2 PFRID_IPV6_PROT_AUTO 의 autoConfInet6Address[2] 에서의 중복 주소\n    027-442~027-447 이 동시에 발생했을 경우, Link 번호가 낮은 순서부터 우선적으로\n    표시된다.\n[대처순서]\n    중복된 네트워크상의 기계 IPv6 주소를 변경하여 IP 주소 중복을 해결한다.\n    (1) 비상태형 주소 자동 설정으로 설정한 IPv6 주소가 다른 곳에서 사용되고 있는지\n        확인한다.\n    (2) 장애 분석 로그 수집과 패킷 수집"
+ },
+ "027-445": {
+  "title": "Illegal IP address",
+  "text": "[Error 분류]\n    Information\n[Fault 내용]\n    IPv6 - 수동 설정 IP 주소가 부정확\n[검지조건]\n    기계에 설정된 IPv6 [ 수동 설정 주소 ] 가 부정확.\n    *Bit 13 PFRID_IPV6_PROT_MANUAL 의 inet6Address 에서 주소 할당 에러\n    027-442~027-447 이 동시에 발생했을 경우, Link 번호가 낮은 순서부터 우선적으로\n    표시된다.\n[대처순서]\n    기계의 [IPv6( 수동 설정 주소 )] 를 본체 주소로 사용 가능한 IPv6 주소로 변경한다.\n    (1) 자동으로 설정한 수동 주소의 IPv6 주소에 부정확한 주소를 사용하고 있는지 확\n        인한다.\n    (2) 장애 분석 로그 수집과 패킷 수집\n\n    문제가 계속되는 경우는 다음을 실시한다.\n    2.4.3 전혀 나오지 않는다. 인자되지 않음\n    2.4.5 네트워크 관련 세부사항의 확인작업 흐름\n    2.5.1 로그 수집 / 추출 도구 기능설명"
  }
 }
