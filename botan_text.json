@@ -2366,5 +2366,85 @@
  "018-587": {
   "title": "File dupulication fail",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    File 명 중복시의 처리 중지\n[검지조건]\n    Scan File 명 중복시의 처리에 [덮어쓰기 금지] 로 선택\n[대처순서]\n    중복된 파일명 처리를 [작업중지] 이외로 설정한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-589": {
+  "title": "NEXTNAME.DAT Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    NEXTNAMEDAT File 의 Access Error"
+ },
+ "018-590": {
+  "title": "Same name exists",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    동일한 명칭의 File 존재하므로 처리 중지\n[검지조건]\n    Server 상에서 동일한 명칭의 File/Folder 를 검지\n[대처순서]\n    다음을 실시한다.\n    1.  복수의 기계로부터 동일 Server 의 동일 Folder 에 Access 되지 않은 상태에서 한\n        번 더 동일한 조작을 한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-591": {
+  "title": "File name suffix limit over",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Scan File 명의 Suffix 제한값 Over\n[검지조건]\n    Server 로의 접속후 Server 내에서의 File/Folder 명 결정중에 File 명 /Folder 명의\n    Suffix 가 제한값을 초과했다.\n[대처순서]\n    Scan Server 상의 File 명 / 수신국 Folder 를 변경하거나 전송위치 Folder 내의 File\n    을 이동 또는 삭제한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-592": {
+  "title": "lock folder create fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Scan Lock Folder 의 작성 실패"
+ },
+ "018-593": {
+  "title": "lock folder delete fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Scan Lock Folder 의 삭제 실패\n[검지조건]\n    Scan Lock Folder 의 삭제에 실패했다.\n[대처순서]\n    기존 lock directory(*.LCK) 가 수신국에 남아 있는 경우, 수동으로 삭제하고 다시\n    Job 을 실행한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-595": {
+  "title": "Detected user duplication, in LDAP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    ICCG 외부 인증에서 중복 ID 를 검지 (LDAP Protocol)\n[검지조건]\n    LDAP Server 의 Data Base 위에 현재 사용한 IC Card 와 동일한 정보를 가진 Entry 가\n    여러 개 발견되었다\n[대처순서]\n    LDAP Server 의 Data Base 위에 User 의 Entry 가 동일한 IC Card 정보를 갖지 않도록\n    수정한다.\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n    취하여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-700": {
+  "title": "Network stack is not initialized Fail",
+  "text": "[Fault 명칭]\n    Network stack is not initialized Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Network stack is not initialized Fail\n[검지조건]\n    외부인증 라이브러리가 외부 액세스를 시도할 때에 장치의 네트워크 스택이 초기화\n    되지 않아 에러를 검지하였다.\n[대처순서]\n    네트워크 스택 초기화중. 잠시 기다린 후에 다시 시도한다."
+ },
+ "018-701": {
+  "title": "LDAP protocol Error 01",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 01( 조작 Error)\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[1]( 조작\n    Error) 이 수신되었다.\n[대처순서]\n    본체의 [외부 인증 Server/Directory Service 설정 ] 의 [LDAP Server/Directory\n    Service 설정 ] 이 정확히 설정되어 있는지 확인한다.\n    또는 Server 측에 문제가 발생되어 있다. Network 관리자에게 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-702": {
+  "title": "LDAP protocol Error 02",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "018-703": {
+  "title": "LDAP protocol Error 03",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 03\n    (검색 Timeout)\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[3]( 검색 시간\n    Timeout) 이 수신되었다.\n[대처순서]\n    주소록 내부 Data 에 대해 검색 조건 / 검색 개시 위치의 확인 등, 검색 대상을 좁혀\n    서 다시 검색한다.\n    그래도 재발할 경우에는 Network 관리자에게 상담한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-705": {
+  "title": "LDAP protocol Error 05",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "018-706": {
+  "title": "LDAP protocol Error 06",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 06( 비교 요구의 결과는 참 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[6]( 비교 요구\n    의 결과는 참 ) 이 수신되었다.\n[대처순서]\n    [지시대로의 결과를 내보냈다 ] 라는 의미로 Error Message 가 아니다.\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-707": {
+  "title": "LDAP protocol Error 07",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 07( 지정한 인증 방식은 Support 하지 않음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[7]( 지정한 인\n    증 방식은 Support 하지 않음 ) 이 수신되었다.\n[대처순서]\n    지정한 인증 방식에 대응하지 않는다. 인증 방식을 변경한다.\n    Network 관리자와 상담하고, 인증 설정을 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-708": {
+  "title": "LDAP protocol Error 08",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 08( 강력한 인증이 필요함 )"
+ },
+ "018-709": {
+  "title": "Active communication is unavailable now Fail",
+  "text": "[Fault 명칭]\n    Active communication is unavailable now Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Active communication is unavailable now Fail\n[검지조건]\n    외부인증 라이브러리가 외부 액세스를 시도할 때에 장치의 능동적 통신상태를 검지\n    하였다.\n[대처순서]\n    A.  IPv4 환경만 해당\n    1.  본 기계의 IPv4 주소용 주소가 올바르지 않거나 자동 IP 주소로 설정되어 있지\n        않은지 확인한다.\n    2.  네트워크가 올바르게 연결되어 있는지 확인한다.\n    3.  네트워크 관리자에게 DHCP 서버의 주소가 고갈되어 있지 않은지 확인한다.\n    4.  \"PfShowInfo9\" Log 를 취득한다.\n    B.  IPv6 환경만 해당\n    1.  본 기계의 IPv6 주소에 IPv6 라우터에서 배부된 네트워크 주소를 사용한 글로벌\n        주소가 할당되어 있는지 확인한다.\n    2.  네트워크가 올바르게 연결되어 있는지 확인한다.\n    3.  네트워크 관리자에게 IPv6 라우터가 올바르게 설정되어 있는지 확인한다.\n    4.  \"PfShowInfo9\" Log 를 취득한다."
+ },
+ "018-710": {
+  "title": "LDAP protocol Error 10",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 10( 검색 범위에 등록 없음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[10](referral(\n    소개, 참고 )) 이 수신되었다.\n[대처순서]\n    지정한 검색 범위에 아무 것도 등록이 없다. Network 관리자와 상담하고, 인증 설\n    정의 상태를 확인한다."
+ },
+ "018-711": {
+  "title": "LDAP protocol Error 11",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 11(Administration 제한을 초과 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의\n    resultMessageNo[11](Administration 제한을 초과 ) 이 수신되었다.\n[대처순서]\n    Network 관리자와 상담한 뒤 필요한 항목을 설정할 것.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-712": {
+  "title": "LDAP protocol Error 12",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 12( 확장 기능을 사용할 수 없음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[12]( 확장 기능\n    을 사용할 수 없음 ) 가 수신되었다.\n[대처순서]\n    Network 관리자와 상담한 뒤 필요한 항목을 설정할 것.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-713": {
+  "title": "LDAP protocol Error 13",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 13( 기밀성이 필요 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[13]( 기밀성이\n    필요 ) 이 수신되었다.\n[대처순서]\n    Network 관리자와 상담한 뒤 필요한 항목을 설정할 것.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-714": {
+  "title": "LDAP protocol Error 14",
+  "text": "[Error 분류]\n    Job Fail"
  }
 }
