@@ -4526,5 +4526,133 @@
  "091-929": {
   "title": "Drum CRUM C Not Position",
   "text": "참고 FIP\nCF-026 (Drum CRUM Not Position) FIP 참고."
+ },
+ "091-943": {
+  "title": "Drum CRUM Y Data Mismatch",
+  "text": "참고 FIP\nCF-027 (Drum CRUM Data Mismatch) FIP 참고."
+ },
+ "091-944": {
+  "title": "Drum CRUM M Data Mismatch",
+  "text": "참고 FIP\nCF-027 (Drum CRUM Data Mismatch) FIP 참고."
+ },
+ "092-312": {
+  "title": "ATC System Fail Y",
+  "text": "참고 FIP\nCF-029 (ATC System Fail) FIP 참고."
+ },
+ "092-313": {
+  "title": "ATC System Fail M",
+  "text": "참고 FIP\nCF-029 (ATC System Fail) FIP 참고."
+ },
+ "092-315": {
+  "title": "ATC System Fail K",
+  "text": "참고 FIP\nCF-029 (ATC System Fail) FIP 참고."
+ },
+ "092-649": {
+  "title": "ADC Shutter Open Fail",
+  "text": "참고 FIP\nCF-030 (ADC Shutter/Sensor Fail) FIP 참고."
+ },
+ "092-650": {
+  "title": "ADC Shutter Close Fail",
+  "text": "참고 FIP\nCF-030 (ADC Shutter/Sensor Fail) FIP 참고."
+ },
+ "093-337": {
+  "title": "Toner CRUM M Authentication IC is not Available",
+  "text": "참고 FIP\nCF-036 (Toner CRUM Authentication IC is not Available) FIP 참고."
+ },
+ "093-407": {
+  "title": "Toner Cartridge Y Pre Near Empty",
+  "text": "참고 FIP\nCF-038 (Toner Cartridge Pre Near Empty) FIP 참고."
+ },
+ "093-408": {
+  "title": "Toner Cartridge M Pre Near Empty",
+  "text": "참고 FIP\nCF-038 (Toner Cartridge Pre Near Empty) FIP 참고."
+ },
+ "093-409": {
+  "title": "Toner Cartridge C Pre Near Empty",
+  "text": "참고 FIP\nCF-038 (Toner Cartridge Pre Near Empty) FIP 참고."
+ },
+ "093-423": {
+  "title": "Toner Cartridge Y Near Empty",
+  "text": "참고 FIP\nCF-037 (Toner Cartridge Near Empty) FIP 참고."
+ },
+ "093-424": {
+  "title": "Toner Cartridge M Near Empty",
+  "text": "참고 FIP\nCF-037 (Toner Cartridge Near Empty) FIP 참고."
+ },
+ "093-425": {
+  "title": "Toner Cartridge C Near Empty",
+  "text": "참고 FIP\nCF-037 (Toner Cartridge Near Empty) FIP 참고."
+ },
+ "093-912": {
+  "title": "Toner Cartridge K Empty",
+  "text": "참고 FIP\nCF-003 (Toner Cartridge Empty) FIP 참고."
+ },
+ "093-916": {
+  "title": "Toner CRUM K Not Position",
+  "text": "참고 FIP\nCF-039 (Toner CRUM Not Position) FIP 참고."
+ },
+ "093-926": {
+  "title": "Toner CRUM K Data Mismatch Fail",
+  "text": "참고 FIP\nCF-028 (Toner CRUM Data Mismatch Fail) FIP 참고."
+ },
+ "093-960": {
+  "title": "Toner CRUM Y Data Mismatch Fail",
+  "text": "참고 FIP\nCF-028 (Toner CRUM Data Mismatch Fail) FIP 참고."
+ },
+ "093-961": {
+  "title": "Toner CRUM M Data Mismatch Fail",
+  "text": "참고 FIP\nCF-028 (Toner CRUM Data Mismatch Fail) FIP 참고."
+ },
+ "093-962": {
+  "title": "Toner CRUM C Data Mismatch Fail",
+  "text": "참고 FIP\nCF-028 (Toner CRUM Data Mismatch Fail) FIP 참고."
+ },
+ "093-970": {
+  "title": "Toner CRUM Y Not Position",
+  "text": "참고 FIP\nCF-039 (Toner CRUM Not Position) FIP 참고."
+ },
+ "093-971": {
+  "title": "Toner CRUM M Not Position",
+  "text": "참고 FIP\nCF-039 (Toner CRUM Not Position) FIP 참고."
+ },
+ "093-972": {
+  "title": "Toner CRUM C Not Position",
+  "text": "참고 FIP\nCF-039 (Toner CRUM Not Position) FIP 참고."
+ },
+ "094-318": {
+  "title": "1st BTR Position Fail",
+  "text": "참조 BSD : CH9.19\n\n1st BTR Contact/Retract 동작을 시작한 후 규정 시간이 지나도 Contact 또는 Retract 동\n작이 완료되지 않는다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  1st BTR Contact/Retract Sensor 의 조립 불량.\n·  1st BTR Contact/Retract Sensor (DC330[094-200]) 작동불량. (PL 3.1)\n·  1st BTR Contact/Retract Clutch (DC330[094-008/009] (Retract/Contact)) 작동불량\n    . (PL 3.1)\n\n    주기 : 1st BTR Contact/Retract 작동 시, Fusing Unit Drive Motor 도 회전하는지 점\n    검한다. 회전하지 않는 경우는 1st BTR Contact/Retract Gear 의 긁힘, 파손을 점검\n    한다.\n\n·  IBT Belt Unit 의 기계적인 부하, 파손.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "094-417": {
+  "title": "IBT Unit Near End Warning",
+  "text": "참조 BSD : CH3.1\n\nIBT Belt Unit 의 교환 시기가 근접했다.\n\n원인 / 대처방법\nIBT Belt Unit (PL 6.1) 를 교환하고 DC135 [954-820](IBT Unit) 를 재설정한다.\n\n    주기 : IBT Belt Unit 교환 후 Diagnostic 의 DC675 Registration Control 설정 주기\n    (6.4.2.23) 와 DC937 Procon ON Print(6.4.2.28) 를 DC675, DC937 의 순서대로 실행한다."
+ },
+ "094-418": {
+  "title": "IBT Cleaner Unit Near End Warning",
+  "text": "참조 BSD : CH3.1\n\nIBT Cleaner Unit 의 교환 시기가 근접했다.\n\n원인 / 대처방법\nIBT Cleaner Unit (PL 6.1) 을 교환하고 DC135 [954-822](IBT Cleaner Unit) 의 카운터 값\n을 재설정한다."
+ },
+ "094-419": {
+  "title": "2nd BTR Unit Near End Warning",
+  "text": "참조 BSD : CH3.1\n\n2nd BTR Unit 의 교환시기가 가깝다.\n\n원인 / 대처방법\n2nd BTR Unit (PL 14.1) 을 교환하고 DC135[954-821] (2nd BTR Unit) 의 카운터 값을 재설\n정한다."
+ },
+ "094-421": {
+  "title": "IBT Cleaner Unit End Warning",
+  "text": "참조 BSD : CH3.1\n\nIBT Cleaner Unit 의 교환 시기이다.\n\n원인 / 대처방법\n094-418 (IBT Cleaner Unit Near End Warning) FIP 참고."
+ },
+ "094-422": {
+  "title": "2nd BTR Unit End Warning",
+  "text": "참조 BSD : CH3.1\n\n2nd BTR Unit 의 교환시기이다.\n\n원인 / 대처방법\n094-419 (2nd BTR Unit Near End Warning) FIP 참고."
+ },
+ "099-364": {
+  "title": "Fusing Unit Low Not Ready Return Time Fail",
+  "text": "참조 BSD : CH10.4\n\n저온의 Not Ready 상태가 규정 시간을 초과했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 IH Power Supply J60, J61 와 IH Heating Coil P634 사이의 Wire 단\n    선, 단락 또는 접촉불량을 점검한다.\n3.  본체와 Fusing Unit 사이의 Drawer Connector( DP/DJ600, P/J600) 의 Pin 변형, 소\n    실, Connector 에 이물질 혼입 등을 점검한다.\n4.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  Coil Assembly (PL 7.1)\n    ·  Fusing Unit (PL 7.1)"
+ },
+ "099-373": {
+  "title": "Wind Around P/Roll Fail",
+  "text": "참조 BSD : CH10.5\n\nP/Roll 의 용지말림을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n용지를 제거하고 전원을 OFF/ON 한다. 재현하는 경우에는 Fusing Unit 을 교환한다. (PL\n7.1)"
+ },
+ "099-395": {
+  "title": "Fusing Motor Current Fail",
+  "text": "참조 BSD : CH10.1\n\nFusing Motor 에 인가되는 전류값이 규정 시간을 넘어 연속해서 기준값을 초과하고 있다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n010-613 (Fusing Motor Current Warning) FIP 참고."
  }
 }
