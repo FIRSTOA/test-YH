@@ -2122,5 +2122,89 @@
  "018-441": {
   "title": "Wi-Fi Direct stops by the conflict setting for 5GHz mode",
   "text": "[Fault 명칭]\n    Wi-Fi Direct stops by the conflict setting for 5GHz mode"
+ },
+ "018-443": {
+  "title": "Dynamic DNS-IPv4 Update Failure (WiFi)",
+  "text": "[Fault 명칭]\n    Dynamic DNS-IPv4 Update Failure (WiFi)\n[Error 분류]\n    Information\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Wi-Fi 에서 DNS 서버로의 IPv4 주소 및 호스트 이름 업데이트에 실패했다.\n[대처순서]\n    전원을 OFF/ON 한다. 문제가 계속되는 경우는 다음을 실시한다.\n    1.  DNS 서버 주소가 디바이스에 올바르게 설정되었는지 확인한다.\n    2.  고객 시스템 관리자에게 Dynamic DNS 가 동작 가능한 DNS 서버로 설정되었는지 확\n        인한다.\n    문제가 계속되는 경우 문제 발생 직후에 pfshowinfo 9 로그와 네트워크 로그를 취득\n    하여 지원부서에 연락한다 (2.5.1 LOG)."
+ },
+ "018-444": {
+  "title": "Dynamic DNS-IPv6 Update Failure (WiFi)",
+  "text": "[Fault 명칭]\n    Dynamic DNS-IPv6 Update Failure (WiFi)\n[Error 분류]\n    Information\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Wi-Fi 에서 DNS 서버로의 IPv6 주소 및 호스트 이름 업데이트에 실패했다.\n[대처순서]\n    전원을 OFF/ON 한다. 문제가 계속되는 경우는 다음을 실시한다.\n    1.  DNS 서버 주소가 기계에 올바르게 설정되었는지 확인한다.\n    2.  고객 시스템 관리자에게 IPv6 주소를 사용하여 Dynamic DNS 가 동작 가능한 DNS\n        서버로 설정되었는지 확인한다.\n    3.  DNS 서버 주소가 디바이스에 올바르게 설정되었는지 확인한다.\n    4.  고객 시스템 관리자에게 IPv6 주소를 사용하여 Dynamic DNS 가 동작 가능한 DNS\n        서버로 설정되었는지 확인한다."
+ },
+ "018-500": {
+  "title": "CA Message Receiver Boot Error (S_cert lost)",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CA 인증 메시지 수신서버의 기동 Error\n[검지조건]\n    Device 기동시에 서버 인증서 / 비밀번호가 없어서 CA 에 필요한 SSL 서버를 기동하지\n    못했다.\n[대처순서]\n    IOT 와 Controller 의 계약정보를 일치시킨다.\n    Device 의 서버 인증서가 없다. 서버 인증서를 설정할 것. 또는 CA 기능을 OFF 로 설\n    정한다.\n    Trouble 이 계속되는 경우, Trouble 발생 직후에 \"2.5 LOG\" 에 따라 pfshowinfo9 Log\n    와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5 LOG"
+ },
+ "018-501": {
+  "title": "CA Server Connection Error",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CA 인증서버 통신 Error\n[검지조건]\n    Device 가 CA 인증을 실시하는 과정에서 CA 서버에 접속하지 못했다. 통신에 실패했\n    다.\n[대처순서]\n    IOT 와 Controller 의 계약정보를 일치시킨다.\n    Device 에 설정된 CA 서버와의 통신에 실패했다. Device 에 설정된 CA 서버의 주소를\n    확인한다. 또는 네트워크의 연결상태를 확인한다.\n    Trouble 이 계속되는 경우, Trouble 발생 직후에 \"2.5 LOG\" 에 따라 pfshowinfo9 Log\n    와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5 LOG"
+ },
+ "018-502": {
+  "title": "Login failure in SMB",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB 스캔에서 로그인 가능한 Workstation 이 제한되어 있다.\n[검지조건]\n    SMB 서버 로그인시, SMB 스캔에서 로그인 가능한 Workstation 이 제한되어 있음을 검\n    지"
+ },
+ "018-503": {
+  "title": "CA Message Receiver Timeout",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CA 인증서버 Timeout\n[검지조건]\n    CA 서버에서 메시지를 수신하는 과정에서 JRM, UI 에서의 판단을 기다리고 있었지만\n    반응이 없어 Timeout 되었다.\n[대처순서]\n    IOT 와 Controller 의 계약정보를 일치시킨다.\n    Device 내부의 부하로 인해 CA 서버로의 반응이 Timeout 되었다. 다시 인증동작을 실\n    시한다.\n    Trouble 이 계속되는 경우, Trouble 발생 직후에 \"2.5 LOG\" 에 따라 pfshowinfo9 Log\n    와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5 LOG"
+ },
+ "018-504": {
+  "title": "CA SessionID Mismatch",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CA 인증 Session ID Error\n[검지조건]\n    CA 서버와 인증 통신을 실시하는 과정에서 CA 서버의 Session ID 와 Device 의 Session\n    ID 가 일치하지 않았다. (통신 Error 또는 Device 내부의 Error 또는 코드 불일치)\n[대처순서]\n    IOT 와 Controller 의 계약정보를 일치시킨다.\n    CA 서버와 Device 간의 인증동작에서 오류가 발생했다. 다시 인증동작을 실시한다."
+ },
+ "018-505": {
+  "title": "SMB-DOS protocol Error 1-005",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB User 인증 실패 /SMB Scanner Login 불가\n[검지조건]\n    SMB 인증시에 발생한 경우:\n    -  User 명 또는 Password 가 부정확하므로 인증할 수 없었다."
+ },
+ "018-506": {
+  "title": "CA FieldID Mismatch",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CA 인증 Field ID Error\n[검지조건]\n    CA 서버와 인증 통신을 실시하는 과정에서 CA 서버의 Field ID 와 Device 의 Field ID\n    가 일치하지 않았다. (통신 Error 또는 Device 내부의 Error 또는 코드 불일치)\n[대처순서]\n    IOT 와 Controller 의 계약정보를 일치시킨다.\n    CA 서버와 Device 간의 인증동작에서 오류가 발생했다. 다시 인증동작을 실시한다."
+ },
+ "018-507": {
+  "title": "CA Credential Error",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CA 인증 사용자의 인증 Error\n[검지조건]\n    CA 인증 서버가 사용자 정보의 입력을 요구하였지만, 입력된 정보를 서버에서 불일\n    치로 판단했다.\n[대처순서]\n    IOT 와 Controller 의 계약정보를 일치시킨다.\n    사용자 인증에 실패했다. 입력된 사용자명 또는 비밀번호가 정확하지 않다. 정확한\n    사용자명 및 비밀번호를 확인하고 입력한다."
+ },
+ "018-508": {
+  "title": "CA Server Fatal Error",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CA 인증서버의 치명적 Error\n[검지조건]\n    CA 인증 처리중에 CA 인증서버에서 Server Exception 메시지를 수신했다.\n[대처순서]\n    IOT 와 Controller 의 계약정보를 일치시킨다.\n    CA 인증서버에서 Server Error 메시지를 수신했다. CA 서버의 상태를 확인한다. 재\n    부팅을 실시한다."
+ },
+ "018-509": {
+  "title": "Template parameter conflict",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    CUI Scan: 부정확한 Job Template 지정\n[검지조건]\n    1.  CUI Scan 에서 존재하지 않는 Template 명이 지정된 Job 이 요청되었다.\n    2.  Job Template 속성이 충돌.\n    3.  이미지를 저장하는 Server Address 가 Job Template 에 설정되어 있지 않다.\n[대처순서]\n    Job Template 에 지정된 내용이 바른지 확인한다. 예를 들어, 다음과 같은 내용을 확\n    인한다.\n    -  Device 에서 사용할 수 없는 설정이 기술되어 있다.\n    -  전송 위치 Repository 가 바르게 설정되어 있지 않다.\n    -  존재하지 않는 Template 명이 지정되어 있다."
+ },
+ "018-510": {
+  "title": "Host name solution Error in BMLinkS",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan 에서 DNS Host 명 해결에 실패\n[검지조건]\n    BMLinkS Service 와의 접속전에 DNS Access 를 시도하였으나 BMLinkS Service Server\n    명 해결에 실패\n[대처순서]\n    DNS 이 취득가능한 상태인지 확인한다. 예를 들어, 다음 내용을 확인한다.\n    -  검색을 실시하여 최신 정보를 취득한다.\n    -  DNS Server 와 접속되어 있는지 확인한다.\n    -  수신국의 BMLinkS 저장 Service 의 Server 명 또는 Host 명이 DNS 에 등록되어 있\n        는지 확인한다.\n    -  DNS Server 의 Address 가 설정되어 있는지 확인한다.\n    Trouble 이 계속될 경우는 다음을 참고하여 pfshowinfo9 Log 와 Network Log 를 취득\n    한 후, Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-511": {
+  "title": "DNS server un-sets up in BMLinkS",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan 에서 DNS Server 미설정\n[검지조건]\n    BMLinkS Service 와의 접속전에 DNS Access 를 시도하였으나 DNS Server 가 미설정 상\n    태인 것을 검지했다.\n[대처순서]\n    DNS Server Address 를 설정한다. 또는 수신국의 BMLinkS 저장 Service 의 Address 를\n    IP Address 에서 설정한다.\n    Trouble 이 계속될 경우는 다음을 참고하여 pfshowinfo9 Log 와 Network Log 를 취득\n    한 후, Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-512": {
+  "title": "Service Connect Error in BMLinkS",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Service 로의 접속 실패\n[검지조건]\n    BMLinkS Server 를 찾을 수 없다."
+ },
+ "018-513": {
+  "title": "BMLinkS Service Not Found",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Server 를 찾을 수 없다.\n[검지조건]\n    http status 404 를 검지했다.\n[대처순서]\n    다음중 하나의 방법으로 대처한다.\n    -  검색을 실시하여 최신 정보를 취득한다.\n    -  전송위치의 BMLinkS 저장 Service 를 사용하여 해당 User 의 저장 Service 가 기\n        동하고 있는지 확인한다.\n    Trouble 이 계속될 경우는 다음을 참고하여 pfshowinfo9 Log 와 Network Log 를 취득\n    한 후, Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-514": {
+  "title": "BMLinkS access-right-violation",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Service 로의 Access 권한이 부정확\n[검지조건]\n    어떠한 이유로 인해 BMLinkS Service 로부터 해당 Error Code 를 수신\n[대처순서]\n    Login 명 (User 명) 및 Password 가 정확한지 확인한다.\n    Trouble 이 계속될 경우는 다음을 참고하여 pfshowinfo9 Log 와 Network Log 를 취득\n    한 후, Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-515": {
+  "title": "BMLinkS storage-access-Error",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Service 저장 Access Error"
+ },
+ "018-516": {
+  "title": "BMLinkS unsupported-attribute",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Service 로의 저장속성이 부정확\n[검지조건]\n    어떠한 이유로 인해 BMLinkS Service 로부터 해당 Error Code 를 수신\n[대처순서]\n    다음중 하나의 방법으로 대처한다.\n    -  File 명의 문자중 BMLinkS 저장 Service 에서 사용할 수 없는 문자를 변경한다.\n    -  지정한 File 명과 동일한 이름의 File 또는 Folder 가 있는지 확인한다.\n    -  File 중복시의 처리를 [덮어쓰기] 로 변경한다.\n    -  저장위치 Folder 명 또는 File 명을 줄인다.\n    Trouble 이 계속될 경우는 다음을 참고하여 pfshowinfo9 Log 와 Network Log 를 취득\n    한 후, Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-517": {
+  "title": "BMLinkS storage-full",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    BMLinkS Scan Service 상의 저장위치 Disk 가 Full\n[검지조건]\n    어떠한 이유로 인해 BMLinkS Service 로부터 해당 Error Code 를 수신\n[대처순서]\n    저장위치에 여유 공간이 있는지 확인한다.\n    Trouble 이 계속될 경우는 다음을 참고하여 pfshowinfo9 Log 와 Network Log 를 취득\n    한 후, Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-518": {
+  "title": "BMLinkS operation-not-available",
+  "text": "[Error 분류]\n    Job"
  }
 }
