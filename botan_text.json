@@ -3926,5 +3926,45 @@
  "042-342": {
   "title": "Suction Fan Fail (High model)",
   "text": "참고 FIP\nCF-002 (IOT Fan Fail) FIP 참고."
+ },
+ "042-344": {
+  "title": "C Exhaust Fan Fail (Mid/High model)",
+  "text": "참고 FIP\nCF-002 (IOT Fan Fail) FIP 참고."
+ },
+ "042-347": {
+  "title": "YMC Drum Motor Fail (High model)",
+  "text": "참조 BSD : CH9.3\n\nYMC Drum Motor 의 회전불량을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\nDrum Cartridge(Y, M, C) 를 분해하고 Front Cover Interlock Switch 와 Front Cover Open\nSwitch 를 Cheat 한다.\n\n전원을 켜고 DC330[042-012](YMC Drum Motor) 을 On 한다. YMC Drum Motor 가 회전하는가?\nY  N\n    전원을 끄고 아래 Wire 의 단선, 단락 또는 접촉불량을 점검한다.\n\n    ·  Motor Drive PWB J426 와 YMC Drum Motor J203 사이\n    ·  Motor Drive PWB J427 와 YMC Drum Motor J213 사이\n\n    점검에서 문제가 없으면 아래 부품을 차례대로 교환한다. 단, 부품 교환 시마다 Fail\n    발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n\n    ·  Main Drive Assembly (PL 3.1)\n    ·  Motor Drive PWB (PL 18.2)"
+ },
+ "042-385": {
+  "title": "K_IBT Motor On Fail",
+  "text": "참조 BSD : CH9.1\n\n기동 시 Drum_K/Deve_K/IBT Motor 의 회전불량을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n042-324 (K_IBT Motor Fail) FIP 참고."
+ },
+ "042-603": {
+  "title": "Suction Filter Fail (High model)",
+  "text": "참조 BSD : CH9.24\n\nSuction Fan 의 회전수가 규정값을 초과했다.\n\n원인 / 대처방법\n토너 회수통을 교환한다. (PL 8.1)"
+ },
+ "042-641": {
+  "title": "NOHAD Temp Humid Sensor Fail",
+  "text": "참조 BSD : CH10.5\n\nNOHAD Temp Humidity Sensor 의 이상을 검지했다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  NOHAD Temp Humidity Sensor 의 검지부에 이물질 부착.\n·  NOHAD Temp Humidity Sensor J115 와 Motor Drive PWB J435 사이의 Wire 단선, 단\n    락 또는 접촉불량."
+ },
+ "042-643": {
+  "title": "DEO Filter Life Fail",
+  "text": "참조 BSD : -\n\nDEO Filter 가 지정된 프린트 매수를 초과하여 사용되고 있다.\n\n원인 / 대처방법\nDeo Filter(9.1.23) 를 교환하고 DC135[954-861](Deo Filter) 의 카운터 값을 재설정한다."
+ },
+ "043-346": {
+  "title": "YMC Motor On Fail (Low/Mid model)",
+  "text": "참조 BSD : CH9.2\n\n기동 시 YMC Drum/Deve Motor 의 회전불량을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n043-345 (YMC Motor Fail (Low/Mid model)) FIP 참고."
+ },
+ "043-347": {
+  "title": "YMC Drum Motor On Fail (High model)",
+  "text": "참조 BSD : CH9.3\n\n기동 시 YMC Drum Motor 의 회전불량을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n042-347 (YMC Drum Motor Fail (High model)) FIP 참고."
+ },
+ "043-348": {
+  "title": "YMC Deve Motor On Fail (High model)",
+  "text": "참조 BSD : CH9.4\n\n기동 시 YMC Deve Motor 의 회전불량을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\nDrum Cartridge(Y, M, C) 와 Developer Housing Assembly(Y, M, C) 를 분해하고 Front\nCover Interlock Switch 와 Front Cover Open Switch 를 Cheat 한다."
+ },
+ "043-349": {
+  "title": "M Fan Fail",
+  "text": "참고 FIP\nCF-002 (IOT Fan Fail) FIP 참고."
  }
 }
