@@ -2446,5 +2446,85 @@
  "018-714": {
   "title": "LDAP protocol Error 14",
   "text": "[Error 분류]\n    Job Fail"
+ },
+ "018-715": {
+  "title": "Kerberos Attestation Protocol Error 73",
+  "text": "[Fault 명칭]\n    Kerberos Attestation Protocol Error 73\n[Error 분류]\n    작업\n[Fault 내용]\n    Kerberos 인증 프로토콜 Error(73)\n[검지조건]\n    Kerberos 인증 서버와 장치를 사용할 수 있는 인증방식이 일치하지 않는 경우\n    Kerberos 인증시 Error 를 검출한다.\n[대처순서]\n    스마트 카드 인증과정에서 발생한 경우는 KDC 로부터 장치가 지원하지 않는 알고리즘\n    이 지정되었다.\n    비밀번호 인증의 경우는 KDC 가 장치의 알고리즘을 전혀 지원하지 않는다.\n    KDC 을 다시 설정한다. 또한 FIPS 대응기종의 경우는 FIPS 모드를 무효로하면 문제를\n    회피할 수 있는 경우가 있다.\n\n    그래도 문제가 계속되는 경우는 문제 발생 직후에 [PfShowInfo 8 로그 ] 및 [네트워\n    크 로그 ] 를 취득하여 지원부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "018-717": {
+  "title": "LDAP protocol Error 17",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 17( 지정된 속성은 미정의 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[17]( 지정된 속\n    성은 미정의 ) 이 수신되었다.\n[대처순서]\n    Attribute 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상태를\n    확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-718": {
+  "title": "LDAP protocol Error 18",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 18( 부적합한 조합 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[18]( 부적합한\n    조합 ) 이 수신되었다.\n[대처순서]\n    Attribute 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상태를\n    확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-719": {
+  "title": "LDAP protocol Error 19",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 19( 제약 위반 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[19]( 제약 위\n    반 ) 가 수신되었다.\n[대처순서]\n    Attribute 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상태를\n    확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-720": {
+  "title": "LDAP protocol Error 20",
+  "text": ""
+ },
+ "018-721": {
+  "title": "LDAP protocol Error 21",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 21( 지정된 속성값의 Syntax Error)\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[21]( 지정된 속\n    성값의 Syntax 가 틀림 ) 이 수신되었다.\n[대처순서]\n    Attribute 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상태를\n    확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-723": {
+  "title": "GCP Certification Fail",
+  "text": ""
+ },
+ "018-724": {
+  "title": "GCP SSL Connection Fail",
+  "text": "[Fault 명칭]\n    GCP SSL Connection Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    GCP SSL 접속 에러\n[검지조건]\n    Google 서버와 HTTP 통신시 SSL 접속 에러가 발생했다.\n[대처순서]\n    네트워크 (SSL 통신 ) 접속상황과 SSL 설정상황을 네트워크 관리자에게 확인한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
+ },
+ "018-725": {
+  "title": "Kerberos Attestation protocol Error 22",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    Kerberos 인증 프로토콜 Error(22)\n[검지조건]\n    사용자의 Kerberos 비밀번호 사용기간이 만료되었다.\n[대처순서]\n    Kerbeors 서버에 설정된 사용자의 Kerbeors 비밀번호에 대한 사용기간이 만료되었으\n    므로 서버 관리자에게 사용기간의 연장을 요청할 필요가 있다."
+ },
+ "018-726": {
+  "title": "Kerberos Attestation protocol Error 70",
+  "text": ""
+ },
+ "018-727": {
+  "title": "Kerberos Attestation protocol Error 71",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    Kerberos 인증 프로토콜 Error(71)\n[검지조건]\n    사용자의 Smart Card 내에 있는 인증서가 부정확하다. (Kerbeors 서버에서 거절 )\n[대처순서]\n    사용자의 Smart Card 내에 있는 인증서가 유효한지 확인하고, 무효 / 실효 상태인 경\n    우에는 Smart Card 내에 있는 인증서를 변경한다. 또는 Kerberos 서버측에서 사용금\n    지된 경우, 서버 관리자에게 Permission 을 확인하도록 요청할 필요가 있다."
+ },
+ "018-728": {
+  "title": "Kerberos Attestation protocol Error 72",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    Kerberos 인증 프로토콜 Error(72)\n[검지조건]\n    Kerbeors 서버의 KDC 인증서가 부정확하다. (CA 루트 인증서가 Device 에 미등록 /KDC\n    인증서가 실효 상태 /KDC 인증서의 주소가 인증서 기재와 불일치 )\n[대처순서]\n    1.  KDC 인증서의 CA 루트 인증서가 Device 에 등록되어 있는지 확인하고, 등록되어 있지\n        않으면 CA 루트 인증서를 등록한다.\n    2.  KDC 인증서가 실효 상태인 경우, Kerbeors 서버의 KDC 측에서 인증서를 갱신한다.\n    3.  Device 에 설정한 Kerberos 서버의 주소와 해당 Kerbeors 서버의 KDC 인증서에 기재\n        된 주소가 일치하는지 확인하고, 일치하지 않으면 Device 의 Kerbeors 서버주소를\n        변경하거나 Kerberos 서버의 KDC 인증서를 확인한다. 이 경우, 설정 오류이거나\n        Kerbeors 서버의 도용일 가능성이 있다."
+ },
+ "018-729": {
+  "title": "GCP Network Timeout Fail",
+  "text": "[Fault 명칭]\n    GCP Network Timeout Fail"
+ },
+ "018-730": {
+  "title": "GCP Network Other Fail",
+  "text": "[Fault 명칭]\n    GCP Network Other Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    GCP 기타 네트워크 에러\n[검지조건]\n    Google 서버와 HTTP 통신시 네트워크와 관련해서 기타 내부 에러가 발생했다.\n[대처순서]\n    네트워크 접속상황과 설정상황을 확인한다. 현상이 재발하는 경우는 콜 센터로 문의\n    한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
+ },
+ "018-732": {
+  "title": "LDAP protocol Error 32",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 32( 해당하는 Object 가 없음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[32]( 해당하는\n    Object 가 없음 ) 가 수신되었다.\n[대처순서]\n    [32] 해당하는 Mail Address 가 없다.\n    입력한 Mail Address 를 확인하여 수정하거나, Server 에 등록되어 있는 Mail Address\n    를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-733": {
+  "title": "LDAP protocol Error 33",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 33(Alias 틀림 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[33](Alias 가\n    틀림 ) 이 수신되었다.\n[대처순서]\n    Name 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상태\n    를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-734": {
+  "title": "LDAP protocol error 34",
+  "text": "[Fault 명칭]\n    LDAP protocol error 34\n[Error 분류]\n    Job\n[Fault 내용]\n    주소록 조작에서 LDAP protocol error 34(DN 형식 오류, Password 오류 )\n[검지조건]\n    주소록의 문의에 대하여 서버로부터 RFC2251 에서 규정한 resultMessageNo[34](DN 의\n    형식이 틀리다 ) 가 반환되었다."
+ },
+ "018-735": {
+  "title": "LDAP protocol Error 35",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 35(Object 가 종단 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[35](Object 가\n    종단 ) 가 수신되었다.\n[대처순서]\n    Name 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상태\n    를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-736": {
+  "title": "LDAP protocol Error 36",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 36(Alias 참고할 수 없음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[36](Alias 를\n    참고할 수 없음 ) 이 수신되었다.\n[대처순서]\n    Name 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상태\n    를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-738": {
+  "title": "GCP XMPP Network Fail",
+  "text": "[Fault 명칭]\n    GCP XMPP Network Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    GCP 네트워크 접속 에러 (XMPP)\n[검지조건]\n    Google 서버와 XMPP 프로토콜 통신시 네트워크 관련 에러가 발생했다.\n[대처순서]\n    네트워크 접속상황과 네트워크 설정상황을 네트워크 관리자에게 확인한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
  }
 }
