@@ -3206,5 +3206,45 @@
  "024-353": {
   "title": "IOT-ESS Communication Fail 13",
   "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 MCU 수신 Error\n    (Check Code Error)\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신한 경우에 발생. ( 수신된 Message Packet 의\n    Check Code 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 아래를 진행하고, Trouble 을 복구한\n    다.\n    OF-06 IOT System Fail\n    (ESS PWB 교환은 필요없음.)"
+ },
+ "024-354": {
+  "title": "IOT-ESS Communication Fail 14",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 MCU 수신 Error\n    (Parity Error)\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신한 경우에 발생. (UART 가 가지고 있는 HARDWARE\n    로 Parity Error 를 검지했다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail\n    ESS-PWB 의 변경은 필요없음."
+ },
+ "024-355": {
+  "title": "IOT-ESS Communication Fail 15",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 MCU 수신 Error\n    (Flaming Error)"
+ },
+ "024-356": {
+  "title": "IOT-ESS Communication Fail 16",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 MCU 수신 Overrun Error\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신한 경우에 발생. (UART 가 가지고 있는 HARDWARE\n    로 Overrun Error 를 검지했다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail\n    ESS-PWB 의 변경은 필요없음."
+ },
+ "024-357": {
+  "title": "IOT-ESS Communication Fail 17",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 MCU 수신 Error\n    ( 수신중단 Error)\n[검지조건]\n    통신 Fail 발생을 통지한 NAK 를 수신한 경우에 발생. (Header 를 인식한 후, 수신중\n    단을 검출했다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 아래를 진행하고, Trouble 을 복구한\n    다.\n    OF-06 IOT System Fail\n    (ESS PWB 교환은 필요없음.)"
+ },
+ "024-358": {
+  "title": "IOT-ESS Communication Fail 18",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 인쇄 Sequence Error(NBR 에 대응하지 않는 용지 Feed 및 용\n    지 배출 검지 )"
+ },
+ "024-359": {
+  "title": "IOT-ESS Communication Fail 19",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 MCU 통신수신 Error\n    ( 부정확한 Parameter 가 사용되었다.)\n[검지조건]\n    수신 함수의 인수에 이상한 Parameter 가 설정된 경우에 Error 발생.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 아래를 진행하고, Trouble 을 복구한\n    다.\n    OF-06 IOT System Fail\n    (ESS PWB 교환은 필요없음.)"
+ },
+ "024-360": {
+  "title": "IOT-ESS Initialization Fail",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    IOT-ESS 간 초기화 Error\n[검지조건]\n    IOT Driver 의 초기화 Fail\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 아래를 진행하고, Trouble 을 복구한\n    다.\n    OF-06 IOT System Fail\n    (ESS PWB 교환은 필요없음.)"
+ },
+ "024-361": {
+  "title": "Invalid IOT Paper Size Group Info",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    용지 Size Group 의 정보가 ESS 와 IOT 가 불일치\n[검지조건]\n    Controller 의 용지 Size Group 의 설정과 IOT 가 검지하는 용지 Size Group 정보가\n    일치하지 않는 경우"
+ },
+ "024-364": {
+  "title": "DMA Transfer Fail",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    [Image 출력 ]\n    DMA 전송 Error"
+ },
+ "024-365": {
+  "title": "Over Flow on Loop Back Write",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Loopback 쓰기 Over Flow\n[검지조건]\n    신장한 Data 가 확보한 Buffer Size 를 초과했다.\n[대처순서]\n    현재, 이 Fail 은 표시하지 않는다."
  }
 }
