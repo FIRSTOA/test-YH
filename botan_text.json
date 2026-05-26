@@ -3806,5 +3806,45 @@
  "027-445": {
   "title": "Illegal IP address",
   "text": "[Error 분류]\n    Information\n[Fault 내용]\n    IPv6 - 수동 설정 IP 주소가 부정확\n[검지조건]\n    기계에 설정된 IPv6 [ 수동 설정 주소 ] 가 부정확.\n    *Bit 13 PFRID_IPV6_PROT_MANUAL 의 inet6Address 에서 주소 할당 에러\n    027-442~027-447 이 동시에 발생했을 경우, Link 번호가 낮은 순서부터 우선적으로\n    표시된다.\n[대처순서]\n    기계의 [IPv6( 수동 설정 주소 )] 를 본체 주소로 사용 가능한 IPv6 주소로 변경한다.\n    (1) 자동으로 설정한 수동 주소의 IPv6 주소에 부정확한 주소를 사용하고 있는지 확\n        인한다.\n    (2) 장애 분석 로그 수집과 패킷 수집\n\n    문제가 계속되는 경우는 다음을 실시한다.\n    2.4.3 전혀 나오지 않는다. 인자되지 않음\n    2.4.5 네트워크 관련 세부사항의 확인작업 흐름\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "027-447": {
+  "title": "Duplicat IP address",
+  "text": "[Error 분류]\n    Information\n[Fault 내용]\n    IPv6 - 링크 로컬 IP 주소 중복\n[검지조건]\n    기계의 IPv6 [ 링크 로컬 주소 ] 와 동일한 IP 주소를 가진 기기가 네트워크상에 존재\n    한다.\n    *Bit 15 PFRID_IPV6_PROT_AUTO 의 linkLocalAddress 에서의 중복 주소\n    027-442~027-447 이 동시에 발생했을 경우, Link 번호가 낮은 순서부터 우선적으로\n    표시된다.\n[대처순서]\n    중복된 네트워크상의 기계 IPv6 주소를 변경하여 IP 주소 중복을 해결한다.\n    (1) 자동으로 설정한 링크 로컬 주소의 IPv6 주소가 다른 곳에서 사용되고 있는지 확\n        인한다.\n    (2) 장애 분석 로그 수집과 패킷 수집\n\n    문제가 계속되는 경우는 다음을 실시한다.\n    2.4.3 전혀 나오지 않는다. 인자되지 않음\n    2.4.5 네트워크 관련 세부사항의 확인작업 흐름\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "027-500": {
+  "title": "SMTP Server Fail for Mail IO",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMTP Server Address Resolution Fail for Mail IO\n[검지조건]\n    SMTP 명이 바르지 않은 것을 검출했다.\n[대처순서]\n    1.  고객 System 관리자에게 Mail Server 가 시작되고 있고, 별도의 용도 ( 가령 PC 등 )\n        로 이미 사용되고 있는 환경인지 여부를 다시 확인\n    2.  Device 설정 List 에 반영되고 있는 SMTP Server Address 가 정확한지 아래를 확인\n        2-1. IP Address 로 SMTP Server Address 를 지정할 경우에는, 바른 IP Address 를 설정\n        2-2. FQDN( 이름 :aaa.co.jp) 으로 SMTP Server Address 를 지정할 경우에는 FQDN 명이\n        바른지 확인. 또한, Device 의 DNS Server Address 가 설정되어 있는지 아닌지, 바른\n        IP Address 를 설정\n    3.  그래도 Trouble 이 지속될 때는 장애해석 Log 수집과 Packet 수집"
+ },
+ "027-501": {
+  "title": "POP Server Fail for Mail IO",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    POP Server Address Resolution Fail for Mail IO\n[검지조건]\n    POP Server 명이 바르지 않은 것을 검출했다.\n[대처순서]\n    SMTP Server 명을 바르게 설정할지 IP Address 로 지정한다.\n    1.  고객 System 관리자에게 Mail Server 가 시작되고 있고, 별도의 용도 ( 가령 PC\n        등 ) 로 이미 사용되고 있는 환경인지 여부를 다시 확인\n    2.  Device 설정 List 에 반영되고 있는 POP Server Address 가 바른지 다음을 확인\n        2-1. IP Address 로 POP Server Address 를 지정할 경우에는, 바른 IP Address 를\n        설정\n        2-2. FQDN( 이름 :aaa.co.jp) 으로 POP Server Address 를 지정할 경우에는 FQDN\n        명이 바른지 확인. 또한, Device 의 DNS Server Address 가 설정되어 있는지 아\n        닌지, 바른 IP Address 를 설정\n    3.  그래도 Trouble 이 지속될 때는 장애해석 Log 수집과 Packet 수집\n    2.4 NET 시스템 오류 확인\n    2.4.3 전혀 나오지 않음 인자되지 않음\n    2.4.5 Network 관계 상세 확인 Flow\n    2.5.2 로그 수집 / 추출 도구의 조작설명"
+ },
+ "027-502": {
+  "title": "POP Authentication Fail for Mail IO",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "027-504": {
+  "title": "Response reception is not expected from server",
+  "text": "[Fault 명칭]\n    Response reception  is not expected from server\n[Error 분류]\n    Job\n[Fault 내용]\n    내부 에러 또는 서버에서 예기치 않은 응답을 수신 ( 타이밍 선택 )\n[검지조건]\n    임의의 장소\n[대처순서]\n    [조치방법 ]\n    1.  SMTP 서버 정보 ( 이용 서버명과 버전 ) 또는 이용 프로바이더명을 조사한다 (*1).\n    2.  SMTP 통신 프로토콜 포트를 참고하여 서버로부터 4xx,5xx 의 에러 응답이 통지되\n        지 않았는지 확인한다.\n    4xx, 5xx 응답이 통지되는 경우에 서버측에 문제가 있다고 생각되므로 1,2 에서 얻\n    어진 정보를 바탕으로 Web 에서 Troubleshooting 정보를 검색하여 (*2), 그 조치에 따\n    른다.\n\n    *1 메일서버로부터의 220 응답 ( 맨 처음 Packet) 에 기재된 호스트명에서 어떤 프로\n    바이더를 사용하고 있는지, 어떤 서버를 이용하고 있는지를 추측할 수도 있다."
+ },
+ "027-513": {
+  "title": "SMB Scan client has no right to access.",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan Client 는 Access 권한을 가지고 있지 않다. (Win9x 계 )\n[검지조건]\n    스캔 (PC 저장 ) 의 SMB 전송에서 SMB Server 로의 Access 권한이 없다.\n    [다음은 DMP6-2 이후 제품만 해당 ]\n    -  지정한 File 명의 Folder 가 이미 존재한다. (MacOS X v10.2)\n[대처순서]\n    지정한 저장위치에서 File 및 Folder 의 읽기 및 쓰기가 가능하도록 설정한다.\n    [다음은 DMP6-2 이후 제품만 해당 ]\n    -  지정한 File 명과 동일한 이름의 Folder 가 있는지 확인한다. (MacOS X v10.2)\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채취\n    하여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "027-518": {
+  "title": "Login name or a password error in SMB",
+  "text": "[Fault 명칭]\n    Login name or a password error in SMB\n[Error 분류]\n    Job\n[Fault 내용]\n    SMB 스캔의 로그인명 또는 비밀번호에 문제가 있다\n[검지조건]\n    · 스캐너 (PC 저장 ) 의 SMB 전송에서 지정한 비밀번호가 틀리다.\n\n    ----- 여기서부터 [DMP6-2 이후의 제품만 ]-----\n    · 사용자명 또는 비밀번호가 틀려서 인증할 수 없다. (MacOSX v10.2)\n    · 지정한 사용자명은 Windows 공유를 사용할 수 있는 사용자에 등록되지 않았다.\n    (MacOS X v10.2)\n    ----- 여기까지 -----\n[대처순서]\n    · 공유폴더에 설정한 비밀번호를 확인한다.\n\n    보충 1) [DMP6-2 이후의 제품만 ]\n    · 네트워크 관리자에게 사용자명 또는 비밀번호를 확인한다. (MacOS X v10.2)\n    · Windows 공유를 사용할 수 있는 사용자를 확인한다. (MacOS X v10.2)\n    확인방법은 다음과 같다.\n\n    ① [Dock] 에서 [ 시스템 환경설정 ] 아이콘을 기동한다.\n    ② [ 시스템 환경 설정 ] 윈도우에서 [ 계정 ] 아이콘을 클릭한다.\n    ③ [ 변경하려면 열쇠를 클릭합니다 ] 아이콘을 클릭하고 로그인한다.\n    ④ 사용자를 선택하고 [ 사용자 편집 ] 버튼을 클릭한다."
+ },
+ "027-519": {
+  "title": "Scanning picture preservation place Error in SMB",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    스캔 (PC 저장 ) 의 SMB 전송에서 Scan 화상 저장위치 또는 File 명 지정 Error\n[검지조건]\n    스캔 (PC 저장 ) 의 SMB 전송에서 지정한 Scan 화상의 저장위치 또는 File 명에 문제\n    가 있다.\n    -  지정한 저장위치가 Server 상에 존재하지 않는다\n    -  지정한 저장위치 또는 File 명에서 금칙문자를 검출했다\n    -  지정한 저장위치는 분산 File System(DFS) 설정 때문에 별도의 공유 Folder 에\n        Link 되어 있다.\n[대처순서]\n    다음중 하나의 방법으로 처치한다.\n    -  저장위치가 정확한지 확인한다.\n    -  지정한 File 명이 SMB Server 상에 작성 가능한 File 명인지 확인한다\n    -  System 관리자에게 분산 File System(DFS) 의 설정을 확인한다.\n    확인 순서는 다음과 같다."
+ },
+ "027-520": {
+  "title": "File name acquisition failure from SMB server",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan Server 의 File/Folder 명 취득에 실패\n[검지조건]\n    SMB Scan Server 의 File/Folder 명 취득에 실패했다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채취\n    하여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "027-521": {
+  "title": "File name suffix limit over in SMB",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    SMB Scan File 명 /Folder 명의 Suffix 가 제한값을 초과했다.\n[검지조건]\n    SMB Scan 에서 지정 가능한 File 명 /Folder 명 Suffix 가 제한값을 초과했다.\n[대처순서]\n    1.  SMB Scan Server 상의 File 명 / 수신국 Folder 를 변경하거나 수신국 Folder 내의 File\n        을 이동 또는 삭제한다.\n    Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채취하\n    여 Support 부문에 연락하여 지시를 받는다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
  }
 }
