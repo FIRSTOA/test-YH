@@ -2606,5 +2606,85 @@
  "018-767": {
   "title": "LDAP protocol Error 67",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 67(RDN 에서의 실행 불가 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[67](RDN 에서\n    의 실행 불가 ) 이 수신되었다.\n[대처순서]\n    Update 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상\n    태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-768": {
+  "title": "LDAP protocol Error 68",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 68( 지정한 Entry 는 이미 존재함 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[68]( 지정한\n    Entry 는 이미 존재함 ) 이 수신되었다.\n[대처순서]\n    Update 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상\n    태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-769": {
+  "title": "LDAP protocol Error 69",
+  "text": ""
+ },
+ "018-770": {
+  "title": "LDAP protocol Error 70",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 70\n    (검색 대상이 너무 큼 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[70]( 검색 결과\n    가 너무 큼 ) 이 수신되었다.\n[대처순서]\n    주소록 내부 Data 에 대해 검색 조건 / 검색 개시 위치의 확인 등, 검색 대상을 좁혀\n    서 다시 검색한다.\n    그래도 재발할 경우에는 Network 관리자와 상담한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-771": {
+  "title": "LDAP protocol Error 71",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 71( 복수의 DSA 에 영향이 있음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[71]( 복수의\n    DSA 에 영향이 있음 ) 이 수신되었다.\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-774": {
+  "title": "CSB Print Host name resolve fail",
+  "text": "[Fault 명칭]\n    CSB Print Host name resolve fail"
+ },
+ "018-775": {
+  "title": "CSB Print Proxy server connect fail",
+  "text": "[Fault 명칭]\n    CSB Print Proxy server connect fail\n[Error 분류]\n    Job\n[Fault 내용]\n    CSB 프린트 프록시 서버 접속 실패\n[검지조건]\n    CSB 프린트에서 서버와의 HTTP 통신 시에 네트워크 관련 (프록시 접속 ) 에러가 발생\n    했다.\n[대처순서]\n    네트워크 접속 상태, 특히 프록시 서버 설정 상태를 확인한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    문제 발생 직후에 PfShowInfo 9 로그와 네트워크 로그를 취득하여 지원 부서에 연락\n    하고 지시에 따른다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "018-776": {
+  "title": "CSB Print Network timeout over",
+  "text": "[Fault 명칭]\n    CSB Print Network timeout over\n[Error 분류]\n    Job"
+ },
+ "018-778": {
+  "title": "CSB Print Certification fail",
+  "text": "[Fault 명칭]\n    CSB Print Certification fail\n[Error 분류]\n    Job\n[Fault 내용]\n    CSB 프린트 증명서 접속 에러"
+ },
+ "018-780": {
+  "title": "LDAP protocol Error 80",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 80( 미지의 Error 발생 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[80]( 미지의\n    Error 발생 ) 이 수신되었다."
+ },
+ "018-781": {
+  "title": "LDAP protocol Error 81",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 81\n    (Server 에 접속할 수 없음 )\n[검지조건]\n    주소록의 조회에 대해, Server 에 접속할 수 없다.\n[대처순서]\n    1.  Network Cable 이 접속되어 있는지 확인한다.\n    2.  접속되어 있으면 요구처 Server 의 기동상태를 확인한다.\n    3.  [사양 설정 ]-[Network 설정 ]-[ 외부 인증 Server/Directory Service 설정 ]-[LDAP\n        Server/Directory Service 설정 ] 에서 Server 명칭이 정확한지 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-783": {
+  "title": "LDAP protocol Error 83",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 83( 송신 Message Encoding Error)\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[83]( 송신\n    Message Encoding Error) 이 수신되었다."
+ },
+ "018-784": {
+  "title": "LDAP protocol Error 84",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 84( 수신 Message Encoding Error)\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[84]( 수신\n    Message Encoding Error) 가 수신되었다.\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-785": {
+  "title": "LDAP protocol Error 85",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 85\n    (검색 Timeout)\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[85]( 검색 시간\n    Timeout) 가 수신되었다.\n[대처순서]\n    주소록 내부 Data 에 대해 검색 조건 / 검색 개시 위치의 확인 등, 검색 대상을 좁혀\n    서 다시 검색한다.\n    그래도 재발할 경우에는 Network 관리자와 상담한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-786": {
+  "title": "LDAP protocol Error 86",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 86( 미지의 인증 방식이 지정되었음 )\n[검지조건]\n    주소록 조작으로 LDAP protocol Error 86( 미지의 인증 방식이 지정되었음 )\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-787": {
+  "title": "LDAP protocol Error 87",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 87( 검색 필터의 기술에 오류 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[87]( 검색 필\n    터의 기술에 오류 ) 이 수신되었다.\n[대처순서]\n    검색 조건을 확인하고, 이상이 없을 경우에는 Network 관리자와 상담한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-788": {
+  "title": "LDAP protocol Error 88",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 88( 지시가 Cancel 되었음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[88]( 지시가\n    Cancel 되었음 ) 이 수신되었다.\n[대처순서]\n    Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 때는 다음을 진행한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-789": {
+  "title": "LDAP protocol Error 89",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 89( 부정확한 Parameter 가 전달되었음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[89]( 부정확한\n    Parameter 가 전달되었음 ) 가 수신되었다.\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-790": {
+  "title": "LDAP protocol Error 90",
+  "text": ""
+ },
+ "018-791": {
+  "title": "LDAP protocol Error 91",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 91(Server 에 접속 불가 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[91](Server 에\n    접속 불가 ) 이 수신되었다.\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-792": {
+  "title": "LDAP protocol Error 92",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 92( 기능 지원안됨 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[92]( 기능 지\n    원안됨 ) 가 수신되었다.\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
  }
 }
