@@ -3606,5 +3606,45 @@
  "024-968": {
   "title": "Stapler/Punch Batting",
   "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Staple 과 Punch 의 Batting(FCW-UI 만 발생 )\n[검지조건]\n    Staple 위치와 Punch 의 위치가 Batting 했다.\n[대처순서]\n    Staple 해제, Punch 해제, 양쪽을 해제한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-969": {
+  "title": "Different Width Mix Punch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    이상 폭 Mix Punch\n[검지조건]\n    Punch Mode 로 Print 중에 다른 폭의 용지를 검지\n[대처순서]\n    Copy:Punch 해제 (User 개입 )"
+ },
+ "024-972": {
+  "title": "Tray6 size mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Comm:Size Mismatch(Tray 6 Size 부적합 )\n[검지조건]\n    Tray 6 내의 용지와 프린트 지시한 용지가 다르다.\n[대처순서]\n    해당 Tray 에 바르게 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-973": {
+  "title": "Tray7 size mismatch",
+  "text": ""
+ },
+ "024-974": {
+  "title": "Interposer Tray Size Mismatch",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Interposer Tray Size Mismatch\n[검지조건]\n    Interposer 에서 용지 Feed 시 지정 Size 와 Tray 의 Size 가 달라진다.\n[대처순서]\n    해당 Tray 에 바르게 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-975": {
+  "title": "Copy Booklet sheets counts over",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Booklet 용지 매수 Over( 제본 없음 처리에서만 발생 )\n[검지조건]\n    Print 개시시에 검지\n    Signature 제본 없음 또는 Printer Print 에서 Set 의 용지매수가 Booklet 가능매수\n    를 초과했다.\n    ·  1 장의 경우에는 자동으로 중앙 여백만 해제하고 두번접기로 배출\n    ·  접기만 지정한 경우 자동으로 접기 가능한 매수마다 접어서 배출.\n    PrintService 제본 처리는 Driver 로 실시하기 때문에, 기계 본체에서는 제본 없음\n    처리만 실시.\n    이 Fail 을 검지하면 Job Cancel 되므로, Job Cancel 한 내용의 표시만\n[대처순서]\n    Copy:Booklet 해제 (User 개입 )\n    Printer:Booklet 해제 ( 자동해제 )\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-976": {
+  "title": "Finisher Staple Status NG",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Finisher Staple Status NG\n[검지조건]\n    Staple Motor 가 정회전 동작개시후 450ms 이내에 Staple Home SNR OFF →ON 을 검지\n    할 수 없으며, Staple Motor 정회전 동작개시후, 200ms 이내에 Stapler Head Home\n    SNR 을 ON 했을 경우\n[대처순서]\n    Stapler 침 확인, 바르게 다시 세트한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-978": {
+  "title": "Booklet Stapler NG",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Booklet Stapler NG\n[검지조건]\n    Booklet Staple 동작개시로에서 규정시간 경과한 시점에서 Ready 신호가 Not Ready\n    상태인 경우.\n[대처순서]\n    Stapler 침 확인, 바르게 다시 세트한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-979": {
+  "title": "Stapler Near Empty",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Stapler 침 Near Empty, 혹은, Stapler 침 송신 불량"
+ },
+ "024-980": {
+  "title": "Finisher Stacker Tray Full",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Finisher Stacker Tray Full Stack\n[검지조건]\n    ## APC4300G##\n    [B-Fin 장착시 ] & [C-Fin/D-Fin 장착 + Booklet 장착시 ]\n        \" 배출용지의 대소 구별안함 \" 에서 발생한다.\n    [C-Fin 장착 + Booklet 미장착 ]\n        Stack Encoder SNR 이 Full Stack( 큰 크기 ) 의 규정매수를 카운트했다.\n        Stack Encoder SNR 이 Full Stack( 작은 크기 ) 의 규정매수를 카운트했다.\n    ## APC4300G# 이외 ##\n    (C-Fin/D-Fin) 다음중 하나인 경우\n    ·  Stacker Tray 의 높이조정 동작 실시중 ( 하강시 ) 에 작은 크기의 용지 Full 을 검\n        지한 경우.\n    ·  Half Limit 대상용지의 배출을 위한 Stacker Tray 의 높이조정 동작중 ( 하강시 )\n        에 Half 를 검지한 경우.\n    ·  큰 크기 용지가 이미 Full(Half) 위치를 검지한 상태에서 큰 크기 용지의 배출을\n        실시한 경우\n    (A-Fin/B-Fin) 다음중 하나인 경우\n    ·  전원 ON 시에 Stacker Height Snr 높이 검지 및 Full 위치를 동시에 검지한 경우\n    ·  작은 크기 용지 배출시의 Stacker Tray 높이조정 동작 실시중 ( 하강시 ) 에 Full\n        위치를 검지한 경우\n    ·  작은 크기 용지 배출시의 Stacker Tray 높이조정 동작 실시중 ( 하강시 ) 에 Half\n        위치 ( 큰 크기 용지의 Full 위치 ) 를 검지한 경우\n    ·  Half 위치 ( 큰 크기 용지의 Full 위치 ) 를 이미 검지한 상태에서 Half Limit 대\n        상 용지 ( 큰 크기 용지 ) 를 배출한 경우\n[대처순서]\n    Stacker 에서 용지를 제거한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-981": {
+  "title": "Finisher TopTray Full",
+  "text": "[Error 분류]\n    Operation Error"
  }
 }
