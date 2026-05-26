@@ -1842,5 +1842,125 @@
  "017-525": {
   "title": "Host name solution in SFTP Fail",
   "text": "[Fault 명칭]\n    Host name solution in SFTP Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    SFTP 서버로 연결 전 DNS 로 액세스한 타이밍에서 호스트 이름 (= 서버 이름) 해결에\n    실패했다.\n[대처순서]\n    DNS 연결 또는 수신자 서버 이름이 DNS 에 등록되었는지 확인한다 (사용자 조치와 동\n    일).\n    문제가 계속되는 경우 문제 발생 직후에 pfshowinfo 9 로그와 네트워크 로그를 취득\n    하여 지원부서에 연락한다 (2.5.1 LOG)."
+ },
+ "017-526": {
+  "title": "Server connection in SFTP Fail",
+  "text": "[Fault 명칭]\n    Server connection in SFTP Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    SFTP 서버와의 접속에 실패했다.\n[대처순서]\n    서버 IP 주소 또는 네트워크 케이블 접속을 확인한다 (사용자 조치와 동일).\n    문제가 계속되는 경우 문제 발생 직후에 pfshowinfo 9 로그와 네트워크 로그를 취득\n    하여 지원부서에 연락한다 (2.5.1 LOG)."
+ },
+ "017-528": {
+  "title": "Unable start multi send Job Flow Job with JobLimits",
+  "text": "[Fault 명칭]\n    Unable start multi send Job Flow Job with JobLimits\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    JobLimits 활성화 시 Multi Send JobFlowJob 을 실행하려고 하여 작업을 취소했다.\n[대처순서]\n    관리자에게 연락하여 조치를 의뢰한다."
+ },
+ "017-529": {
+  "title": "Folder Access Denied Via Network",
+  "text": "[Fault 명칭]\n    Folder Access Denied Via Network\n[Error 분류]\n    Job\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    축적 문서의 네트워크 분리 기능이 [활성화] 일 때 폴더에 대해 허가되지 않은 경로\n    로 문서 축적 / 문서 추출 / 문서 전송을 실행하려 했다.\n[대처순서]\n    액세스하려는 폴더 사용이 허가되었는지 확인한다."
+ },
+ "017-530": {
+  "title": "Protocol Not Supported For Network",
+  "text": "[Fault 명칭]\n    Protocol Not Supported For Network"
+ },
+ "017-700": {
+  "title": "ThinPrint Connection timeout Fail",
+  "text": "[Fault 명칭]\n    ThinPrint Connection timeout Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    ThinPrint 연결 시간초과 오류\n[검지조건]\n    ThinPrint .print Engine 과의 연결시간이 초과되었다.\n[대처순서]\n    ThinPrint .print Engine 의 에러를 확인한다.\n    ThinPrint .print Engine 의 연결을 확인한다."
+ },
+ "017-701": {
+  "title": "ThinPrint Connection Fail",
+  "text": "[Fault 명칭]\n    ThinPrint Connection Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    ThinPrint 연결 오류\n[검지조건]\n    ThinPrint .print Engine 과의 연결에서 알 수 없는 에러가 발생하였다.\n[대처순서]\n    ThinPrint .print Engine 의 에러를 확인한다.\n    ThinPrint .print Engine 의 연결을 확인한다."
+ },
+ "017-702": {
+  "title": "ThinPrint Invalid data Fail",
+  "text": "[Fault 명칭]\n    ThinPrint Invalid data Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    ThinPrint 인쇄 데이터 오류"
+ },
+ "017-703": {
+  "title": "ThinPrint Over maximum data size Fail",
+  "text": "[Fault 명칭]\n    ThinPrint Over maximum data size Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    ThinPrint 인쇄 데이터 크기 오류\n[검지조건]\n    ThinPrint .print Engine 에서 전송된 데이터가 장치에서 취급할 수 있는 최대크기를\n    초과하였다.\n[대처순서]\n    작업을 분할한 후에 인쇄작업을 다시 실행한다."
+ },
+ "017-705": {
+  "title": "ThinPrint SSL Authentication Invalid certification Fail",
+  "text": "[Fault 명칭]\n    ThinPrint SSL Authentication Invalid certification Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    ThinPrint SSL 인증 - 서버 인증서 오류\n[검지조건]\n    ThinPrint .print Engine 이 사용 중인 서버 인증서가 올바르지 않다.\n[대처순서]\n    ThinPrint .print Engine 에 등록된 서버 인증서를 확인한다."
+ },
+ "017-706": {
+  "title": "ThinPrint SSL Authentication Before expiration Fail",
+  "text": "[Fault 명칭]\n    ThinPrint SSL Authentication Before expiration Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    ThinPrint SSL 인증 - 서버 인증서의 유효기간 시작전 오류\n[검지조건]\n    ThinPrint .print Engine 이 사용하는 인증서의 유효기간이 아직 시작되지 않았다.\n[대처순서]\n    ThinPrint .print Engine 에 등록된 서버 인증서를 확인한다."
+ },
+ "017-707": {
+  "title": "ThinPrint SSL Authentication Expired Fail",
+  "text": "[Fault 명칭]\n    ThinPrint SSL Authentication Expired Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    ThinPrint SSL 인증 - 서버 인증서의 유효기간 만료 오류\n[검지조건]\n    ThinPrint .print Engine 이 사용하는 인증서의 유효기간이 만료되었다.\n[대처순서]\n    ThinPrint .print Engine 에 등록된 서버 인증서를 확인한다."
+ },
+ "017-708": {
+  "title": "ThinPrint SSL Authentication Misrepresentation Fail",
+  "text": "[Fault 명칭]\n    ThinPrint SSL Authentication Misrepresentation Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    ThinPrint SSL 인증 - 서버 주소의 불일치 오류\n[검지조건]\n    ThinPrint .print Engine 이 사용하는 인증서의 주소가 올바르지 않다.\n[대처순서]\n    ThinPrint .print Engine 에 등록된 서버 인증서를 확인한다."
+ },
+ "017-709": {
+  "title": "ThinPrint SSL Fail",
+  "text": "[Fault 명칭]\n    ThinPrint SSL Fail\n[Error 분류]\n    Job Fail"
+ },
+ "017-710": {
+  "title": "SIP Mismatched media type Fail",
+  "text": "[Fault 명칭]\n    SIP Mismatched media type Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    SIP 접속거부 - 매체종류 불일치\n[검지조건]\n    접속요구에 대해 접속할 위치의 매체종류가 올바르지 않아서 접속거부 응답을 실행\n    하였다.\n[대처순서]\n    통신상대의 기기를 확인한다."
+ },
+ "017-711": {
+  "title": "SIP redirect Response Fail",
+  "text": "[Fault 명칭]\n    SIP redirect Response Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    SIP 리다이렉트 요구 - 3xx 응답\n[검지조건]\n    SIP 접속에서 리다이렉스가 응답되었다.\n[대처순서]\n    통신상대의 주소를 확인한다."
+ },
+ "017-712": {
+  "title": "SIP session timeout Fail",
+  "text": "[Fault 명칭]\n    SIP session timeout Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    SIP 세션 시간초과\n[검지조건]\n    세션 간격 내에 세션 새로고침이 실행되지 않았다.\n[대처순서]\n    통신상대의 기기를 확인한다."
+ },
+ "017-713": {
+  "title": "Starttls unsupported Fail",
+  "text": "[Fault 명칭]\n    Starttls unsupported Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Starttls unsupported Fail\n[검지조건]\n    SMTP 서버가 STARTTLS 에 대응되지 않는다.\n    (참고 : SMTPERR_STARTTLS_NONSUPPORT)\n[대처순서]\n    1.  SSL 작동모드를 STARTTLS 모드 이외 (TLS 모드) 로 설정을 변경한다.\n\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 << 5 >> Log 취득방법의\n    설명에 따라 PfShowInfo 8 Log 와 Network Log 를 취득하여 기술부문에 문의한다."
+ },
+ "017-714": {
+  "title": "Smtp over ssl Fail",
+  "text": "[Fault 명칭]\n    Smtp over ssl Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Smtp over ssl Fail\n[검지조건]\n    SMTP 서버와의 SSL 접속에 실패하였다.\n    (참고 : SMTPERR_SSL_FAILED)\n[대처순서]\n    1.  TLS 모드에서 발생한 경우에는 포트번호가 다를 가능성이 있다.\n        SMTP 서버의 포트번호 설정을 확인한다.\n    2.  상기 이외의 경우에는 프로그램 내부 에러가 발생했을 가능성이 있다.\n        Trouble 발생 직후에 << 5 >> Log 취득방법의 설명에 따라 PfShowInfo 8 Log 와\n        Network Log 를 취득하여 기술부문에 문의한다."
+ },
+ "017-715": {
+  "title": "Ssl cert untrusted Fail",
+  "text": "[Fault 명칭]\n    Ssl cert untrusted Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Ssl cert untrusted Fail\n[검지조건]\n    서버 인증서의 데이터 일부가 올바르지 않아서 SSL 서버 인증에서 에러가 발생하였\n    다."
+ },
+ "017-716": {
+  "title": "Ssl cert date invalid Fail",
+  "text": "[Fault 명칭]\n    Ssl cert date invalid Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Ssl cert date invalid Fail\n[검지조건]\n    서버 인증서가 유효기간 이전이었다.\n    (참고 : SMTPERR_SSL_AUTH_CERT_BEFORE_EXPIRATION)\n[대처순서]\n    1.  SMTP 서버와 복합기의 시계가 각각 올바른지 확인한다.\n        시계가 올바르면 SMTP 서버의 SSL 인증서를 유효한 인증서로 변경한다.\n    2.  복합기의 설정 [SSL 서버 검증] 을 OFF 로 해도 해결되지만 접속할 SMTP 서버의 정\n        당성이 보증되지 않으므로 주의한다.\n\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 << 5 >> Log 취득방법의\n    설명에 따라 PfShowInfo 8 Log 를 취득하여 기술부문에 문의한다."
+ },
+ "017-717": {
+  "title": "Ssl server cert expired Fail",
+  "text": "[Fault 명칭]\n    Ssl server cert expired Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Ssl server cert expired Fail\n[검지조건]\n    서버 인증서의 유효기한이 만료되었다.\n    (참고 : SMTPERR_SSL_AUTH_CERT_EXPIRED)\n[대처순서]\n    1.  SMTP 서버 인증서의 유효기간을 확인한다. 또는 복합기의 시계가 올바른지 확인\n        한다.\n    2.  복합기의 설정 [SSL 서버 검증] 을 OFF 로 해도 해결되지만 접속할 SMTP 서버의 정\n        당성이 보증되지 않으므로 주의한다."
+ },
+ "017-719": {
+  "title": "Smtp over ssl internal Fail",
+  "text": "[Fault 명칭]\n    Smtp over ssl internal Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Smtp over ssl internal Fail\n[검지조건]\n    SMTP over SSL 처리중에 소프트웨어 내부 에러가 발생하였다.\n    (참고 : SMTPERR_SSL_AUTH_FAILED)\n[대처순서]\n    1.  동일한 조작을 다시 실시한다.\n\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 << 5 >> Log 취득방법의\n    설명에 따라 PfShowInfo 8 Log 와 Network Log 를 취득하여 기술부문에 문의한다."
+ },
+ "017-720": {
+  "title": "Contract Type Fail",
+  "text": "[Fault 명칭]\n    Contract Type Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Contract Type 값 부정확"
+ },
+ "017-721": {
+  "title": "Geographic Region Fail",
+  "text": "[Fault 명칭]\n    Geographic Region Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    Geographic Region 값 부정확\n[검지조건]\n    PJL 명령에서 지정된 Geographic Regio 의 값이 틀리다.\n[대처순서]\n    PJL 명령에서 지정된 Contract Type 의 값을 올바른 값으로 수정하고 다시 실시한다."
+ },
+ "017-722": {
+  "title": "Total Impressions Over Fail",
+  "text": "[Fault 명칭]\n    Total Impressions Over Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    PJL 진단용 데이터에서 사용매수의 페이지수 합계가 9,999,900 이상이다.\n[검지조건]\n    사용매수의 페이지수 합계가 9,999,900 이상인 때에 Geographic Region 및 Contract\n    Type 의 변경요구를 수신하였다.\n[대처순서]\n    페이지수 합계가 0~9,999,900 인 값일 때에 실행한다."
+ },
+ "017-723": {
+  "title": "DocuWorks Unsupported character Fail",
+  "text": "[Fault 명칭]\n    DocuWorks Unsupported character Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    DocuWorks Unsupported character Fail\n[검지조건]\n    DocuWorks Decomposer 처리중에 출력 불가능한 문자의 사용을 검지했다.\n[대처순서]\n    DocuWorks Viewer 에서 프린터 드라이버 (ART-EX, PCL 등) 를 사용하여 인쇄한다.\n    문제가 계속되는 경우는 아래를 실시하여 문제를 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "017-724": {
+  "title": "Denshi-Pen Syntax Fail",
+  "text": "[Fault 명칭]\n    Denshi-Pen Syntax Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    Denshi-Pen 지시 Error\n[검지조건]\n    Denshi-Pen 인쇄지시에 포함되는 XPJL 에서 이상이 검출되었거나 Denshi-Pen 에 대응\n    하지 않는다.\n    ·  Denshi-Pen 대상기종이 아니다.\n    ·  17 개 이상의 Layout 이 지시되었다.\n    ·  대응하는 Layout 번호가 없다.\n[대처순서]\n    Denshi-Pen 대상기종인지 확인한다. 대상기종인 경우 다시 한 번 동일한 조작을 실\n    시한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "017-725": {
+  "title": "Forced Annotation Syntax Fail",
+  "text": "[Fault 명칭]\n    Forced Annotation Syntax Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    강제주석 구문 Error\n[검지조건]\n    강제주석의 지시구문에서 이상을 검지했다.\n[대처순서]\n    드라이버 설정을 확인한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "017-728": {
+  "title": "Scan Job Flow Document Fail",
+  "text": "[Fault 명칭]\n    Scan Job Flow Document Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    Scan Job Flow Service 실행시 처리대상 문서의 이상\n[검지조건]\n    1.  지시서 기술에 출력양식으로 MS Word 또는 MS Excel 을 지정한 경우 처리대상 문서가\n        포맷화 처리에 필요한 조건을 충족시키지 않고 있다."
+ },
+ "017-729": {
+  "title": "Temporary Error in PDL Transfer",
+  "text": "[Fault 명칭]\n    Temporary Error in PDL Transfer\n[Error 분류]\n    작업\n[Fault 내용]\n    PDL 데이터 전송의 일시적 실패\n[검지조건]\n    발신지 기계가 작업 최대 수를 초과했거나 프린트 데이터 스풀 영역 Full 등으로 인\n    해 일시적으로 송신할 수 없다.\n[대처순서]\n    송신대상 기계의 프린트 데이터 스풀 설정을 하드 디스크에 설정한다.\n    CentreWare Internet 서비스 [등록정보] → [일반정보] → [메모리 설정] → [IPP]\n    → [스풀안함] 에서 [하드 디스크] 로 변경한다.\n\n    그래도 문제가 계속되는 경우는 문제 발생 직후에 [PfShowInfo 8 로그] 및 [네트워\n    크 로그] 를 취득하여 지원부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
  }
 }
