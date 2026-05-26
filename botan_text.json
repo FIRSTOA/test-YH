@@ -1362,5 +1362,85 @@
  "016-589": {
   "title": "Data read failure from FTP server",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan Server 로부터의 Data 읽기에 실패\n[검지조건]\n    스캔 (PC 저장) 의 FTP 전송에서 FTP Server 로의 접속후 FTP Server 로부터의 Data 읽\n    기에 실패했다.\n[대처순서]\n    FTP Server 에 Access 권이 있는지 확인하고 정확한 권리를 부여받는다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-590": {
+  "title": "Data reading failure from FTP server",
+  "text": ""
+ },
+ "016-591": {
+  "title": "FTP scan filing policy injustice",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan Filing Policy 부정확 (추가 선택시)\n[검지조건]\n    FTP Server 로의 접속후에 Filing Policy 부정확 (추가 선택시) 을 검지\n[대처순서]\n    1.  File 명 중복시의 처리에 [추가] 가 지정된 경우, File Format 이 Multi-Page 로 되\n        어 있지 않은지 확인한다"
+ },
+ "016-592": {
+  "title": "NEXTNAME.DAT file access Error in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 에서 NEXTNAME.DAT File Access Error\n[검지조건]\n    스캔 (PC 저장) 의 FTP 전송에서 FTP Server 로의 접속 후, NEXTNAME.DAT 로의 Access\n    시에 Error 가 발생했다.\n[대처순서]\n    1.  File 명 중복시의 처리에 [추가] 가 지정된 경우, NEXTNAME.DAT File 이 정확한지 확\n        인한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-593": {
+  "title": "Internal Error in FTP Scan",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 에서 내부 Error 가 발생했다."
+ },
+ "016-594": {
+  "title": "TYPE command failure in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 에서 TYPE Command 가 실패했다. (Network Error)\n[검지조건]\n    FTP Server 로의 접속후에 TYPE Command 가 실패했다. (Network Error)\n[대처순서]\n    한번 더 동일한 조작을 한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-595": {
+  "title": "PORT command failure in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 에서 PORT Command 가 실패했다. (Network Error)\n[검지조건]\n    FTP Server 로의 접속후에 PORT Command 가 실패했다. (Network Error)\n[대처순서]\n    한번 더 동일한 조작을 한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-596": {
+  "title": "CDUP command failure in FTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 에서 CDUP Command 가 실패했다. (Network Error)\n[검지조건]\n    FTP Server 로의 접속후에 CDUP Command 가 실패했다. (Network Error)\n[대처순서]\n    한번 더 동일한 조작을 한다."
+ },
+ "016-597": {
+  "title": "Same name file exists in FTP servcer",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    FTP Scan 에서 동일한 이름의 File(Folder) 존재에 의해 처리 중지 (CreditMutuel 사\n    양)\n[검지조건]\n    FTP Server 로의 접속후에 동일한 이름의 File/Folder 를 검지했기 때문에 중지.\n    (CreditMutuel 사양)\n[대처순서]\n    복수의 기계로부터 동일 Server 의 동일 Folder 에 Access 하지 않은 상태에서 한번\n    더 동일한 조작을 한다.\n        Trouble 이 지속될 때는 Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log 를 채\n        취하여 Support 부문에 연락하여 지시를 받는다.\n        2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-598": {
+  "title": "Email message size over",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    Email Message Size Over\n[검지조건]\n    Page 분할시, 1 페이지 분량의 Mail Data Size 가 System Data 의 \"최대 Message Size\"\n    를 초과했다.\n[대처순서]\n    다음을 실시한다.\n    1.  송신 Parameter 의 해상도 (송신화질) 를 낮추어 재송신한다.\n    2.  송신 Parameter 의 배율을 조절하여 Image 를 축소한 후, 다시 송신한다. (A3 →\n        A4 등)\n    3.  \"최대 Message Size\" 의 값을 증가한다. (기본값 10MB 권장)\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo8 과 Network Log\n    를 취득하여 기술부문에 문의한다.\n    2.5.2 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "016-599": {
+  "title": "Email message size over",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    Email Message Size Over"
+ },
+ "016-600": {
+  "title": "KO Authentication Locked",
+  "text": "[Error 분류]\n    History\n[Fault 내용]\n    부정확 KO 인증 검지로 Lock 했다. (연속하는 KO 인증 NG 를 검지)\n[검지조건]\n    연속하여 발생한 KO 인증 Error 가 System Data[KO 인증 연속 Error 최대횟수 ([700-\n    563]) 의 설정횟수에 도달했다.\n[대처순서]\n    History 로의 등록만 해당."
+ },
+ "016-601": {
+  "title": "Illegal Access Detection",
+  "text": "[Error 분류]\n    History\n[Fault 내용]\n    부정 침입 공격을 검지 (KO/CO 의 UserID 의 NG 또는 Password 의 NG 에 의한 식별 / 인\n    증 Error)\n[검지조건]\n    일정시간 이내에 발생한 인증 Error(CO/KO 포함) 가 System Data[ 인증 Error 최대횟\n    수 ([700-564])] 의 설정횟수에 도달했다.\n[대처순서]\n    History 로의 등록만 해당."
+ },
+ "016-603": {
+  "title": "HDD not found Fail",
+  "text": "[Fault 명칭]\n    HDD not found Fail\n[Error 분류]\n    Record\n[Fault 내용]\n    HDD 미검지"
+ },
+ "016-604": {
+  "title": "Created debug-log by System",
+  "text": "[오류 명칭]\n    Created debug-log by System\n[오류 유형]\n    기록\n[오류 내용]\n    시스템에 의해 디버그 로그 자동 생성\n[감지 조건]\n    1. 작업 실행 중 전원이 꺼지고 디버그 로그 자동 생성 시\n\n    2. 전원을 껐으나 Power OFF Sequence 가 실행되지 않고 전원이 다시 켜지고 디버그\n    로그 자동 생성 시\n[해결 방법]\n    필요한 경우 디버그 로그를 수집한다."
+ },
+ "016-605": {
+  "title": "Created debug-log by ExtCont",
+  "text": "[오류 명칭]\n    Created debug-log by ExtCont\n[오류 유형]\n    기록\n[오류 내용]\n    ExtCont 에 의해 디버그 로그 자동 생성\n[감지 조건]\n    DocuSP 등의 외부 DFE 의 요청에 의해 디버그 로그 생성 시\n[해결 방법]\n    필요한 경우 디버그 로그를 수집한다."
+ },
+ "016-606": {
+  "title": "Cont-BP Cable Connection Fail",
+  "text": "[Fault 명칭]\n    Cont-BP Cable Connection Fail\n[Error 분류]\n    Record\n[Fault 내용]\n    Cont-BP Cable Connection Fail\n[검지조건]\n    Controller 가 Back Plane 과의 접속이상을 검지했다.\n[대처순서]\n    접속이상 장소를 복구한다."
+ },
+ "016-607": {
+  "title": "Cont-UI Cable Connection Fail",
+  "text": "[Fault 명칭]\n    Cont-UI Cable Connection Fail\n[Error 분류]\n    Record\n[Fault 내용]\n    Cont-UI Cable Connection Fail\n[검지조건]\n    Controller 가 UI Cable 과의 접속이상을 검지했다.\n[대처순서]\n    접속이상 장소를 복구한다."
+ },
+ "016-608": {
+  "title": "Cont-MCU Cable Connection Fail",
+  "text": "[Fault 명칭]\n    Cont-MCU Cable Connection Fail\n[Error 분류]\n    Record\n[Fault 내용]\n    Cont-MCU Cable Connection Fail\n[검지조건]\n    Controller 가 MCU Cable 과의 접속이상을 검지했다.\n[대처순서]\n    접속이상 장소를 복구한다."
+ },
+ "016-609": {
+  "title": "PCI Option No Support Device Fail",
+  "text": "[Fault 명칭]\n    PCI Option No Support Device Fail\n[Error 분류]\n    Record\n[Fault 내용]\n    PCI Option No Support Device Fail\n[검지조건]\n    Controller 가 불분명한 PCI Option 을 검지했다.\n[대처순서]\n    불분명한 PCI Option 을 해제한다."
+ },
+ "016-612": {
+  "title": "Log Image Creation Failure",
+  "text": "[Fault 명칭]\n    Log Image Creation Failure\n[Error 분류]\n    Record\n[Fault 내용]\n    로그 이미지 작성 실패\n[검지조건]\n    로그 이미지를 작성하는 동안 에러가 발생했다. (로그 이미지 조작 보증 레벨이 [\n    낮음] 인 경우에 한한다.)\n[대처순서]\n    (CE 대처 불필요)"
  }
 }
