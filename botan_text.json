@@ -2686,5 +2686,85 @@
  "018-792": {
   "title": "LDAP protocol Error 92",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 92( 기능 지원안됨 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[92]( 기능 지\n    원안됨 ) 가 수신되었다.\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-793": {
+  "title": "LDAP protocol Error 93",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 93( 결과가 수신되지 않음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[93]( 결과가 수\n    신되지 않음 ) 이 수신되었다."
+ },
+ "018-794": {
+  "title": "LDAP protocol Error 94",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 94( 결과가 없음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[94]( 결과가 없\n    음 ) 가 수신되었다.\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-795": {
+  "title": "LDAP protocol Error 95",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 95( 결과가 아직 있음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[95]( 결과가 아\n    직 있음 ) 가 수신되었다.\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-796": {
+  "title": "LDAP protocol Error 96",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 96(Client 의 Loop 를 검출 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[96](Client 의\n    Loop 를 검출 ) 이 수신되었다.\n[대처순서]\n    Network 관리자와 상담하고, Server 측의 상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-797": {
+  "title": "LDAP protocol Error 97",
+  "text": ""
+ },
+ "018-798": {
+  "title": "CSB Print Network other fail",
+  "text": "[Fault 명칭]\n    CSB Print Network other fail\n[Error 분류]\n    Job\n[Fault 내용]\n    CSB 프린트 외의 기타 네트워크 에러\n[검지조건]\n    CSB 프린트에서 서버와의 HTTP 통신 시에 네트워크 관련된 기타 내부 에러가 발생했\n    다.\n[대처순서]\n    네트워크 접속 상태, 설정 상태를 확인한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    문제 발생 직후에 PfShowInfo 9 로그와 네트워크 로그를 취득하여 지원 부서에 연락\n    하고 지시에 따른다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "018-799": {
+  "title": "CSB Print Abort to get file from CSB",
+  "text": "[Fault 명칭]\n    CSB Print Abort to get file from CSB\n[Error 분류]\n    Job\n[Fault 내용]\n    CSB 프린트 서버에서 문서 가져오기 중지\n[검지조건]\n    CSB 프린트로 서버에서 문서 가져오기 처리를 중단 (취소 )"
+ },
+ "021-208": {
+  "title": "An alert of setting Chain Link has detected.",
+  "text": "[Fault 명칭]\n    An alert of setting Chain Link has detected.\n[Error 분류]\n    System\n[Fault 내용]\n    EP-BB Chain-Link 설정실패 경고\n[검지조건]\n    EP 센터 Chain-Link 변경 지시에 따른 Chain-Link 변경 처리에 실패했다.\n[대처순서]\n    EP 전용 Fault 이므로 사용자 모드에서는 화면에 표시되지 않는다.\n    Chain-Link 설정지시와 결과를 확인한 후 사용자를 방문해 적절히 처리한다."
+ },
+ "021-210": {
+  "title": "USB IC Card Reader connection Error",
+  "text": "[Error 분류]\n    Local Fail\n[Fault 내용]\n    USB IC Card Reader 의 접속 상태 Error\n[검지조건]\n    Fault 의 검지 조건 : Device 의 Power ON 시, USB IC Card 를 Job 제어에 사용하도록\n    설정되어 있는 상태에서 USB IC Card 가 접속되어 있는지를 EPA Lib/EP Cont 가 검지\n    한 경우. Device 가 Ready 상태이고 USB IC Card 를 Job 제어에 사용하도록 설정되\n    어 있는 상태에서 USB 가 분리되거나 또는 USB IC Card Reader 가 고장난 것을 EPA\n    Lib/EP Cont 가 검지한 경우.\n[대처순서]\n    USB Connector 가 분리된 경우 : 분리된 USB Connector 를 다시 접속하고 전원을 Off/\n    On 한다.\n    USB IC Card Reader 가 접속되어 있음에도 불구하고 이 Fault 가 발생한 경우 : 고장나\n    지 않은 USB IC Card Reader 를 접속하고 전원을 Off/On 한다."
+ },
+ "021-212": {
+  "title": "USB IC Card Reader preparing error",
+  "text": "[Error 분류]\n    local"
+ },
+ "021-213": {
+  "title": "Controller Price Table Error",
+  "text": "[Error 분류]\n    local\n[Fault 내용]\n    EPA - Controller 단가표 설정 Error\n[검지조건]\n    새로운 방식의 감산형 (M/C 측 단가표 방식 ) 기능 On(850-027=1) 으로 설정한 때에 설\n    정 가능한 단가 (855-xxx) 에 1~9999999 이외의 값이 하나라도 설정되어 있는 경우.\n[대처순서]\n    ( 기계 관리자만 복구 가능 )\n    CWIS 를 사용하여 단가표를 파일로 보내기한 후 1~9999999 이외의 값이 설정된 부분\n    에 1~9999999 의 값을 임의로 설정하고 CWIS 에서 수정한 단가표의 파일을 가져오기한\n    다.\n    -  새로운 방식의 감산형 (M/C 측 단가표 방식 ) 을 사용하지 않는 경우에는 NVM(850-\n        027) 의 값을 0( 기능 Off) 으로 설정한다.\n    -  새로운 방식의 감산형 (M/C 측 단가표 방식 ) 을 사용할 경우에는 설정 가능한 모\n        든 단가 (855-xxx) 에 1~9999999 의 값을 설정하고 전원을 OFF/ON 한다. ( 설정 값\n        은 고객의 합의가 필요 )\n    그래도 Trouble 이 계속되는 경우에는 다음을 실시한다."
+ },
+ "021-214": {
+  "title": "USB IC Card Reader encryption setting Error",
+  "text": "[Error 분류]\n    local\n[Fault 내용]\n    USB IC Card Reader 의 암호통신 설정에 실패했다.\n[검지조건]\n    ·  USB IC Card Reader 의 암호통신 설정의 설정 중에 USB IC Card Reader 의 Error 를\n        검지한 경우.\n    ·  암호통신 설정이 바르지 않은 ( 상호 인증키가 규정의 키와 불일치 ) USB IC Card\n        Reader 가 접속되어 암호통신에 실패한 경우.\n[대처순서]\n    ·  재기동만으로 복구되는 경우도 있으므로 전원을 OFF/ON 한다.\n    ·  전원을 OFF/ON 해도 복구되지 않는 경우에는 접속된 USB IC Card Reader 의 암호통신\n        설정이 바르지 않으므로 미사용 USB IC Card Reader 또는 암호통신 설정을 공장출하\n        시의 설정으로 초기화한 USB IC Card Reader 를 접속하고 전원을 OFF/ON 한다."
+ },
+ "021-215": {
+  "title": "Invalid Accessory Kind Setting",
+  "text": "[Error 분류]\n    local\n[Fault 내용]\n    Invalid Accessory Kind Setting\n[검지조건]\n    NVM850-007( 과금 / 집계기기의 종류 설정 ) 의 설정값과 연결 액세서리의 종류가 일치\n    하지 않는다.\n[대처순서]\n    NVM850-007 의 값을 연결된 액세서리에 대응되는 설정으로 변경한 후 전원을 OFF/ON\n    한다. 또는 설정값에 알맞은 연결 액세서리로 교환한 후 전원을 OFF/ON 한다."
+ },
+ "021-360": {
+  "title": "EP Accessory Fail",
+  "text": "[Error 분류]\n    System Fail\n[Fault 내용]\n    EP Accessory Fail\n[검지조건]\n    EP-Accessory 와의 접속에서 이상이 발생했다. 설치되어 있어야 하는 Accessary 가 없\n    다.\n[대처순서]\n    Power OFF/ON 한다.\n    1.  EP-Accessory 와의 접속 확인, EPSV Board 의 빼냈다 다시 끼우기, Cable 교환\n    2.  Controller Software 가 최신판인지 확인한다.\n    3.  Trouble 이 지속될 때는 EPSV-IF PWB 를 교환한다."
+ },
+ "021-400": {
+  "title": "점검의뢰",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    점검의뢰 정보\n[검지조건]\n    점검의뢰를 검지했다.\n[대처순서]\n    점검을 실시한다."
+ },
+ "021-401": {
+  "title": "USB IC Card Reader connection Error info",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    USB IC Card Reader 접속상태의 부정확 정보\n[검지조건]\n    설정된 USB IC Card Reader( Reader 이외의 인증기기 포함 ) 가 장치에 설정된 개수\n    보다 많은 경우\n[대처순서]\n    이 Fault 의 발생원인에 해당되는 USB IC Card Reader 를 USB Connector 에서 뽑는다."
+ },
+ "021-402": {
+  "title": "Couldn't resolve proxy name Fail",
+  "text": ""
+ },
+ "021-404": {
+  "title": "Couldn't connect to host/proxy Fail",
+  "text": "[Fault 명칭]\n    Couldn't connect to host/proxy Fail\n[Error 분류]\n    Information\n[Fault 내용]\n    Server Connection Error\n[검지조건]\n    서버 또는 프록시 서버에 접속하지 못했다. ( 서버 전원 OFF 경우도 포함 )\n[대처순서]\n    아래를 확인한다.\n    -  LAN Cable 의 접속을 확인한다.\n    -  DNS 서버 주소 설정을 확인한다.\n    -  기본 게이트웨이의 설정을 확인한다.\n    -  서브넷 마스크의 설정을 확인한다.\n    -  EP 서버 설정을 확인한다. [Chain-Link(920-003~920-006)]\n    BB-Direct 구성인 경우 다음을 확인한다.\n    -  EP 프록시 서버 설정을 확인한다. [Chain-Link(920-035~920-039) 또는 KO 설정 ]\n    위 설정 확인 후 상태가 개선되지 않는 경우에는 네트워크 오류 또는 EPA-Server 의\n    FQDN 이 변경되었을 가능성 (EPA-Server 동반인 경우 ) 이 있으므로 고객의 네트워크\n    관리자에게 문의한다.\n    네트워크가 정상임에도 불구하고 문제가 계속되는 경우 문제 발생 직후에\n    pfshowinfo9 로그와 네트워크 로그를 취득하여 지원부서에 연락한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-405": {
+  "title": "Couldn't establish SSL session Fail",
+  "text": "[Fault 명칭]\n    Couldn't establish SSL session Fail\n[Error 분류]\n    Information\n[Fault 내용]\n    SSL 세션 에러\n[검지조건]\n    SSL/TLS 송수신 시에 에러가 발생했다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    문제 발생 직후에 PfShowInfo 9 로그와 네트워크 로그를 취득하여 지원 부서에 연락\n    하고 지시에 따른다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "021-406": {
+  "title": "An invalid peer certificate has received Fail",
+  "text": "[Fault 명칭]\n    An invalid peer certificate has received Fail\n[Error 분류]\n    Information\n[Fault 내용]\n    SSL 인증서 부정확 (Edge Server)\n[검지조건]\n    Server 의 SSL 인증서가 정확하지 않다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    문제 발생 직후에 PfShowInfo 9 로그와 네트워크 로그를 취득하여 지원 부서에 연락\n    하고 지시에 따른다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
  }
 }
