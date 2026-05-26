@@ -3326,5 +3326,85 @@
  "024-616": {
   "title": "Serial No Master restore",
   "text": "[Fault 명칭]\n    Serial No Master restore\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Serial No Master 를 자동 복구했다.\n[대처순서]\n    History 로의 등록만 해당되고 대처 없음."
+ },
+ "024-617": {
+  "title": "Serial No Backup1 restore",
+  "text": "[Fault 명칭]\n    Serial No Backup1 restore\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Serial No Backup1 를 자동 복구했다.\n[대처순서]\n    History 로의 등록만 해당되고 대처 없음."
+ },
+ "024-618": {
+  "title": "Serial No Backup2 restore",
+  "text": "[Fault 명칭]\n    Serial No Backup2 restore\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Serial No Backup2 를 자동 복구했다.\n[대처순서]\n    History 로의 등록만 해당되고 대처 없음."
+ },
+ "024-619": {
+  "title": "Product No Master restore",
+  "text": "[Fault 명칭]\n    Product No Master restore\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Product No Master 를 자동 복구했다.\n[대처순서]\n    History 로의 등록만 해당되고 대처 없음."
+ },
+ "024-620": {
+  "title": "Product No Backup1 restore",
+  "text": "[Fault 명칭]\n    Product No Backup1 restore\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Product No Backup1 를 자동 복구했다.\n[대처순서]\n    History 로의 등록만 해당되고 대처 없음."
+ },
+ "024-621": {
+  "title": "Product No Backup2 restore",
+  "text": "[Fault 명칭]\n    Product No Backup2 restore\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Product No Backup2 를 자동 복구했다.\n[대처순서]\n    History 로의 등록만 해당되고 대처 없음."
+ },
+ "024-625": {
+  "title": "Shipping Master Restore",
+  "text": "[Fault 명칭]\n    Shipping Master Restore\n[Error 분류]\n    Record"
+ },
+ "024-626": {
+  "title": "Shipping Backup1 Restore",
+  "text": "[Fault 명칭]\n    Shipping Backup1 Restore\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Shipping Backup1 를 자동 복구했다.\n[대처순서]\n    History 로의 등록만 해당되고 대처 없음."
+ },
+ "024-627": {
+  "title": "Shipping Backup2 Restore",
+  "text": "[Fault 명칭]\n    Shipping Backup2 Restore\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Shipping Backup2 를 자동 복구했다.\n[대처순서]\n    History 로의 등록만 해당되고 대처 없음."
+ },
+ "024-700": {
+  "title": "Shortage memory capacity, or no Hard Disk",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    [System Memory 용량 부족 ] 또는 [HDD 미장착 ] 의 조건부족으로 인해 인쇄할 수 없\n    는 Job 을 수신했다.\n[검지조건]\n    조건 1 과 조건 2 양쪽을 만족기키는 본체에 대해, AnalogWaterMark/Hybrid\n    WaterMark/UUID 중에서 하나를 부가한 Job 이 지시되었다.\n    # 조건 1 #\n    SW Option [Paper Security Kit], [Annotation Kit], [Sakura Paper Kit] 중 하나라\n    도 유효, 2 개 유효, 3 개 유효도 포함되므로 주의할 것."
+ },
+ "024-701": {
+  "title": "Invalid instruction of face inversion",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    부정확한 Invert 지시에 의한 작업취소\n[검지조건]\n    IOTsc 가 용지 Invert 가 불가능한 조합의 인쇄지시를 검출한 경우.\n    예 )\n    -  Coil Punch x 인덱스지 x Invert 지시\n    -  Inver 불가능한 크기 / 용지종류 x Invert 지시\n[대처순서]\n    용지의 Invert 가 가능한 인쇄지시로 다시 출력한다."
+ },
+ "024-702": {
+  "title": "Paper Jam",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    용지걸림에 의한 작업취소\n[검지조건]\n    프린트 기능의 프린트 중에 용지걸림이 발생했다 (Jam Recovery 가 OFF 로 설정된 경\n    우 ).\n[대처순서]\n    용지걸림을 해제하고 다시 프린트한다."
+ },
+ "024-703": {
+  "title": "Booklet sheets count over while printing Fail",
+  "text": "[Fault 명칭]\n    Booklet sheets count over while printing Fail\n[Error 분류]\n    Job Fail\n[Fault 내용]\n    인쇄중인 제본작업의 용지매수 초과 오류\n[검지조건]\n    인쇄가 시작된 후에 제본작업의 상한매수를 초과한 것을 검지하였다.\n[대처순서]\n    용지무게에 따른 출력상한값을 초과하지 않도록 무게가 가벼운 용지로 변경한다.\n    그래도 Trouble 이 지속될 때는 아래를 진행하고 Trouble 을 복구한다."
+ },
+ "024-704": {
+  "title": "Denshi-Pen Error While Printing Fail",
+  "text": "[Fault 명칭]\n    Denshi-Pen Error While Printing Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    Denshi-Pen 인쇄시 에러\n[검지조건]\n    Denshi-Pen 문서 출력시에 에러가 발생했다.\n    (SID 예약수 이상의 SID 로 인쇄하려 했다 ))\n[대처순서]\n    기계 전원을 끄고 조작부 화면이 꺼진 후 다시 한번 전원을 켠다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "024-705": {
+  "title": "Forced Annotation Template Fail",
+  "text": "[Fault 명칭]\n    Forced Annotation Template Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    강제 주석의 Template 이상\n[검지조건]\n    지정된 강제 주석의 Template 를 장치내에서 발견할 수 없다.\n[대처순서]\n    문서 삭제드라이버에서 다시 축적한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "024-706": {
+  "title": "Denshi-Pen Print Condition Error",
+  "text": "[Fault 명칭]\n    Denshi-Pen Print Condition Error\n[Error 분류]\n    작업\n[Fault 내용]\n    Denshi-Pen 출력시 금칙에러\n[검지조건]\n    강제 아나로그 워터 마크 또는 강제 하이브리드 워터 마크가 설정된 상태에서\n    Denshi-Pen 이 지시한 문서를 인쇄하려 했다."
+ },
+ "024-707": {
+  "title": "Duplex Inversion Prohibited Media Fail (Duplex Job)",
+  "text": "[Fault 명칭]\n    Duplex Inversion Prohibited Media Fail (Duplex Job)\n[Error 분류]\n    Job\n[Fault 내용]\n    양면 / 반전이 허용되지 않는 용지로 양면 인쇄 지시 접수\n[검지조건]\n    화면 / 반전이 허용되지 않는 용지 품질 / 크기의 용지로 양면 인쇄가 지시되었다.\n    다음은 NVM 설정에서 지정된 화면 / 반전이 허용되지 않는 용지임\n    1.  Coated 1A (106-128 g/m2)780-316\n    2.  Coated 1B (129-150 g/m2)780-317\n    3.  Coated 2A (151-176 g/m2)780-318\n    4.  Coated 2B (176-220 g/m2)780-319\n    5.  Heavyweight 2 (177-220 g/m2)780-320\n    6.  Hole-punched Heavyweight 2 (177-220 g/m2)780-321\n    7.  Coated 1A (Side 2) (106-128 g/m2)780-322\n    8.  Coated 1B (Side 2) (129-150 g/m2)780-323\n    9.  Coated 2A (Side 2) (151-176 g/m2)780-324\n    10. Coated 2B (Side 2) (176-220 g/m2)780-325\n    11. Heavyweight (Side 2) (177-220 g/m2)780-326\n    12. Minimum media length to prohibit duplex/inversion780-315\n[대처순서]\n    용지종류를 변경하고 다시 인쇄한다.\n    또는 양면을 단면 인쇄 지시로 변경하고 다시 인쇄한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "024-708": {
+  "title": "Duplex Inversion Prohibited Media Fail (Face Down Output Job)",
+  "text": "[Fault 명칭]\n    Duplex Inversion Prohibited Media Fail (Face Down Output Job)\n[Error 분류]\n    Job\n[Fault 내용]\n    양면 / 반전이 허용되지 않는 용지로 FaceDown 출력 지시 접수"
+ },
+ "024-742": {
+  "title": "Print Booklet sheets counts over",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Printer Job 에서 Booklet 용지 매수 Over Job Cancel\n[검지조건]\n    Set 의 용지 매수가 Booklet 가능 매수를 넘었다.\n    *Print 개시시에 검지\n    -  1 장의 경우에는 자동으로 중앙 여백만 해제하고 반으로 접어서 배출.\n    -  접기만 지정한 경우에는 자동으로 접기 가능한 매수마다 접어서 배출.\n[대처순서]\n    Booklet 의 상한 매수마다 Booklet 을 하던지 Booklet 을 해제할지 선택\n    * 상한 매수마다의 Booklet 인 경우, Signature 의 제본도 그 단위로 한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-748": {
+  "title": "Bates Numbering Digit Over",
+  "text": "[Error 분류]\n    Job\n[Fault 내용]\n    Bates Numbering 자릿수 초과\n[검지조건]\n    Bates Numbering 인자과정에서 최대 9 자릿수 또는 User 지정 자릿수를 초과했다.\n[대처순서]\n    원고매수를 User 지정매수 이하로 줄이거나 인자매수를 User 지정매수 이상으로 늘\n    린 후 다시 복사한다.\n    Trouble 이 계속될 경우는 다음을 실시한다.\n    OF-09 Common Job Fail"
+ },
+ "024-775": {
+  "title": "Print Booklet sheets counts over (Not field attachment)",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Printer Job 에서 Booklet 용지 매수 Over Job Cancel( 표지만들기 안함 처리에서 발\n    생 )\n[검지조건]\n    Print 개시시에 검지\n    Printer Print Set 의 용지 매수가 Booklet 가능 매수를 넘었다.\n    -  1 장의 경우에는 자동으로 중앙 여백만 해제하고 세 번 접어서 배출"
  }
 }
