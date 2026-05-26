@@ -4006,5 +4006,45 @@
  "045-369": {
   "title": "SBM Master Communication Fail",
   "text": "참조 BSD : CH3.1\n\nController PWB 상의 ASIC(Viento) 와 Motor Drive PWB 상의 ASIC (NHASIC) 사이 시리얼 버\n스에서 Viento 측의 통신 오류가 발생했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n045-368 (SBM Initialize Fail) FIP 참고."
+ },
+ "045-370": {
+  "title": "LPH Download Data Fail Power",
+  "text": "참조 BSD : CH6.9, CH6.10\n\nLPH Drive ASIC 의 초기 다운로드를 확인할 때 전체 LPH 의 ASIC Register 이상을 검지했\n다."
+ },
+ "045-371": {
+  "title": "LPH Download Data Fail Multi",
+  "text": "참조 BSD : CH6.9, CH6.10\n\nLPH Drive ASIC 의 초기 다운로드를 확인할 때 복수 (2 색 또는 3 색 ) ASIC Register 의 이\n상을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n확인작업\nDiagnostic 의 NVM[749-121] (LPH DL FAIL COLOR) 에서 Fail 이 발생하는 LPH 의 색을 확\n인한다.\n\n(Bit0=1:Y 색에서 Error 발생, Bit1=1:M 색에서 Error 발생, Bit2=1:C 색에서 Error 발\n생, Bit3=1:K 색에서 Error 발생. 오류가 다수 발생한 경우는 각각의 Bit 가 1 이 된다 )\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Half Tone PWB J481-A12(+) 와 GND 사이의 전압을 점검한다. (+5VDC)\n·  Half Tone PWB J481-B12(+) 와 GND 사이의 전압을 점검한다. (+24VDC)"
+ },
+ "045-377": {
+  "title": "SBM Slave Communication Fail",
+  "text": "참조 BSD : CH3.1\n\nController PWB 상의 ASIC(Viento) 와 Motor Drive PWB 상의 ASIC (NHASIC) 사이 시리얼\n버스에서 NHASIC 측의 통신 오류가 발생했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  Half Tone PWB J551 와 Motor Drive PWB J410 사이 Flat Cable 의 단선 또는 접촉\n    불량을 점검한다.\n3.  Controller PWB, BP PWB, Half Tone PWB 사이의 접속 Connector( P/J335, P/J451)\n    의 접촉 불량, 파손, Connector 에 이물질 혼입 등을 점검한다.\n4.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  Half Tone-MD Flat Cable (PL 18.4)\n    ·  Motor Drive PWB (PL 18.2)\n    ·  Half Tone PWB (PL 18.5)\n    ·  Controller PWB (PL 35.2)"
+ },
+ "045-382": {
+  "title": "MCU NVM (EEPROM) Write Verify Fail",
+  "text": "참조 BSD : CH3.1\n\nNVM (EEPROM) 의 Write/Read Verify 오류가 발생했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  Controller PWB, BP PWB, Half Tone PWB 사이의 접속 Connector( P/J335, P/J451)\n    의 접촉 불량, 파손, Connector 에 이물질 혼입 등을 점검한다.\n3.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  Half Tone PWB (PL 18.5)\n    ·  Controller PWB (PL 35.2)"
+ },
+ "047-212": {
+  "title": "Exit 2 OCT Home Fail",
+  "text": "참조 BSD : CH10.9\n\nExit 2 OCT Motor On 이후 규정시간이 지나도 Exit 2 OCT Home Position Sensor 가 On 되\n지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Exit 2 OCT Home Position Sensor (DC330[077-110]) 작동불량. (PL 17.4)\n·  Exit 2 OCT Motor (DC330[077-047/048] (Front/Rear)) 작동불량. (PL 17.4)\n·  Exit 2 OCT Home Position Sensor 의 오염, 조립불량.\n·  OCT 2 Chute 조립불량.\n·  Exit 2 OCT Motor 의 Gear 긁힘, Gear 파손.\n·  Exit 2 Chute Assembly 의 Shaft Hanarl 벗겨짐. (PL 17.4)\n\n점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다 Fail\n발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n\n·  Exit 2 Transport Assembly (PL 17.2)\n·  Motor Drive PWB (PL 18.2)"
+ },
+ "047-213": {
+  "title": "Finisher Kind Mismatch",
+  "text": "참조 BSD : CH3.5\n\n다른 종류의 Finisher 가 접속되어 있다.\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 이 기계에 대응되는 Finisher 를 접속한다."
+ },
+ "047-217": {
+  "title": "HCF Communication Fail",
+  "text": "참조 BSD : CH3.6\n\nHCF 와 IOT 간의 통신불량을 검지했다.\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  아래의 항목을 점검한다.\n    ·  Motor Drive PWB J492 와 HCF 기판 사이의 Wire 단선, 단락 또는 접촉불량.\n    ·  본체와 HCF 사이의 Drawer Connector( DP800/DJ678) 의 접촉불량, Pin 변형, 소\n        실, Connector 에 이물질 혼입 등.\n    ·  Motor Drive PWB J405 와 Half Tone PWB J481 사이의 Wire 단선, 단락 또는 접\n        촉불량.\n    ·  Controller PWB, BP PWB, Half Tone PWB 사이의 접속 Connector( P/J335, P/\n        J451) 의 접촉 불량, 파손, Connector 에 이물질 혼입.\n    ·  HCF 측 전원 전압.\n\n    주기 : HCF 측의 IOT 접속 기판과 전원은 별책인 HCF 서비스 매뉴얼을 참고할 것.\n\n3.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  Motor Drive PWB (PL 18.2)\n    ·  Controller PWB (PL 35.2)\n    ·  Half Tone PWB (PL 18.5)"
+ },
+ "047-320": {
+  "title": "ALL Destination Tray Broken",
+  "text": "참조 BSD : CH3.1\n\nIOT 에 연결된 모든 배출 Tray 를 사용할 수 없다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\nDC122 Fail History 에 들어간다. Fail 이 발생하는 배출 Tray 의 FIP 로 진행한다.\n\n    주기 : Finisher 측의 Fail 은 별책 Finisher 서비스 설명서를 참조할 것."
+ },
+ "057-330": {
+  "title": "Motor Drive PWB F21 Fuse Fail",
+  "text": "참조 BSD : CH1.13, CH1.6, CH1.9, CH1.12, CH7.1, CH7.2, CH7.3, CH7.4, CH7.5,\nCH7.6, CH7.7, CH8.3, CH8.4, CH8.5, CH8.7, CH10.3, CH10.6, CH10.8, CH10.9\n\nMotor Drive PWB 상의 Fuse 21 이 끊어졌다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\n전원을 끄고 Rear Lower Cover 를 분리한다. Motor Drive PWB 상에 있는 F21 의 저항값을\n측정한다. 저항값이 5Ω 이상인가?\nY  N\n|    LVPS_CP1U J509-2 과 Motor Drive PWB J400-1 사이의 Wire 단선, 단락 또는 접촉불\n|    량을 점검한다.\n\nMotor Drive PWB 에서 아래의 Connector 를 분리하고 각 Connector 의 단자와 GND 사이의\n저항을 측정한다.\n\n·  J453-1 (TM LH Interlock Switch)\n·  J417-10 (Tray 1 Paper Size Sensor)\n·  J417-14 (Tray 2 Paper Size Sensor)\n·  J453-6 (Tray 3 Paper Size Sensor)\n·  J453-10 (Tray 4 Paper Size Sensor)\n·  J436-A3 (MSI Paper Size Sensor)\n·  J446-5 (Take Away Motor 1)\n·  J446-6 (Take Away Motor 1)\n·  J421-5 (Take Away Motor 2)\n·  J421-6 (Take Away Motor 2)\n·  J452-17 (Tray NVM PWB) (APO Only)\n·  J445-6 (Regi Motor)\n·  J441-7 (IH Power Supply)\n·  J420-12 (Fusing Unit EEPROM)\n·  J431-A3 (Duplex Motor)\n·  J434-B10 (Exit 2 Drive Motor)\n저항값이 모두 5Ω 이상인가?\nY  N\n|    아래의 항목을 점검한다.\n|\n|    ·  접지 (5Ω 이하 ) 된 Wire 단락.\n|    ·  대상부품의 내부 단락.\n\nMotor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "058-322": {
+  "title": "Heat Belt STS Center Abnormal Temperature Rise Fail",
+  "text": "참조 BSD : CH10.4\n\nIH Center Thermistor 의 온도 상승이 규정값보다 빠르다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n전원을 OFF/ON 한다. 복구되지 않는 경우는 Fusing Unit 을 교환한다. (PL 7.1)\n\n    주기 : 교환 후 NVM[744-001] ( 이상 검지 이력 ) 값을 확인한다. 값이 [6] (IH Center\n    Thermistor 의 이상 발열 ) 인 경우에는 [0] 으로 재설정하고 전원을 OFF/ON 할 것."
  }
 }
