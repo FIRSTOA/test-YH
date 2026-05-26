@@ -4286,5 +4286,45 @@
  "074-100": {
   "title": "Tray 4 Miss Pre Feed Jam (2TM의 Low model 제외 )",
   "text": "참조 BSD : CH8.2, CH7.12, CH7.13\n\nTray 4 에서 용지 급지가 시작된 후 규정시간이 지나도 Tray 4 Pre Feed Sensor 가 On 되\n지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Tray 4 Pre Feed Sensor (DC330[074-105]) 작동불량. (PL 10.6, PL 11.8)\n·  Tray 4 Feed/Lift Motor(DC330[074-001] (Feed)) 작동불량. (PL 10.6, PL 11.8)\n·  Tray 4 의 Feed Roll, Retard Roll, Nudger Roll 의 오염, 마모, 열화로 인한 이송불\n    량.\n·  Drive Gear 의 마모 및 파손.\n·  Bottom Plate 상의 Pad 조립불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  Sensor Cover 및 Roll 이탈.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "074-101": {
+  "title": "Tray 4 Miss Feed Jam (TTM)",
+  "text": "참조 BSD : CH8.6, CH7.13\n\nTray 4 에서 용지 급지가 시작된 후 규정시간이 지나도 Feed Out Sensor 4 가 On 되지 않\n는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Feed Out Sensor 4 (DC330[074-103]) 작동불량. (PL 11.9)\n·  Tray 4 Feed/Lift Motor(DC330[074-001] (Feed)) 작동불량. (PL 11.8)\n·  TTM Take Away Motor (DC330[077-035]) 작동불량. (PL 11.4)\n·  T/A Roll 4, Tray 4 의 Feed Roll, Retard Roll, Nudger Roll 의 오염, 마모, 열화로\n    인한 이송불량.\n·  Drive Gear 의 마모 및 파손.\n·  LH Cover Assembly Latch 불량. (PL 14.1)\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "074-105": {
+  "title": "Regi Sensor On Jam (Tray 4)",
+  "text": "참조 BSD : CH8.7, CH8.3, CH8.4, CH8.5, CH8.6, CH7.12, CH7.13\n\nTray 4 에서의 용지 이송에서 규정된 Regi Motor On 회전 개시시간 전임에도 Regi Sensor\n가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Regi Sensor (DC330[077-103]) 작동불량. (PL 14.4)\n·  Take Away Motor 1 (DC330[077-050]) 작동불량. (PL 15.2)\n·  Take Away Motor 2 (DC330[077-051]) 작동불량. (PL 15.2)\n·  2TM/TTM Take Away Motor (DC330[077-035]) 작동불량. (PL 10.4, PL 11.4)\n·  Tray 4 Feed/Lift Motor(DC330[074-001] (Feed)) 작동불량. (PL 10.6, PL 11.8)\n·  T/A Roll 2 - 4, MSI T/A Roll, Trans Roll (TTM), Tray 4 의 Feed Roll, Retard\n    Roll, Nudger Roll 의 오염, 마모, 열화로 인한 이송불량.\n·  Drive Gear 의 마모 및 파손."
+ },
+ "074-107": {
+  "title": "MSI Feed Out Sensor On Jam (Tray 4)",
+  "text": "참조 BSD : CH8.3, CH8.4, CH8.5, CH8.6, CH7.12\n\nTray 4 에서 용지 급지가 시작된 후 규정시간이 지나도 MSI Feed Out Sensor 가 On 되지\n않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  MSI Feed Out Sensor (DC330[077-104]) 작동불량. (PL 13.2)\n·  Take Away Motor 1 (DC330[077-050]) 작동불량. (PL 15.2)\n·  Take Away Motor 2 (DC330[077-051]) 작동불량. (PL 15.2)\n·  2TM/TTM Take Away Motor (DC330[077-035]) 작동불량. (PL 10.4, PL 11.4)\n·  Tray 4 Feed/Lift Motor(DC330[074-001] (Feed)) 작동불량. (PL 10.6, PL 11.8)\n·  T/A Roll 2 - 4, MSI T/A Roll, Trans Roll (TTM), Tray 4 의 Feed Roll, Retard\n    Roll, Nudger Roll 의 오염, 마모, 열화로 인한 이송불량.\n·  Drive Gear 의 마모 및 파손.\n·  LH Unit 의 Latch 불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  Regi Transport Assembly 의 조립불량. (PL 15.1)\n·  LH Lower Chute Assembly 조립불량. (PL 14.3)\n·  MSI TA Assembly 조립불량. (PL 13.1)\n·  Upper Chute 변형. (PL 15.1)\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "074-210": {
+  "title": "Tray 4 Lift Up Fail",
+  "text": "참조 BSD : CH7.12, CH7.13\n\nTray 4 Lift Up 시 규정시간 이내에 Tray 4 Level Sensor 가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다."
+ },
+ "074-212": {
+  "title": "Tray 4 Paper Size Sensor Broken",
+  "text": "참조 BSD : CH7.5, CH7.6\n\nTray 4 Paper Size Sensor 에서 비정상적인 AD 값을 검출했다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  트레이 뒷면 바닥의 Link 이탈, 파손\n·  트레이 Rear 측의 Actuator 작동불량.\n·  Tray 4 Paper Size Sensor 작동불량. (PL 10.1, PL 11.3)\n    -  2TM : DC140[074-200], DC330[074-104]\n    -  TTM : DC140[074-200]\n·  트레이 내의 용지 세트 오류.\n·  트레이 내에 용지 이외의 물건이 방치\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "074-900": {
+  "title": "Feed Out Sensor 4 Static Jam (TTM)",
+  "text": "참고 FIP\nCF-016 (IOT Sensor Static Jam) FIP 참고."
+ },
+ "075-100": {
+  "title": "MSI Miss Feed Jam",
+  "text": "참조 BSD : CH8.3, CH7.14\n\nMSI 에서 용지 급지가 시작된 후 규정시간이 지나도 MSI Feed Out Sensor 가 On 되지 않는\n다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  MSI Feed Out Sensor (DC330[077-104]) 작동불량. (PL 13.2)\n·  MSI Feed/Lift Motor (DC330[075-003] (Feed)) 작동불량. (PL 13.3)\n·  MSI Feed Roll, MSI Retard Roll, MSI Nudger Roll 의 오염, 마모, 열화로 인한 이\n    송불량.\n·  Drive Gear 의 마모 및 파손.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  용지 설정 및 세트 방향 -> 봉투, 엽서의 경우\n·  Chute Front 조립불량. (PL 13.1)\n·  MSI TA Assembly 조립불량. (PL 13.1)\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "075-135": {
+  "title": "Regi Sensor On Jam (MSI)",
+  "text": "참조 BSD : CH8.7, CH7.14\n\nMSI 에서의 용지 Feed 개시 후 규정된 Regi Motor On 회전 개시시간 전임에도 Regi Sensor\n가 On 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Regi Sensor (DC330[077-103]) 작동불량. (PL 14.4)\n·  MSI Feed/Lift Motor (DC330[075-003] (Feed)) 작동불량. (PL 13.3)\n·  MSI T/A Roll, MSI 의 Feed Roll, Retard Roll, Nudger Roll 의 오염, 마모, 열화로\n    인한 이송불량.\n·  Drive Gear 의 마모 및 파손.\n·  LH Unit 의 Latch 불량.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n·  MSI TA Assembly 조립불량. (PL 13.1)\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "075-212": {
+  "title": "MSI Nudger Up Down Fail",
+  "text": "참조 BSD : CH7.14\n\nMSI Nudger Up 또는 Down 동작 개시 후 규정 시간이 지나도 MSI Nudger Position Sensor\n의 출력이 바뀌지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  MSI Nudger Position Sensor (DC330[075-102]) 작동불량. (PL 13.3)\n·  MSI Feed/Lift Motor (DC330[075-004] (Up/Down)) 작동불량. (PL 13.3)\n·  MSI Nudger Roll 의 Up Down 기구의 기계적인 부하, Spring 의 변형, 걸림 등.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "077-103": {
+  "title": "Fusing Unit Exit Sensor Off Jam",
+  "text": "참조 BSD : CH10.5, CH10.1, CH10.9, CH10.7, CH10.11\n\nFusing Unit Exit Sensor On 으로부터 규정시간이 지나도 Fusing Unit Exit Sensor 가 Off\n되지 않는다.\n\n원인 / 대처방법\n1.  남은 용지의 위치를 확인한다. Fusing Unit 내에 용지가 남아있는 경우에는 아래 (1)\n    ~ (4) 의 원인을 생각할 수 있으므로 Fusing Unit 내에 남아있는 용지의 이미지 및 용\n    지의 손상 상태를 확인한다.\n    (1) 선단 여백을 점검한다. 여백이 좁으면 다음을 실시한다.\n        ·  선단 여백 조정.\n        ·  중복 이송 유무 확인.\n        ·  트레이 내의 용지 재세트.\n    (2) 토너 농도가 높지 않은지 점검한다. 농도가 높으면 농도 조정을 실시한다.\n    (3) Skew 로 인해 용지 선단 여백이 좁아지지 않았는지 점검한다. 여백이 좁으면 트\n        레이 내의 용지를 다시 세트한다.\n    (4) 슈트나 Actuator 에서 용지가 손상되지 않았는지 점검한다. 용지가 손상된 경우\n        에는 새 용지를 세트하고 확인한다. ( 함수 정도에 따라 용지의 탄성이 없어졌을\n        가능성이 있다 )\n2.  Fusing Unit 내에 용지가 남아있지 않은 경우 또는 위와 같은 조치로 복구되지 않는\n    경우는 아래 사항을 점검한다.\n    ·  Fusing Unit Exit Sensor(DC330[077-101]) 작동불량. (PL 7.1)\n    ·  Fusing Unit Drive Motor 작동불량. (PL 3.1)\n        -  High model : DC330[010-001]\n        -  Mid model : DC330[010-004]\n        -  Low model : DC330[010-006]\n    ·  Exit 2 Drive Motor (DC330[077-060/061] ( 배출 / 인입 )) 작동불량. (PL 17.4)\n    ·  Exit Roll 1, Invert Roll, Exit Roll 2, Face Up In Roll, Face Up Roll 및\n        Pinch Roll 의 오염, 마모, 열화로 인한 이송불량.\n    ·  Exit 1 Gate 의 작동불량 (Exit 1 Gate Solenoid (DC330[077-003]) 작동불량 포함\n        ). (PL 17.4)\n    ·  Exit 2 Gate 작동불량 (Face Up Gate Solenoid (DC330[077-004]) 작동불량 포함\n        ). (PL 17.5)\n    ·  Exit 1 Gate 변형 (PL 17.4)\n    ·  Exit 2 Gate 변형 (PL 17.5)\n    ·  각 Drive Gear 의 마모, 파손.\n    ·  용지 이송 경로의 이물질로 인한 이송불량.\n    ·  사양 이외의 용지 사용.\n\n    점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
  }
 }
