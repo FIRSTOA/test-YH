@@ -2286,5 +2286,85 @@
  "018-561": {
   "title": "HTTP server not found",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP Error - NotFound\n[검지조건]\n    HTTP Status 404 를 수신했다.\n    -  Host 명이 틀리다.\n    -  Script 저장 위치가 틀리다.\n[대처순서]\n    다음을 실시한다.\n    1.  Scan 문서의 송신위치 HTTP Server 로 PC 에서 Access 가능한지 확인한다.\n    2.  Scan 문서의 송신위치 HTTP Server 명을 확인한다.\n    3.  Scan 문서의 송신위치 HTTP Server Path 명을 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-562": {
+  "title": "HTTP client Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP Response Client Error"
+ },
+ "018-563": {
+  "title": "HTTP server Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP Response Server Error\n[검지조건]\n    HTTP Status 5xx 을 수신했다.\n[대처순서]\n    다음을 실시한다.\n    1.  Scan 문서의 송신위치 HTTP Server 로 PC 에서 Access 가능한지 확인한다.\n    2.  Server 설정을 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-564": {
+  "title": "Host name solution Error in HTTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP 에서 Host 명 해결 실패\n[검지조건]\n    지정한 Host 명의 DNS 해결에 실패\n[대처순서]\n    다음을 실시한다.\n    -  Scan 문서의 송신위치 HTTP Server 가 DNS 에 등록되어 있는지 확인한다.\n    -  DNS Server 와 접속되어 있는지 확인한다.\n    -  DNS Server 의 Address 가 설정되어 있는지 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-565": {
+  "title": "Proxy name solution Error in HTTP",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "018-566": {
+  "title": "Server Connect Error in HTTP",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP Error - 접속 Error\n[검지조건]\n    HTTP Server 로의 접속에 실패했다.\n[대처순서]\n    다음을 실시한다.\n    1.  Device 의 Network Cable 을 확인한다.\n    2.  Scan 문서의 송신위치 HTTP Server 로 PC 에서 Access 가능한지 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-568": {
+  "title": "HTTP server SSL access fail",
+  "text": ""
+ },
+ "018-569": {
+  "title": "HTTP server certificate fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    HTTP Error - 인증서 이상\n[검지조건]\n    Server 의 SSL 인증용 인증서에 문제가 있다.\n[대처순서]\n    다음을 실시한다.\n    1.  Scan 문서의 송신위치 HTTP Server 로 PC 에서 Access 가능한지 확인한다.\n    2.  Scan 문서의 송신위치 HTTP Server 에 대한 SSL Server 인증서가 Device 에 등록\n        되어 있는지 확인한다.\n    3.  Scan 문서의 송신위치 HTTP Server 에 대한 SSL Server 인증서가 올바른지 확인\n        한다.\n        예를 들어, 다음을 확인한다.\n        -  유효기간 이내일 것.\n        -  Device 로 설정된 시간이 올바를 것.\n        -  폐기목록에 등록되어 있지 않을 것.\n        -  SSL Server 인증서의 인증서 Path 를 확인하고 필요한 CA 인증서를 가져오기\n            한다.\n    4.  Scan 문서의 송신위치 HTTP Server 에 인증서가 등록되지 않은 경우, Device 인\n        증서 검증을 비활성화한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-572": {
+  "title": "Invalid char in context",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Netware Context 문자 부정확\n[검지조건]\n    금칙 문자가 혼합된 Context 명이 지정되었다.\n[대처순서]\n    지정한 Context 명이 올바른지 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-573": {
+  "title": "Invalid char in server",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "018-574": {
+  "title": "Invalid char in volume",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Netware Volume 문자 부정확\n[검지조건]\n    금칙 문자가 혼합된 Volume 명이 지정되었다.\n[대처순서]\n    지정한 Volume 명이 올바른지를 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-575": {
+  "title": "Invalid char in login",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Netware Login 부정확\n[검지조건]\n    금칙 문자가 혼합된 사용자명 또는 비밀번호가 지정되었다.\n[대처순서]\n    지정한 사용자명 또는 비밀번호가 올바른지 확인한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-578": {
+  "title": "Netware server not found",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    NetWare Error - 접속 Error\n[검지조건]\n    존재하지 않는 Server/Tree 가 지정되었다.\n[대처순서]\n    다음을 실시한다.\n    1.  Device 의 Network Cable 을 확인한다.\n    2.  NetWare Server 로 PC 에서 Access 가능한지 확인한다.\n    3.  Server 명 /Tree 명을 확인한다.\n    4.  NetWare Server 의 Server Console 로 DSREPAIR 를 실행한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-579": {
+  "title": "Netware server disk full",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    NetWare Error - Hard Disk Full\n[검지조건]\n    Netware Server 의 사용 가능한 용량이 부족하다."
+ },
+ "018-580": {
+  "title": "Netware invalid volume",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    NetWare Error - Volume 이 존재하지 않는다\n[검지조건]\n    존재하지 않는 Volume 명이 지정되었다.\n[대처순서]\n    다음을 실시한다.\n    1.  NetWare Server 로 PC 에서 Access 가능한지 확인한다.\n    2.  Volume 명을 확인한다.\n    3.  NetWare Server 의 Server Console 로 DSREPAIR 를 실행한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-581": {
+  "title": "Netware invalid path",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    NetWare Error - Path 가 존재하지 않는다.\n[검지조건]\n    존재하지 않는 Directory Path 가 지정되었다.\n[대처순서]\n    다음을 실시한다.\n    1.  NetWare Server 로 PC 에서 Access 가능한지 확인한다.\n    2.  Directory Path 명을 확인한다.\n    3.  NetWare Server 의 Server Console 로 DSREPAIR 를 실행한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-583": {
+  "title": "Netware server disk Error",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    NetWare Error - Disk Access Error\n[검지조건]\n    Netware Server 의 Disk 에 장애가 발생했다.\n[대처순서]\n    다음을 실시한다.\n    1.  NetWare Server 의 HDD 를 확인한다.\n    2.  NetWare Server 로 PC 에서 Access 가능한지 확인한다.\n    3.  NetWare Server 의 Server Console 로 DSREPAIR 를 실행한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-584": {
+  "title": "Netware server access fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    NetWare Error - Access Error\n[검지조건]\n    ·  불명확한 이유로 읽기 중에 통신이 단절되었다.\n    ·  불명확한 이유로 쓰기 중에 통신이 단절되었다.\n    ·  불명확한 이유로 File 의 Close 처리에 실패했다.\n[대처순서]\n    다음을 실시한다.\n    1.  NetWare Server 로 PC 에서 Access 가능한지 확인한다.\n    2.  NetWare Server 의 Server Console 로 DSREPAIR 를 실행한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-585": {
+  "title": "Netware Error in use",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Netware 를 다른 사용자가 사용중\n[검지조건]\n    ·  다른 사용자가 찾아보기 등의 작업을 실시중이므로 쓰기가 거부되었다.\n    ·  지정된 파일 / 디렉토리의 일부를 별도의 사용자가 사용중임에도 불구하고 삭제 요구\n        를 실시했다.\n    ·  지정된 파일 / 디렉토리의 전체를 별도의 사용자가 사용중임에도 불구하고 삭제 요구\n        를 실시했다.\n[대처순서]\n    다음을 실시한다.\n    1.  NetWare Server 로 PC 에서 Access 가능한지 확인한다.\n    2.  다른 사용자의 이용 상황을 확인한다.\n    3.  NetWare Server 의 Server Console 로 DSREPAIR 를 실행한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "018-586": {
+  "title": "Netware login fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Netware Server 의 Login Error\n[검지조건]\n    Netware Server 로의 Login 이 거절되었다."
+ },
+ "018-587": {
+  "title": "File dupulication fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    File 명 중복시의 처리 중지\n[검지조건]\n    Scan File 명 중복시의 처리에 [덮어쓰기 금지] 로 선택\n[대처순서]\n    중복된 파일명 처리를 [작업중지] 이외로 설정한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
  }
 }
