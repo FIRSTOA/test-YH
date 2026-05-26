@@ -3646,5 +3646,45 @@
  "024-981": {
   "title": "Finisher TopTray Full",
   "text": "[Error 분류]\n    Operation Error"
+ },
+ "024-982": {
+  "title": "Stacker Lower Safety Warning",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Finisher Stacker Tray Lower Safety\n[검지조건]\n    Stacker Tray Lower Safty SW 의 ON 을 검지\n    Stacker Tray 의 용지 배출시 높이 조정 동작 실시중, 250mSec 이내로 높이 조정이\n    완료되지 않았다.\n    하강 개시 후, 500ms 경과해도 STACKER HEIGHT SNR1 이 OFF 를 검지하지 않음이 3 회\n    연속 발생\n[대처순서]\n    Stacker 에서 용지 제거\n    Stacker 장해물 제거\n    1.  Stacker 장해물 검지\n    2.  Staple Mode 시는 Set 의 접힘 눈금까지 배출해서 정지. Unstaple Mode 시는\n        Scheduling 한 용지까지 배출해서 정지.\n    그 후, Stacker 사용금지\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-983": {
+  "title": "Booklet Tray Full",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Booklet Tray Full 검지\n[검지조건]\n    Booklet Tray 의 Full 을 검지했다.\n[대처순서]\n    Booklet Tray 에서 용지를 제거한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-984": {
+  "title": "Booklet Low Staple F",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Booklet Low Staple F\n[검지조건]\n    1.  Staple 동작 직전에 Booklet Stapler Low Staple F 신호의 ON 을 검지\n    2.  Power ON 시 또는 Interlock Close Initial 시에 Booklet Stapler Low Staple F 신호\n        의 ON 을 검지\n[대처순서]\n    Booklet 용 Staple Cartridge 교환\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-985": {
+  "title": "SMH Stop check",
+  "text": "[Error 분류]\n    Notice Error\n[Fault 내용]\n    SMH 의 일시정지 확인\n[검지조건]\n    원인불명의 장해로 수동 Tray 의 주행을 중단했다.\n[대처순서]\n    용지 Size/ 용지방향 / 용지종류를 확인한 후 배출 Key 를 누른다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-987": {
+  "title": "Envelop Folder Tray Full",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Envelop Folder Tray Full 검지\n[검지조건]\n    Envelop Tray Near Full 검지 후, 규정 매수 용지 배출시\n[대처순서]\n    Envelop Folder Tray 에서 용지를 제거한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-988": {
+  "title": "Envelop Folder Tray Set Fail",
+  "text": "[Error 분류]\n    Operation Error"
+ },
+ "024-989": {
+  "title": "Booklet Low Staple R",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Booklet Low Staple R\n[검지조건]\n    1.  Staple 동작 직전에 Booklet Stapler Low Staple R 신호의 ON 을 검지\n    2.  Power ON 시 또는 Interlock Close Initial 시에 Booklet Stapler Low Staple R 신호\n        의 ON 을 검지\n[대처순서]\n    Stapler 침 확인, 바르게 다시 세트한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "025-596": {
+  "title": "Diag HDD Maintenance Fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Diag 의 HDD 고장 예측 실시시에 NG 가 됐다.\n[검지조건]\n    Diag 의 HDD 고장 예측 실시시에 NG 가 된 경우.\n[대처순서]\n    다음을 실시한다.\n    1.  HDD Harness 배냈다 다시 끼우기.\n    2.  HDD 교환."
+ },
+ "025-597": {
+  "title": "Diag HDD Initialize Fail",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    Diag 의 HDD 초기화 실시시에 Error 가 됐다.\n[검지조건]\n    Diag 의 HDD 초기화 실시시에 Error 가 된 경우\n[대처순서]\n    다음을 실시한다.\n    1.  HDD Harness 배냈다 다시 끼우기.\n    2.  HDD 교환."
+ },
+ "026-400": {
+  "title": "Exceed the number of connection of USB Host Fail",
+  "text": "[Error 분류]\n    info\n[Fault 내용]\n    USB Host 포트의 최대 연결 개수 초과 Fail\n[검지조건]\n    본체의 USB Host 에 연결된 기기의 개수가 최대로 연결 가능한 개수를 초과했다.\n[대처순서]\n    USB Host 포트에 연결된 기기 중 일부의 연결을 해제하여 연결된 기기의 개수를 연결\n    가능한 최대 개수 이하로 한다.\n    상기의 방법으로 Error 가 해제되었지만 USB Host 연결 기기가 바르게 동작하지 않으\n    면 전원을 OFF/ON 한다."
  }
 }
