@@ -2766,5 +2766,45 @@
  "021-406": {
   "title": "An invalid peer certificate has received Fail",
   "text": "[Fault 명칭]\n    An invalid peer certificate has received Fail\n[Error 분류]\n    Information\n[Fault 내용]\n    SSL 인증서 부정확 (Edge Server)\n[검지조건]\n    Server 의 SSL 인증서가 정확하지 않다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    문제 발생 직후에 PfShowInfo 9 로그와 네트워크 로그를 취득하여 지원 부서에 연락\n    하고 지시에 따른다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "021-407": {
+  "title": "Proxy unauthorized access Fail",
+  "text": "[Fault 명칭]\n    Proxy unauthorized access Fail\n[Error 분류]\n    Information\n[Fault 내용]\n    프록시 인증 에러\n[검지조건]\n    프록시 서버 인증에 실패했다. (HTTP 상태 코드 407 수신 )\n[대처순서]\n    아래를 확인한다.\n    EP 프록시 서버 인증 사용자를 확인한다.\n    EP 프록시 서버의 인증 비밀번호를 확인한다.\n\n    상기의 설정을 확인한 후에도 상태가 개선되지 않으면 네트워크 장애 혹은 프록시\n    서버 설정 변경이나 장애의 가능성이 있으므로 고객 네트워크 관리자에게 문의한다.\n    네트워크가 정상이며 동시에 상태가 개선되지 않으면 문제 발생 직후에 pfshowinfo9\n    로그와 네트워크 로그를 취득하여 지원 부서에 연락한다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "021-408": {
+  "title": "A connection to host/proxy has timed out Fail",
+  "text": "[Fault 명칭]\n    A connection to host/proxy has timed out Fail\n[Error 분류]\n    Information\n[Fault 내용]\n    통신 시간 초과"
+ },
+ "021-409": {
+  "title": "A miscellaneous http session error has detected Fail",
+  "text": "[Fault 명칭]\n    A miscellaneous http session error has detected Fail\n[Error 분류]\n    Information\n[Fault 내용]\n    통신 라이브러리 에러\n[검지조건]\n    통신 라이브러리 ( 미분류 ) 에러가 발생했다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    문제 발생 직후에 PfShowInfo 9 로그와 네트워크 로그를 취득하여 지원 부서에 연락\n    하고 지시에 따른다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "021-410": {
+  "title": "Couldn't connect to CA Fail",
+  "text": "[Fault 명칭]\n    Couldn't connect to CA Fail\n[Error 분류]\n    Information"
+ },
+ "021-428": {
+  "title": "Out of range Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    Out of range Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    전파상황이 권외 (3Gnet-BOX)"
+ },
+ "021-430": {
+  "title": "Time setting Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    Time setting Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    시각 동기 실패 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 와의 시각 동기에 실패했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_TIME_SETTING\" 이 반환되었다.\n[대처순서]\n    디바이스의 설정 시각이 올바른지 확인하고 올바르지 않으면 다시 설정하고 복합기\n    의 Power OFF/ON.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 상태가 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-431": {
+  "title": "USB connection timeout Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    USB connection timeout Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    USB 와의 접속 타임아웃 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 와의 USB 접속에 실패했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_USB_CONNECT\" 가 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_USB_CONNECT_ERR\" 가 반환되었다.\n[대처순서]\n    3Gnet-BOX 와 복합기를 연결하는 USB 케이블이 빠져 있지 않은지 확인하여 빠져 있으\n    면 접속하고 복합기의 Power OFF/ON.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON."
+ },
+ "021-432": {
+  "title": "Cannot routing Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    Cannot routing Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    MFP 의 통신경로 확정 실패 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 를 사용한 3G 회선용 MFP 의 주소가 미설정 혹은 라우팅 설정에 실패했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_MFP_IPADDR\",\n    \"SESSMGR_USBRNDIS_ERR_ROUTING\" 이 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_RUTING_ERR\", \"SECEP_BEE_MFP_IPADDR_ERR\" 가 반환되었\n    다.\n[대처순서]\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON 한다.\n\n    그래도 상태가 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-433": {
+  "title": "Over max call Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    Over max call Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    회선의 동시접속 수를 초과한다 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 를 사용한 3G 회선의 동시접속 수가 상한값을 초과한 것을 검지했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_MFP_MAX_CALL\" 이 반환되었다. 또는 secep 에\n    서 \"SECEP_BEE_MFP_MAX_CALL\" 이 반환되었다.\n[대처순서]\n    복합기의 Power OFF/ON.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON."
+ },
+ "021-434": {
+  "title": "3GAdapter Error Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    3GAdapter Error Fail (3Gnet-BOX).\n[Error 분류]\n    Information\n[Fault 내용]\n    3G 어댑터 Error(3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에서 이상이 발생했다.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_ADAPTER_OTHER\",\n    \"SESSMGR_USBRNDIS_ERR_ADPTER_CANNOT_OPERATE\" 가 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_ADAPTER_OTHER_ERR\", \"SECEP_BEE_CANNOT_OPERATE\" 가 반\n    환되었다.\n[대처순서]\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 상태가 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
  }
 }
