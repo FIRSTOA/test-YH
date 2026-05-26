@@ -4486,5 +4486,45 @@
  "091-431": {
   "title": "Drum Cartridge C Near Life",
   "text": "참고 FIP\nCF-023 (Drum Cartridge Near Life) FIP 참고."
+ },
+ "091-436": {
+  "title": "Drum Cartridge C Pre Near Life",
+  "text": "참고 FIP\nCF-025 (Drum Cartridge Pre Near Life) FIP 참고."
+ },
+ "091-480": {
+  "title": "Drum Cartridge Y Life Over",
+  "text": "참고 FIP\nCF-024 (Drum Cartridge Life Over) FIP 참고."
+ },
+ "091-481": {
+  "title": "Drum Cartridge M Life Over",
+  "text": "참고 FIP\nCF-024 (Drum Cartridge Life Over) FIP 참고."
+ },
+ "091-482": {
+  "title": "Drum Cartridge C Life Over",
+  "text": "참고 FIP\nCF-024 (Drum Cartridge Life Over) FIP 참고."
+ },
+ "091-910": {
+  "title": "Waste Toner Bottle Not In Position",
+  "text": "참조 BSD : CH9.22\n\nWaste Toner Bottle 이 지정된 위치에 장착되어 있지 않거나 대응 모델이 아닌 Waste\nToner Bottle 이 장착되어 있다.\n\n원인 / 대처방법\n1.  소모품 포장 상자에 기재된 Waste Toner Bottle 의 대응 모델을 확인한다. 해당 모\n    델이 아닌 경우, 적합한 Waste Toner Bottle Assembly 로 교환한다. (PL 8.1)\n2.  Waste Toner Bottle Assembly 를 확실하게 장착한다. 형상에 변형이 있는 경우에는\n    Waste Toner Bottle Assembly (PL 8.1), 본체측의 고정 부품을 교환한다.\n3.  복구되지 않는 경우는 Waste Toner Bottle Position Sensor(DC330[091-200]) 를 점검\n    한다. (PL 8.2)\n4.  점검에서 문제가 없을 경우에는 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "091-911": {
+  "title": "Waste Toner Bottle Full",
+  "text": "참조 BSD : CH9.22\n\nWaste Toner Bottle 의 교환시기이다.\n\n원인 / 대처방법\n1.  Waste Toner Bottle Assembly 를 교환한다. (PL 8.1)\n2.  복구되지 않는 경우는 Waste Toner Bottle Full Sensor(DC330[091-201]) 를 점검한다\n    . (PL 8.2)\n3.  점검에서 문제가 없을 경우에는 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "091-916": {
+  "title": "Drum CRUM K Data Mismatch",
+  "text": "참고 FIP\nCF-027 (Drum CRUM Data Mismatch) FIP 참고."
+ },
+ "091-927": {
+  "title": "Drum CRUM Y Not Position",
+  "text": "참고 FIP\nCF-026 (Drum CRUM Not Position) FIP 참고."
+ },
+ "091-928": {
+  "title": "Drum CRUM M Not Position",
+  "text": "참고 FIP\nCF-026 (Drum CRUM Not Position) FIP 참고."
+ },
+ "091-929": {
+  "title": "Drum CRUM C Not Position",
+  "text": "참고 FIP\nCF-026 (Drum CRUM Not Position) FIP 참고."
  }
 }
