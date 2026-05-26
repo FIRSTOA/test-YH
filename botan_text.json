@@ -4326,5 +4326,45 @@
  "077-103": {
   "title": "Fusing Unit Exit Sensor Off Jam",
   "text": "참조 BSD : CH10.5, CH10.1, CH10.9, CH10.7, CH10.11\n\nFusing Unit Exit Sensor On 으로부터 규정시간이 지나도 Fusing Unit Exit Sensor 가 Off\n되지 않는다.\n\n원인 / 대처방법\n1.  남은 용지의 위치를 확인한다. Fusing Unit 내에 용지가 남아있는 경우에는 아래 (1)\n    ~ (4) 의 원인을 생각할 수 있으므로 Fusing Unit 내에 남아있는 용지의 이미지 및 용\n    지의 손상 상태를 확인한다.\n    (1) 선단 여백을 점검한다. 여백이 좁으면 다음을 실시한다.\n        ·  선단 여백 조정.\n        ·  중복 이송 유무 확인.\n        ·  트레이 내의 용지 재세트.\n    (2) 토너 농도가 높지 않은지 점검한다. 농도가 높으면 농도 조정을 실시한다.\n    (3) Skew 로 인해 용지 선단 여백이 좁아지지 않았는지 점검한다. 여백이 좁으면 트\n        레이 내의 용지를 다시 세트한다.\n    (4) 슈트나 Actuator 에서 용지가 손상되지 않았는지 점검한다. 용지가 손상된 경우\n        에는 새 용지를 세트하고 확인한다. ( 함수 정도에 따라 용지의 탄성이 없어졌을\n        가능성이 있다 )\n2.  Fusing Unit 내에 용지가 남아있지 않은 경우 또는 위와 같은 조치로 복구되지 않는\n    경우는 아래 사항을 점검한다.\n    ·  Fusing Unit Exit Sensor(DC330[077-101]) 작동불량. (PL 7.1)\n    ·  Fusing Unit Drive Motor 작동불량. (PL 3.1)\n        -  High model : DC330[010-001]\n        -  Mid model : DC330[010-004]\n        -  Low model : DC330[010-006]\n    ·  Exit 2 Drive Motor (DC330[077-060/061] ( 배출 / 인입 )) 작동불량. (PL 17.4)\n    ·  Exit Roll 1, Invert Roll, Exit Roll 2, Face Up In Roll, Face Up Roll 및\n        Pinch Roll 의 오염, 마모, 열화로 인한 이송불량.\n    ·  Exit 1 Gate 의 작동불량 (Exit 1 Gate Solenoid (DC330[077-003]) 작동불량 포함\n        ). (PL 17.4)\n    ·  Exit 2 Gate 작동불량 (Face Up Gate Solenoid (DC330[077-004]) 작동불량 포함\n        ). (PL 17.5)\n    ·  Exit 1 Gate 변형 (PL 17.4)\n    ·  Exit 2 Gate 변형 (PL 17.5)\n    ·  각 Drive Gear 의 마모, 파손.\n    ·  용지 이송 경로의 이물질로 인한 이송불량.\n    ·  사양 이외의 용지 사용.\n\n    점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "077-104": {
+  "title": "Fusing Unit Exit Sensor Off Jam (Too Short)",
+  "text": "참조 BSD : CH10.5, CH10.1, CH10.9, CH10.7, CH10.11\n\nFusing Unit Exit Sensor On 이후 규정시간이 지나기 전에 Fusing Unit Exit Sensor 가\nOff 되었다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Fusing Unit 으로의 용지 감김.\n·  Fusing Unit Exit Sensor(DC330[077-101]) 작동불량. (PL 7.1)\n·  Fusing Unit Drive Motor 작동불량. (PL 3.1)\n    -  High model : DC330[010-001]\n    -  Mid model : DC330[010-004]\n    -  Low model : DC330[010-006]\n·  Exit 2 Drive Motor (DC330[077-060/061] ( 배출 / 인입 )) 작동불량. (PL 17.4)\n·  Exit Roll 1, Invert Roll, Exit Roll 2, Face Up In Roll, Face Up Roll 및 Pinch\n    Roll 의 오염, 마모, 열화로 인한 이송불량.\n·  Exit 1 Gate 의 작동불량 (Exit Gate Solenoid (DC330[077-003]) 작동불량 포함 ). (PL\n    17.4)\n·  Exit 2 Gate 작동불량 (Face Up Gate Solenoid (DC330[077-004]) 작동불량 포함 ). (PL\n    17.5)\n·  각 Drive Gear 의 마모, 파손.\n·  용지 이송 경로의 이물질로 인한 이송불량.\n·  사양 이외의 용지 사용.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "077-189": {
+  "title": "Face Up Exit Sensor Off Jam",
+  "text": "참조 BSD : CH10.11, CH10.9\n\nExit 2 Sensor Off 이후 규정시간이 지나도 Face Up Exit Sensor 가 Off 되지 않는다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  Face Up Exit Sensor (DC330[077-112]) 작동불량. (PL 17.5)\n·  Exit 2 Drive Motor (DC330[077-060/061] ( 배출 / 인입 )) 작동불량. (PL 17.4)\n·  Exit 2 Gate 작동불량 (Face Up Gate Solenoid (DC330[077-004]) 작동불량 포함 ). (PL\n    17.5)\n·  Face Up In Roll, Face Up Roll 및 Pinch Roll 의 오염, 마모, 열화로 인한 이송불량."
+ },
+ "077-301": {
+  "title": "Left Hand Cover Interlock Open",
+  "text": "참조 BSD : CH1.12\n\nL/H Cover Interlock Switch 의 Open 을 검지했다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  L/H Cover Interlock Switch (DC330[077-300]) 작동불량. (PL 14.1)\n·  L/H Cover 의 파손, 정합불량.\n\n점검에서 문제가 없으면 Motor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "077-900": {
+  "title": "Regi Sensor Static Jam",
+  "text": "참고 FIP\nCF-016 (IOT Sensor Static Jam) FIP 참고."
+ },
+ "077-908": {
+  "title": "Face Up Exit Sensor Static Jam",
+  "text": "참고 FIP\nCF-016 (IOT Sensor Static Jam) FIP 참고."
+ },
+ "077-912": {
+  "title": "MSI Feed Out Sensor Static Jam",
+  "text": "참고 FIP\nCF-016 (IOT Sensor Static Jam) FIP 참고."
+ },
+ "078-118": {
+  "title": "MSI Feed Out Sensor On Jam (HCF)",
+  "text": "참조 BSD : CH8.3, CH8.4\n\nHCF 에서 용지 급지가 시작된 후 규정시간이 지나도 MSI Feed Out Sensor 가 On 되지 않는\n다.\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  MSI Feed Out Sensor (DC330[077-104]) 작동불량. (PL 13.2)\n·  Take Away Motor 1 (DC330[077-050]) 작동불량. (PL 15.2)\n·  Take Away Motor 2 (DC330[077-051]) 작동불량. (PL 15.2)\n·  HCF Feed Lift Motor (DC330[078-003] (Feed)) 작동불량. (PL 28.4: HCF 설명서 )\n·  HCF 측의 이송 Roll, T/A Roll 2, MSI T/A Roll 의 오염, 마모, 열화로 인한 이송불\n    량.\n·  Drive Gear 의 마모 및 파손.\n·  LH Unit 의 Latch 불량."
+ },
+ "078-216": {
+  "title": "HCF Logic Fail",
+  "text": "참조 BSD : CH3.6\n\nHCF 의 치명적인 이상을 검지했다.\n\n원인 / 대처방법\n047-217 (HCF Communication Fail) FIP 참고."
+ },
+ "078-219": {
+  "title": "2000HCF Software Download Fail",
+  "text": "참조 BSD : CH3.6\n\nHCF 로의 소프트웨어 다운로드에 실패했다.\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  통신 Cable 의 접속을 확인한다.\n3.  Motor Drive PWB J492, J493, 중계 Connector DP800/DJ678, 2000HCF PWB JF03 의\n    Half Connection, 접촉불량을 점검한다.\n4.  점검에서 문제가 없으면 다시 Download 를 실시한다."
+ },
+ "089-314": {
+  "title": "IReCT Error Fail #2",
+  "text": "참고 FIP\nCF-017 (IReCT Error Fail) FIP 참고."
  }
 }
