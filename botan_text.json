@@ -3966,5 +3966,45 @@
  "043-349": {
   "title": "M Fan Fail",
   "text": "참고 FIP\nCF-002 (IOT Fan Fail) FIP 참고."
+ },
+ "043-351": {
+  "title": "Process 1 Fan Fail (Mid/High model)",
+  "text": "참고 FIP\nCF-002 (IOT Fan Fail) FIP 참고."
+ },
+ "043-352": {
+  "title": "Cartridge Fan Fail (Mid/High model)",
+  "text": "참고 FIP\nCF-002 (IOT Fan Fail) FIP 참고."
+ },
+ "043-354": {
+  "title": "Process 2 Fan Fail (Mid/High model)",
+  "text": "참고 FIP\nCF-002 (IOT Fan Fail) FIP 참고."
+ },
+ "043-355": {
+  "title": "LH Fan 2 Fail",
+  "text": "참고 FIP\nCF-002 (IOT Fan Fail) FIP 참고."
+ },
+ "044-312": {
+  "title": "MK Timeout Fail",
+  "text": "참조 BSD : CH3.1\n\nMarking Software 에서 규정 시간 이내에 Response 가 없음을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  올바른 버전의 IOT 펌웨어를 설치한다.\n3.  복구되지 않는 경우는 Controller PWB 를 교환한다. (PL 35.2)"
+ },
+ "044-313": {
+  "title": "PH Timeout Fail",
+  "text": "참조 BSD : CH3.1\n\nPH Software 에서 규정 시간 이내에 Response 가 없음을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n044-312 (MK Timeout Fail) FIP 참고."
+ },
+ "044-314": {
+  "title": "Pitch Skip Fail",
+  "text": "참조 BSD : CH3.1\n\n규정 시간 이상 Pitch Skip 을 반복했음을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n044-312 (MK Timeout Fail) FIP 참고."
+ },
+ "044-389": {
+  "title": "MK Output Check Fail",
+  "text": "참조 BSD : CH3.1\n\nPower Up 시, Cycle Up 시 또는 Marking Standby 이동 시에 디바이스의 이상 출력을 검\n출했다."
+ },
+ "045-310": {
+  "title": "Image Ready NG",
+  "text": "참조 BSD : CH3.1\n\nController 의 이미지 준비 불량을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  올바른 버전의 IOT 펌웨어를 설치한다.\n3.  복구되지 않는 경우는 Controller PWB 를 교환한다. (PL 35.2)"
+ },
+ "045-369": {
+  "title": "SBM Master Communication Fail",
+  "text": "참조 BSD : CH3.1\n\nController PWB 상의 ASIC(Viento) 와 Motor Drive PWB 상의 ASIC (NHASIC) 사이 시리얼 버\n스에서 Viento 측의 통신 오류가 발생했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n045-368 (SBM Initialize Fail) FIP 참고."
  }
 }
