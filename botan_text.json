@@ -3886,5 +3886,45 @@
  "041-316": {
   "title": "IH Driver Interface Fail",
   "text": "참조 BSD : CH10.3\n\nMotor Drive PWB 와 IH Power Supply 사이의 인터페이스 이상 (IH Driver 측 ) 을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 IH Power Supply J530 와 Motor Drive PWB J441 사이의 Wire 단선, 단\n    락 또는 접촉불량을 점검한다.\n3.  점검에서 문제가 없을 경우에는 IH Power Supply 를 교환한다. (PL 18.1)"
+ },
+ "041-340": {
+  "title": "MCU NVM (EEPROM) Data Fail",
+  "text": "참조 BSD : CH3.1\n\nNVM(EEPROM) 데이터의 특정 주소에 특정 값이 입력되지 않았다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  다음 NVM 값을 삼가한다 (Fail 원인 규명을 위해 ).\n    ·  740-012 (Range Over Chain No)\n    ·  740-013 (Range Over Link No)\n    ·  740-015 (Range Over Value)\n2.  전원을 OFF/ON 한다.\n3.  올바른 버전의 IOT 펌웨어를 설치한다.\n4.  IOT 의 NVM 을 초기화한다 ( 조정 NVM 의 쓰기 허용 포함 ).\n5.  복구되지 않는 경우는 Half Tone PWB 를 교환한다. (PL 18.5)"
+ },
+ "041-344": {
+  "title": "Motor Drive PWB F1 Fuse Fail",
+  "text": "참조 BSD : CH1.13, CH1.8, CH1.10, CH10.5, CH9.9\n\nMotor Drive PWB 상의 Fuse 1 이 끊어졌다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\n전원을 끄고 Rear Lower Cover 를 분리한다. Motor Drive PWB 상에 있는 F1 의 저항값을\n측정한다. 저항값이 5Ω 이상인가?\nY  N\n|    LVPS_CP1U J510-1 과 Motor Drive PWB J401-1 사이의 Wire 단선, 단락 또는 접촉불\n|    량을 점검한다."
+ },
+ "041-345": {
+  "title": "Motor Drive PWB F2 Fuse Fail",
+  "text": "참조 BSD : CH1.13, CH1.8, CH1.10, CH9.19, CH6.11, CH9.23\n\nMotor Drive PWB 상의 Fuse 2 이 끊어졌다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\n전원을 끄고 Rear Lower Cover 를 분리한다. Motor Drive PWB 상에 있는 F2 의 저항값을\n측정한다. 저항값이 5Ω 이상인가?\nY  N\n|    LVPS_CP1U J510-2 과 Motor Drive PWB J401-2 사이의 Wire 단선, 단락 또는 접촉\n|    불량을 점검한다.\n\nMotor Drive PWB 에서 아래의 Connector 를 분리하고 각 Connector 의 단자와 GND 사이의\n저항을 측정한다.\n\n·  J413-B13 (1st BTR Contact/Retract Clutch)\n·  J416-6 (ADC Shutter Solenoid) (Mid/High model)\n·  J442-1 (Marking Fan)\n저항값이 모두 5Ω 이상인가?\nY  N\n|    아래의 항목을 점검한다.\n|\n|    ·  접지 (5Ω 이하 ) 된 Wire 단락.\n|    ·  대상부품의 내부 단락.\n\nMotor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "041-346": {
+  "title": "Motor Drive PWB F3 Fuse Fail",
+  "text": "참조 BSD : CH1.13, CH1.8, CH1.10, CH9.23, CH1.14, CH10.8, CH10.4, CH10.7, CH10.11\n\nMotor Drive PWB 상의 Fuse 3 이 끊어졌다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\n전원을 끄고 Rear Lower Cover 를 분리한다. Motor Drive PWB 상에 있는 F3 의 저항값을\n측정한다. 저항값이 5Ω 이상인가?\nY  N\n|    LVPS_CP1U J510-2 과 Motor Drive PWB J401-2 사이의 Wire 단선, 단락 또는 접촉\n|    불량을 점검한다.\n\nMotor Drive PWB 에서 아래의 Connector 를 분리하고 각 Connector 의 단자와 GND 사이의\n저항을 측정한다.\n\n·  J408-7 (Front Left Marking Fan) (Mid/High model)\n·  J408-10 (Rear Add Fan) (Mid/High model) ※단, Fan 자체는 미포함.\n·  J444-1 (LVPS Fan)\n·  J436-B4 (LH Fan 2)\n·  J436-B1 (LH Fan 1)\n·  J408-4 (IHPS Intake Fan)\n·  J423-1 (Front Right Marking Fan) (Mid/High model)\n·  J434-A7 (Exit 1 Gate Solenoid)\n·  J433-15 (Face Up Gate Solenoid)\n저항값이 모두 5Ω 이상인가?\nY  N\n|    아래의 항목을 점검한다.\n|\n|    ·  접지 (5Ω 이하 ) 된 Wire 단락.\n|    ·  대상부품의 내부 단락.\n\nMotor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "041-350": {
+  "title": "Motor Drive PWB F7 Fuse Fail",
+  "text": "참조 BSD : CH1.13, CH1.8, CH1.10, CH10.7, CH10.9, CH8.7\n\nMotor Drive PWB 상의 Fuse 7 이 끊어졌다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\n전원을 끄고 Rear Lower Cover 를 분리한다. Motor Drive PWB 상에 있는 F7 의 저항값을\n측정한다. 저항값이 5Ω 이상인가?\nY  N\n|    LVPS_CP1U J510-5 과 Motor Drive PWB J401-3 사이의 Wire 단선, 단락 또는 접촉불\n|    량을 점검한다.\n\nMotor Drive PWB 에서 아래의 Connector 를 분리하고 각 Connector 의 단자와 GND 사이의\n저항을 측정한다.\n\n·  J422-7/8 (Exit 1 OCT Motor)\n·  J434-A3/A4 (Exit 2 OCT Motor)\n·  J431-A9 (Regi Heater)\n저항값이 모두 5Ω 이상인가?\nY  N\n|    아래의 항목을 점검한다.\n|\n|    ·  접지 (5Ω 이하 ) 된 Wire 단락.\n|    ·  대상부품의 내부 단락.\n\nMotor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "041-352": {
+  "title": "Motor Drive PWB F5 Fuse Fail",
+  "text": "참조 BSD : CH1.13, CH1.8, CH1.10, CH10.2\n\nMotor Drive PWB 상의 Fuse 5 이 끊어졌다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\n전원을 끄고 Rear Lower Cover 를 분리한다. Motor Drive PWB 상에 있는 F5 의 저항값을\n측정한다. 저항값이 5Ω 이상인가?\nY  N\n|    LVPS_CP1U J510-2 과 Motor Drive PWB J401-2 사이의 Wire 단선, 단락 또는 접촉불\n|    량을 점검한다."
+ },
+ "041-354": {
+  "title": "Motor Drive PWB F9 Fuse Fail",
+  "text": "참조 BSD : CH1.13, CH1.8, CH1.10, CH3.5\n\nMotor Drive PWB 상의 Fuse 9 이 끊어졌다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\n전원을 끄고 Rear Lower Cover 를 분리한다. Motor Drive PWB 상에 있는 F9 의 저항값을\n측정한다. 저항값이 5Ω 이상인가?\nY  N\n|    LVPS_CP1U J510-1 과 Motor Drive PWB J401-1 사이의 Wire 단선, 단락 또는 접촉\n|    불량을 점검한다.\n\nMotor Drive PWB 에서 Connector J491 를 분리하고 J491-1 과 GND 사이의 저항을 측정한\n다. 저항값이 5Ω 이상인가?\nY  N\n|    아래의 항목을 점검한다.\n|\n|    ·  Motor Drive PWB J491-1 과 Finisher A2 J8704-1 사이의 Wire 단락 ( 접지 ).\n|    ·  Finisher A2 의 내부 단락.\n|\n|    주기 : Finisher 측의 회로는 별책 Finisher 서비스 설명서를 참고할 것.\n\nMotor Drive PWB 를 교환한다. (PL 18.2)"
+ },
+ "041-356": {
+  "title": "Motor Drive PWB F11 Fuse Fail",
+  "text": "참조 BSD : CH1.13, CH1.6, CH1.9, CH6.11\n\nMotor Drive PWB 상의 Fuse 11 이 끊어졌다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\n전원을 끄고 Rear Lower Cover 를 분리한다. Motor Drive PWB 상에 있는 F11 의 저항값을\n측정한다. 저항값이 5Ω 이상인가?\nY  N\n|    LVPS_CP1U J509-2 과 Motor Drive PWB J400-1 사이의 Wire 단선, 단락 또는 접촉\n|    불량을 점검한다.\n\nMotor Drive PWB 에서 아래의 Connector 를 분리하고 각 Connector 의 단자와 GND 사이의\n저항을 측정한다.\n\n·  J411-3 (1ST BTR CONT/RET Sensor)\n·  J416-4 (Temp & Humidity Sensor)\n·  J416-12 (ADC Sensor)\n·  J417-3 (Toner Bottle Position Sensor)\n·  J417-6 (Toner Bottle Full Sensor)\n·  J418-18 (ATC Sensor Y)\n·  J420-1 (Fusing Unit Exit Sensor)\n·  J420-4 (P/Roll Latch Sensor)\n·  J420-9 (Belt Speed Sensor)\n·  J424-3 (ATC Sensor K)\n·  J424-6 (ATC Sensor M)\n·  J424-9 (ATC Sensor C)\n·  J425-5 (T1 Level Sensor)\n·  J425-8 (T1 No Paper Sensor)\n·  J425-11 (T1 Lever Position Sensor)\n·  J425-16 (T1 Pre Feed Sensor)\n·  J428-4 (T2 No Paper Sensor)\n·  J428-9 (T2 Pre Feed Sensor)\n·  J428-10 (T2 Lever Position Sensor)\n·  J428-12 (T2 Level Sensor)\n·  J431-B6 (Regi Sensor)"
+ },
+ "041-603": {
+  "title": "Xero Temperature Sensor Fail",
+  "text": "참고 FIP\nCF-032 (Temperature/Humidity Sensor Fail) FIP 참고."
+ },
+ "042-342": {
+  "title": "Suction Fan Fail (High model)",
+  "text": "참고 FIP\nCF-002 (IOT Fan Fail) FIP 참고."
  }
 }
