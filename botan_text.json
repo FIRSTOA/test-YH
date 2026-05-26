@@ -3446,5 +3446,45 @@
  "024-922": {
   "title": "Face Down Tray2 Paper FULL",
   "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Face Down Tray2 Paper FULL\n[검지조건]\n    Face Down Tray 2 에 출력된 용지가 가득하다."
+ },
+ "024-923": {
+  "title": "Operation Y Toner Empty",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Operation Y Toner Empty\n[검지조건]\n    Color 인쇄시에 Y Toner 가 떨어져 인쇄 지속 불가능을 검지. 혹은 Y Toner 가 떨어\n    져 인쇄 지속 불가능 상태로 Color 인쇄를 지시했다.\n[대처순서]\n    해당 Toner Cartridge 를 교환한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 지속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail\n    OF-06 IOT System Fail"
+ },
+ "024-924": {
+  "title": "Toner Cartridge M Empty",
+  "text": "참고 FIP\nCF-003 (Toner Cartridge Empty) FIP 참고."
+ },
+ "024-926": {
+  "title": "Punch DustBox Miss Set",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Finisher Punch DustBox Miss Set 발생\n[검지조건]\n    PunchDustBox 가 장착되어 있지 않은 것을 검지했다.\n[대처순서]\n    PunchDustBox 를 장착한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 지속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-927": {
+  "title": "OCT Full Stack",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    OCT Full Stack\n[검지조건]\n    OCT Full Stack Sensor 의 On 을 5 초 연속으로 검지했다.\n[대처순서]\n    OCT 에서 종이를 제거한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 지속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-928": {
+  "title": "Scratch Sheet Compile (A-Fin)",
+  "text": "[Error 분류]\n    Operation Fail\n[Fault 내용]\n    Scratch Sheet Compile (A-Fin)\n[검지조건]\n    Sheet Integrity 명령에 따라 IOT 에서 비정상 용지로 통지된 용지 (Scratch Sheet)\n    를 Compiler 에 배출한 경우\n[대처순서]\n    OF-09 Common Job Fail"
+ },
+ "024-930": {
+  "title": "Stacker Tray Full (LargeSize Full)",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Finisher Stacker Tray Full Stack\n    (LargeSize Full)\n[검지조건]\n    Stacker Encode SNR 이 Full Stack( 큰 Size) 의 규정매수분을 Count 했다.\n[대처순서]\n    Stacker 에서 용지를 제거한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 지속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-931": {
+  "title": "Staple Dust Full",
+  "text": "[Error 분류]\n    Operation\n[Fault 내용]\n    Staple Full 을 검지했다.\n[검지조건]\n    1.  Staple Dust near Full 후, Staple Count 를 실시하고 유효 Count 수가 5K 에 도달하\n        면 통지한다.\n    2.  Staple Dust Box 의 탈착을 검출한 후, 유효 Count 수가 20K 에 도달해도 Near Full\n        Sensor 가 ON 되지 않을 경우에 통지한다.\n\n    주기 : 유효 Count 수와 용지 매수가 70 매 이하인 Staple 횟수를 Count 한 수.\n\n[대처순서]\n    Staple Dust Box 교환. Staple Dust Near Full Sensor 출력 확인, 검지하고 있지 않\n    은 경우 NVM 763-435 ~ 441 확인."
+ },
+ "024-932": {
+  "title": "Staple Box Set Fail",
+  "text": "[Error 분류]\n    Operation\n[Fault 내용]\n    Staple Box 가 정확히 장착되어 있지 않은 것을 검지했다."
+ },
+ "024-933": {
+  "title": "Drum Cartridge Y Life End",
+  "text": "참고 FIP\nCF-004 (Drum Cartridge Life End) FIP 참고."
+ },
+ "024-935": {
+  "title": "Tray1 Wrong Medium Type",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 1 용지 종류 불일치\n    BUTTON: 용지 종류 불일치 테두리가 있는 OHP 필름 검지 Tray 1\n[검지조건]\n    Feed 시작 후에 (OHP Sensor 에서 ) OHP 필름의 흰색 테두리 유무를 검사하고 흰색 테\n    두리가 있다고 판단하면 Jam 이 발생한다.\n[대처순서]\n    Xerox 의 흰색 테두리가 없는 OHP 필름을 사용함."
  }
 }
