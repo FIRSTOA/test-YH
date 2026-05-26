@@ -3086,5 +3086,85 @@
  "023-500": {
   "title": "Panel ROM Download Fail",
   "text": "[Fault 명칭]\n    Panel ROM Download Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    Panel-ROM 으로 데이터 쓰기 처리 시에 에러 검지 (DLD 방식 )\n[검지조건]\n    Panel-ROM 쓰기 중에 에러 검지\n[대처순서]\n    다시 다운로드를 진행한다. 다시 실행해도 실패하면 Panel 을 교환한다."
+ },
+ "023-601": {
+  "title": "Held Down Softkey Error (UI-Panel)",
+  "text": "[Error 분류]\n    record\n[Fault 내용]\n    Touch Panel 연속 누름 Error\n[검지조건]\n    ( 이 Fail 은 숨은 Fail 이다.)\n    Touch Panel 을 1 분 이상 계속해서 누른 것을 검출한 경우\n[대처순서]\n    메시지를 전달하기 위한 Fail 일 뿐이므로 대처할 필요 없음."
+ },
+ "023-602": {
+  "title": "KeyPad Option (Main Key) board broken",
+  "text": "[Fault 명칭]\n    KeyPad Option (Main Key) board broken\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    옵션 Hard Key(Main Key) 기판 고장을 검지했다."
+ },
+ "023-603": {
+  "title": "KeyPad Option (Fax Onetouch Key) board broken",
+  "text": "[Fault 명칭]\n    KeyPad Option (Fax Onetouch Key) board broken\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    옵션 Hard Key(Onetouch Key) 기판 고장을 검지했다.\n[대처순서]\n    옵션 Hard Key(Onetouch Key) 기판을 확인하고 교환한다."
+ },
+ "023-605": {
+  "title": "KeyPad Option (Main Key) status inconsistent",
+  "text": "[Fault 명칭]\n    KeyPad Option (Main Key) status inconsistent\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    NVM 설정에서는 ' 옵션 Hard Key 있음 ' 이지만 기동 시 옵션 Hard Key 를 검지하지 못\n    했다.\n[대처순서]\n    옵션 Hard Key(Main Key) 설치 상태를 확인한다."
+ },
+ "023-606": {
+  "title": "KeyPad Option (Fax Onetouch Key) status inconsistent",
+  "text": "[Fault 명칭]\n    KeyPad Option (Fax Onetouch Key) status inconsistent"
+ },
+ "023-607": {
+  "title": "KeyPad Option (Translator) status inconsistent",
+  "text": "[Fault 명칭]\n    KeyPad Option (Translator) status inconsistent\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    NVM 설정에서는 ' 옵션 Hard Key 있음 ' 이지만 기동 시 옵션 Hard Key 를 검지하지 못\n    했다.\n[대처순서]\n    옵션 Hard Key( 중계 기판 ) 설치 상태를 확인한다."
+ },
+ "023-608": {
+  "title": "KeyPad Option (Fax Onetouch Key) flip card disorder",
+  "text": "[Fault 명칭]\n    KeyPad Option (Fax Onetouch Key) flip card disorder\n[Error 분류]\n    Record\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Onetouch Key Flip Card 가 떠있음을 검지했다.\n[대처순서]\n    Flip Card 상태를 확인한다."
+ },
+ "024-314": {
+  "title": "IOT NVM Backup Restore Fail 4",
+  "text": "[Fault 명칭]\n    IOT NVM Backup Restore Fail 4\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    백업 데이터 읽기 오류를 검출했다.\n[대처순서]\n    전원을 OFF/ON 하고 다시 조작한다."
+ },
+ "024-315": {
+  "title": "IOT NVM Backup Restore Fail 5",
+  "text": "[Fault 명칭]\n    IOT NVM Backup Restore Fail 5\n[Error 분류]\n    SubSystem"
+ },
+ "024-316": {
+  "title": "IOT NVM Backup Restore Fail 6",
+  "text": "[Fault 명칭]\n    IOT NVM Backup Restore Fail 6\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    IOT NVM Backup Restore Fail ( 복원 시의 식별자 불일치 검출 )\n[검지조건]\n    백업된 IOT NVM Data 의 식별자 (Product No, Serial No) 가 복원 요구에서 지시받은\n    식별자와 다른 것을 검출\n[대처순서]\n    이 기계의 전원을 OFF 한 후 조작부가 꺼진 것을 확인하고 전원을 다시 ON. ( 재발 시\n    에는 관리자 · 고객상담센터 등에 연락 )"
+ },
+ "024-317": {
+  "title": "IOT NVM Backup Restore Fail 7",
+  "text": "[Fault 명칭]\n    IOT NVM Backup Restore Fail 7\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    IOT NVM Backup Restore Fail( 복원 시의 데이터 크기 불일치 검출 )\n[검지조건]\n    백업된 IOT NVM Data 의 데이터 크기가 복원 요구에서 지시받은 식별자와 다른 것을\n    검출\n[대처순서]\n    이 기계의 전원을 OFF 한 후 조작부가 꺼진 것을 확인하고 전원을 다시 ON. ( 재발 시\n    에는 관리자 · 고객상담센터 등에 연락 )"
+ },
+ "024-319": {
+  "title": "IOT NVM Backup Restore Fail 9",
+  "text": "[Fault 명칭]\n    IOT NVM Backup Restore Fail 9\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    IOT NVM Backup Restore Fail( 백업 데이터가 없음 )\n[검지조건]\n    복원 요구를 받았을 때 백업 데이터가 없음을 검출\n[대처순서]\n    이 기계의 전원을 OFF 한 후 조작부가 꺼진 것을 확인하고 전원을 다시 ON. ( 재발 시\n    에는 관리자 · 고객상담센터 등에 연락 )"
+ },
+ "024-320": {
+  "title": "IOT NVM Backup Restore Fail 10",
+  "text": "[Fault 명칭]\n    IOT NVM Backup Restore Fail 10\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    IOT NVM Backup Restore Fail( 복원 처리 미완료 )\n[검지조건]\n    기동 시에 복원이 완료되지 않은 것을 검지\n[대처순서]\n    CE Diag 에서 수동 (DC363) 으로 IOT NVM 복원 실시.\n    또는 시스템 데이터 (xxx-xxx) 를 0 으로 변경."
+ },
+ "024-321": {
+  "title": "3 Position Data Recovery Fail",
+  "text": "[Fault 명칭]\n    3 Position Data Recovery Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    3 Position Data Recovery Fail\n[검지조건]\n    Check Error 인 3 곳을 DC132 수동 보정을 실행할 때, 3 곳의 데이터를 확인해본 결\n    과 해당 데이터가 모두 일치하지 않아\n    수동 보정이 불가능할 때"
+ },
+ "024-322": {
+  "title": "SEEPROM Refurbish Already Fail",
+  "text": "[Fault 명칭]\n    SEEPROM Refurbish Already Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Refurbish 완료된 ESS Board 에 다시 Refurbish 요구한 것을 검출했다.\n[대처순서]\n    전원을 OFF/ON 하고 다시 조작한다."
+ },
+ "024-323": {
+  "title": "SEEPROM Refurbish Over Count Fail",
+  "text": "[Fault 명칭]\n    SEEPROM Refurbish Over Count Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    Count 값이 최대 Count 값을 초과하여 Referbish 할 수 없게 되었다.\n[대처순서]\n    전원을 OFF/ON 하고 다시 조작한다."
+ },
+ "024-324": {
+  "title": "IOT NVM Backup Restore Fail",
+  "text": "[Fault 명칭]\n    IOT NVM Backup Restore Fail\n[Error 분류]\n    SubSystem\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    기동 시에 복원이 완료되지 않은 것을 검지했다.\n[대처순서]\n    DC363 으로 IOT NVM 을 복원한다.\n    또는 시스템 데이터 (780-470: 자동 복원 요구 ) 를 '0' 으로 변경한다."
+ },
+ "024-340": {
+  "title": "IOT-ESS Communication Fail 1",
+  "text": "[Error 분류]\n    Sub System Fail"
+ },
+ "024-341": {
+  "title": "IOT-ESS Communication Fail 2",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    (IOT):\n    Controller 가 검지하는 MCU 송신 Error\n    (SequenceNo Error)\n[검지조건]\n    2 회 재전송으로 ACK 를 수신할 수 없으므로 통신 Fail 발생. ( 송신한 Message Packet\n    의 Sequence No. 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail\n    ESS-PWB 의 변경은 필요없음."
+ },
+ "024-342": {
+  "title": "IOT-ESS Communication Fail 3",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    (IOT):\n    Controller 가 검지하는 MCU 송신 Error\n    (PacketNo Error)\n[검지조건]\n    2 회 재전송으로 ACK 를 수신할 수 없으므로 통신 Fail 발생. ( 송신한 Message Packet\n    의 Packet No. 가 바른 값이 아니다.)\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복구\n    한다.\n    OF-06 IOT System Fail\n    ESS-PWB 의 변경은 필요없음."
  }
 }
