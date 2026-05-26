@@ -2886,5 +2886,85 @@
  "021-517": {
   "title": "SOAP Fault:The service not responded",
   "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    통신 장애 (EP Center)\n[검지조건]\n    Server 측에서 EP Center 와의 통신 장애를 검출했다.\n    Edge Server (EPA 설치 구성인 경우는 EPA-Server) 와 해당 Back-end 사이에서 통신\n    장애가 발생했음을 알리는 SOAP Fault 가 Server 로부터 통지되었다.\n    Code=Server, Subcode=NextServiceNotRespond\n[대처순서]\n    EP Center 에 System 의 가동 상황을 확인한다.\n    EP Center 에서 장애가 발생한 경우, EP Center 가 복구되는 대로 다시 UI 에서 조작\n    을 시도한다.\n    EP Center 가 복구하고 있음에도 불구하고 상태가 되지 않는 경우, Trouble 발생 직\n    후에 pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-518": {
+  "title": "SOAP Fault:An internal Error occurred on server",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    내부 Error (Edge Server)\n[검지조건]\n    Server 측에서 내부 Error 가 발생했다.\n    Edge Server 에서 내부 Error 가 발생하고 있음을 알리는 SOAP Fault 가 Server 로부터\n    통지되었다.\n    Code=Server, Subcode=InternalError\n[대처순서]\n    EP Center 에 System 의 가동 상황을 확인한다.\n    EP Center 에서 장애가 발생한 경우, EP Center 가 복구되는 대로 다시 UI 에서 조작\n    을 시도한다.\n    EP Center 가 복구하고 있음에도 불구하고 상태가 되지 않는 경우, Trouble 발생 직\n    후에 pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-519": {
+  "title": "SOAP Fault:Service is temporarily unavailable",
+  "text": ""
+ },
+ "021-520": {
+  "title": "Couldn't connect to CA",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    CA 통신 Error\n[검지조건]\n    EP 인증서 취득시에 통신 Error 가 발생했다.\n    Secep 에서 \"SECEP_COM_Error\" 가 응답되었다.\n[대처순서]\n    다음을 확인한다.\n    -  LAN Cable 의 접속을 확인한다.\n    -  Default Gateway 설정을 확인한다.\n    -  Subnet Mask 설정을 확인한다.\n    BB-Direct 구성인 경우\n    -  EP Proxy Server 설정을 확인한다. (Chain-Link(920-035 ~ 920-039) 또는 KO 설\n        정 )\n    EPA-Server 구성인 경우\n    -  EP Server 설정을 확인한다. (Chain-Link(920-003 ~ 920-006))\n    상기의 설정을 확인 후 상태가 개선되지 않는 경우, Network 장애일 가능성이 크므\n    로 고객의 Network 관리자에게 문의한다.\n    Network 가 정상이지만 상태가 개선되지 않는 경우, Trouble 발생 직후에 pfshowinfo9\n    Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-521": {
+  "title": "A connection to CA has timed out",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    CA 통신 Timeout"
+ },
+ "021-525": {
+  "title": "An unregstration conflict has detected",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    철수 상태 부정합\n[검지조건]\n    철수를 지시했지만 내부에서 철수된 상태라고 검출했다.\n    철수 처리의 개시시, System Data 의 \"설치 상태\" 가 설치완료 상태가 아닌 것을 검\n    출했다."
+ },
+ "021-526": {
+  "title": "A miscellaneous http session Error has detected",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    통신 Library Error\n[검지조건]\n    통신 Library 의 Error 가 발생했다.\n    libc URL 에서 미분류 Error 가 응답되었다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-527": {
+  "title": "An invalid message has received",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    통신 Message 부정확 (Edge Server)\n[검지조건]\n    부정확한 Message 를 Server 에서 수신했다.\n    libcURL 에서 \"HTTP Status : 4XX\" 가 응답되었다.\n    또는 부정확한 SOAP Fault 를 수신했다. ( 미지의 Code, Subcode 등 )\n    또는 부정확한 SOAP Response 를 수신했다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    그래도 Trouble 이 계속되는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network\n    Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-528": {
+  "title": "A communication settings was set as disabled",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    통신 설정 오류\n[검지조건]\n    통신 시작 시 통신 불가 설정을 검출했다."
+ },
+ "021-529": {
+  "title": "Device has already latest firmware.",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    최신 버전의 검출 ( 소프트웨어 업그레이드 )\n[검지조건]\n    소프트웨어 업그레이드 서버에 본체의 소프트웨어 버전을 문의한 결과, 본체의 ROM\n    이 최신 버전인 것을 검출했다.\n[대처순서]\n    최신 버전임에도 불구하고 이 Error 가 검지된 경우, EP Center( 소프트웨어 업그레\n    이드 서버 ) 에서 시스템의 가동 상황을 확인한다."
+ },
+ "021-530": {
+  "title": "An internal Error has occurred on update server.",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    서버 내부 Error( 소프트웨어 업그레이드 )\n[검지조건]\n    소프트웨어 업그레이드 서버측에서 내부 Error 를 검출했다.\n    소프트웨어 업그레이드 서버에서 내부 Error 를 검지한 것을 나타내는 응답 메시지가\n    서버에서 본체로 통지됐다.\n[대처순서]\n    일정 시간 방치한 후에 다시 실행한다.\n    그래도 Trouble 이 계속되는 경우에는 다음을 실시한다.\n    1.  EP Center( 소프트웨어 업그레이드 서버 ) 에서 시스템의 가동 상황을 확인한다.\n    2.  EP Center 에서 장애가 발생한 경우, EP Center 가 복구되는 대로 다시 UI 에서\n        조작을 시도한다.\n    EP Center 가 복구되어 있음에도 불구하고 상태가 개선되지 않는 경우에는 Trouble 발\n    생 직후에 pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "021-531": {
+  "title": "Service is temporarily unavailable on update server.",
+  "text": "[Error 분류]\n    job"
+ },
+ "021-532": {
+  "title": "Found an unsupported ROM set.",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    서포트 외의 ROM 구성 검출 ( 소프트웨어 업그레이드 )\n[검지조건]\n    소프트웨어 업그레이드 서버에 본체의 소프트웨어 버전을 문의한 결과, 현재의 본체\n    ROM 은 EP 에서 정한 소프트웨어 업그레이드 대상이 아닌 ROM 버전의 조합인 것을 검\n    출했다.\n[대처순서]\n    FirmWare DownLoad 소프트웨어에 의한 버전 업그레이드를 실시한다."
+ },
+ "021-533": {
+  "title": "Software Update unoperational by user.",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    사용자에 의한 실행 불가 ( 소프트웨어 업그레이드 )\n[검지조건]\n    소프트웨어 업그레이드 서버에 본체의 소프트웨어 버전을 문의한 결과, 현재의 본체\n    ROM 은 Key Operator(KO) 에 의한 소프트웨어 업그레이드가 불가능한 ROM 버전의 조\n    합인 것을 검출했다.\n[대처순서]\n    FirmWare DownLoad 소프트웨어에 의한 버전 업그레이드를 실시한다."
+ },
+ "021-534": {
+  "title": "Found an unsupported submodule.",
+  "text": "[Error 분류]\n    job"
+ },
+ "021-536": {
+  "title": "Device has already a file of Chain Link.",
+  "text": "[Fault 명칭]\n    Device has already a file of Chain Link.\n[Error 분류]\n    작업\n[Fault 내용]\n    Chain-Link 설정 지시와의 경합\n    ( 소프트웨어 업그레이드 )\n[검지조건]\n    사용자로부터 소프트웨어 업그레이드 지시를 받았을 때 미처리된 Chain-Link 설정파\n    일을 검지했다.\n[대처순서]\n    전원을 OFF/ON 하고 다음 기동시에 소프트웨어 업그레이드 지시를 다시 실행한다.\n    OFF/ON 을 통한 장치 초기화 중에 미처리된 Chain-Link 설정이 처리되고 장치는 자동\n    으로 재기동한다. 이를 통해 이 에러는 발생하지 않는다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
+ },
+ "021-544": {
+  "title": "EP-BB Chain-Link setting file access Fail",
+  "text": "[Fault 명칭]\n    EP-BB Chain-Link setting file access Fail"
+ },
+ "021-545": {
+  "title": "A EP-BB function execution was not necessary Fail",
+  "text": "[Fault 명칭]\n    A EP-BB function execution was not necessary Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    EP-BB 기능 실행 불필요 검출\n[검지조건]\n    EP-BB 기능의 실행 요청 (UI 지시 등 ) 이 발생하여 그 기능의 실행을 기다리는 동안\n    작업 취소나 다른 EP 에러로 인해 실행하지 않아도 됨을 검지했다.\n[대처순서]\n    EP 계약이 해지되지 않으면 콜센터로 연락한다.\n    해약할 때에는 처리 불필요\n\n    EP 센서에 EP 계약 상태와 등록 상태를 확인한다.\n\n    계약 상태와 등록 상태에 문제가 없으면 에러 이력을 참고하여 이러한 오류 발생 문\n    제 시에 다른 EP 에러가 발생하지 않았는지 확인한다.\n\n    발생한 경우에는 그 에러를 해결한다.\n\n    상태가 개선되지 않으면 Pfshowinfo9 로그를 취득하여 지원 부서로 연락한다.\n    2.5.1 로그 수집 / 추출 도구 기능설명"
+ },
+ "021-565": {
+  "title": "3G connection timeout Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    3G connection timeout Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    3G 회선에 대한 접속 시에 타임아웃 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 를 사용한 3G 회선에 대한 접속에서 타임아웃이 발생했다."
+ },
+ "021-566": {
+  "title": "Out of range Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    Out of range Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    전파상황이 권외 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 를 사용한 3G 회선의 전파상태가 권외\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_OUT_OF_RANGE\" 가 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_COMM_OUT_OF_RANGE\" 가 반환되었다.\n[대처순서]\n    3Gnet-BOX 진단 리포트를 출력하여 전파상태 상태가 권외 혹은 레벨이 낮은 상태, 혹\n    은 3Gnet-BOX 의 전파 강도 LED 램프가 2 개 이상 켜져 있지 않으면 다음을 실시한다.\n\n    · 3Gnet-BOX 의 안테나가 넘어져 있으면 수직으로 세운다.\n    · 안테나 주변에 차폐하는 것이 있으면 떨어진 곳에 설치한다.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
+ },
+ "021-567": {
+  "title": "SIM card NG Fail (3Gnet-BOX).",
+  "text": "[Fault 명칭]\n    SIM card NG Fail (3Gnet-BOX).\n[Error 분류]\n    작업\n[Fault 내용]\n    SIM 카드 이상 (3Gnet-BOX)\n[검지조건]\n    3Gnet-BOX 에 삽입할 SIM 카드의 상태가 이상.\n\n    SessionMgr 에서 \"SESSMGR_USBRNDIS_ERR_SIM_NG\",\n    \"SIM_CONFIRMING\" 이 반환되었다.\n    또는 secep 에서 \"SECEP_BEE_SIM_NG\", \"SECEP_BEE_SIM_CONFIRMING\" 이 반환되었다.\n[대처순서]\n    3Gnet-BOX 에 정품 SIM 카드가 올바로 꽂혀 있는지 확인한다.\n\n    확인 결과, 상태가 개선되지 않는 경우는\n    3Gnet-BOX 를 리셋하고 복합기의 Power OFF/ON.\n\n    그래도 개선되지 않는 경우는\n    · 3Gnet-BOX 진단 리포트\n    · PfShowInfo8 로그\n    를 취득하고 지원부서에 연락한다."
  }
 }
