@@ -3526,5 +3526,45 @@
  "024-947": {
   "title": "Tray 2 Out Of Place",
   "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 2 Out of Place\n[검지조건]\n    Tray 2 가 세트되지 않은 것을 검출했다.\n[대처순서]\n    Tray 를 세트한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-948": {
+  "title": "Tray 3 Out Of Place",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 3 Out of Place\n[검지조건]\n    Tray 3 이 세트되지 않은 것을 검출했다.\n[대처순서]\n    Tray 를 세트한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-949": {
+  "title": "Tray 4 Out Of Place",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 4 Out of Place\n[검지조건]\n    Tray 4 이 세트되지 않은 것을 검출했다.\n[대처순서]\n    Tray 를 세트한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-950": {
+  "title": "Tray 1 Empty",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 1 Empty\n[검지조건]\n    Tray 1 Tray 의 용지없음을 검지했다.\n[대처순서]\n    해당 Tray 에 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-951": {
+  "title": "Tray 2 Empty",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 2 Empty\n[검지조건]\n    Tray 2 Tray 의 용지없음을 검지했다.\n[대처순서]\n    해당 Tray 에 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-952": {
+  "title": "Tray 3 Empty",
+  "text": "[Error 분류]\n    Operation Error"
+ },
+ "024-953": {
+  "title": "Tray 4 Empty",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 4 Empty\n[검지조건]\n    Tray 4 Tray 의 용지없음을 검지했다.\n[대처순서]\n    해당 Tray 에 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-954": {
+  "title": "Tray SMH Empty",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray SMH Empty\n[검지조건]\n    수동 Tray 의 용지없음을 검지했다.\n[대처순서]\n    해당 Tray 에 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-955": {
+  "title": "Tray 6 Empty",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 6 Empty\n[검지조건]\n    Tray 6 Tray 의 용지없음을 검지했다."
+ },
+ "024-956": {
+  "title": "Tray 7 Empty",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Tray 7 Empty\n[검지조건]\n    Tray 7 Tray 의 용지없음을 검지했다.\n[대처순서]\n    해당 Tray 에 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
+ },
+ "024-957": {
+  "title": "Interposer Empty",
+  "text": "[Error 분류]\n    Operation Error\n[Fault 내용]\n    Interposer Empty\n[검지조건]\n    Interposer Tray 의 용지없음을 검지했다.\n[대처순서]\n    해당 Tray 에 용지를 보급한다.\n    Trouble 이 계속될 경우는 범용 Sensor FIP 를 참고하여 Sensor 를 Check 한다.\n    Trouble 이 계속될 때는 다음을 참고하여 Trouble 을 복구한다.\n    OF-09 Common Job Fail"
  }
 }
