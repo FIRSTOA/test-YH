@@ -3686,5 +3686,45 @@
  "026-400": {
   "title": "Exceed the number of connection of USB Host Fail",
   "text": "[Error 분류]\n    info\n[Fault 내용]\n    USB Host 포트의 최대 연결 개수 초과 Fail\n[검지조건]\n    본체의 USB Host 에 연결된 기기의 개수가 최대로 연결 가능한 개수를 초과했다.\n[대처순서]\n    USB Host 포트에 연결된 기기 중 일부의 연결을 해제하여 연결된 기기의 개수를 연결\n    가능한 최대 개수 이하로 한다.\n    상기의 방법으로 Error 가 해제되었지만 USB Host 연결 기기가 바르게 동작하지 않으\n    면 전원을 OFF/ON 한다."
+ },
+ "026-402": {
+  "title": "Changed IOT Speed Slow Mode",
+  "text": "[Fault 명칭]\n    Changed IOT Speed Slow Mode\n[Error 분류]\n    Information\n[Fault 내용]\n    축적 없는 프린트 금지\n[검지조건]\n    IOT 프린트 속도가 느려졌다.\n[대처순서]\n    기계 내부 온도가 낮아지면 원래 속도로 복귀하므로 별도의 조치 필요 없음."
+ },
+ "026-700": {
+  "title": "LDAP protocol MAX Error",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    주소록 조작에서 규정 외의 LDAP Protocol 을 검지"
+ },
+ "026-705": {
+  "title": "DocuWorks Short of Memory",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    XDW Short of Memory\n[검지조건]\n    DocuWorks Decomposer 처리중에 메모리 부족을 검지했다.\n[대처순서]\n    프린트모드가 [고화질 ] 인 경우에는 [표준 ], [표준 ] 인 경우에는 [고속 ] 으로 변\n    경한다. 그래도 계속 발생하는 경우, 메모리를 증설한다. 최대까지 증설해도 발생\n    하는 경우, DocuWorks Viewer 에서 프린터 드라이버 (ART-EX, PCL 등 ) 를 사용하여\n    프린트한다."
+ },
+ "026-706": {
+  "title": "DocuWorks Print Prohibited",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    XDW Print Prohibited"
+ },
+ "026-707": {
+  "title": "DocuWorks Unlock Failed",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    XDW Unlock Failed\n[검지조건]\n    보안으로 보호된 DocuWorks 파일을 처리하는 과정에서 UI 조작부 설정의 비밀번호,\n    XPJL 에서 지정된 (ContentsBridge Utility 에서 설정 ) 비밀번호가 일치하지 않는 경\n    우.\n[대처순서]\n    1.  Device 에 지정된 비밀번호 초기값 또는 프린트시에 ContentsBridgeUtility 에서 입\n        력한 비밀번호가 정확하지 않으므로 정확한 비밀번호를 입력한다.\n    2.  DocuWorks Viewer 에서 [비밀번호 ( 모든 권한 )] 를 입력하여 프린트 금지를 해제한\n        후에 프린터 드라이버 (ART-EX, PCL 등 ) 를 사용하여 프린트한다."
+ },
+ "026-713": {
+  "title": "Couldn't detect proxy server automatically",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    자동 프록시 검출 실패\n[검지조건]\n    프록시 서버를 자동으로 검출하지 못했다.\n    프록시 서버가 수동으로 설정된 경우를 제외하고는 자동으로 DHCP 서버에서 프록시\n    서버의 설정을 취득하도록 시도하지만 취득에 실패했다.\n    자세한 내용은 아래와 같다.\n    -  취득한 PAC 파일의 내용이 비정상이다. (JavaScript 실행시 Error 가 발생 )\n    -  PAC 파일을 취득하지 못했다. (Timeout/ 연결 Error)\n    -  PAC 파일을 취득하지 못했다. (PAC 파일이 존재안함 / 파일의 용량 비대 )\n    -  PAC 파일의 URL 정보를 취득하지 못했다. (Timeout)\n    -  PAC 파일의 URL 정보를 취득하지 못했다. ( 조회 결과에 URL 가 없음 )\n[대처순서]\n    아래를 확인한다.\n    -  기본 게이트웨이의 설정을 확인한다.\n    -  서브넷 마스크의 설정을 확인한다.\n    -  DNS 서버주소의 설정을 확인한다.\n    상기의 설정을 확인한 후, 상태가 개선되지 않으면 네트워크 장애 또는 DHCP 서버의\n    설정이 부적절할 가능성이 크므로 네트워크 관리자에게 상담한다. ( 예를 들어, DHCP\n    서버가 프록시 서버의 주소를 반송하도록 설정되어 있으면 이 Error 가 발생 )\n    네트워크 환경의 확인항목을 아래와 같다.\n    -  PAC 파일 (CFILE) 을 제공하는 HTTP 서버가 정상적으로 가동하고 있는지 또는 해\n        당 서버에 네트워크가 도달하고 있는지 확인한다.\n    -  PAC 파일의 내용에 구성 상의 문제 또는 지정 서버의 주소에 문제가 없는지 확인\n        한다. 또는 파일 크기가 64KB 이하인지 확인한다."
+ },
+ "026-715": {
+  "title": "Connection to Xerox server has timed out",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    서버 무응답\n[검지조건]\n    Xerox Communication 서버에서 일정시간 응답이 없어 통신 Timeout 이 발생했다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    복구수단을 실시한 후, Xerox Communication 서버와 정상적으로 통신이 실행되는 시\n    점에서 Fault 는 해제된다.\n    상태가 개선되지 않는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log\n    를 취득하여 기술부문에 문의한다."
+ },
+ "026-716": {
+  "title": "An invalid state message received from server",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    서버이상 검출\n[검지조건]\n    Xerox Communication 서버에서 이상상태를 표시하는 메시지가 송신되었다.\n[대처순서]\n    전원을 OFF/ON 한다.\n    복구수단을 실시한 후, Xerox Communication 서버와 정상적으로 통신이 실행되는 시\n    점에서 Fault 는 해제된다.\n    상태가 개선되지 않는 경우, Trouble 발생 직후에 pfshowinfo9 Log 와 Network Log\n    를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "026-717": {
+  "title": "Invalid network settings were found",
+  "text": "[Error 분류]\n    job\n[Fault 내용]\n    설정이상\n[검지조건]\n    무효 또는 부적절한 네트워크 설정으로 인해 통신하지 못했다.\n[대처순서]\n    아래를 확인한다.\n    -  IP 주소의 설정을 확인한다.\n    -  기본 게이트웨이의 설정을 확인한다.\n    -  서브넷 마스크의 설정을 확인한다.\n    -  DNS 서버주소의 설정을 확인한다.\n    -  프록시 서버주소의 설정을 확인한다.\n    -  Xerox Communication Server URL 의 설정을 확인한다.\n    -  [상대 서버 인증서 검증 ] 을 [사용안함 ] 으로 설정한다.\n    상기의 설정을 확인한 후, 상태가 개선되지 않으면 네트워크 장애일 가능성이 크므\n    로 네트워크 관리자에게 상담한다.\n    복구수단을 실시한 후, Xerox Communication 서버와 정상적으로 통신이 실행되는 시\n    점에서 Fault 는 해제된다.\n    네트워크가 정상임에도 불구하고 상태가 개선되지 않는 경우, Trouble 발생 직후에\n    pfshowinfo9 Log 와 Network Log 를 취득하여 기술부문에 문의한다.\n    2.5.1 로그 수집 / 추출 도구의 기능 설명"
+ },
+ "026-718": {
+  "title": "PS Print Instruction Fail",
+  "text": "[Error 분류]\n    job"
  }
 }
