@@ -3246,5 +3246,45 @@
  "024-365": {
   "title": "Over Flow on Loop Back Write",
   "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Loopback 쓰기 Over Flow\n[검지조건]\n    신장한 Data 가 확보한 Buffer Size 를 초과했다.\n[대처순서]\n    현재, 이 Fail 은 표시하지 않는다."
+ },
+ "024-370": {
+  "title": "Marker Code Detection Fail",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Maker Code 검출 Error\n[검지조건]\n    신장시에 지정된 Size 분만 신장했을 경우, 압축 Data 에 종료 Code(FF02) 가 발견되\n    지 않았다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 아래를 실행한다.\n    ·  특정한 문서에서만 발생할 경우 (Software 의 문제일 가능성이 높다.)\n        1.  인쇄 Mode( 표준 / 고화질 / 초고화질 ) 를 변경.\n        2.  RAM Size 의 변경으로 출력될 수 있다.\n            A.  설치할 RAM Size 를 변경한다.\n            B.  RAM 의 용지 Size 를 변경한다. (Port 의 설정변경 및 수신 Buffer Size\n                등을 변경한다.)\n        그래도 Trouble 이 지속될 때는 아래를 진행하고 Trouble 을 복구한다.\n        OF-01 Common System Fail\n        OF-06 IOT System Fail\n        OF-02 HDD System Fail\n    ·  불특정하게, 대부분의 문서에서 발생할 경우에는 Hardware 의 문제일 가능성이\n        높다.\n        1.  System Memory 를 배냈다 다시 끼우고 장착을 확인\n        2.  RAM 의 교환\n        3.  ESS/MCU 간의 Cable 또는 Back Plane 을 배냈다 다시 끼운다 / 교환한다."
+ },
+ "024-371": {
+  "title": "IOT-ESS Communication Fail 21",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는, ESS 와 IOT 간의 통신 확립이 불가능했다.\n[검지조건]\n    Controller, 및 IOT 의 전원 ON 후 ( 에너지 절감 복귀를 포함 ), 통신이 정상으로 되\n    기 위한 준비를 위해, Controller 측에서의 통신 확립 요구에 대해 IOT 측에서의 응\n    답을 시간 안에 검출할 수 없었다.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-06 IOT System Fail\n    ESS-PWB 도 변경 대상이 된다."
+ },
+ "024-372": {
+  "title": "IOT-ESS Communication Fail 22",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지할 송신 Error( 부정확한 Parameter 지시 )\n[검지조건]\n    IOT Port 번호의 부정확 지시, Timeout 시간의 부정확 지시, Pointer 의 부정확 지\n    시, 전송 Size 의 부정확 지시를 검지.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-06 IOT System Fail\n    ESS-PWB 도 변경 대상이 된다."
+ },
+ "024-373": {
+  "title": "IOT-ESS Communication Fail 23",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 DLL 의 통신 Fail 복구 실패\n[검지조건]\n    Controller 측에서 송신한 Message Packet 에 대한 규정 횟수를 다시 시도해도 IOT 측\n    에서의 ACK Packet 을 시간 내에 수신할 수 없다."
+ },
+ "024-374": {
+  "title": "Regi Con PLL Parameter Fail",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지하는 RegiCon 조정값 설정 Error( 부정확한 Parameter 지시 )\n[검지조건]\n    IOT 에서 통지된 Color Regi 조정값이 부정확\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우는 아래를 실행한다.\n    1.  ESS 와 IOT 를 연결하는 Harness 를 교환.\n    그래도 Trouble 이 지속될 때는 아래를 진행하고 Trouble 을 복구한다.\n    OF-06 IOT System Fail"
+ },
+ "024-375": {
+  "title": "IOT-ESS Communication Fail 24",
+  "text": "[Error 분류]\n    Sub System Fail\n[Fault 내용]\n    Controller 가 검지할 DLL 수신 Error( 부정확한 Parameter 지시 )\n[검지조건]\n    IOT Port 번호의 부정확 지시, Timeout 시간의 부정확 지시, Pointer 의 부정확 지\n    시를 검지.\n[대처순서]\n    전원을 OFF/ON 해도 Trouble 이 계속될 경우에는 다음으로 진행하여, Trouble 을 복\n    구한다.\n    OF-06 IOT System Fail\n    ESS-PWB 도 변경 대상이 된다."
+ },
+ "024-376": {
+  "title": "IOT-ESS Communication Fail 25",
+  "text": "[Fault 명칭]\n    IOT-ESS Communication Fail 25\n[Error 분류]\n    sub\n[Fault 내용]\n    (IOT): Controller 가 검지하는 MCU 이미지 신호선 누락\n[검지조건]\n    이미지 신호선의 Loopback 단자에서 접속 단절을 검지한 경우에 발생\n[대처순서]\n    전원을 OFF/ON 한다."
+ },
+ "024-600": {
+  "title": "Billing Master Counter repair",
+  "text": "[Error 분류]\n    History\n[Fault 내용]\n    Billing Master Counter 복구\n[검지조건]\n    Billing Master Counter 를 자동복구했다.\n[대처순서]\n    History 로의 등록만 해당."
+ },
+ "024-604": {
+  "title": "SW-Key Backup Counter 1 repair",
+  "text": "[Error 분류]\n    History\n[Fault 내용]\n    SW-Key Backup Counter 1 복구\n[검지조건]\n    SW-Key Backup Counter1 을 자동복구했다.\n[대처순서]\n    History 로의 등록만 해당."
+ },
+ "024-605": {
+  "title": "SW-Key Backup Counter 2 repair",
+  "text": "[Error 분류]\n    History\n[Fault 내용]\n    SW-Key Backup Counter 2 복구\n[검지조건]\n    SW-Key Backup Counter2 를 자동복구했다.\n[대처순서]\n    History 로의 등록만 해당."
  }
 }
