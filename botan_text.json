@@ -2526,5 +2526,85 @@
  "018-738": {
   "title": "GCP XMPP Network Fail",
   "text": "[Fault 명칭]\n    GCP XMPP Network Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    GCP 네트워크 접속 에러 (XMPP)\n[검지조건]\n    Google 서버와 XMPP 프로토콜 통신시 네트워크 관련 에러가 발생했다.\n[대처순서]\n    네트워크 접속상황과 네트워크 설정상황을 네트워크 관리자에게 확인한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
+ },
+ "018-739": {
+  "title": "GCP XMPP Network Other Fail",
+  "text": "[Fault 명칭]\n    GCP XMPP Network Other Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    GCP 네트워크 기타 에러 (XMPP)\n[검지조건]\n    Google 서버와 XMPP 프로토콜 통신시 네트워크 관련 내부 에러가 발생했다.\n[대처순서]\n    네트워크 접속상황과 설정상황을 확인한다. 현상이 재발하는 경우는 콜 센터로 문의\n    한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
+ },
+ "018-740": {
+  "title": "GCP XMPP Certification Fail",
+  "text": ""
+ },
+ "018-741": {
+  "title": "GCP XMPP Other Fail",
+  "text": "[Fault 명칭]\n    GCP XMPP Other Fail\n[Error 분류]\n    작업\n[Fault 내용]\n    GCP 기타 에러 (XMPP)\n[검지조건]\n    GCP 모듈 (XMPP 라이브러리 ) 처리중 기타 내부 에러가 발생했다.\n[대처순서]\n    설정을 확인한 후 다시 실행한다. 현상이 재발하는 경우는 콜 센터로 문의한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
+ },
+ "018-743": {
+  "title": "GCP Network Proxy Fail",
+  "text": "[Fault 명칭]\n    GCP Network Proxy Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    GCP 네트워크 프록시 접속 에러\n[검지조건]\n    Google 서버와 HTTP 통신 시 네트워크 관련 (프록시 접속 ) 에러가 발생했다."
+ },
+ "018-744": {
+  "title": "GCP Network DNS Resolve Fail",
+  "text": "[Fault 명칭]\n    GCP Network DNS Resolve Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    GCP 네트워크 DNS 이름 해결 에러\n[검지조건]\n    Google 서버와 HTTP 통신 시에 네트워크 관련 (DNS 이름 해결 ) 에러가 발생했다.\n[대처순서]\n    네트워크 접속 상태, 네트워크 설정 상태를 확인한다. 네트워크 관리자에게 확인한\n    다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
+ },
+ "018-746": {
+  "title": "GCP XMPP Network DNS Resolve Fail",
+  "text": "[Fault 명칭]\n    GCP XMPP Network DNS Resolve Fail\n[Error 분류]\n    Job\n[Fault 내용]\n    GCP 네트워크 프록시 접속 에러 (XMPP)\n[검지조건]\n    Google 서버와 XMPP 프로토콜 통신 시에 네트워크 관련 (DNS 이름 해결 ) 에러가 발\n    생했다.\n[대처순서]\n    네트워크 접속 상태, 설정 상태를 확인한다. 현상이 재발하는 경우는 콜 센터로 문\n    의한다.\n\n    그래도 문제가 계속되는 경우는 다음을 실시한다.\n    OF-09 Common Job Fail\n    Information Fail/Warning 발생시 문제점을 조사한다."
+ },
+ "018-747": {
+  "title": "Server not found in SMB",
+  "text": ""
+ },
+ "018-748": {
+  "title": "LDAP protocol Error 48",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 48( 인증 거부 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[48]( 인증 거부\n    ) 이 수신되었다.\n[대처순서]\n    Security 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의\n    인증설정을 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-750": {
+  "title": "LDAP protocol Error 50",
+  "text": "[Error 분류]\n    Job Fail"
+ },
+ "018-751": {
+  "title": "LDAP protocol Error 51",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 51(Busy)\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[51](Busy) 이\n    수신되었다.\n[대처순서]\n    Service 에 관한 문제가 발생하고 있다. 잠시 기다렸다가 한번 더 조작한다. 상황이\n    개선되지 않을 때는 Network 관리자에게 상담한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-752": {
+  "title": "LDAP protocol Error 52",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 52( 처리 불가능 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[52]( 처리 불\n    가능 ) 가 수신되었다.\n[대처순서]\n    Service 에 관한 문제가 발생하고 있다. 잠시 기다렸다가 한번 더 조작한다. 상황이\n    개선되지 않을 때는 Network 관리자에게 상담한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-753": {
+  "title": "LDAP protocol Error 53",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 53( 실행 거부 )"
+ },
+ "018-754": {
+  "title": "LDAP protocol Error 54",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 54(Loop 검출 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[54](Loop 검출\n    ) 가 수신되었다.\n[대처순서]\n    Service 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의\n    Service 가동상태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-755": {
+  "title": "Server connection error in SMB",
+  "text": "[Fault 명칭]\n    Server connection error in SMB\n[Error 분류]\n    Job\n[Fault 내용]\n    SMB 스캔에서 SMB 서버와의 접속 시에 에러\n[검지조건]\n    서버로부터 응답이 없고, TCP/IP 세션 확립에 실패하였다.\n[대처순서]\n    수신국의 서버 및 복합기와 서버 사이에 존재하는 라우터나 수신국 서버 상의 바이\n    러스 스캔 소프트웨어, 방화벽 소프트웨어 등으로 139 번 포트 (TCP), 445 번 포트\n    (TCP) 에 의한 통신이 차단되어 있지 않는지 확인한다.\n    문제가 없다면 다른 PC 에서 동일한 사용자로 SMB 서버에 로그인하여 SMB 서버의 동\n    일한 저장위치에 파일 작성이 가능한지 확인한다.\n    쓰기가 가능한 경우에 본 기기로부터 한 번 더 같은 조작을 실시한다.\n    상황이 개선되지 않는 경우는\n    서버측에 어떤 문제가 발생했을 가능성이 높으므로 시스템 관리자에게 상담한다.\n    그래도 문제가 해결되지 않는 경우는\n    \"고객에게서 입수하는 정보\", \"채취 로그 정보\" 를 취득한 다음에 지원부서에 연락\n    한다."
+ },
+ "018-756": {
+  "title": "Server login response timeout in SMB",
+  "text": "[Fault 명칭]\n    Server login response timeout in SMB\n[Error 분류]\n    Job\n[Fault 내용]\n    SMB 스캔에서 SMB 인증 응답 타임아웃\n[검지조건]\n    스캐너 (PC 저장 ) 의 SMB 인증 시에 규정시간 내에 서버로부터 응답을 수신할 수 없\n    었다.\n[대처순서]\n    수신국의 서버가 ActiveDirectory 의 도메인에 소속되어 있는 경우, 수신국의 서버와\n    도메인 컨트롤러 사이의 통신에 지연이 발생하지 않는지 다음 방법으로 확인한다.\n    PC 클라이언트로부터 수신국의 서버에 액세스하여 시간이 걸리지 않는지 확인한다.\n    시간이 걸리는 경우는 시스템 관리자에게 상담한다.\n    문제가 없다면 다른 PC 에서 동일한 사용자로 SMB 서버에 로그인하여 SMB 서버의 동\n    일한 저장위치에 파일 작성이 가능한지 확인한다.\n    쓰기가 가능한 경우에 본 기기로부터 한 번 더 같은 조작을 실시한다.\n    상황이 개선되지 않는 경우는\n    고객 환경의 통신상황이 나쁠 가능성이 있으므로 시스템 관리자와 상담한다.\n    고객측에서 통신환경을 개선할 수 없으며 또 이상이 발생했다 안했다 하는 경우는\n    840-225:SMB 통신 시의 타임아웃값 (CE: 기본값 30 초 ) 을 120 초로 변경하여 조작해\n    본다.\n    그래도 상황이 개선되지 않는 경우는 \"네트워크 통신 리포트\", \"고객에게서 입수한\n    정보\", \"채취 로그 정보\" 를 취득하고 지원부서에 연락한다.\n    [고객에게서 입수하는 정보 ( 필수 )]\n    1.  서버 정보 ( 벤더 / 기종명, OS Version)\n    2.  본 기기의 기종명, SW 버전\n    [채취 로그 정보 ( 필수 )]\n    1.  ( 문제 발생 직후 ) 컨트롤러 로그를 채취\n    2.  ( 문제 발생 직후 ) 본 기기측의 패킷 캡쳐를 취득\n    3.  다른 PC 로부터 쓰기가 성공했을 때 다른 PC 측 패킷 캡쳐를 채취"
+ },
+ "018-761": {
+  "title": "Out of server memory in SMB",
+  "text": "[Fault 명칭]\n    Out of server memory in SMB"
+ },
+ "018-764": {
+  "title": "LDAP protocol Error 64",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 64(Naming 위반 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[64](Naming 위\n    반 ) 가 수신되었다.\n[대처순서]\n    Update 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상\n    태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-765": {
+  "title": "LDAP protocol Error 65",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 65(Object Class 지정 오류 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[65](Object\n    Class 지정 오류 ) 가 수신되었다.\n[대처순서]\n    Update 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상\n    태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-766": {
+  "title": "LDAP protocol Error 66",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 66( 종단 이외의 Entry 에서는 실행할 수 없음 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[66]( 종단 이\n    외의 Entry 에서는 실행할 수 없음 ) 이 수신되었다.\n[대처순서]\n    Update 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상\n    태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
+ },
+ "018-767": {
+  "title": "LDAP protocol Error 67",
+  "text": "[Error 분류]\n    Job Fail\n[Fault 내용]\n    주소록 조작으로 LDAP protocol Error 67(RDN 에서의 실행 불가 )\n[검지조건]\n    주소록의 조회에 대해 Server 로부터 RFC2251 규정의 resultMessageNo[67](RDN 에서\n    의 실행 불가 ) 이 수신되었다.\n[대처순서]\n    Update 에 관한 문제가 발생하고 있다. Network 관리자와 상담하고, Server 측의 상\n    태를 확인한다.\n    그래도 Trouble 이 지속될 경우는 아래를 진행하고 Trouble 을 복구한다.\n    2.4.2 [Network 에 접속할 수 없음 ] 이나 [PC 에서 Printer 가 보이지 않음 ]"
  }
 }
