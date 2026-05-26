@@ -4206,5 +4206,45 @@
  "062-357": {
   "title": "CCD Fan Fail (High model)",
   "text": "참조 BSD : CH6.8\n\nCCD Fan 의 이상을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n아래의 항목을 점검한다.\n\n·  CCD Fan (DC330[062-017]) 회전불량. (PL 1.3)\n·  CCD Fan 에 이물질 혼입.\n·  CCD Fan Fail 신호 라인 (DC330[062-280]) 단선.\n\n점검에서 문제가 없으면 IIT Trans PWB 를 교환한다. (PL 1.3)"
+ },
+ "062-362": {
+  "title": "X Hard Fail",
+  "text": "참조 BSD : CH6.7, CH6.8\n\n인식장치의 Hard 개조를 검지했다. ( 상시 검지 /Power On 시 검지 )\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  복구되지 않는 경우는 Controller PWB 를 교환한다. (PL 35.2)"
+ },
+ "062-380": {
+  "title": "AGC Fail",
+  "text": "참조 BSD : CH6.7, CH6.8\n\nAGC 를 실시할 때 Lamp 의 광량부족을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n확인작업\n광로를 차단하는 장해물, 램프, 렌즈, 경면, 흰색 보정판의 노후 또는 오염이 없는지\n점검한다.\n\n원인 / 대처방법"
+ },
+ "062-386": {
+  "title": "AOC Fail",
+  "text": "참조 BSD : CH6.7, CH6.8\n\nAOC 를 실시할 때 CCD 의 출력 이상을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n1.  전원을 켜고 진단 모드에 들어간다. NVM[715-030] 의 값을 \"1\" 로 변경하고 IIT 고장\n    부품 진단을 실행한다. IIT 고장부품을 진단한 후에 [설정 변경 ] 버튼을 누른다.\n2.  [현재의 설정값 ] 란에 3 자릿수 또는 4 자릿수가 표시된다."
+ },
+ "062-389": {
+  "title": "Carriage Over Run Fail",
+  "text": "참조 BSD : CH6.5, CH6.6\n\nCarriage 가 Scan End 측에 Over Run 했다.\n\n    주기 : CCD 주변 및 IIT Trans PWB 의 점검 작업에서 전원 On 일 때, CCD Lens Cover 를 분\n    리한 상태에서 Carriage 를 오른쪽으로 끝까지 밀지 않을 것. Carriage 를 오른쪽 끝까지\n    밀면, LED Lamp PWB 와 Earth Plate 가 접촉하여 LED Lamp PWB 가 단락에 의해 파손된다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n062-360 (Carriage Position Fail) FIP 참고."
+ },
+ "062-393": {
+  "title": "CCD PWB Sync Signal Fail",
+  "text": "참조 BSD : CH6.7, CH6.8\n\n다음 중 하나가 발생했다.\n\n·  Shading Memory 로의 입력 오류\n·  GAP Memory 에 대한 입력 오류\n·  ASIC 의 평균화 처리 오류\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n원인 / 대처방법\n062-386 (AOC Fail) FIP 참고."
+ },
+ "062-395": {
+  "title": "Trans PWB Power Cable Connection Fail",
+  "text": "참조 BSD : CH3.2\n\nIIT Trans PWB 의 전원 이상을 검지했다.\n\n    주기 : 본 Fail 은 Sub System Fail 이며, 본 Fail 이 발생하면 +24VDC_C13, +24VDC_Intlk\n    가 차단된다. (BSD CH1.8, CH1.10 참고 )\n\n순서\n[High model]"
+ },
+ "062-397": {
+  "title": "IIT-Cont Video Cable Connection Fail",
+  "text": "참조 BSD : CH3.2, CH6.7, CH6.8\n\nIIT-Controller Video Cable 의 접속 이상을 검지했다.\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 CCD PWB J700 와 Controller PWB J336 사이 Flat Cable 의 단선, 단락\n    또는 접촉불량을 점검한다.\n3.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  Controller PWB (PL 35.2)\n    ·  IIT Trans PWB (PL 1.3, PL 1.9)"
+ },
+ "062-398": {
+  "title": "IIT-Cont I/O Cable Connection Fail",
+  "text": "참조 BSD : CH3.2\n\nIIT-Controller I/O Cable 의 접속 이상을 검지했다.\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 IIT Trans PWB J7192 와 Controller PWB J321 사이 Flat Cable 의 단선\n    , 단락 또는 접촉불량을 점검한다.\n3.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  Controller PWB (PL 35.2)\n    ·  IIT Trans PWB (PL 1.3, PL 1.9)"
+ },
+ "062-790": {
+  "title": "PreIPS X Recognition Fail",
+  "text": "참조 BSD : CH6.7, CH6.8\n\n스캔한 원고가 지폐 / 유가증권, 법률로 금지된 원고이다.\n\n원인 / 대처방법\n사용설명서 \"법률상의 주의사항\" 을 참고하여 복사 가능한 원고인지 확인한다."
+ },
+ "063-210": {
+  "title": "Extension EEPROM Fail",
+  "text": "참조 BSD : CH5.11, CH5.21\n\nExtension EEPROM 에 대한 쓰기불량 또는 EEPROM 과의 통신불량을 검지했다.\n\n원인 / 대처방법\n1.  전원을 OFF/ON 한다.\n2.  전원을 끄고 DCDC PWB J745 와 Controller PWB J390 사이 Cable 의 단선, 단락 또\n    는 접촉불량을 점검한다.\n3.  점검에서 문제가 없으면 아래의 부품을 차례대로 교환한다. 단, 부품 교환 시마다\n    Fail 발생 유무를 확인하고 문제가 없는 부품은 원래대로 복원할 것.\n    ·  DCDC PWB (PL 54.4, PL 55.4)\n    ·  Controller PWB (PL 35.2)"
  }
 }
