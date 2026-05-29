@@ -2069,6 +2069,136 @@ body{background:var(--bg-soft)}
 
 /* Selection */
 ::selection{background:rgba(49,130,246,.2);color:var(--ink)}
+
+/* ============================================================
+   UNIFIED CROSS-FAMILY SECTION (Marble / Botan side-by-stacked)
+   ============================================================ */
+.family-section{
+  background:#fff;
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-md);
+  padding:18px 20px;
+  margin-bottom:14px;
+}
+.family-section:last-child{margin-bottom:0}
+.family-section.secondary{
+  background:var(--bg-soft);
+  border-style:dashed;
+}
+.family-section-head{
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:14px;flex-wrap:wrap;
+}
+.family-badge{
+  width:26px;height:26px;border-radius:8px;
+  display:grid;place-items:center;
+  color:#fff;font-weight:800;font-size:13px;
+  letter-spacing:-0.02em;
+}
+.family-badge.iA{background:var(--blue)}
+.family-badge.iB{background:#5B7CFA}
+.family-section-title{
+  font-size:14.5px;font-weight:700;
+  color:var(--ink);letter-spacing:-0.02em;
+}
+.family-section-sub{
+  font-size:11.5px;font-weight:500;
+  color:var(--muted-soft);letter-spacing:-0.01em;
+}
+.family-section-body{font-size:14px;line-height:1.7;color:var(--ink-mid)}
+
+/* Bracketed section header (Botan-style) */
+.ts-section-bracket{
+  background:var(--blue-tint);
+  color:var(--blue-dark);
+}
+
+/* ============================================================
+   UI STABILIZATION
+   ============================================================ */
+body{font-size:14.5px}
+.pdf-area{padding:18px 22px 24px}
+.manual-section{padding:18px 20px;margin-bottom:14px}
+.model-tile{transition:border-color .14s,background .14s}
+.model-tile:hover{transform:none;box-shadow:none;border-color:var(--blue)}
+.sg-item{transition:background .12s}
+.sg-empty{
+  padding:24px 18px;
+  background:#fff;
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-md);
+  color:var(--muted);
+  text-align:center;
+}
+.sg-empty strong{color:var(--ink);font-weight:700}
+
+/* Text content typographic stability */
+.text-content p{margin:0 0 4px}
+.text-content .ts-bullet{margin:2px 0;padding-left:14px;position:relative}
+.text-content .ts-bullet::before{content:"·";position:absolute;left:4px;color:var(--muted-soft);font-weight:700}
+.text-content .ts-bullet > div{padding-left:0}
+.text-content .ts-blank{height:6px;margin:0}
+.text-content .ts-section{margin:14px 0 8px}
+.text-content .ts-bsd{
+  font-size:12.5px;color:var(--muted);
+  background:var(--bg-grey);
+  padding:6px 10px;border-radius:8px;
+  margin:8px 0;display:inline-block;
+}
+.text-content .ts-code,.text-content .ts-pl{
+  background:var(--bg-grey);
+  color:var(--ink);
+  font-weight:600;
+  font-family:var(--mono);
+  padding:1px 5px;border-radius:4px;font-size:12.5px;
+}
+.text-content .ts-branch{
+  display:inline-block;width:18px;text-align:center;
+  background:var(--blue-soft);color:var(--blue-dark);
+  border-radius:5px;font-weight:800;font-size:12px;
+}
+
+/* Text view note (warning + image toggle button) */
+.text-view-note{
+  margin-top:14px;padding:12px 14px;
+  background:var(--bg-grey);
+  border-radius:10px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-size:12.5px;color:var(--muted);font-weight:500;
+}
+.text-view-note .view-toggle-btn{
+  margin-left:auto;
+  background:var(--blue);
+  color:#fff;
+}
+.text-view-note .view-toggle-btn:hover{background:var(--blue-dark);color:#fff}
+.view-toggle-btn.img-toggle{margin:10px 0}
+
+/* No content state */
+.text-no-content{
+  background:var(--bg-soft);
+  border:1px dashed var(--line);
+  border-radius:var(--radius-md);
+  padding:24px;
+  text-align:center;color:var(--muted);
+}
+.text-no-content-title{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:6px}
+
+/* Workspace head spacing nudges */
+.workspace-head{padding:20px 24px 14px}
+.ws-search-stage{padding:16px 24px}
+
+/* Image frame body */
+.image-frame{
+  background:var(--bg-soft);
+  border-radius:var(--radius-md);
+  padding:14px;
+}
+.image-frame canvas{
+  background:#fff;border-radius:8px;
+  box-shadow:var(--shadow-sm);
+  max-width:100%;height:auto;
+}
 </style>
 </head>
 <body>
@@ -3137,10 +3267,19 @@ function showImagePage(item, model){
   $('pageFrame2').classList.add('hidden');
   $('pageDivider').classList.add('hidden');
   $('imageFrame').classList.remove('hidden');
-  $('textFrame').classList.add('hidden');
   $('focusToggle').style.display = 'none';
   if($('zoomOut').parentElement) $('zoomOut').parentElement.style.display = 'none';
   if($('prevPage').parentElement) $('prevPage').parentElement.style.display = 'none';
+
+  // Cross-family supplement: if Marble has text for the same code, show it under the image
+  const tc = $('textContent');
+  const marble = state.marbleText[item.code];
+  if(marble){
+    $('textFrame').classList.remove('hidden');
+    tc.innerHTML = familySectionHtml('Marble', 'iA', formatMarbleText(marble), false);
+  } else {
+    $('textFrame').classList.add('hidden');
+  }
   
   const pageNum = item.page;
   const b64 = state.botanPages[String(pageNum)];
@@ -3241,6 +3380,36 @@ function showImagePage(item, model){
   }
 }
 
+function familySectionHtml(name, iconCls, bodyHtml, isPrimary){
+  const sub = isPrimary ? '' : '<span class="family-section-sub">참고 — 같은 코드의 다른 패밀리 처리법</span>';
+  return `
+    <section class="family-section ${isPrimary ? 'primary' : 'secondary'}">
+      <header class="family-section-head">
+        <span class="family-badge ${iconCls}">${name.charAt(0)}</span>
+        <span class="family-section-title">${name} Family</span>
+        ${sub}
+      </header>
+      <div class="family-section-body">${bodyHtml}</div>
+    </section>`;
+}
+
+function buildUnifiedContent(item, model){
+  const botan = state.botanText[item.code];
+  const marble = state.marbleText[item.code];
+  if(!botan && !marble) return '';
+
+  const isBotanPrimary = model.id === 'Botan';
+  const sections = [];
+  if(isBotanPrimary){
+    if(botan)  sections.push(familySectionHtml('Botan',  'iB', formatMarbleText(botan),  true));
+    if(marble) sections.push(familySectionHtml('Marble', 'iA', formatMarbleText(marble), !botan));
+  } else {
+    if(marble) sections.push(familySectionHtml('Marble', 'iA', formatMarbleText(marble), true));
+    if(botan)  sections.push(familySectionHtml('Botan',  'iB', formatMarbleText(botan),  !marble));
+  }
+  return sections.join('');
+}
+
 function showTextContent(item, model){
   // Hide PDF-specific elements
   $('pageFrame').classList.add('hidden');
@@ -3253,13 +3422,12 @@ function showTextContent(item, model){
   $('focusToggle').style.display = 'none';
   if($('zoomOut').parentElement) $('zoomOut').parentElement.style.display = 'none';
   if($('prevPage').parentElement) $('prevPage').parentElement.style.display = 'none';
-  
-  const textSource = model.id === 'Botan' ? state.botanText : state.marbleText;
-  const content = textSource[item.code];
+
   const tc = $('textContent');
-  
-  if(!content){
-    if(model.id === 'Botan'){
+  let html = buildUnifiedContent(item, model);
+
+  if(!html){
+    if(model.id === 'Botan' && state.botanCrops[item.code.toLowerCase()]){
       // Botan: fallback to image view if no text available
       $('textFrame').classList.add('hidden');
       showImagePage(item, model);
@@ -3272,9 +3440,7 @@ function showTextContent(item, model){
       </div>`;
     return;
   }
-  
-  let html = formatMarbleText(content);
-  
+
   // For Botan with image fallback available, add toggle button
   if(model.id === 'Botan' && state.botanCrops[item.code.toLowerCase()]){
     html += `
@@ -3283,9 +3449,9 @@ function showTextContent(item, model){
         <button class="view-toggle-btn" id="showImgBtn">원본 매뉴얼 페이지 이미지로 보기</button>
       </div>`;
   }
-  
+
   tc.innerHTML = html;
-  
+
   const showImgBtn = document.getElementById('showImgBtn');
   if(showImgBtn){
     showImgBtn.onclick = () => {
@@ -3347,8 +3513,15 @@ function formatMarbleText(content){
     const trimmed = line.trim();
     
     // Section headers (standalone lines like 원인/대처방법, 순서)
-    if(/^(원인\s*\/\s*대처방법|순서|점검방법|예방조치|복구방법|처리방법|증상|특기사항|개요|동작|확인사항|보충설명)$/.test(trimmed)){
+    if(/^(원인\s*\/\s*대처방법|순서|점검방법|예방조치|복구방법|처리방법|증상|특기사항|개요|동작|확인사항|보충설명|확인작업|참고\s*FIP)$/.test(trimmed)){
       out.push(`<div class="ts-section">${esc}</div>`);
+      continue;
+    }
+
+    // Botan-style bracketed section headers e.g. [Error 분류], [Fault 명칭], [Fault 내용], [검지조건], [대처순서], [오류 명칭], [오류 유형], [오류 내용], [감지 조건], [해결 방법], [Fault 명칭], [조치방법]
+    if(/^\[\s*[^\]]+\s*\]$/.test(trimmed)){
+      const inner = trimmed.replace(/^\[\s*|\s*\]$/g, '');
+      out.push(`<div class="ts-section ts-section-bracket">${escapeHtml(inner)}</div>`);
       continue;
     }
     
